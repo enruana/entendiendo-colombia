@@ -1,0 +1,324 @@
+---
+import Base from "../layouts/Base.astro";
+import StatCard from "../components/ui/StatCard.astro";
+import ChapterCard from "../components/ui/ChapterCard.astro";
+
+const chapters = [
+  {
+    number: "01",
+    title: "Cuantos colombianos hay",
+    description: "Poblacion, nacimientos, muertes y migracion. El contexto demografico que todo lo explica.",
+    href: "/capitulos/01-demografia",
+    icon: "🌎",
+    color: "indigo" as const,
+    available: true,
+  },
+  {
+    number: "02",
+    title: "Como se divide la poblacion",
+    description: "Quienes trabajan, quienes buscan trabajo, y los 14.9 millones que no aparecen en ningun titular.",
+    href: "/capitulos/02-clasificacion",
+    icon: "📊",
+    color: "violet" as const,
+    available: false,
+  },
+  {
+    number: "03",
+    title: "Empleo formal: dos fuentes, dos verdades",
+    description: "GEIH y PILA dan numeros distintos. Entendemos por que y cual usar cuando.",
+    href: "/capitulos/03-empleo-formal",
+    icon: "💼",
+    color: "cyan" as const,
+    available: false,
+  },
+  {
+    number: "04",
+    title: "La controversia DANE vs ANDI",
+    description: "En marzo 2026, los empresarios denunciaron la perdida de 500 mil empleos. El DANE respondio. Quien tiene razon?",
+    href: "/capitulos/04-controversia",
+    icon: "⚖️",
+    color: "amber" as const,
+    available: false,
+  },
+  {
+    number: "05",
+    title: "Empleo informal",
+    description: "13 millones de colombianos trabajan sin proteccion social. Por que y quienes son.",
+    href: "/capitulos/05-empleo-informal",
+    icon: "🏗️",
+    color: "rose" as const,
+    available: false,
+  },
+  {
+    number: "06",
+    title: "Desempleo",
+    description: "La tasa esta en minimos historicos. Pero es enganosa. Por que y como leerla.",
+    href: "/capitulos/06-desempleo",
+    icon: "📉",
+    color: "pink" as const,
+    available: false,
+  },
+  {
+    number: "07",
+    title: "Los invisibles: la PEI",
+    description: "14.9 millones de personas que no trabajan ni buscan trabajo. La mayoria son mujeres. Por que.",
+    href: "/capitulos/07-poblacion-inactiva",
+    icon: "👥",
+    color: "sky" as const,
+    available: false,
+  },
+  {
+    number: "08",
+    title: "Calidad del empleo",
+    description: "Subempleo, brechas de genero, NINIs, working poor. Mas alla del numero agregado.",
+    href: "/capitulos/08-calidad-empleo",
+    icon: "⭐",
+    color: "emerald" as const,
+    available: false,
+  },
+];
+---
+
+<Base title="Empleo Colombia">
+  <!-- HERO -->
+  <section class="relative overflow-hidden mesh-gradient-hero">
+    <div class="relative mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-32">
+      <!-- Badge -->
+      <div class="flex justify-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-white/80 px-4 py-1.5 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur">
+          <span class="flex h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
+          Datos oficiales DANE · UGPP · BanRep
+        </div>
+      </div>
+
+      <!-- Title -->
+      <h1 class="mt-8 text-center text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] text-neutral-900">
+        Cuantos colombianos<br />
+        <span class="gradient-text">trabajan realmente?</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="mx-auto mt-6 max-w-2xl text-center text-lg md:text-xl text-neutral-600 leading-relaxed">
+        Depende de a quien le preguntes. Un recorrido paso a paso por las cifras,
+        las fuentes y la metodologia del mercado laboral colombiano.
+      </p>
+
+      <!-- CTAs -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="/empezar-aqui" class="btn-primary">
+          Empezar el recorrido
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+        <a href="#capitulos" class="btn-secondary">
+          Ver los capitulos
+        </a>
+      </div>
+
+      <!-- Stats grid -->
+      <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <StatCard
+          value="53.4M"
+          label="Habitantes en Colombia"
+          sublabel="Proyeccion DANE 2026"
+          accent="indigo"
+        />
+        <StatCard
+          value="23.2M"
+          label="Personas con trabajo"
+          sublabel="Segun GEIH, enero 2026"
+          accent="violet"
+        />
+        <StatCard
+          value="55.4%"
+          label="En la informalidad"
+          sublabel="13.2 millones sin proteccion"
+          accent="pink"
+        />
+        <StatCard
+          value="14.9M"
+          label="Poblacion invisible"
+          sublabel="Ni trabaja ni busca"
+          accent="cyan"
+        />
+      </div>
+    </div>
+
+    <!-- Bottom fade -->
+    <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- INTRO / PROBLEMA -->
+  <section class="relative mx-auto max-w-4xl px-6 py-24">
+    <div class="text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        El problema
+      </div>
+      <h2 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+        Los titulares no te cuentan<br />
+        <span class="gradient-text-subtle">la historia completa</span>
+      </h2>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="text-sm font-semibold uppercase tracking-wider text-indigo-600">
+          Titular oficial
+        </div>
+        <blockquote class="mt-3 text-2xl font-bold text-neutral-900 leading-tight">
+          "Colombia alcanza tasa de desempleo mas baja desde 2001: 8.9%"
+        </blockquote>
+        <p class="mt-4 text-neutral-600 leading-relaxed">
+          Es la noticia que sale en todos los medios. Y es cierta. Pero si paras ahi,
+          te quedas con una version muy parcial de la realidad.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-8">
+        <div class="text-sm font-semibold uppercase tracking-wider text-pink-600">
+          Lo que no te cuentan
+        </div>
+        <ul class="mt-3 space-y-3 text-neutral-700">
+          <li class="flex gap-3">
+            <span class="mt-1 text-pink-500">▸</span>
+            <span><strong class="text-neutral-900">48.9%</strong> de los trabajadores gana menos del salario minimo</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-pink-500">▸</span>
+            <span><strong class="text-neutral-900">14.9 millones</strong> no aparecen ni como empleados ni como desempleados</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-pink-500">▸</span>
+            <span><strong class="text-neutral-900">La ANDI dice</strong> que se perdieron 500 mil empleos formales. El DANE dice que no.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-pink-500">▸</span>
+            <span><strong class="text-neutral-900">1 hora de trabajo</strong> al mes te hace "ocupado" en las estadisticas</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="mt-16 text-center text-lg text-neutral-600 max-w-2xl mx-auto">
+      Este sitio te explica <strong class="text-neutral-900">quien reporta los datos</strong>,
+      <strong class="text-neutral-900">como los miden</strong>, y <strong class="text-neutral-900">por que
+      dos fuentes oficiales pueden dar numeros distintos</strong>. Paso a paso, sin jerga.
+    </p>
+  </section>
+
+  <!-- CAPITULOS -->
+  <section id="capitulos" class="relative bg-neutral-50 border-y border-neutral-200">
+    <div class="mx-auto max-w-6xl px-6 py-24">
+      <div class="text-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          El recorrido
+        </div>
+        <h2 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+          8 capitulos para entenderlo todo
+        </h2>
+        <p class="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
+          Cada capitulo explica un aspecto distinto del mercado laboral colombiano.
+          Puedes empezar desde el principio o saltar al que te interese.
+        </p>
+      </div>
+
+      <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {chapters.map((ch) => <ChapterCard {...ch} />)}
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="/empezar-aqui" class="btn-primary">
+          Empezar por el principio
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODOLOGIA / QUE HACE DIFERENTE -->
+  <section class="mx-auto max-w-6xl px-6 py-24">
+    <div class="text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        Que hace diferente este sitio
+      </div>
+      <h2 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+        No solo datos.<br />
+        <span class="gradient-text-subtle">El como y el por que.</span>
+      </h2>
+    </div>
+
+    <div class="mt-16 grid gap-6 md:grid-cols-3">
+      <div class="card">
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-50">
+          <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+          </svg>
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-neutral-900">Fuentes oficiales</h3>
+        <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
+          Todos los datos vienen del DANE, UGPP, Banco de la Republica y OIT.
+          Cada cifra tiene un link directo a la fuente primaria.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-50">
+          <svg class="h-5 w-5 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+          </svg>
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-neutral-900">Graficas interactivas</h3>
+        <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
+          Cada dato tiene su grafica. Pasa el mouse, filtra, explora. Los datos
+          hablan mas cuando los puedes tocar.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-pink-50">
+          <svg class="h-5 w-5 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-neutral-900">Metodologia transparente</h3>
+        <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
+          Te explicamos como se mide cada cosa, por que algunas fuentes se contradicen,
+          y como verificarlo tu mismo en las paginas oficiales.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="mx-auto max-w-4xl px-6 py-24">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-violet-600 to-pink-500 p-12 md:p-16 text-center shadow-xl">
+      <div class="relative">
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          Listo para empezar?
+        </h2>
+        <p class="mx-auto mt-4 max-w-xl text-lg text-white/90">
+          Te tomara unos 30 minutos recorrer los 8 capitulos. Al final vas a
+          entender mas sobre el mercado laboral colombiano que la mayoria.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/empezar-aqui"
+            class="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-base font-semibold text-indigo-700 shadow-lg hover:bg-neutral-50 hover:shadow-xl transition-all hover:-translate-y-0.5"
+          >
+            Empezar el recorrido
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Decorative dots -->
+      <div class="absolute top-8 right-8 h-20 w-20 rounded-full bg-white/10 blur-2xl"></div>
+      <div class="absolute bottom-8 left-8 h-24 w-24 rounded-full bg-white/10 blur-2xl"></div>
+    </div>
+  </section>
+</Base>
