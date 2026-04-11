@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import {
-  ComposedChart,
+  BarChart,
   Bar,
-  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -25,14 +24,17 @@ export default function NacimientosDefunciones() {
       .then((r) => r.text())
       .then((csv) => {
         const lines = csv.trim().split("\n");
-        const rows: Row[] = lines.slice(1).map((line) => {
-          const [anio, nac, def] = line.split(",");
-          return {
-            anio: anio.replace("pr", ""),
-            nacimientos: nac ? Number(nac) : null,
-            defunciones: def ? Number(def) : null,
-          };
-        }).filter((r) => r.nacimientos !== null); // Skip partial 2025pr
+        const rows: Row[] = lines
+          .slice(1)
+          .map((line) => {
+            const [anio, nac, def] = line.split(",");
+            return {
+              anio: anio.replace("pr", ""),
+              nacimientos: nac ? Number(nac) : null,
+              defunciones: def ? Number(def) : null,
+            };
+          })
+          .filter((r) => r.nacimientos !== null);
         setData(rows);
         setLoading(false);
       });
@@ -59,13 +61,17 @@ export default function NacimientosDefunciones() {
           Nacimientos y muertes en Colombia, 2015-2024
         </h3>
         <p className="mt-1 text-sm text-neutral-600">
-          Los nacimientos cayeron <strong>31.3%</strong> en una decada. Las muertes tuvieron
-          un pico en 2020-2021 por COVID y luego se normalizaron.
+          Los nacimientos cayeron <strong>31.3%</strong> en una decada. Las muertes
+          tuvieron un pico en 2020-2021 por COVID y luego se normalizaron.
         </p>
       </div>
 
       <ResponsiveContainer width="100%" height={340}>
-        <ComposedChart data={data} margin={{ top: 10, right: 20, left: 0, bottom: 0 }}>
+        <BarChart
+          data={data}
+          margin={{ top: 10, right: 20, left: 0, bottom: 0 }}
+          barCategoryGap="20%"
+        >
           <CartesianGrid strokeDasharray="3 3" stroke="#e5e5e5" vertical={false} />
           <XAxis
             dataKey="anio"
@@ -89,7 +95,12 @@ export default function NacimientosDefunciones() {
               boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
               fontSize: "13px",
             }}
-            labelStyle={{ fontWeight: 600, color: "#171717", marginBottom: "4px" }}
+            labelStyle={{
+              fontWeight: 600,
+              color: "#171717",
+              marginBottom: "4px",
+            }}
+            cursor={{ fill: "#f5f5f5" }}
             formatter={(value: number, name: string) => {
               const labels: Record<string, string> = {
                 nacimientos: "Nacimientos",
@@ -102,19 +113,15 @@ export default function NacimientosDefunciones() {
             dataKey="nacimientos"
             fill="#6366f1"
             name="nacimientos"
-            radius={[6, 6, 0, 0]}
-            maxBarSize={36}
+            radius={[4, 4, 0, 0]}
           />
-          <Line
-            type="monotone"
+          <Bar
             dataKey="defunciones"
-            stroke="#ec4899"
-            strokeWidth={3}
+            fill="#ec4899"
             name="defunciones"
-            dot={{ r: 4, fill: "#ec4899" }}
-            activeDot={{ r: 6 }}
+            radius={[4, 4, 0, 0]}
           />
-        </ComposedChart>
+        </BarChart>
       </ResponsiveContainer>
 
       <div className="mt-4 flex flex-wrap items-center gap-4 text-xs">
@@ -123,7 +130,7 @@ export default function NacimientosDefunciones() {
           <span className="text-neutral-700 font-medium">Nacimientos</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <div className="h-0.5 w-4 bg-pink-500"></div>
+          <div className="h-2.5 w-2.5 rounded-sm bg-pink-500"></div>
           <span className="text-neutral-700 font-medium">Muertes</span>
         </div>
         <div className="ml-auto text-neutral-500">
