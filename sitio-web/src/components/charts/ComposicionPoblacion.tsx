@@ -101,11 +101,11 @@ export default function ComposicionPoblacion() {
     >
       {/* Nivel 1: Total → Menores + PET */}
       <div className="mb-8">
-        <div className="mb-2 flex items-baseline justify-between">
-          <div className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        <div className="mb-2 flex items-baseline justify-between gap-2 flex-wrap">
+          <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-neutral-500">
             Paso 1: Todos los colombianos
           </div>
-          <div className="text-xs font-mono text-neutral-500">
+          <div className="text-[10px] sm:text-xs font-mono text-neutral-500">
             Total: {formatFull(data.total)}
           </div>
         </div>
@@ -113,16 +113,17 @@ export default function ComposicionPoblacion() {
           {level1.map((seg) => (
             <div
               key={seg.label}
-              className="group relative flex flex-col justify-center px-4 transition-all hover:brightness-110"
+              className="group relative flex flex-col justify-center px-2 sm:px-4 transition-all hover:brightness-110 min-w-0"
               style={{
                 width: `${pctLevel1(seg)}%`,
                 backgroundColor: seg.color,
               }}
+              title={`${seg.label}: ${formatFull(seg.value)} (${pctLevel1(seg).toFixed(1)}%)`}
             >
-              <div className="text-xs font-bold text-white truncate">
+              <div className="text-[10px] sm:text-xs font-bold text-white truncate">
                 {seg.label}
               </div>
-              <div className="text-[10px] text-white/90 font-mono">
+              <div className="text-[9px] sm:text-[10px] text-white/90 font-mono truncate">
                 {formatFull(seg.value)} ({pctLevel1(seg).toFixed(1)}%)
               </div>
             </div>
@@ -132,11 +133,11 @@ export default function ComposicionPoblacion() {
 
       {/* Nivel 2: PET → Ocupados + Desocupados + PEI */}
       <div className="mb-6">
-        <div className="mb-2 flex items-baseline justify-between">
-          <div className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        <div className="mb-2 flex items-baseline justify-between gap-2 flex-wrap">
+          <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-neutral-500">
             Paso 2: De los que tienen 15+ años (PET)
           </div>
-          <div className="text-xs font-mono text-neutral-500">
+          <div className="text-[10px] sm:text-xs font-mono text-neutral-500">
             PET: {formatFull(data.pet)}
           </div>
         </div>

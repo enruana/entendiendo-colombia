@@ -55,11 +55,11 @@ export default function DesempleoCiudades() {
           const widthPct = (d.td / 30) * 100;
           const color = getColor(d.td);
           return (
-            <div key={d.ciudad} className="group flex items-center gap-3">
-              <div className="w-36 flex-shrink-0 text-right text-sm font-medium text-neutral-700 truncate">
+            <div key={d.ciudad} className="group flex items-center gap-2 sm:gap-3">
+              <div className="w-24 sm:w-36 flex-shrink-0 text-right text-xs sm:text-sm font-medium text-neutral-700 truncate">
                 {d.ciudad}
               </div>
-              <div className="flex-1 relative h-7">
+              <div className="flex-1 relative h-7 min-w-0">
                 <div className="absolute inset-0 rounded-md bg-neutral-100"></div>
                 <div
                   className="absolute inset-y-0 left-0 rounded-md transition-all duration-500 group-hover:brightness-110"
@@ -68,8 +68,8 @@ export default function DesempleoCiudades() {
                     backgroundColor: color,
                   }}
                 >
-                  <div className="absolute inset-y-0 right-2 flex items-center">
-                    <span className="text-xs font-bold text-white drop-shadow-sm">
+                  <div className="absolute inset-y-0 right-1.5 sm:right-2 flex items-center">
+                    <span className="text-[10px] sm:text-xs font-bold text-white drop-shadow-sm">
                       {d.td.toFixed(1)}%
                     </span>
                   </div>

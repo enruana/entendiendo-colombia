@@ -82,46 +82,46 @@ const chapters = [
 <Base title="Empleo Colombia">
   <!-- HERO -->
   <section class="relative overflow-hidden mesh-gradient-hero">
-    <div class="relative mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-32">
+    <div class="relative mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-28 md:pb-32">
       <!-- Badge -->
       <div class="flex justify-center">
-        <div class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-white/80 px-4 py-1.5 text-xs font-medium text-indigo-700 shadow-sm backdrop-blur">
-          <span class="flex h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
+        <div class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-white/80 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-medium text-indigo-700 shadow-sm backdrop-blur text-center">
+          <span class="flex h-1.5 w-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>
           Datos oficiales DANE · UGPP · BanRep
         </div>
       </div>
 
       <!-- Title -->
-      <h1 class="mt-8 text-center text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] text-neutral-900">
-        Cuantos colombianos<br />
+      <h1 class="mt-6 sm:mt-8 text-center text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] text-neutral-900">
+        ¿Cuántos colombianos<br />
         <span class="gradient-text">trabajan realmente?</span>
       </h1>
 
       <!-- Subtitle -->
-      <p class="mx-auto mt-6 max-w-2xl text-center text-lg md:text-xl text-neutral-600 leading-relaxed">
-        Depende de a quien le preguntes. Un recorrido paso a paso por las cifras,
-        las fuentes y la metodologia del mercado laboral colombiano.
+      <p class="mx-auto mt-5 sm:mt-6 max-w-2xl text-center text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-2">
+        Depende de a quién le preguntes. Un recorrido paso a paso por las cifras,
+        las fuentes y la metodología del mercado laboral colombiano.
       </p>
 
       <!-- CTAs -->
-      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
-        <a href="/empezar-aqui" class="btn-primary">
+      <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 px-4 sm:px-0">
+        <a href="/empezar-aqui" class="btn-primary justify-center">
           Empezar el recorrido
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </a>
-        <a href="#capitulos" class="btn-secondary">
-          Ver los capitulos
+        <a href="#capitulos" class="btn-secondary justify-center">
+          Ver los capítulos
         </a>
       </div>
 
       <!-- Stats grid -->
-      <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
         <StatCard
           value="53.4M"
           label="Habitantes en Colombia"
-          sublabel="Proyeccion DANE 2026"
+          sublabel="Proyección DANE 2026"
           accent="indigo"
         />
         <StatCard
@@ -138,7 +138,7 @@ const chapters = [
         />
         <StatCard
           value="14.5M"
-          label="Poblacion invisible"
+          label="Población invisible"
           sublabel="Ni trabaja ni busca (feb 2026)"
           accent="cyan"
         />
@@ -146,43 +146,43 @@ const chapters = [
     </div>
 
     <!-- Bottom fade -->
-    <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+    <div class="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
   </section>
 
   <!-- INTRO / PROBLEMA -->
-  <section class="relative mx-auto max-w-4xl px-6 py-24">
+  <section class="relative mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
     <div class="text-center">
       <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
         El problema
       </div>
-      <h2 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
-        Los titulares no te cuentan<br />
+      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+        Los titulares no te cuentan<br class="hidden sm:inline" />
         <span class="gradient-text-subtle">la historia completa</span>
       </h2>
     </div>
 
-    <div class="mt-16 grid md:grid-cols-2 gap-8 items-center">
+    <div class="mt-10 sm:mt-12 md:mt-16 grid md:grid-cols-2 gap-6 md:gap-8 items-center">
       <div>
-        <div class="text-sm font-semibold uppercase tracking-wider text-indigo-600">
+        <div class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-indigo-600">
           Titular oficial
         </div>
-        <blockquote class="mt-3 text-2xl font-bold text-neutral-900 leading-tight">
-          "Colombia alcanza tasa de desempleo mas baja desde 2001: 8.9%"
+        <blockquote class="mt-3 text-xl sm:text-2xl font-bold text-neutral-900 leading-tight">
+          "Colombia alcanza tasa de desempleo más baja desde 2001: 8.9%"
         </blockquote>
         <p class="mt-4 text-neutral-600 leading-relaxed">
-          Es la noticia que sale en todos los medios. Y es cierta. Pero si paras ahi,
-          te quedas con una version muy parcial de la realidad.
+          Es la noticia que sale en todos los medios. Y es cierta. Pero si paras ahí,
+          te quedas con una versión muy parcial de la realidad.
         </p>
       </div>
 
-      <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-8">
-        <div class="text-sm font-semibold uppercase tracking-wider text-pink-600">
+      <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 sm:p-8">
+        <div class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-pink-600">
           Lo que no te cuentan
         </div>
-        <ul class="mt-3 space-y-3 text-neutral-700">
+        <ul class="mt-3 space-y-3 text-neutral-700 text-sm sm:text-base">
           <li class="flex gap-3">
             <span class="mt-1 text-pink-500">▸</span>
-            <span><strong class="text-neutral-900">48.9%</strong> de los trabajadores gana menos del salario minimo</span>
+            <span><strong class="text-neutral-900">48.9%</strong> de los trabajadores gana menos del salario mínimo</span>
           </li>
           <li class="flex gap-3">
             <span class="mt-1 text-pink-500">▸</span>
@@ -194,41 +194,41 @@ const chapters = [
           </li>
           <li class="flex gap-3">
             <span class="mt-1 text-pink-500">▸</span>
-            <span><strong class="text-neutral-900">1 hora de trabajo</strong> al mes te hace "ocupado" en las estadisticas</span>
+            <span><strong class="text-neutral-900">1 hora de trabajo</strong> a la semana te hace "ocupado" en las estadísticas</span>
           </li>
         </ul>
       </div>
     </div>
 
-    <p class="mt-16 text-center text-lg text-neutral-600 max-w-2xl mx-auto">
-      Este sitio te explica <strong class="text-neutral-900">quien reporta los datos</strong>,
-      <strong class="text-neutral-900">como los miden</strong>, y <strong class="text-neutral-900">por que
-      dos fuentes oficiales pueden dar numeros distintos</strong>. Paso a paso, sin jerga.
+    <p class="mt-12 sm:mt-16 text-center text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+      Este sitio te explica <strong class="text-neutral-900">quién reporta los datos</strong>,
+      <strong class="text-neutral-900">cómo los miden</strong>, y <strong class="text-neutral-900">por qué
+      dos fuentes oficiales pueden dar números distintos</strong>. Paso a paso, sin jerga.
     </p>
   </section>
 
   <!-- CAPITULOS -->
   <section id="capitulos" class="relative bg-neutral-50 border-y border-neutral-200">
-    <div class="mx-auto max-w-6xl px-6 py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
       <div class="text-center">
         <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
           El recorrido
         </div>
-        <h2 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
-          8 capitulos para entenderlo todo
+        <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+          8 capítulos para entenderlo todo
         </h2>
-        <p class="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-          Cada capitulo explica un aspecto distinto del mercado laboral colombiano.
+        <p class="mt-4 text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+          Cada capítulo explica un aspecto distinto del mercado laboral colombiano.
           Puedes empezar desde el principio o saltar al que te interese.
         </p>
       </div>
 
-      <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-10 sm:mt-12 md:mt-14 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {chapters.map((ch) => <ChapterCard {...ch} />)}
       </div>
 
-      <div class="mt-12 text-center">
-        <a href="/empezar-aqui" class="btn-primary">
+      <div class="mt-10 sm:mt-12 text-center">
+        <a href="/empezar-aqui" class="btn-primary justify-center">
           Empezar por el principio
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -239,18 +239,18 @@ const chapters = [
   </section>
 
   <!-- METODOLOGIA / QUE HACE DIFERENTE -->
-  <section class="mx-auto max-w-6xl px-6 py-24">
+  <section class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
     <div class="text-center">
       <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
-        Que hace diferente este sitio
+        Qué hace diferente este sitio
       </div>
-      <h2 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
         No solo datos.<br />
-        <span class="gradient-text-subtle">El como y el por que.</span>
+        <span class="gradient-text-subtle">El cómo y el por qué.</span>
       </h2>
     </div>
 
-    <div class="mt-16 grid gap-6 md:grid-cols-3">
+    <div class="mt-10 sm:mt-12 md:mt-16 grid gap-5 sm:gap-6 md:grid-cols-3">
       <div class="card">
         <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-50">
           <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -259,7 +259,7 @@ const chapters = [
         </div>
         <h3 class="mt-4 text-lg font-bold text-neutral-900">Fuentes oficiales</h3>
         <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
-          Todos los datos vienen del DANE, UGPP, Banco de la Republica y OIT.
+          Todos los datos vienen del DANE, UGPP, Banco de la República y OIT.
           Cada cifra tiene un link directo a la fuente primaria.
         </p>
       </div>
@@ -270,10 +270,10 @@ const chapters = [
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
           </svg>
         </div>
-        <h3 class="mt-4 text-lg font-bold text-neutral-900">Graficas interactivas</h3>
+        <h3 class="mt-4 text-lg font-bold text-neutral-900">Gráficas interactivas</h3>
         <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
-          Cada dato tiene su grafica. Pasa el mouse, filtra, explora. Los datos
-          hablan mas cuando los puedes tocar.
+          Cada dato tiene su gráfica. Pasa el mouse, filtra, explora. Los datos
+          hablan más cuando los puedes tocar.
         </p>
       </div>
 
@@ -283,25 +283,25 @@ const chapters = [
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
           </svg>
         </div>
-        <h3 class="mt-4 text-lg font-bold text-neutral-900">Metodologia transparente</h3>
+        <h3 class="mt-4 text-lg font-bold text-neutral-900">Metodología transparente</h3>
         <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
-          Te explicamos como se mide cada cosa, por que algunas fuentes se contradicen,
-          y como verificarlo tu mismo en las paginas oficiales.
+          Te explicamos cómo se mide cada cosa, por qué algunas fuentes se contradicen,
+          y cómo verificarlo tú mismo en las páginas oficiales.
         </p>
       </div>
     </div>
   </section>
 
   <!-- CTA FINAL -->
-  <section class="mx-auto max-w-4xl px-6 py-24">
-    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-violet-600 to-pink-500 p-12 md:p-16 text-center shadow-xl">
+  <section class="mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+    <div class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-indigo-600 via-violet-600 to-pink-500 p-8 sm:p-12 md:p-16 text-center shadow-xl">
       <div class="relative">
-        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
-          Listo para empezar?
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          ¿Listo para empezar?
         </h2>
-        <p class="mx-auto mt-4 max-w-xl text-lg text-white/90">
-          Te tomara unos 30 minutos recorrer los 8 capitulos. Al final vas a
-          entender mas sobre el mercado laboral colombiano que la mayoria.
+        <p class="mx-auto mt-4 max-w-xl text-base sm:text-lg text-white/90">
+          Te tomará unos 30 minutos recorrer los 8 capítulos. Al final vas a
+          entender más sobre el mercado laboral colombiano que la mayoría.
         </p>
         <div class="mt-8">
           <a

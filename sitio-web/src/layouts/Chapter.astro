@@ -64,27 +64,27 @@ const badges = {
   <!-- Chapter header -->
   <header class="relative overflow-hidden border-b border-neutral-200">
     <div class="absolute inset-0 mesh-gradient-hero opacity-60"></div>
-    <div class="relative mx-auto max-w-4xl px-6 pt-16 pb-14">
-      <div class="flex items-center gap-3">
+    <div class="relative mx-auto max-w-4xl px-4 sm:px-6 pt-10 pb-10 sm:pt-16 sm:pb-14">
+      <div class="flex items-center gap-3 flex-wrap">
         <div class:list={["inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wider", badges[accentColor]]}>
-          Capitulo {number}
+          Capítulo {number}
         </div>
         <div class="text-xs text-neutral-500">
           {chapterNumber} de {totalChapters}
         </div>
       </div>
 
-      <h1 class="mt-5 text-4xl md:text-5xl font-extrabold tracking-tighter text-neutral-900 leading-[1.1]">
+      <h1 class="mt-5 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter text-neutral-900 leading-[1.1]">
         {title}
       </h1>
-      <p class="mt-4 text-xl text-neutral-600 leading-relaxed max-w-2xl">
+      <p class="mt-4 text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-2xl">
         {subtitle}
       </p>
     </div>
   </header>
 
   <!-- Chapter content -->
-  <article class="relative mx-auto max-w-4xl px-6 py-14">
+  <article class="relative mx-auto max-w-4xl px-4 sm:px-6 py-10 sm:py-14">
     <div class="prose-custom">
       <slot />
     </div>
@@ -92,26 +92,26 @@ const badges = {
 
   <!-- Chapter navigation -->
   <nav class="border-t border-neutral-200 bg-neutral-50">
-    <div class="mx-auto max-w-4xl px-6 py-10">
-      <div class="grid grid-cols-2 gap-4">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 py-8 sm:py-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
         {prevHref ? (
-          <a href={prevHref} class="group rounded-xl border border-neutral-200 bg-white p-5 transition-all hover:border-neutral-300 hover:shadow-sm hover:-translate-y-0.5">
+          <a href={prevHref} class="group rounded-xl border border-neutral-200 bg-white p-4 sm:p-5 transition-all hover:border-neutral-300 hover:shadow-sm hover:-translate-y-0.5">
             <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
               <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
               </svg>
-              Capitulo anterior
+              Capítulo anterior
             </div>
             <div class="mt-2 text-base font-bold text-neutral-900 group-hover:text-indigo-700 transition-colors">
               {prevTitle}
             </div>
           </a>
-        ) : <div></div>}
+        ) : <div class="hidden sm:block"></div>}
 
         {nextHref ? (
-          <a href={nextHref} class="group rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/50 to-violet-50/30 p-5 transition-all hover:border-indigo-300 hover:shadow-md hover:-translate-y-0.5 text-right">
-            <div class="flex items-center justify-end gap-2 text-xs font-semibold uppercase tracking-wider text-indigo-600">
-              Siguiente capitulo
+          <a href={nextHref} class="group rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/50 to-violet-50/30 p-4 sm:p-5 transition-all hover:border-indigo-300 hover:shadow-md hover:-translate-y-0.5 sm:text-right">
+            <div class="flex items-center sm:justify-end gap-2 text-xs font-semibold uppercase tracking-wider text-indigo-600">
+              Siguiente capítulo
               <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -121,7 +121,7 @@ const badges = {
             </div>
           </a>
         ) : (
-          <a href="/" class="group rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/50 to-violet-50/30 p-5 transition-all hover:border-indigo-300 text-right">
+          <a href="/" class="group rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/50 to-violet-50/30 p-4 sm:p-5 transition-all hover:border-indigo-300 sm:text-right">
             <div class="text-xs font-semibold uppercase tracking-wider text-indigo-600">
               Volver al inicio
             </div>

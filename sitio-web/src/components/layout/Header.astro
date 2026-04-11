@@ -1,7 +1,7 @@
 ---
 const navItems = [
   { label: "Empezar", href: "/empezar-aqui" },
-  { label: "Capitulos", href: "/#capitulos" },
+  { label: "Capítulos", href: "/#capitulos" },
   { label: "Datos", href: "/datos" },
   { label: "Glosario", href: "/glosario" },
   { label: "Fuentes", href: "/fuentes" },
@@ -11,7 +11,7 @@ const currentPath = Astro.url.pathname;
 ---
 
 <header class="sticky top-0 z-50 border-b border-neutral-200/60 bg-white/80 backdrop-blur-lg">
-  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
     <a href="/" class="flex items-center gap-2 group">
       <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 via-violet-600 to-pink-500 shadow-sm transition-transform group-hover:scale-105">
         <svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -21,6 +21,7 @@ const currentPath = Astro.url.pathname;
       <span class="text-base font-bold tracking-tight text-neutral-900">Empleo Colombia</span>
     </a>
 
+    <!-- Nav desktop -->
     <nav class="hidden md:flex items-center gap-1">
       {navItems.map((item) => (
         <a
@@ -37,11 +38,95 @@ const currentPath = Astro.url.pathname;
       ))}
     </nav>
 
-    <a href="/empezar-aqui" class="btn-primary !py-2 !px-4 text-sm hidden sm:inline-flex">
-      Comenzar recorrido
+    <!-- CTA desktop -->
+    <a href="/empezar-aqui" class="btn-primary !py-2 !px-4 text-sm hidden md:inline-flex">
+      Empezar
       <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
         <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
       </svg>
     </a>
+
+    <!-- Hamburguesa mobile -->
+    <button
+      id="mobile-menu-toggle"
+      type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      class="md:hidden -mr-2 inline-flex h-10 w-10 items-center justify-center rounded-md text-neutral-700 hover:bg-neutral-100"
+    >
+      <svg class="h-6 w-6 menu-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+      </svg>
+      <svg class="h-6 w-6 menu-close hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Panel mobile (oculto por defecto) -->
+  <div
+    id="mobile-menu-panel"
+    class="md:hidden hidden border-t border-neutral-200/60 bg-white"
+  >
+    <nav class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-1">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class:list={[
+            "rounded-lg px-4 py-3 text-base font-medium transition-colors",
+            currentPath === item.href
+              ? "bg-indigo-50 text-indigo-700"
+              : "text-neutral-700 hover:bg-neutral-100"
+          ]}
+        >
+          {item.label}
+        </a>
+      ))}
+      <a
+        href="/empezar-aqui"
+        class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-indigo-600 to-violet-600 px-4 py-3 text-base font-semibold text-white shadow-sm"
+      >
+        Empezar el recorrido
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+      </a>
+    </nav>
   </div>
 </header>
+
+<script>
+  const toggle = document.getElementById("mobile-menu-toggle");
+  const panel = document.getElementById("mobile-menu-panel");
+  const openIcon = toggle?.querySelector(".menu-open");
+  const closeIcon = toggle?.querySelector(".menu-close");
+
+  if (toggle && panel && openIcon && closeIcon) {
+    toggle.addEventListener("click", () => {
+      const isOpen = !panel.classList.contains("hidden");
+      if (isOpen) {
+        panel.classList.add("hidden");
+        openIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Abrir menu");
+      } else {
+        panel.classList.remove("hidden");
+        openIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+        toggle.setAttribute("aria-expanded", "true");
+        toggle.setAttribute("aria-label", "Cerrar menu");
+      }
+    });
+
+    // Cerrar al hacer click en un link
+    panel.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        panel.classList.add("hidden");
+        openIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+</script>

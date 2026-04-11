@@ -2,10 +2,10 @@
 const year = new Date().getFullYear();
 ---
 
-<footer class="mt-24 border-t border-neutral-200 bg-neutral-50">
-  <div class="mx-auto max-w-6xl px-6 py-12">
-    <div class="grid gap-8 md:grid-cols-4">
-      <div class="md:col-span-2">
+<footer class="mt-16 sm:mt-24 border-t border-neutral-200 bg-neutral-50">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12">
+    <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+      <div class="sm:col-span-2 md:col-span-2">
         <div class="flex items-center gap-2">
           <div class="flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-indigo-600 via-violet-600 to-pink-500">
             <svg class="h-3.5 w-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -16,7 +16,7 @@ const year = new Date().getFullYear();
         </div>
         <p class="mt-3 text-sm text-neutral-600 max-w-md">
           Un recorrido paso a paso por el mercado laboral colombiano. Datos
-          abiertos, metodologia transparente, explicaciones para todo el publico.
+          abiertos, metodología transparente, explicaciones para todo el público.
         </p>
       </div>
 
@@ -25,8 +25,8 @@ const year = new Date().getFullYear();
           Navegar
         </h3>
         <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="/empezar-aqui" class="text-neutral-600 hover:text-indigo-600">Empezar aqui</a></li>
-          <li><a href="/#capitulos" class="text-neutral-600 hover:text-indigo-600">Capitulos</a></li>
+          <li><a href="/empezar-aqui" class="text-neutral-600 hover:text-indigo-600">Empezar aquí</a></li>
+          <li><a href="/#capitulos" class="text-neutral-600 hover:text-indigo-600">Capítulos</a></li>
           <li><a href="/glosario" class="text-neutral-600 hover:text-indigo-600">Glosario</a></li>
           <li><a href="/datos" class="text-neutral-600 hover:text-indigo-600">Descargar datos</a></li>
         </ul>
@@ -39,13 +39,13 @@ const year = new Date().getFullYear();
         <ul class="mt-3 space-y-2 text-sm">
           <li><a href="https://www.dane.gov.co" class="text-neutral-600 hover:text-indigo-600" target="_blank" rel="noopener">DANE</a></li>
           <li><a href="https://www.ugpp.gov.co" class="text-neutral-600 hover:text-indigo-600" target="_blank" rel="noopener">UGPP (PILA)</a></li>
-          <li><a href="https://www.banrep.gov.co" class="text-neutral-600 hover:text-indigo-600" target="_blank" rel="noopener">Banco de la Republica</a></li>
+          <li><a href="https://www.banrep.gov.co" class="text-neutral-600 hover:text-indigo-600" target="_blank" rel="noopener">Banco de la República</a></li>
           <li><a href="https://www.ilo.org" class="text-neutral-600 hover:text-indigo-600" target="_blank" rel="noopener">OIT</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="mt-12 flex flex-col gap-2 border-t border-neutral-200 pt-8 text-xs text-neutral-500 sm:flex-row sm:justify-between">
+    <div class="mt-10 sm:mt-12 flex flex-col gap-2 border-t border-neutral-200 pt-6 sm:pt-8 text-xs text-neutral-500 sm:flex-row sm:justify-between">
       <p>&copy; {year} Empleo Colombia. Contenido bajo Creative Commons BY 4.0.</p>
       <p>Los datos son propiedad de sus fuentes originales (DANE, UGPP, etc).</p>
     </div>
