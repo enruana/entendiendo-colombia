@@ -13,17 +13,24 @@ import {
 import ChartFrame, { LegendItem } from "./ChartFrame";
 import { COLORS, tooltipStyle, tooltipLabelStyle, formatNumber } from "./shared";
 
-// PILA: cotizantes totales verificados oficialmente (fuente: UGPP + reportes Infobae/El Colombiano
-// del 31 de marzo de 2026, con datos citados por Bruce Mac Master de la ANDI)
+// PILA: cotizantes totales verificados oficialmente. Fuentes:
+// - Informes mensuales UGPP (descargados directamente del sitio oficial)
+// - Reportes Infobae/El Colombiano del 31 de marzo 2026 (citas de Bruce Mac Master, ANDI)
+// Cada punto incluye la fuente exacta entre parentesis
 const pilaData: { fecha: string; cotizantes: number }[] = [
-  { fecha: "2023-02", cotizantes: 12881 },
-  { fecha: "2023-11", cotizantes: 13604 },
-  { fecha: "2024-02", cotizantes: 12844 },
-  { fecha: "2024-09", cotizantes: 13819 }, // PICO HISTORICO
-  { fecha: "2025-02", cotizantes: 12972 },
-  { fecha: "2025-04", cotizantes: 13271 },
-  { fecha: "2025-05", cotizantes: 13143 },
-  { fecha: "2025-12", cotizantes: 13352 },
+  { fecha: "2023-02", cotizantes: 12881 },  // Infobae/ANDI
+  { fecha: "2023-11", cotizantes: 13604 },  // Infobae/ANDI
+  { fecha: "2024-02", cotizantes: 12844 },  // Infobae/ANDI
+  { fecha: "2024-09", cotizantes: 13819 },  // Infobae/ANDI
+  { fecha: "2024-11", cotizantes: 13910 },  // UGPP (citado en informe Nov25)
+  { fecha: "2024-12", cotizantes: 13115 },  // UGPP (citado en informe Dic25)
+  { fecha: "2025-02", cotizantes: 12972 },  // Infobae/ANDI
+  { fecha: "2025-04", cotizantes: 13271 },  // Infobae/ANDI
+  { fecha: "2025-05", cotizantes: 13143 },  // UGPP informe Mayo25 oficial
+  { fecha: "2025-07", cotizantes: 13591 },  // UGPP informe Julio25 oficial
+  { fecha: "2025-08", cotizantes: 13774 },  // UGPP informe Agosto25 oficial
+  { fecha: "2025-11", cotizantes: 14240 },  // UGPP informe Noviembre25 - PICO HISTORICO REAL
+  { fecha: "2025-12", cotizantes: 13352 },  // UGPP informe Diciembre25 oficial
 ];
 
 // Dato ANDI marzo 2026: ~11.3M privados formales (NO comparable directamente con los
@@ -125,7 +132,7 @@ export default function GEIHvsPILA() {
     <ChartFrame
       number="Grafica 2 · La controversia"
       title="Dos fuentes oficiales, dos numeros diferentes"
-      description="GEIH (DANE, autorreporte) marca ~10.8M formales. PILA (UGPP, cotizaciones reales) marca ~13.3M cotizantes. La brecha de ~2.5M no es un error: las dos fuentes miden cosas distintas. El pico PILA fue en septiembre 2024 (13.82M). La controversia DANE-ANDI estallo el 31 de marzo de 2026."
+      description="GEIH (DANE, autorreporte) marca ~10.7M formales. PILA (UGPP, cotizaciones reales) llego a su PICO HISTORICO en noviembre 2025 con 14.24M cotizantes, antes de caer fuerte en diciembre. La brecha de ~2.5M entre ambas fuentes no es un error: miden cosas distintas. La controversia DANE-ANDI estallo el 31 de marzo de 2026."
       source="DANE GEIH (extension feb 2026) + UGPP PILA (datos oficiales verificados)"
       legend={
         <>
@@ -153,7 +160,7 @@ export default function GEIHvsPILA() {
             axisLine={false}
             fontSize={11}
             tickFormatter={(v) => formatNumber(v * 1000)}
-            domain={[8500, 14500]}
+            domain={[8500, 15000]}
           />
           <Tooltip
             contentStyle={tooltipStyle}
@@ -186,15 +193,15 @@ export default function GEIHvsPILA() {
             connectNulls
           />
           <ReferenceDot
-            x="2024-09"
-            y={13819}
+            x="2025-11"
+            y={14240}
             r={8}
             fill="none"
             stroke={COLORS.rose}
             strokeWidth={2}
             strokeDasharray="3 3"
             label={{
-              value: "Pico PILA: 13.82M",
+              value: "Pico PILA: 14.24M",
               position: "top",
               fill: COLORS.rose,
               fontSize: 10,
@@ -218,19 +225,26 @@ export default function GEIHvsPILA() {
       </ResponsiveContainer>
 
       <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50/50 p-3 text-xs text-amber-900">
-        <strong>Por que la grafica para en enero 2026:</strong> Los datos publicos del DANE
-        sobre formales/informales se publican <em>trimestre movil</em>, con ~45 dias de rezago.
-        El ultimo trimestre disponible al 11 de abril 2026 es <strong>noviembre 2025 - enero 2026</strong>.
-        Para PILA, la UGPP solo ha publicado oficialmente datos hasta diciembre 2025.
-        La controversia del 31 de marzo 2026 (linea roja) ocurrio antes de que se publicara
-        el siguiente boletin. Cuando salgan los datos de febrero y marzo 2026,
-        actualizamos.
+        <strong>El pico real fue noviembre 2025, no septiembre 2024:</strong> Cuando la
+        ANDI denuncio en marzo 2026 que se habian "perdido 500 mil empleos formales",
+        comparo el pico de 2024 con datos posteriores. Pero los informes mensuales
+        oficiales de UGPP muestran que el verdadero pico historico fue
+        <strong> noviembre 2025 con 14.24 millones</strong> de cotizantes. Despues de
+        ese pico cayo fuerte (efecto estacional fuerte: muchos contratos temporales
+        terminan en diciembre).
+        <br /><br />
+        <strong>Por que la grafica para en diciembre 2025:</strong> Los datos publicos
+        del DANE sobre formales se publican <em>trimestre movil</em> con ~45 dias de
+        rezago. El ultimo disponible al 11 de abril 2026 es <strong>noviembre 2025 -
+        enero 2026</strong>. Para PILA, el ultimo informe publico de UGPP es Diciembre25.
+        Los datos de enero, febrero y marzo 2026 se publicaran progresivamente entre
+        marzo y mayo 2026.
         <br /><br />
         <strong>Sobre la cifra ANDI de "11.3 millones":</strong> Mac Master citó esa cifra
         para marzo 2026, pero se refiere <em>solo a trabajadores privados formales</em>
         (excluye sector público e independientes). No es directamente comparable con los
-        ~13M de cotizantes totales que muestra la serie PILA. Esa diferencia conceptual es
-        parte central del enredo: cada lado usa una rebanada distinta del mismo universo.
+        ~13-14M de cotizantes totales que muestra la serie PILA. Esa diferencia conceptual
+        es parte central del enredo: cada lado usa una rebanada distinta del mismo universo.
       </div>
     </ChartFrame>
   );
