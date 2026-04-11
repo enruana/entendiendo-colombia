@@ -46,7 +46,7 @@ export default function TasasHistorico() {
   if (loading) {
     return (
       <div className="flex h-[400px] items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
-        <div className="text-sm text-neutral-500">Cargando serie historica...</div>
+        <div className="text-sm text-neutral-500">Cargando serie histórica...</div>
       </div>
     );
   }
@@ -58,14 +58,14 @@ export default function TasasHistorico() {
 
   return (
     <ChartFrame
-      number="Grafica 2"
-      title="Tasa de participacion, ocupacion y desempleo (2001-2026)"
-      description="25 años de historia del mercado laboral colombiano en una sola grafica. El shock de COVID es visible en 2020-2021."
+      number="Gráfica 2"
+      title="Tasa de participación, ocupación y desempleo (2001-2026)"
+      description="25 años de historia del mercado laboral colombiano en una sola gráfica. El shock de COVID es visible en 2020-2021."
       source="DANE — GEIH, serie mensual 2001-2026"
       legend={
         <>
-          <LegendItem color={COLORS.indigo} label="TGP (Participacion)" shape="line" />
-          <LegendItem color={COLORS.emerald} label="TO (Ocupacion)" shape="line" />
+          <LegendItem color={COLORS.indigo} label="TGP (Participación)" shape="line" />
+          <LegendItem color={COLORS.emerald} label="TO (Ocupación)" shape="line" />
           <LegendItem color={COLORS.rose} label="TD (Desempleo)" shape="line" />
         </>
       }
@@ -95,8 +95,8 @@ export default function TasasHistorico() {
             labelStyle={tooltipLabelStyle}
             formatter={(v: number, name: string) => {
               const labels: Record<string, string> = {
-                TGP: "Participacion",
-                TO: "Ocupacion",
+                TGP: "Participación",
+                TO: "Ocupación",
                 TD: "Desempleo",
               };
               return [`${v.toFixed(1)}%`, labels[name] || name];

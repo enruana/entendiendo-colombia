@@ -58,13 +58,13 @@ export default function ComposicionPoblacion() {
       label: "Menores de 15 años",
       value: data.menores15,
       color: COLORS.slate,
-      description: "No entran en estadisticas laborales",
+      description: "No entran en estadísticas laborales",
     },
     {
-      label: "Poblacion en Edad de Trabajar (PET)",
+      label: "Población en Edad de Trabajar (PET)",
       value: data.pet,
       color: COLORS.indigo,
-      description: "Personas de 15 años o mas",
+      description: "Personas de 15 años o más",
     },
   ];
 
@@ -82,7 +82,7 @@ export default function ComposicionPoblacion() {
       description: "No trabajaron pero buscaron activamente",
     },
     {
-      label: "Poblacion Inactiva (PEI)",
+      label: "Población Inactiva (PEI)",
       value: data.pei,
       color: COLORS.violet,
       description: "Ni trabajan ni buscan trabajo",
@@ -94,10 +94,10 @@ export default function ComposicionPoblacion() {
 
   return (
     <ChartFrame
-      number="Grafica 1 · Interactiva"
-      title={`Como se divide la poblacion de Colombia (${formatFull(data.total / 1_000_000).substring(0, 4)}M)`}
-      description="Todas las personas se clasifican en una sola categoria. Datos a febrero 2026."
-      source="DANE — GEIH Febrero 2026 + Proyecciones de poblacion"
+      number="Gráfica 1 · Interactiva"
+      title={`Cómo se divide la población de Colombia (${formatFull(data.total / 1_000_000).substring(0, 4)}M)`}
+      description="Todas las personas se clasifican en una sola categoría. Datos a febrero 2026."
+      source="DANE — GEIH Febrero 2026 + Proyecciones de población"
     >
       {/* Nivel 1: Total → Menores + PET */}
       <div className="mb-8">
@@ -141,26 +141,51 @@ export default function ComposicionPoblacion() {
           </div>
         </div>
         <div className="flex h-20 w-full overflow-hidden rounded-xl border border-neutral-200">
-          {level2.map((seg) => (
-            <div
-              key={seg.label}
-              className="group relative flex flex-col justify-center px-4 transition-all hover:brightness-110"
-              style={{
-                width: `${pctLevel2(seg)}%`,
-                backgroundColor: seg.color,
-              }}
-            >
-              <div className="text-xs font-bold text-white truncate">
-                {seg.label}
+          {level2.map((seg) => {
+            const pct = pctLevel2(seg);
+            const isWide = pct >= 18; // suficiente espacio para 3 lineas
+            const isMedium = pct >= 8; // espacio para 2 lineas
+            return (
+              <div
+                key={seg.label}
+                className="group relative flex flex-col justify-center transition-all hover:brightness-110"
+                style={{
+                  width: `${pct}%`,
+                  backgroundColor: seg.color,
+                  paddingLeft: isMedium ? "1rem" : "0.25rem",
+                  paddingRight: isMedium ? "1rem" : "0.25rem",
+                }}
+                title={`${seg.label}: ${formatFull(seg.value)} (${pct.toFixed(1)}%)`}
+              >
+                {isWide ? (
+                  <>
+                    <div className="text-xs font-bold text-white truncate">
+                      {seg.label}
+                    </div>
+                    <div className="text-[11px] text-white/90 font-mono">
+                      {formatFull(seg.value)}
+                    </div>
+                    <div className="text-[10px] text-white/80">
+                      {pct.toFixed(1)}% de la PET
+                    </div>
+                  </>
+                ) : isMedium ? (
+                  <>
+                    <div className="text-[11px] font-bold text-white font-mono">
+                      {pct.toFixed(1)}%
+                    </div>
+                    <div className="text-[9px] text-white/80 font-mono truncate">
+                      {(seg.value / 1_000_000).toFixed(1)}M
+                    </div>
+                  </>
+                ) : (
+                  <div className="text-[10px] font-bold text-white text-center font-mono">
+                    {pct.toFixed(1)}%
+                  </div>
+                )}
               </div>
-              <div className="text-[11px] text-white/90 font-mono">
-                {formatFull(seg.value)}
-              </div>
-              <div className="text-[10px] text-white/80">
-                {pctLevel2(seg).toFixed(1)}% de la PET
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
