@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
 import {
-  AreaChart,
+  ComposedChart,
   Area,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  ReferenceLine,
+  ReferenceDot,
 } from "recharts";
 
 interface Row {
   anio: number;
-  poblacion_total: number;
-  poblacion_cabecera: number;
-  poblacion_centros_poblados_rural: number;
+  total: number;
+  cabecera: number | null;
+  rural: number | null;
 }
 
 export default function PoblacionColombia() {
@@ -26,14 +27,15 @@ export default function PoblacionColombia() {
       .then((r) => r.text())
       .then((csv) => {
         const lines = csv.trim().split("\n");
-        const headers = lines[0].split(",");
         const rows: Row[] = lines.slice(1).map((line) => {
-          const values = line.split(",");
+          const v = line.split(",");
+          const cab = Number(v[2]);
+          const rur = Number(v[3]);
           return {
-            anio: Number(values[0]),
-            poblacion_total: Number(values[1]) || 0,
-            poblacion_cabecera: Number(values[2]) || 0,
-            poblacion_centros_poblados_rural: Number(values[3]) || 0,
+            anio: Number(v[0]),
+            total: Number(v[1]) || 0,
+            cabecera: cab > 0 ? cab : null,
+            rural: rur > 0 ? rur : null,
           };
         });
         setData(rows);
@@ -49,17 +51,20 @@ export default function PoblacionColombia() {
     );
   }
 
-  const formatNumber = (n: number) => {
-    if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
-    if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K`;
-    return n.toString();
-  };
-
+  const formatM = (n: number) => `${(n / 1_000_000).toFixed(1)}M`;
   const formatFull = (n: number) => n.toLocaleString("es-CO");
+
+  // Encontrar el pico (ano con poblacion maxima)
+  const peakRow = data.reduce((max, r) => (r.total > max.total ? r : max), data[0]);
+
+  // Datos clave para mostrar
+  const start = data[0];
+  const today = data.find((r) => r.anio === 2026) || start;
+  const end = data[data.length - 1];
 
   return (
     <div className="my-8 rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-      <div className="mb-6">
+      <div className="mb-4">
         <div className="text-xs font-semibold uppercase tracking-wider text-indigo-600">
           Grafica 1
         </div>
@@ -67,21 +72,48 @@ export default function PoblacionColombia() {
           Poblacion total de Colombia, 2018 a 2070
         </h3>
         <p className="mt-1 text-sm text-neutral-600">
-          Proyecciones oficiales del DANE, desagregadas entre poblacion urbana
-          (cabeceras municipales) y rural (centros poblados y disperso).
+          Proyecciones oficiales del DANE. La poblacion alcanzara su pico cerca de
+          2050 con ~55.7M habitantes y luego empezara a caer.
         </p>
       </div>
 
-      <ResponsiveContainer width="100%" height={360}>
-        <AreaChart data={data} margin={{ top: 10, right: 20, left: 0, bottom: 0 }}>
+      {/* Mini stats */}
+      <div className="mb-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="rounded-lg border border-neutral-200 bg-neutral-50/50 p-3">
+          <div className="text-xs text-neutral-500">Censo 2018</div>
+          <div className="mt-1 text-lg font-bold text-neutral-900 font-mono">
+            {formatM(start.total)}
+          </div>
+        </div>
+        <div className="rounded-lg border border-indigo-200 bg-indigo-50/40 p-3">
+          <div className="text-xs text-indigo-700">Hoy ({today.anio})</div>
+          <div className="mt-1 text-lg font-bold text-indigo-900 font-mono">
+            {formatM(today.total)}
+          </div>
+        </div>
+        <div className="rounded-lg border border-pink-200 bg-pink-50/40 p-3">
+          <div className="text-xs text-pink-700">Pico ({peakRow.anio})</div>
+          <div className="mt-1 text-lg font-bold text-pink-900 font-mono">
+            {formatM(peakRow.total)}
+          </div>
+        </div>
+        <div className="rounded-lg border border-neutral-200 bg-neutral-50/50 p-3">
+          <div className="text-xs text-neutral-500">Proyeccion {end.anio}</div>
+          <div className="mt-1 text-lg font-bold text-neutral-900 font-mono">
+            {formatM(end.total)}
+          </div>
+        </div>
+      </div>
+
+      <ResponsiveContainer width="100%" height={380}>
+        <ComposedChart
+          data={data}
+          margin={{ top: 20, right: 24, left: 0, bottom: 0 }}
+        >
           <defs>
-            <linearGradient id="colorUrbana" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#6366f1" stopOpacity={0.35} />
-              <stop offset="95%" stopColor="#6366f1" stopOpacity={0.05} />
-            </linearGradient>
-            <linearGradient id="colorRural" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#ec4899" stopOpacity={0.35} />
-              <stop offset="95%" stopColor="#ec4899" stopOpacity={0.05} />
+            <linearGradient id="totalGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#6366f1" stopOpacity={0.4} />
+              <stop offset="95%" stopColor="#6366f1" stopOpacity={0.04} />
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="#e5e5e5" vertical={false} />
@@ -98,7 +130,8 @@ export default function PoblacionColombia() {
             tickLine={false}
             axisLine={false}
             fontSize={12}
-            tickFormatter={formatNumber}
+            tickFormatter={formatM}
+            domain={[40_000_000, 60_000_000]}
           />
           <Tooltip
             contentStyle={{
@@ -108,61 +141,100 @@ export default function PoblacionColombia() {
               boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
               fontSize: "13px",
             }}
-            labelStyle={{ fontWeight: 600, color: "#171717", marginBottom: "4px" }}
+            labelStyle={{
+              fontWeight: 600,
+              color: "#171717",
+              marginBottom: "4px",
+            }}
             formatter={(value: number, name: string) => {
               const labels: Record<string, string> = {
-                poblacion_cabecera: "Cabecera urbana",
-                poblacion_centros_poblados_rural: "Centros poblados y rural",
-                poblacion_total: "Total nacional",
+                total: "Total nacional",
+                cabecera: "Poblacion urbana",
+                rural: "Poblacion rural",
               };
+              if (value === null || value === undefined) return ["—", labels[name]];
               return [formatFull(value), labels[name] || name];
             }}
           />
-          <ReferenceLine
-            x={2050}
+          {/* Area de poblacion total */}
+          <Area
+            type="monotone"
+            dataKey="total"
+            stroke="#6366f1"
+            strokeWidth={2.5}
+            fill="url(#totalGrad)"
+            name="total"
+          />
+          {/* Linea de poblacion urbana (datos solo hasta 2050) */}
+          <Line
+            type="monotone"
+            dataKey="cabecera"
+            stroke="#06b6d4"
+            strokeWidth={2}
+            strokeDasharray="5 3"
+            dot={false}
+            name="cabecera"
+            connectNulls={false}
+          />
+          {/* Linea de poblacion rural (datos solo hasta 2050) */}
+          <Line
+            type="monotone"
+            dataKey="rural"
             stroke="#ec4899"
-            strokeDasharray="4 4"
+            strokeWidth={2}
+            strokeDasharray="5 3"
+            dot={false}
+            name="rural"
+            connectNulls={false}
+          />
+          {/* Marca del pico */}
+          <ReferenceDot
+            x={peakRow.anio}
+            y={peakRow.total}
+            r={6}
+            fill="#ec4899"
+            stroke="white"
+            strokeWidth={2}
             label={{
-              value: "Pico ~2050",
+              value: `Pico ${peakRow.anio}: ${formatM(peakRow.total)}`,
               position: "top",
               fill: "#ec4899",
               fontSize: 11,
-              fontWeight: 600,
+              fontWeight: 700,
             }}
           />
-          <Area
-            type="monotone"
-            dataKey="poblacion_cabecera"
-            stackId="1"
-            stroke="#6366f1"
-            strokeWidth={2}
-            fill="url(#colorUrbana)"
-            name="poblacion_cabecera"
-          />
-          <Area
-            type="monotone"
-            dataKey="poblacion_centros_poblados_rural"
-            stackId="1"
-            stroke="#ec4899"
-            strokeWidth={2}
-            fill="url(#colorRural)"
-            name="poblacion_centros_poblados_rural"
-          />
-        </AreaChart>
+        </ComposedChart>
       </ResponsiveContainer>
 
-      <div className="mt-4 flex flex-wrap items-center gap-4 text-xs">
+      <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs">
         <div className="flex items-center gap-1.5">
-          <div className="h-2.5 w-2.5 rounded-full bg-indigo-500"></div>
-          <span className="text-neutral-700 font-medium">Poblacion urbana</span>
+          <div className="h-3 w-3 rounded-sm bg-indigo-500"></div>
+          <span className="text-neutral-700 font-medium">Poblacion total</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <div className="h-2.5 w-2.5 rounded-full bg-pink-500"></div>
-          <span className="text-neutral-700 font-medium">Poblacion rural</span>
+          <div className="h-0.5 w-4 border-t-2 border-dashed border-cyan-500"></div>
+          <span className="text-neutral-700 font-medium">
+            Urbana <span className="text-neutral-400">(hasta 2050)</span>
+          </span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <div className="h-0.5 w-4 border-t-2 border-dashed border-pink-500"></div>
+          <span className="text-neutral-700 font-medium">
+            Rural <span className="text-neutral-400">(hasta 2050)</span>
+          </span>
         </div>
         <div className="ml-auto text-neutral-500">
           Fuente: DANE — Proyecciones de poblacion nacional 2018-2070
         </div>
+      </div>
+
+      <div className="mt-4 rounded-lg border border-neutral-200 bg-neutral-50/60 p-3 text-xs text-neutral-600">
+        <strong className="text-neutral-900">Nota tecnica sobre la escala:</strong> El
+        eje Y empieza en 40M (no en 0) para que se vea claramente la trayectoria de
+        crecimiento y posterior caida. Si empezara en 0, la variacion entre 48M y 56M
+        se veria como una linea casi plana. El DANE solo publica el desglose
+        urbano/rural hasta 2050; la proyeccion del total continua hasta 2070 mostrando
+        la fase de declive demografico esperada.
       </div>
     </div>
   );
