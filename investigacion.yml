@@ -1,0 +1,341 @@
+##############################################################################
+# INVESTIGACION: Mercado Laboral en Colombia - Radiografia Completa
+# Inicio: 2026-04-09
+# Estado: en_progreso
+##############################################################################
+
+proyecto:
+  nombre: "Mercado Laboral en Colombia: Radiografia Completa"
+  inicio: "2026-04-09"
+  estado: en_progreso
+
+# ============================================================================
+# AGRUPACIONES SEMANTICAS
+#
+# Cada grupo es independiente. Se investiga por separado.
+# Ningun grupo mezcla categorias de otro.
+#
+#   A. Poblacion y Demografia  --> Cuantos somos, cuantos nacen, cuantos mueren
+#   B. Clasificacion Laboral   --> Como se divide la PET (PEA vs PEI)
+#   C. Empleo Formal           --> Solo empleo formal, sus fuentes y datos
+#   D. Empleo Informal         --> Solo empleo informal, sus fuentes y datos
+#   E. Desempleo               --> Solo desocupados, como se mide, sus sesgos
+#   F. Poblacion Inactiva      --> Los que no trabajan NI buscan (PEI)
+#   G. Calidad del Empleo      --> Subempleo, NINIs, desalentados, brechas
+#
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# A. POBLACION Y DEMOGRAFIA
+# Contexto base: cuantas personas hay, como cambia esa cifra.
+# Sin esto, ninguna proporcion tiene sentido.
+# ----------------------------------------------------------------------------
+grupo_a_demografia:
+  nombre: "Poblacion y Demografia"
+  pregunta_central: >
+    Cuantas personas hay en Colombia, como cambia esa cifra
+    (natalidad, mortalidad, migracion), y como se distribuyen
+    por edad, genero y region?
+  indicadores:
+    - Poblacion total
+    - Tasa de natalidad
+    - Tasa de mortalidad
+    - Saldo migratorio neto
+    - Piramide poblacional (distribucion por edad y genero)
+    - Poblacion en Edad de Trabajar (PET, 15+ anios)
+    - Poblacion menor de 15 anios
+  fuentes_esperadas:
+    - DANE (Censo, proyecciones poblacionales, estadisticas vitales)
+    - Migracion Colombia
+  fase_01:
+    - id: A.1
+      nombre: "Fuentes y metodologia de datos demograficos"
+      estado: completado
+      entregable: "fase-01-fuentes-y-metodologia/reportes/a_demografia_fuentes.md"
+    - id: A.2
+      nombre: "Obtener datos demograficos 2020-2026"
+      estado: completado
+      entregable: "fase-02-datasets/raw/dane_demografia/ + processed/poblacion_colombia_2018_2070.csv + piramides + nacimientos_defunciones"
+    - id: A.3
+      nombre: "Graficas: piramide poblacional, tendencia PET"
+      estado: pendiente
+      entregable: "fase-03-graficas/a_demografia/"
+
+# ----------------------------------------------------------------------------
+# B. CLASIFICACION LABORAL
+# Como se divide la PET en PEA y PEI. La foto general.
+# No entra en detalle de formal/informal (eso es C y D).
+# ----------------------------------------------------------------------------
+grupo_b_clasificacion_laboral:
+  nombre: "Clasificacion Laboral General"
+  pregunta_central: >
+    De la poblacion en edad de trabajar, cuantos participan
+    en el mercado laboral (PEA) y cuantos no (PEI)?
+  indicadores:
+    - PET (Poblacion en Edad de Trabajar)
+    - PEA (Fuerza de Trabajo) = ocupados + desocupados
+    - PEI (Fuera de la Fuerza de Trabajo)
+    - TGP (Tasa Global de Participacion = PEA / PET)
+    - TO (Tasa de Ocupacion = ocupados / PET)
+  fuentes_esperadas:
+    - DANE (GEIH) - fuente unica para esta clasificacion
+  fase_01:
+    - id: B.1
+      nombre: "Metodologia GEIH y clasificacion PET/PEA/PEI"
+      estado: completado
+      entregable: "fase-01-fuentes-y-metodologia/reportes/b_clasificacion_metodologia.md"
+    - id: B.2
+      nombre: "Obtener datos PET/PEA/PEI 2020-2026"
+      estado: completado
+      entregable: "processed/geih_total_nacional_mensual_2001_2026.csv + geih_13_ciudades_mensual_2001_2026.csv"
+    - id: B.3
+      nombre: "Graficas: composicion PET, tendencia TGP"
+      estado: pendiente
+      entregable: "fase-03-graficas/b_clasificacion/"
+
+# ----------------------------------------------------------------------------
+# C. EMPLEO FORMAL
+# Solo empleo formal. Dos fuentes que se contradicen.
+# ----------------------------------------------------------------------------
+grupo_c_empleo_formal:
+  nombre: "Empleo Formal"
+  pregunta_central: >
+    Cuantos empleos formales hay en Colombia y por que las
+    dos fuentes principales dan numeros diferentes?
+  indicadores:
+    - Ocupados formales (GEIH) - autorreporte
+    - Cotizantes (PILA) - registro administrativo
+    - Discrepancia GEIH vs PILA
+    - Por sector economico
+    - Por genero y edad
+    - Por region
+  fuentes_esperadas:
+    - DANE (GEIH) - modulo informalidad/seguridad social
+    - UGPP (PILA) - registros de cotizacion
+  fase_01:
+    - id: C.1
+      nombre: "Metodologia GEIH para medir formalidad"
+      estado: completado
+      descripcion: >
+        Definicion de formal en GEIH: asalariado que reporta
+        cotizar a salud Y pension. Es autorreporte.
+      entregable: "fase-01-fuentes-y-metodologia/reportes/c_formal_geih.md"
+    - id: C.2
+      nombre: "Metodologia PILA para medir formalidad"
+      estado: completado
+      descripcion: >
+        Registro de pagos reales al sistema de seguridad social.
+        Ventajas (dato real), limitaciones (doble conteo, solo formal).
+        Como acceder a los datos.
+      entregable: "fase-01-fuentes-y-metodologia/reportes/c_formal_pila.md"
+    - id: C.3
+      nombre: "Controversia DANE vs ANDI (marzo 2026)"
+      estado: completado
+      descripcion: >
+        Caso de estudio: ANDI dice -500K formales (PILA),
+        DANE dice mejora (GEIH). Documentar ambas posiciones.
+      entregable: "fase-01-fuentes-y-metodologia/reportes/c_formal_controversia.md"
+    - id: C.4
+      nombre: "Obtener datos de empleo formal 2020-2026"
+      estado: completado
+      entregable: "processed/informalidad_por_sexo_trimestre_movil_2021_2025.csv + informalidad_por_tamano_empresa_2021_2025.csv + raw/ugpp_pila/"
+    - id: C.5
+      nombre: "Graficas: serie formal GEIH, serie PILA, comparativa"
+      estado: pendiente
+      entregable: "fase-03-graficas/c_empleo_formal/"
+
+# ----------------------------------------------------------------------------
+# D. EMPLEO INFORMAL
+# Solo empleo informal. Fuente unica pero definicion compleja.
+# ----------------------------------------------------------------------------
+grupo_d_empleo_informal:
+  nombre: "Empleo Informal"
+  pregunta_central: >
+    Cuantos empleos informales hay, como se define informalidad,
+    y que tan confiable es esa medicion?
+  indicadores:
+    - Ocupados informales (GEIH)
+    - Tasa de informalidad (informales / total ocupados)
+    - Por sector economico
+    - Por genero y edad
+    - Por region (urbano vs rural)
+    - Informalidad rural (~83%) vs urbana (~42%)
+  fuentes_esperadas:
+    - DANE (GEIH) - fuente unica, trimestral
+  fase_01:
+    - id: D.1
+      nombre: "Metodologia GEIH para medir informalidad"
+      estado: completado
+      descripcion: >
+        Definicion OIT/DANE de informal: asalariado sin cotizacion
+        a salud/pension, o independiente en empresa de hasta 5
+        trabajadores sin registro mercantil. Limitaciones del
+        autorreporte. Diferencia urbano vs rural.
+      entregable: "fase-01-fuentes-y-metodologia/reportes/d_informal_metodologia.md"
+    - id: D.2
+      nombre: "Obtener datos de empleo informal 2020-2026"
+      estado: completado
+      entregable: "processed/informalidad_por_ciudad_trimestre_movil_2021_2025.csv + ocupados_por_rama + ocupados_por_posicion"
+    - id: D.3
+      nombre: "Graficas: tasa informalidad, urbano vs rural, sectores"
+      estado: pendiente
+      entregable: "fase-03-graficas/d_empleo_informal/"
+
+# ----------------------------------------------------------------------------
+# E. DESEMPLEO
+# Solo desocupados. Como se mide y por que subestima el problema.
+# ----------------------------------------------------------------------------
+grupo_e_desempleo:
+  nombre: "Desempleo"
+  pregunta_central: >
+    Cuantas personas estan desempleadas, como se mide eso,
+    y por que la tasa de desempleo puede ser enganosa?
+  indicadores:
+    - Desocupados (buscaron trabajo en ultimas 4 semanas)
+    - Tasa de desempleo (TD = desocupados / PEA)
+    - TD por genero (mujeres 11.4% vs hombres 7.0%)
+    - TD juvenil (15.3%)
+    - TD por region
+    - Duracion del desempleo
+  fuentes_esperadas:
+    - DANE (GEIH) - fuente unica, mensual
+  sesgo_clave: >
+    La TD solo cuenta a quienes buscan ACTIVAMENTE. Si alguien
+    deja de buscar, sale del desempleo y entra a la PEI.
+    La TD puede BAJAR sin que nadie consiga empleo.
+  fase_01:
+    - id: E.1
+      nombre: "Metodologia de medicion del desempleo"
+      estado: completado
+      descripcion: >
+        Definicion OIT de desocupado: no trabajo en semana de
+        referencia + busco en ultimas 4 semanas + disponible.
+        Por que esta definicion subestima el problema real.
+      entregable: "fase-01-fuentes-y-metodologia/reportes/e_desempleo_metodologia.md"
+    - id: E.2
+      nombre: "Obtener datos de desempleo 2020-2026"
+      estado: completado
+      entregable: "Incluido en geih_total_nacional_mensual_2001_2026.csv (columna TD y Desocupados)"
+    - id: E.3
+      nombre: "Graficas: TD historica, por genero, juvenil, TD vs PEI"
+      estado: pendiente
+      entregable: "fase-03-graficas/e_desempleo/"
+
+# ----------------------------------------------------------------------------
+# F. POBLACION INACTIVA (PEI)
+# Los 14.4 millones invisibles. No trabajan NI buscan.
+# ----------------------------------------------------------------------------
+grupo_f_poblacion_inactiva:
+  nombre: "Poblacion Economicamente Inactiva (PEI)"
+  pregunta_central: >
+    Quienes son los 14.4 millones que no trabajan ni buscan
+    trabajo, y por que no aparecen en ningun titular?
+  indicadores:
+    - PEI total
+    - PEI por razon (oficios hogar, estudio, pension, incapacidad, desaliento, otros)
+    - Desalentados (dejaron de buscar porque "no hay trabajo")
+    - Tendencia PEI vs TD (cuando uno baja, el otro sube?)
+  fuentes_esperadas:
+    - DANE (GEIH) - fuente unica
+  fase_01:
+    - id: F.1
+      nombre: "Metodologia y composicion de la PEI"
+      estado: completado
+      descripcion: >
+        Quienes componen la PEI: hogar (54%), estudiantes (~30%),
+        pensionados, incapacitados, desalentados, otros.
+        Definicion de desalentado. Por que importa.
+      entregable: "fase-01-fuentes-y-metodologia/reportes/f_pei_metodologia.md"
+    - id: F.2
+      nombre: "Obtener datos PEI 2020-2026"
+      estado: completado
+      entregable: "processed/pei_desagregada_nacional_2010_2026.csv (Total, Estudiando, Hogar, Otros)"
+    - id: F.3
+      nombre: "Graficas: composicion PEI, desalentados, PEI vs TD"
+      estado: pendiente
+      entregable: "fase-03-graficas/f_pei/"
+
+# ----------------------------------------------------------------------------
+# G. CALIDAD DEL EMPLEO Y GRUPOS VULNERABLES
+# Cortes transversales: subempleo, NINIs, brechas.
+# ----------------------------------------------------------------------------
+grupo_g_calidad_y_vulnerabilidad:
+  nombre: "Calidad del Empleo y Grupos Vulnerables"
+  pregunta_central: >
+    Mas alla de cuantos empleos hay, que tan buenos son?
+    Y quienes son los mas afectados?
+  indicadores:
+    - Subempleo subjetivo (quieren mejor empleo)
+    - Subempleo objetivo (quieren Y buscan activamente)
+    - NINIs 15-28 anios (~2.3M, brecha de genero 1.5M mujeres)
+    - Brecha salarial de genero
+    - Empleo juvenil vs adulto
+  fuentes_esperadas:
+    - DANE (GEIH) - modulos especificos
+    - DANE - Mercado laboral de la juventud
+  fase_01:
+    - id: G.1
+      nombre: "Metodologia: subempleo, NINIs, brechas"
+      estado: completado
+      entregable: "fase-01-fuentes-y-metodologia/reportes/g_calidad_metodologia.md"
+    - id: G.2
+      nombre: "Obtener datos de calidad del empleo 2020-2026"
+      estado: completado
+      entregable: "informalidad_por_sexo (brechas) + TS en serie mensual + informalidad por ciudad y tamano"
+    - id: G.3
+      nombre: "Graficas: subempleo, NINIs, brechas genero/edad"
+      estado: pendiente
+      entregable: "fase-03-graficas/g_calidad/"
+
+# ============================================================================
+# FASES DE EJECUCION
+# Cada grupo tiene sus tareas distribuidas en las mismas 4 fases.
+# Se ejecuta fase por fase, NO grupo por grupo.
+# ============================================================================
+fases:
+  fase_01:
+    nombre: "Fuentes y Metodologia"
+    estado: completado
+    descripcion: "Investigar y documentar fuentes, metodologias, definiciones"
+    tareas_incluidas: "A.1, B.1, C.1, C.2, C.3, D.1, E.1, F.1, G.1"
+
+  fase_02:
+    nombre: "Obtencion de Datasets"
+    estado: completado
+    descripcion: "Descargar datos crudos de fuentes primarias. 63 archivos raw + 16 CSV procesados. Ver FUENTES.md"
+    tareas_incluidas: "A.2, B.2, C.4, D.2, E.2, F.2, G.2"
+
+  fase_03:
+    nombre: "Graficas"
+    estado: bloqueado
+    bloqueado_por: fase_02
+    descripcion: "Construir visualizaciones por grupo"
+    tareas_incluidas: "A.3, B.3, C.5, D.3, E.3, F.3, G.3"
+
+  fase_04:
+    nombre: "Reporte Final"
+    estado: bloqueado
+    bloqueado_por: fase_03
+    entregable: "fase-04-reporte/"
+
+# ============================================================================
+# NOTAS Y DECISIONES
+# ============================================================================
+notas:
+  - fecha: "2026-04-09"
+    nota: >
+      Inicio. Se prioriza entender fuentes y metodologias
+      antes de descargar datos.
+
+  - fecha: "2026-04-09"
+    nota: >
+      Decision: 7 agrupaciones semanticas independientes (A-G).
+      Empleo formal (C) y empleo informal (D) NUNCA se mezclan.
+      Se agrega demografia (A) como contexto base: sin saber
+      cuantos somos, ninguna proporcion tiene sentido.
+
+  - fecha: "2026-04-09"
+    nota: >
+      Hallazgo: la tasa de desempleo solo mide a quienes buscan
+      activamente. 14.4M de personas son invisibles en la PEI.
+      Esto debe ser central en el reporte.
