@@ -1,0 +1,198 @@
+---
+import Chapter from "../../layouts/Chapter.astro";
+import Callout from "../../components/ui/Callout.astro";
+import InformalidadCiudades from "../../components/charts/InformalidadCiudades.tsx";
+---
+
+<Chapter
+  number="05"
+  title="Empleo informal"
+  subtitle="13 millones de colombianos trabajan sin proteccion social. Estos son los sectores donde viven, las ciudades donde abundan, y por que es tan dificil reducirla."
+  chapterNumber={5}
+  totalChapters={8}
+  prevHref="/capitulos/04-controversia"
+  prevTitle="La controversia DANE vs ANDI"
+  nextHref="/capitulos/06-desempleo"
+  nextTitle="Desempleo"
+  accentColor="rose"
+>
+
+<h2>Que es exactamente el empleo informal</h2>
+
+<p>
+  En Colombia, segun el DANE, un trabajador es informal si se cumple alguna de estas
+  condiciones:
+</p>
+
+<ul>
+  <li>Es <strong>asalariado</strong> y no le pagan salud ni pension por su trabajo</li>
+  <li>Es <strong>independiente</strong> en un negocio sin registro mercantil ni contabilidad</li>
+  <li>Es <strong>trabajador familiar sin pago</strong> (ayuda en el negocio de un familiar gratis)</li>
+  <li>Es <strong>empleado domestico sin cotizacion</strong></li>
+</ul>
+
+<p>
+  No es ilegal ser informal. Mucha gente confunde "informal" con "ilegal", pero son
+  cosas distintas. La mayoria de los informales trabaja en actividades perfectamente
+  legales: venden frutas en la calle, cuidan ninos, hacen mandados, tienen tiendas de
+  barrio sin registro. Lo que los hace informales es la falta de <strong>proteccion
+  social</strong>.
+</p>
+
+<Callout type="info" title="Por que alguien elegiria ser informal?">
+  La mayoria no elige. Lo son por necesidad. Formalizarse cuesta: hay que pagar aportes
+  patronales, llevar contabilidad, sacar RUT, registrar negocio en camara de comercio.
+  Para un vendedor ambulante que apenas cubre los gastos del dia, esos costos son
+  prohibitivos. La informalidad es un sintoma de productividad baja, no de elecciones
+  individuales.
+</Callout>
+
+<h2>Cuantos son y donde viven</h2>
+
+<p>
+  En 2025, <strong>55.4% de los ocupados colombianos son informales</strong>. Son
+  aproximadamente 13.2 millones de personas. Pero el promedio nacional esconde una
+  realidad que cambia radicalmente entre ciudades:
+</p>
+
+<InformalidadCiudades client:load />
+
+<Callout type="key" title="Dos paises en uno">
+  Mira la grafica con cuidado. La brecha entre <strong>Sincelejo (67%)</strong> y
+  <strong>Bogota (35%)</strong> es de 32 puntos porcentuales. Son casi dos realidades
+  completamente distintas. En Bogota, 2 de cada 3 trabajadores son formales. En
+  Sincelejo, 2 de cada 3 son informales. Mismo pais, mismas leyes, resultados opuestos.
+</Callout>
+
+<h2>El patron geografico</h2>
+
+<p>
+  La informalidad en Colombia no es aleatoria. Sigue un patron muy claro:
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-sm font-bold text-rose-900">Mas informales: Caribe y Pacifico</div>
+    <p class="mt-1 text-sm text-rose-900/80">
+      Sincelejo, Valledupar, Cucuta, Riohacha, Santa Marta, Quibdo. Regiones con menor
+      productividad, economias agrarias, y presencia historica de conflicto armado.
+    </p>
+  </div>
+
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="text-sm font-bold text-emerald-900">Mas formales: Eje cafetero y centro</div>
+    <p class="mt-1 text-sm text-emerald-900/80">
+      Bogota, Manizales, Medellin, Tunja, Pereira. Ciudades con tejido empresarial
+      mas consolidado, presencia de grandes empresas formales, y sector servicios fuerte.
+    </p>
+  </div>
+</div>
+
+<h2>La informalidad rural es otro nivel</h2>
+
+<p>
+  Los datos anteriores son solo para ciudades. En el <strong>campo colombiano</strong>,
+  la informalidad sube a niveles dramaticos:
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-3xl font-extrabold text-neutral-900 font-mono">55.4%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-700">Total nacional</div>
+    <div class="mt-1 text-xs text-neutral-500">GEIH 2025</div>
+  </div>
+  <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-5">
+    <div class="text-3xl font-extrabold text-indigo-900 font-mono">42.3%</div>
+    <div class="mt-1 text-sm font-semibold text-indigo-700">13 ciudades principales</div>
+    <div class="mt-1 text-xs text-indigo-600">Lo que ves arriba</div>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-3xl font-extrabold text-rose-900 font-mono">83.4%</div>
+    <div class="mt-1 text-sm font-semibold text-rose-700">Zona rural</div>
+    <div class="mt-1 text-xs text-rose-600">Casi todo el trabajo</div>
+  </div>
+</div>
+
+<p>
+  En zonas rurales, mas de <strong>8 de cada 10 trabajadores</strong> son informales.
+  La agricultura, que emplea al 16% del pais, tiene una tasa de informalidad del ~85%.
+  Y esa cifra casi no ha bajado en 5 anos: paso de 86% en 2021 a 83% en 2025.
+</p>
+
+<h2>Sectores donde vive la informalidad</h2>
+
+<p>
+  Tres sectores concentran mas de la mitad de toda la informalidad del pais:
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="flex items-center gap-4 rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="text-3xl">🌾</div>
+    <div class="flex-1">
+      <div class="font-bold text-neutral-900">Agricultura, ganaderia, pesca</div>
+      <div class="text-sm text-neutral-600">~85% informal · 3.2 millones de trabajadores</div>
+    </div>
+  </div>
+  <div class="flex items-center gap-4 rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="text-3xl">🛒</div>
+    <div class="flex-1">
+      <div class="font-bold text-neutral-900">Comercio y reparacion de vehiculos</div>
+      <div class="text-sm text-neutral-600">~60% informal · 4.0 millones de trabajadores</div>
+    </div>
+  </div>
+  <div class="flex items-center gap-4 rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="text-3xl">🍳</div>
+    <div class="flex-1">
+      <div class="font-bold text-neutral-900">Alojamiento y servicios de comida</div>
+      <div class="text-sm text-neutral-600">~76% informal · 1.6 millones de trabajadores</div>
+    </div>
+  </div>
+</div>
+
+<h2>Por que es tan dificil reducirla</h2>
+
+<p>
+  Colombia ha intentado reducir la informalidad por decadas con resultados modestos.
+  Entre 2021 y 2025, la tasa nacional solo bajo ~4 puntos porcentuales. Las razones
+  son estructurales:
+</p>
+
+<ol>
+  <li><strong>Los costos de formalizacion son altos</strong> relativos a los ingresos. Cotizar salud + pension cuesta ~28% del salario. Para un trabajador que gana poco, eso es prohibitivo.</li>
+  <li><strong>La productividad es baja</strong>. Colombia produce una cuarta parte de lo que produce la OCDE por trabajador. Eso limita cuanto pueden pagar los empleadores.</li>
+  <li><strong>Las microempresas dominan</strong>. El 85% de los informales trabajan en micros (hasta 10 empleados). Formalizar microempresas es muchisimo mas costoso por trabajador que formalizar grandes.</li>
+  <li><strong>El sector agropecuario es irreductiblemente informal</strong>. La estructura de trabajo familiar, estacional y de subsistencia no encaja con el modelo de seguridad social tradicional.</li>
+</ol>
+
+<h2>Donde verificar estos datos</h2>
+
+<Callout type="source" title="Boletin trimestral de Ocupacion Informal (DANE)">
+  <p>
+    URL: <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-informal-y-seguridad-social" target="_blank" rel="noopener">
+      dane.gov.co/mercado-laboral/empleo-informal-y-seguridad-social
+    </a>
+  </p>
+  <p class="mt-2">
+    El DANE publica este boletin cada mes con trimestre movil. El anexo Excel
+    <code>anex-GEIHEISS-[trimestre].xlsx</code> contiene varias hojas utiles:
+  </p>
+  <ul class="mt-2 text-sm list-disc list-inside space-y-1">
+    <li><strong>"Prop informalidad"</strong>: tasa por ciudad, serie trimestral</li>
+    <li><strong>"Sexo"</strong>: formales e informales por genero</li>
+    <li><strong>"Ramas de actividad CIIU 4 A.C"</strong>: por sector economico</li>
+    <li><strong>"Tamano de empresa"</strong>: por tamano del empleador</li>
+  </ul>
+</Callout>
+
+<h2>Resumen del capitulo</h2>
+
+<ul>
+  <li>El <strong>55.4% de los ocupados</strong> en Colombia son informales (~13.2 millones)</li>
+  <li>La informalidad varia de <strong>35% en Bogota a 67% en Sincelejo</strong></li>
+  <li>En zonas rurales alcanza el <strong>83.4%</strong></li>
+  <li>Agricultura, comercio y alojamiento/comida concentran mas de la mitad del empleo informal</li>
+  <li>En 5 anos (2021-2025), la informalidad solo bajo 4 puntos porcentuales</li>
+  <li>Los costos altos de formalizacion y la baja productividad mantienen el fenomeno</li>
+</ul>
+
+</Chapter>

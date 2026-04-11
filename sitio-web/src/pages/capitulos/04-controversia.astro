@@ -1,0 +1,188 @@
+---
+import Chapter from "../../layouts/Chapter.astro";
+import Callout from "../../components/ui/Callout.astro";
+import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
+---
+
+<Chapter
+  number="04"
+  title="La controversia DANE vs ANDI"
+  subtitle="El 31 de marzo de 2026, los empresarios denunciaron la perdida de 500 mil empleos. El mismo dia, el DANE dijo lo contrario. Aqui entiendes quien tiene razon (y no es tan simple)."
+  chapterNumber={4}
+  totalChapters={8}
+  prevHref="/capitulos/03-empleo-formal"
+  prevTitle="Empleo formal: dos fuentes, dos verdades"
+  nextHref="/capitulos/05-empleo-informal"
+  nextTitle="Empleo informal"
+  accentColor="amber"
+>
+
+<h2>Lo que paso en un dia</h2>
+
+<p>
+  El 31 de marzo de 2026 es una fecha clave en el debate sobre el mercado laboral colombiano.
+  Ese dia, dos voces muy distintas hablaron sobre lo mismo y llegaron a conclusiones
+  radicalmente opuestas.
+</p>
+
+<div class="my-8 space-y-4">
+  <div class="rounded-xl border-l-4 border-indigo-500 bg-indigo-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-indigo-700">
+      9:00 AM · DANE
+    </div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">
+      "Desempleo en minimos historicos: 9.2%"
+    </div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Piedad Urdinola, directora del DANE, publica las cifras oficiales de mercado laboral
+      de febrero 2026. La tasa de desempleo del 9.2% es la mas baja para un mes de febrero
+      desde 2021. Se crearon 624.000 nuevos ocupados. La informalidad bajo 2.3 puntos.
+    </p>
+  </div>
+
+  <div class="rounded-xl border-l-4 border-rose-500 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">
+      11:30 AM · ANDI (Bruce Mac Master)
+    </div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">
+      "Se perdieron mas de 500.000 empleos formales desde 2023"
+    </div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      El presidente de la ANDI (el gremio mas grande de empresarios) publica un hilo en X.
+      Usando datos de PILA/UGPP, muestra una caida en cotizantes al sistema de seguridad
+      social desde 2023. Califica las cifras del DANE como incompletas.
+    </p>
+  </div>
+
+  <div class="rounded-xl border-l-4 border-violet-500 bg-violet-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">
+      2:00 PM · DANE responde
+    </div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">
+      "Se trata de fuentes de informacion diferentes"
+    </div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Urdinola responde que GEIH y PILA miden cosas distintas y no son comparables
+      directamente. Su respuesta, en un tono sarcastico, invita a "aprender a leer las cifras".
+    </p>
+  </div>
+</div>
+
+<h2>Las cifras en el centro del debate</h2>
+
+<p>
+  Ya vimos esta grafica en el capitulo anterior, pero ahora tiene otro peso. Mira lo
+  que ve la ANDI cuando mira PILA entre septiembre 2024 y mayo 2025:
+</p>
+
+<GEIHvsPILA client:load />
+
+<p>
+  El pico de cotizantes PILA fue en <strong>septiembre 2024: 13.8 millones</strong>.
+  Para mayo 2025 habia caido a 13.1 millones. Son <strong>~670 mil cotizantes menos
+  en 8 meses</strong>. Si comparas el pico con el valle, la caida parece dramatica.
+</p>
+
+<Callout type="warning" title="Pero cuidado con pico vs valle">
+  Los datos PILA tienen estacionalidad fuerte. Septiembre es historicamente un mes
+  "alto" (muchos contratos activos, fin del segundo trimestre, aguinaldos programados).
+  Febrero y mayo son meses "bajos" (fin de contratos temporales de fin de ano, periodos
+  de transicion). Comparar pico con valle amplifica la caida. Parte del argumento de
+  la ANDI descansa en esta comparacion.
+</Callout>
+
+<h2>Quien tiene razon?</h2>
+
+<p>
+  La respuesta honesta: <strong>los dos y ninguno</strong>. Cada uno captura una parte
+  real del fenomeno. Pero no ven el mismo fenomeno.
+</p>
+
+<div class="my-8 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-indigo-200 bg-indigo-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-indigo-700">
+      Donde tiene razon el DANE
+    </div>
+    <ul class="mt-3 space-y-2 text-sm text-neutral-700">
+      <li>✓ GEIH y PILA no son comparables directamente</li>
+      <li>✓ La metodologia GEIH sigue estandares OIT desde 2021</li>
+      <li>✓ La caida en cotizantes puede ser estacionalidad, no perdida real</li>
+      <li>✓ Sector publico (OPS) no aparece igual en ambas fuentes</li>
+    </ul>
+  </div>
+
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">
+      Donde tiene razon la ANDI
+    </div>
+    <ul class="mt-3 space-y-2 text-sm text-neutral-700">
+      <li>✓ PILA muestra una tendencia real de deterioro desde 2024</li>
+      <li>✓ Los nuevos empleos son mayoritariamente cuenta propia (informal)</li>
+      <li>✓ El empleo asalariado privado formal se estanco o cayo</li>
+      <li>✓ "Desempleo bajo + informalidad estancada" es un patron paradojico</li>
+    </ul>
+  </div>
+</div>
+
+<h2>La pelicula completa</h2>
+
+<p>
+  Cuando uno mira todos los datos juntos, emerge una imagen mas completa:
+</p>
+
+<ol>
+  <li><strong>El empleo total crece</strong>: si, cada vez hay mas personas trabajando (GEIH tiene razon)</li>
+  <li><strong>Pero el empleo asalariado formal no crece mucho</strong>: casi todos los nuevos empleos son cuenta propia (la ANDI tiene razon)</li>
+  <li><strong>El empleo asalariado formal incluso cae en algunos periodos</strong>: PILA lo captura mejor que GEIH</li>
+  <li><strong>La tasa de desempleo baja</strong>: porque mas gente consigue algun trabajo, no porque sean trabajos buenos</li>
+</ol>
+
+<Callout type="key" title="La leccion">
+  La "perdida de 500 mil empleos formales" NO es exactamente un invento, pero tampoco
+  es exactamente una perdida. Es la diferencia entre dos formas de contar cosas
+  parecidas pero distintas. En un pais con 55% de informalidad y mucha rotacion,
+  esa diferencia es enorme.
+</Callout>
+
+<h2>Por que este debate importa</h2>
+
+<p>
+  Detras de la controversia hay intereses politicos y economicos muy concretos:
+</p>
+
+<ul>
+  <li><strong>El gobierno Petro</strong> necesita demostrar que su reforma laboral esta generando empleo formal. Usa las cifras del DANE para defenderla.</li>
+  <li><strong>Los gremios empresariales</strong> (ANDI, Fenalco) se oponen a la reforma laboral y al aumento del salario minimo. Usan las cifras de PILA para argumentar que las politicas estan destruyendo empleo formal.</li>
+  <li><strong>El Banco de la Republica</strong> proyecto que la reforma laboral eliminaria entre 152 y 746 mil empleos formales. Petro reto publicamente al BanRep a "mostrar donde estan esos empleos perdidos".</li>
+</ul>
+
+<p>
+  Esta no es una disputa tecnica aislada. Es parte de una discusion mas amplia sobre
+  la direccion economica del pais.
+</p>
+
+<Callout type="tip" title="Como leer los titulares sobre empleo">
+  Cuando veas un titular sobre mercado laboral en Colombia, preguntate:
+  <ol class="mt-2 list-decimal list-inside space-y-1">
+    <li>Que fuente usa? (GEIH o PILA?)</li>
+    <li>Que periodo compara? (pico vs valle, mismo mes año anterior, trimestre movil?)</li>
+    <li>Que conviene politicamente al que lo publica?</li>
+  </ol>
+  <p class="mt-2">
+    Si no mencionan la fuente o el periodo, es sospechoso. Si mencionan solo una fuente
+    cuando las dos son relevantes, tambien.
+  </p>
+</Callout>
+
+<h2>Resumen del capitulo</h2>
+
+<ul>
+  <li>El 31 de marzo de 2026, DANE y ANDI publicaron cifras contradictorias sobre empleo formal</li>
+  <li>El DANE (con GEIH) dijo: desempleo en minimos, 624 mil nuevos ocupados</li>
+  <li>La ANDI (con PILA) dijo: se perdieron 500 mil empleos formales desde 2023</li>
+  <li>Ambos tenian datos oficiales y ambos tenian parte de razon</li>
+  <li>La diferencia se explica por metodologia, estacionalidad y definiciones distintas</li>
+  <li>La discusion tiene un trasfondo politico importante (reforma laboral, salario minimo)</li>
+</ul>
+
+</Chapter>
