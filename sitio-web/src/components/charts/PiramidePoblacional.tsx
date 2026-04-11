@@ -58,7 +58,7 @@ export default function PiramidePoblacional() {
   if (loading) {
     return (
       <div className="flex h-[500px] items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50">
-        <div className="text-sm text-neutral-500">Cargando piramide poblacional...</div>
+        <div className="text-sm text-neutral-500">Cargando pirámide poblacional...</div>
       </div>
     );
   }
@@ -104,14 +104,14 @@ export default function PiramidePoblacional() {
       <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
         <div>
           <div className="text-xs font-semibold uppercase tracking-wider text-indigo-600">
-            Grafica 3 · Interactiva
+            Gráfica 3 · Interactiva
           </div>
           <h3 className="mt-1 text-xl font-bold text-neutral-900">
-            Piramide poblacional de Colombia
+            Pirámide poblacional de Colombia
           </h3>
           <p className="mt-1 text-sm text-neutral-600">
-            Observa como Colombia pasa de una piramide joven (2020) a una envejecida (2050).
-            Haz click para cambiar de año.
+            Observa cómo Colombia pasa de una pirámide joven (2020) a una envejecida (2050).
+            Haz clic para cambiar de año.
           </p>
         </div>
 

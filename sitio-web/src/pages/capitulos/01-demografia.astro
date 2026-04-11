@@ -8,115 +8,115 @@ import PiramidePoblacional from "../../components/charts/PiramidePoblacional.tsx
 
 <Chapter
   number="01"
-  title="Cuantos colombianos hay?"
-  subtitle="Antes de hablar de empleo, necesitamos saber cuantos somos. Y como esa cifra esta cambiando mas rapido de lo que imaginas."
+  title="¿Cuántos colombianos hay?"
+  subtitle="Antes de hablar de empleo, necesitamos saber cuántos somos. Y cómo esa cifra está cambiando más rápido de lo que imaginas."
   chapterNumber={1}
   totalChapters={8}
   nextHref="/capitulos/02-clasificacion"
-  nextTitle="Como se divide la poblacion"
+  nextTitle="Cómo se divide la población"
   accentColor="indigo"
 >
 
-<h2>Por que empezar por la demografia?</h2>
+<h2>¿Por qué empezar por la demografía?</h2>
 
 <p>
-  Cuando alguien dice "el desempleo en Colombia es del 9%", estas ante una fraccion.
-  Una fraccion tiene dos partes: un numerador (los desempleados) y un denominador
-  (la poblacion que podria trabajar). <strong>Sin entender el denominador, el porcentaje no dice nada.</strong>
+  Cuando alguien dice "el desempleo en Colombia es del 9%", estás ante una fracción.
+  Una fracción tiene dos partes: un numerador (los desempleados) y un denominador
+  (la población que podría trabajar). <strong>Sin entender el denominador, el porcentaje no dice nada.</strong>
 </p>
 
 <p>
-  Por eso empezamos aqui: por cuantos somos, cuantos nacen, cuantos mueren, y como
-  se distribuye la poblacion entre jovenes y adultos mayores. Todo lo demas se monta
-  sobre estos numeros.
+  Por eso empezamos aquí: por cuántos somos, cuántos nacen, cuántos mueren, y cómo
+  se distribuye la población entre jóvenes y adultos mayores. Todo lo demás se monta
+  sobre estos números.
 </p>
 
-<h2>Cuantos somos, exactamente?</h2>
+<h2>¿Cuántos somos, exactamente?</h2>
 
 <p>
-  Segun las proyecciones oficiales del DANE, en 2026 Colombia tiene aproximadamente
+  Según las proyecciones oficiales del DANE, en 2026 Colombia tiene aproximadamente
   <strong>53.4 millones de habitantes</strong>. Esta cifra no viene de un conteo directo:
-  el ultimo censo real fue en 2018, cuando se contaron 48.258.494 personas casa por casa.
-  Todo lo que viene despues son <em>estimaciones</em> que el DANE calcula combinando
-  el censo con las estadisticas de nacimientos, muertes y migracion.
+  el último censo real fue en 2018, cuando se contaron 48.258.494 personas casa por casa.
+  Todo lo que viene después son <em>estimaciones</em> que el DANE calcula combinando
+  el censo con las estadísticas de nacimientos, muertes y migración.
 </p>
 
 <PoblacionColombia client:load />
 
 <p>
-  La grafica muestra algo que sorprende a muchos: <strong>la poblacion de Colombia va a
-  dejar de crecer alrededor del año 2050</strong>. No es una prediccion catastrofica,
-  es simple matematica demografica: cada vez nacen menos bebes. Despues de ese pico,
-  la poblacion empieza a bajar lentamente.
+  La gráfica muestra algo que sorprende a muchos: <strong>la población de Colombia va a
+  dejar de crecer alrededor del año 2050</strong>. No es una predicción catastrófica,
+  es simple matemática demográfica: cada vez nacen menos bebés. Después de ese pico,
+  la población empieza a bajar lentamente.
 </p>
 
-<Callout type="info" title="Como lee el DANE tu poblacion">
+<Callout type="info" title="Cómo lee el DANE tu población">
   El DANE publica dos tipos de datos: <strong>conteos reales</strong> (del censo, cada
-  ~13 años) y <strong>proyecciones</strong> (estimaciones matematicas para los años entre
-  censos). La precision de las proyecciones se degrada con el tiempo: son mas exactas
+  ~13 años) y <strong>proyecciones</strong> (estimaciones matemáticas para los años entre
+  censos). La precisión de las proyecciones se degrada con el tiempo: son más exactas
   en 2019 que en 2030, y mucho menos exactas en 2070.
 </Callout>
 
-<h2>El dato que cambio todo: nacen cada vez menos bebes</h2>
+<h2>El dato que cambió todo: nacen cada vez menos bebés</h2>
 
 <p>
-  Aqui esta el fenomeno mas importante de la demografia colombiana reciente:
+  Aquí está el fenómeno más importante de la demografía colombiana reciente:
   <strong>entre 2015 y 2024, los nacimientos cayeron un 31.3%.</strong> No es un bache
-  coyuntural. Es una tendencia sostenida, acelerada, y que afectara todo lo demas.
+  coyuntural. Es una tendencia sostenida, acelerada, y que afectará todo lo demás.
 </p>
 
 <NacimientosDefunciones client:load />
 
 <p>
-  En 2015 nacian 661 mil bebes al año. En 2024, solo 454 mil. Son 207 mil nacimientos
-  menos <em>cada año</em>, comparado con hace una decada. Los datos preliminares de 2025
-  indican que la caida continua.
+  En 2015 nacían 661 mil bebés al año. En 2024, solo 454 mil. Son 207 mil nacimientos
+  menos <em>cada año</em>, comparado con hace una década. Los datos preliminares de 2025
+  indican que la caída continúa.
 </p>
 
 <p>
   Las muertes, en cambio, se mantienen relativamente estables alrededor de los
   275 mil por año (con el pico obvio de la pandemia: 363 mil en 2021). La brecha
-  entre nacimientos y muertes se cierra rapidamente, y es lo que eventualmente
-  detendra el crecimiento de la poblacion.
+  entre nacimientos y muertes se cierra rápidamente, y es lo que eventualmente
+  detendrá el crecimiento de la población.
 </p>
 
-<Callout type="warning" title="Por que importa esto para el empleo?">
-  Menos nacimientos hoy significa menos fuerza laboral en 15-20 años. El pais
-  esta agotando lo que los demografos llaman el <strong>"bono demografico"</strong>:
-  ese periodo en que hay mas gente en edad de trabajar que personas dependientes
+<Callout type="warning" title="¿Por qué importa esto para el empleo?">
+  Menos nacimientos hoy significa menos fuerza laboral en 15-20 años. El país
+  está agotando lo que los demógrafos llaman el <strong>"bono demográfico"</strong>:
+  ese período en que hay más gente en edad de trabajar que personas dependientes
   (niños + adultos mayores). Cuando ese bono termina, hay menos trabajadores
-  sosteniendo a mas jubilados.
+  sosteniendo a más jubilados.
 </Callout>
 
-<h2>La piramide que se esta invirtiendo</h2>
+<h2>La pirámide que se está invirtiendo</h2>
 
 <p>
-  Una piramide poblacional es la forma clasica de ver la estructura de edad de un pais.
-  Los paises jovenes tienen base ancha (muchos niños) y punta angosta (pocos viejos).
-  Los paises envejecidos tienen lo contrario: base angosta y "hombros" anchos.
+  Una pirámide poblacional es la forma clásica de ver la estructura de edad de un país.
+  Los países jóvenes tienen base ancha (muchos niños) y punta angosta (pocos viejos).
+  Los países envejecidos tienen lo contrario: base angosta y "hombros" anchos.
 </p>
 
 <p>
-  Colombia esta en transicion. Mira lo que pasa cuando comparas 2020 con 2050:
+  Colombia está en transición. Mira lo que pasa cuando comparas 2020 con 2050:
 </p>
 
 <PiramidePoblacional client:load />
 
 <p>
-  En 2020 todavia se notaba una base mas ancha. En 2026 la base ya se achica:
+  En 2020 todavía se notaba una base más ancha. En 2026 la base ya se achica:
   hay menos niños de 0-9 años que de 10-19. Para 2050, la forma empieza a
-  parecerse mas a la de Italia o Japon que a la de un pais tradicionalmente joven.
+  parecerse más a la de Italia o Japón que a la de un país tradicionalmente joven.
 </p>
 
-<h2>Como y donde ver estos datos tu mismo</h2>
+<h2>Cómo y dónde ver estos datos tú mismo</h2>
 
 <p>
-  Todos los datos que usamos en este capitulo vienen directamente del DANE y son
-  publicos. Aqui te decimos exactamente donde encontrarlos:
+  Todos los datos que usamos en este capítulo vienen directamente del DANE y son
+  públicos. Aquí te decimos exactamente dónde encontrarlos:
 </p>
 
-<Callout type="source" title="Proyecciones de poblacion">
-  <p>Las proyecciones vienen de: <strong>DANE — Demografia y Poblacion — Proyecciones de poblacion</strong>.</p>
+<Callout type="source" title="Proyecciones de población">
+  <p>Las proyecciones vienen de: <strong>DANE — Demografía y Población — Proyecciones de población</strong>.</p>
   <p class="mt-2">
     URL: <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion" target="_blank" rel="noopener">dane.gov.co/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion</a>
   </p>
@@ -126,8 +126,8 @@ import PiramidePoblacional from "../../components/charts/PiramidePoblacional.tsx
   </p>
 </Callout>
 
-<Callout type="source" title="Estadisticas vitales (nacimientos y muertes)">
-  <p>Los datos de natalidad y mortalidad vienen del boletin tecnico de <strong>Estadisticas Vitales (EEVV)</strong>.</p>
+<Callout type="source" title="Estadísticas vitales (nacimientos y muertes)">
+  <p>Los datos de natalidad y mortalidad vienen del boletín técnico de <strong>Estadísticas Vitales (EEVV)</strong>.</p>
   <p class="mt-2">
     URL: <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones" target="_blank" rel="noopener">dane.gov.co/salud/nacimientos-y-defunciones</a>
   </p>
@@ -137,34 +137,34 @@ import PiramidePoblacional from "../../components/charts/PiramidePoblacional.tsx
   </p>
 </Callout>
 
-<Callout type="tip" title="Como leer un boletin del DANE en 2 minutos">
-  Cada boletin tecnico del DANE tiene la misma estructura:
+<Callout type="tip" title="Cómo leer un boletín del DANE en 2 minutos">
+  Cada boletín técnico del DANE tiene la misma estructura:
   <ol class="mt-2 list-decimal list-inside space-y-1">
-    <li><strong>Primera pagina</strong>: resumen con la cifra clave</li>
-    <li><strong>Seccion 1</strong>: introduccion metodologica</li>
-    <li><strong>Secciones 2-5</strong>: datos por categoria (edad, sexo, region)</li>
-    <li><strong>Ficha metodologica</strong>: definiciones, fuentes, calidad</li>
-    <li><strong>Glosario</strong>: terminos tecnicos explicados</li>
+    <li><strong>Primera página</strong>: resumen con la cifra clave</li>
+    <li><strong>Sección 1</strong>: introducción metodológica</li>
+    <li><strong>Secciones 2-5</strong>: datos por categoría (edad, sexo, región)</li>
+    <li><strong>Ficha metodológica</strong>: definiciones, fuentes, calidad</li>
+    <li><strong>Glosario</strong>: términos técnicos explicados</li>
   </ol>
   <p class="mt-2">
-    Si solo tienes 2 minutos: lee el resumen de la primera pagina y la ficha metodologica.
-    Asi sabes que mide y como lo mide.
+    Si solo tienes 2 minutos: lee el resumen de la primera página y la ficha metodológica.
+    Así sabes qué mide y cómo lo mide.
   </p>
 </Callout>
 
-<h2>Resumen del capitulo</h2>
+<h2>Resumen del capítulo</h2>
 
 <ul>
-  <li><strong>53.4 millones</strong> de habitantes en Colombia en 2026 (proyeccion DANE)</li>
-  <li>La poblacion va a dejar de crecer alrededor de <strong>2050</strong></li>
-  <li>Los nacimientos cayeron <strong>31.3% en una decada</strong> (2015-2024)</li>
-  <li>La piramide poblacional esta envejeciendo rapido</li>
-  <li>El "bono demografico" se esta agotando: menos trabajadores para sostener mas jubilados</li>
+  <li><strong>53.4 millones</strong> de habitantes en Colombia en 2026 (proyección DANE)</li>
+  <li>La población va a dejar de crecer alrededor de <strong>2050</strong></li>
+  <li>Los nacimientos cayeron <strong>31.3% en una década</strong> (2015-2024)</li>
+  <li>La pirámide poblacional está envejeciendo rápido</li>
+  <li>El "bono demográfico" se está agotando: menos trabajadores para sostener más jubilados</li>
 </ul>
 
 <Callout type="key" title="Con esto entiendes el denominador">
-  Ya sabes cuantos colombianos hay y como esta cambiando esa cifra. En el
-  siguiente capitulo vamos a ver como se divide esa poblacion entre los que
+  Ya sabes cuántos colombianos hay y cómo está cambiando esa cifra. En el
+  siguiente capítulo vamos a ver cómo se divide esa población entre los que
   trabajan, los que buscan trabajo, y los <strong>14.9 millones de invisibles</strong>
   que no aparecen en ninguna cifra oficial.
 </Callout>

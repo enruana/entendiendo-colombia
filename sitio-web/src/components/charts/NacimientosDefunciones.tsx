@@ -55,13 +55,13 @@ export default function NacimientosDefunciones() {
     <div className="my-8 rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
       <div className="mb-6">
         <div className="text-xs font-semibold uppercase tracking-wider text-indigo-600">
-          Grafica 2
+          Gráfica 2
         </div>
         <h3 className="mt-1 text-xl font-bold text-neutral-900">
           Nacimientos y muertes en Colombia, 2015-2024
         </h3>
         <p className="mt-1 text-sm text-neutral-600">
-          Los nacimientos cayeron <strong>31.3%</strong> en una decada. Las muertes
+          Los nacimientos cayeron <strong>31.3%</strong> en una década. Las muertes
           tuvieron un pico en 2020-2021 por COVID y luego se normalizaron.
         </p>
       </div>
@@ -134,7 +134,7 @@ export default function NacimientosDefunciones() {
           <span className="text-neutral-700 font-medium">Muertes</span>
         </div>
         <div className="ml-auto text-neutral-500">
-          Fuente: DANE — Estadisticas Vitales
+          Fuente: DANE — Estadísticas Vitales
         </div>
       </div>
     </div>

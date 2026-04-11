@@ -66,14 +66,14 @@ export default function PoblacionColombia() {
     <div className="my-8 rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
       <div className="mb-4">
         <div className="text-xs font-semibold uppercase tracking-wider text-indigo-600">
-          Grafica 1
+          Gráfica 1
         </div>
         <h3 className="mt-1 text-xl font-bold text-neutral-900">
-          Poblacion total de Colombia, 2018 a 2070
+          Población total de Colombia, 2018 a 2070
         </h3>
         <p className="mt-1 text-sm text-neutral-600">
-          Proyecciones oficiales del DANE. La poblacion alcanzara su pico cerca de
-          2050 con ~55.7M habitantes y luego empezara a caer.
+          Proyecciones oficiales del DANE. La población alcanzará su pico cerca de
+          2050 con ~55.7M habitantes y luego empezará a caer.
         </p>
       </div>
 
@@ -98,7 +98,7 @@ export default function PoblacionColombia() {
           </div>
         </div>
         <div className="rounded-lg border border-neutral-200 bg-neutral-50/50 p-3">
-          <div className="text-xs text-neutral-500">Proyeccion {end.anio}</div>
+          <div className="text-xs text-neutral-500">Proyección {end.anio}</div>
           <div className="mt-1 text-lg font-bold text-neutral-900 font-mono">
             {formatM(end.total)}
           </div>
@@ -149,8 +149,8 @@ export default function PoblacionColombia() {
             formatter={(value: number, name: string) => {
               const labels: Record<string, string> = {
                 total: "Total nacional",
-                cabecera: "Poblacion urbana",
-                rural: "Poblacion rural",
+                cabecera: "Población urbana",
+                rural: "Población rural",
               };
               if (value === null || value === undefined) return ["—", labels[name]];
               return [formatFull(value), labels[name] || name];
@@ -209,7 +209,7 @@ export default function PoblacionColombia() {
       <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs">
         <div className="flex items-center gap-1.5">
           <div className="h-3 w-3 rounded-sm bg-indigo-500"></div>
-          <span className="text-neutral-700 font-medium">Poblacion total</span>
+          <span className="text-neutral-700 font-medium">Población total</span>
         </div>
         <div className="flex items-center gap-1.5">
           <div className="h-0.5 w-4 border-t-2 border-dashed border-cyan-500"></div>
@@ -224,7 +224,7 @@ export default function PoblacionColombia() {
           </span>
         </div>
         <div className="ml-auto text-neutral-500">
-          Fuente: DANE — Proyecciones de poblacion nacional 2018-2070
+          Fuente: DANE — Proyecciones de población nacional 2018-2070
         </div>
       </div>
     </div>
