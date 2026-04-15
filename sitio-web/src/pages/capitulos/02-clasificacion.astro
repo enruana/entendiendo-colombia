@@ -27,23 +27,25 @@ import TasasHistorico from "../../components/charts/TasasHistorico.tsx";
 </p>
 
 <ul>
-  <li><strong>Ocupados</strong>: tienen algún tipo de trabajo (incluso 1 hora a la semana cuenta)</li>
+  <li><strong>Ocupados</strong>: tienen algún tipo de trabajo (incluso 1 hora remunerada a la semana cuenta)</li>
   <li><strong>Desocupados</strong>: no trabajan pero están buscando activamente</li>
-  <li><strong>Población fuera de la fuerza de trabajo (PEI)</strong>: ni trabajan ni buscan trabajo</li>
+  <li><strong>Población fuera de la fuerza de trabajo (PFFT)</strong>: ni trabajan ni buscan trabajo</li>
 </ul>
 
 <p>
   La tercera categoría es la más grande después de los ocupados, pero casi nadie habla
-  de ella. Son <strong>14.9 millones de colombianos invisibles</strong> en los titulares.
+  de ella. Son <strong>14.5 millones de colombianos invisibles</strong> en los titulares.
 </p>
 
 <ComposicionPoblacion client:load />
 
-<Callout type="key" title="Lo que ves arriba">
-  De los <strong>53.4 millones</strong> de habitantes, unos 15 millones son menores
-  de 15 años. Los otros 38 millones son la PET (Población en Edad de Trabajar).
-  Y de esos 38 millones: 23.2 trabajan, 2.8 buscan trabajo, y
-  <strong>14.9 millones no están en ninguna de las dos categorías</strong>.
+<Callout type="key" title="Lo que ves arriba (febrero 2026)">
+  De los <strong>53.4 millones</strong> de habitantes que proyecta el DANE para 2026,
+  unos <strong>12.4 millones son menores de 15 años</strong>. Los otros
+  <strong>41 millones son la PET</strong> (Población en Edad de Trabajar, 15 años o más).
+  Y de esos 41 millones: <strong>24.1 millones trabajan</strong>,
+  <strong>2.5 millones buscan trabajo</strong>, y
+  <strong>14.5 millones no están en ninguna de las dos categorías</strong>.
 </Callout>
 
 <h2>¿Cómo decide el DANE quién es "ocupado"?</h2>
@@ -115,14 +117,15 @@ import TasasHistorico from "../../components/charts/TasasHistorico.tsx";
   Toda la clasificación de ocupados, desocupados e inactivos viene de una sola
   fuente: la <strong>Gran Encuesta Integrada de Hogares (GEIH)</strong> del DANE.
   Es una encuesta presencial que se aplica todos los meses a una muestra de
-  aproximadamente <strong>23 mil hogares al mes</strong> en todo el país, sumando
-  más de <strong>275 mil hogares al año</strong>.
+  aproximadamente <strong>23 mil hogares al mes</strong>, sumando cerca de
+  <strong>315 mil hogares al año</strong> a nivel nacional.
 </p>
 
 <p>
-  Los encuestadores van casa por casa y le preguntan a cada persona mayor de 10
-  años sobre su situación laboral en la semana anterior. Con base en sus respuestas,
-  el DANE clasifica a cada persona en una de las tres categorías que vimos arriba.
+  Los encuestadores van casa por casa y le preguntan a cada persona de 15 años
+  o más sobre su situación laboral en la semana anterior (la "semana de referencia").
+  Con base en sus respuestas, el DANE clasifica a cada persona en una de las tres
+  categorías que vimos arriba.
 </p>
 
 <Callout type="source" title="Cómo encontrar la GEIH oficialmente">
@@ -175,8 +178,8 @@ import TasasHistorico from "../../components/charts/TasasHistorico.tsx";
 </div>
 
 <p>
-  Fíjate que en el denominador NO están los 14.9 millones de inactivos. Es decir,
-  <strong>la tasa de desempleo ignora completamente</strong> a una de cada tres personas en edad de trabajar.
+  Fíjate que en el denominador NO están los 14.5 millones de inactivos. Es decir,
+  <strong>la tasa de desempleo ignora completamente</strong> a más de una de cada tres personas en edad de trabajar.
 </p>
 
 <p>
@@ -213,9 +216,13 @@ import TasasHistorico from "../../components/charts/TasasHistorico.tsx";
 </p>
 
 <ol>
-  <li><strong>El desempleo (rojo) tocó un pico cerca del 20%</strong> en mayo de 2020, durante el peor mes de la pandemia.</li>
-  <li><strong>La ocupación (verde) cayó dramáticamente</strong> en el mismo período, mientras la participación (morado) también se desplomó.</li>
-  <li><strong>Desde 2023, el desempleo viene bajando</strong>, llegando en 2025 al nivel más bajo desde 2001: un promedio anual del 8.9%.</li>
+  <li><strong>El desempleo (rojo) tocó un pico del 17.4% a nivel nacional</strong>
+    en agosto de 2020, durante el peor momento de la pandemia. En las 13 ciudades
+    principales llegó al 20.2% ese mismo mes.</li>
+  <li><strong>La ocupación (verde) cayó dramáticamente</strong> en el mismo período,
+    mientras la participación (morado) también se desplomó.</li>
+  <li><strong>Desde 2023, el desempleo viene bajando</strong>, llegando en 2025 al
+    nivel más bajo desde 2001: un promedio anual del 8.9%.</li>
 </ol>
 
 <p>
@@ -249,11 +256,18 @@ import TasasHistorico from "../../components/charts/TasasHistorico.tsx";
 <h2>Resumen del capítulo</h2>
 
 <ul>
-  <li>La población se divide en <strong>Ocupados (23.2M)</strong>, <strong>Desocupados (2.8M)</strong> e <strong>Inactivos (14.9M)</strong></li>
-  <li>La <strong>tasa de desempleo solo considera a los primeros dos grupos</strong>, ignorando a los 14.9M inactivos</li>
-  <li>Si alguien deja de buscar trabajo, desaparece del numerador y del denominador: la tasa baja artificialmente</li>
-  <li>Para detectar ese sesgo, hay que mirar la <strong>Tasa Global de Participación</strong> junto con la tasa de desempleo</li>
-  <li>La pandemia llevó el desempleo a un pico del 21% en 2020. En 2025 llegó al mínimo histórico del 8.9%</li>
+  <li>La PET (Población en Edad de Trabajar, 15+ años) se divide en
+    <strong>Ocupados (24.1M)</strong>, <strong>Desocupados (2.5M)</strong> e
+    <strong>Inactivos (14.5M)</strong>. Cifras a febrero 2026.</li>
+  <li>La <strong>tasa de desempleo solo considera a los primeros dos grupos</strong>,
+    ignorando a los 14.5M inactivos</li>
+  <li>Si alguien deja de buscar trabajo, desaparece del numerador y del denominador:
+    la tasa baja artificialmente</li>
+  <li>Para detectar ese sesgo, hay que mirar la
+    <strong>Tasa Global de Participación (TGP)</strong> junto con la tasa de desempleo</li>
+  <li>La pandemia llevó el desempleo a un pico del <strong>17.4%</strong> a nivel
+    nacional en agosto 2020 (20.2% en las 13 ciudades principales). En 2025 llegó
+    al mínimo histórico del <strong>8.9%</strong> anual</li>
 </ul>
 
 <Callout type="key" title="La pregunta incómoda">
