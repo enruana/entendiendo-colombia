@@ -30,7 +30,7 @@ export default function PiramidePoblacional() {
   useEffect(() => {
     Promise.all(
       YEARS.map((year) =>
-        fetch(`/data/piramide_poblacional_${year}.csv`)
+        fetch(`/data/empleo/piramide_poblacional_${year}.csv`)
           .then((r) => r.text())
           .then((csv) => {
             const lines = csv.trim().split("\n");
