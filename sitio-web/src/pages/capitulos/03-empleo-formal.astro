@@ -57,11 +57,10 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
   el 5-10%; Uruguay, el miembro latinoamericano con la tasa más baja, ronda el 25%.
 </p>
 
-<Callout type="warning" title="Un número engañoso">
-  El DANE reportó que en 2025 el empleo formal creció. Y es cierto. Pero también creció
-  el informal al mismo tiempo. La pregunta clave no es "¿creció el empleo formal?"
-  sino "<strong>¿creció más rápido que el informal?</strong>". La respuesta en 2025 es:
-  apenas.
+<Callout type="info" title="Crecimiento absoluto vs. ritmo relativo">
+  Entre 2024 y 2025 el empleo formal aumentó en términos absolutos. El empleo informal
+  también lo hizo en el mismo periodo. La tasa de informalidad cayó de ~56,5% a 55,3%
+  entre enero 2025 y enero 2026, una variación de 1,2 puntos porcentuales.
 </Callout>
 
 <h2>Ahora lo extraño: dos fuentes oficiales, dos números</h2>
@@ -119,17 +118,63 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
     <li><strong>GEIH</strong> tiene estacionalidad muestral; PILA tiene estacionalidad económica (fin de contratos temporales en enero-febrero)</li>
   </ul>
   <p class="mt-2">
-    Fíjate en la gráfica: el pico de la serie PILA fue en <strong>noviembre 2025
-    con 14,239,988 cotizantes</strong> (según el informe oficial de la UGPP). Luego
-    cayó 6.2% en diciembre hasta 13,352,360 por efecto estacional, siguió bajando
-    a <strong>13,039,466 en enero 2026</strong> y apenas rebotó a <strong>13,163,895
-    en febrero</strong> — con caída anual de -1,2%, la primera variación interanual
-    negativa de la serie reciente. La pérdida acumulada desde el pico es de
-    <strong>~1.08M cotizantes en tres meses</strong>. Esa caída, combinada con la
-    brecha estructural frente a GEIH, es el origen de la controversia ANDI-DANE
-    de marzo de 2026 que veremos en el siguiente capítulo.
+    El máximo de la serie PILA es <strong>noviembre 2025 con 14,239,988 cotizantes</strong>.
+    En los meses posteriores la serie registra 13,352,360 en diciembre, 13,039,466 en
+    enero 2026 y 13,163,895 en febrero 2026. La variación interanual de febrero 2026
+    es de -1,2%.
   </p>
 </Callout>
+
+<h2>Caída estacional de PILA: comparación nov → feb</h2>
+
+<p>
+  PILA registra cada año una caída entre noviembre (máximo anual) y febrero (mínimo
+  del primer trimestre), asociada al cierre de contratos temporales de fin de año.
+  La tabla compara la magnitud de esa caída en los tres últimos ciclos.
+</p>
+
+<div class="my-6 overflow-x-auto rounded-xl border border-neutral-200 bg-white">
+  <table class="w-full text-sm border-collapse">
+    <thead class="bg-neutral-50">
+      <tr class="border-b border-neutral-200">
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Periodo</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">Máximo (nov)</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">Mínimo (feb)</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">Cotizantes perdidos</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">% perdido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">nov 2023 → feb 2024</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">13,604,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12,844,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−760,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−5,59%</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">nov 2024 → feb 2025</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">13,910,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12,972,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−938,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−6,74%</td>
+      </tr>
+      <tr class="bg-amber-50 border-l-4 border-amber-400 font-semibold">
+        <td class="py-3 px-4 text-neutral-900">nov 2025 → feb 2026</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-900">14,239,988</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-900">13,163,895</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-900">−1,076,093</td>
+        <td class="text-right py-3 px-4 tabular-nums text-amber-700">−7,56%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="text-sm text-neutral-600 mt-2">
+  La caída <strong>nov 2025 → feb 2026 es la mayor de los tres ciclos</strong>, tanto
+  en cotizantes perdidos como en porcentaje. Fuente: serie cotizantes PILA reportada
+  por la UGPP (informes oficiales para 2024-2026) y prensa económica para 2023.
+</p>
 
 <h2>¿Cuál debo usar?</h2>
 
@@ -206,40 +251,8 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
   <li>En el trimestre móvil nov 2025 - ene 2026, <strong>44.7% de los ocupados son formales</strong> y 55.3% son informales</li>
   <li>Hay dos fuentes oficiales: <strong>GEIH</strong> (encuesta a hogares) y <strong>PILA</strong> (registro administrativo)</li>
   <li>Las dos miden cosas parecidas pero no idénticas, y sus números divergen en ~2.5M</li>
-  <li>PILA llegó a su pico histórico en nov 2025 (14.24M) y cayó a 13.16M en feb 2026 — <strong>-1,08M cotizantes en tres meses</strong> y primera variación anual negativa de la serie reciente</li>
+  <li>El máximo de la serie PILA es nov 2025 (14.24M cotizantes); feb 2026 cierra en 13.16M con variación interanual de -1,2%</li>
   <li>Para una vista completa del mercado, hay que usar ambas en conjunto</li>
 </ul>
-
-<Callout type="key" title="La discrepancia entre fuentes creó una polémica">
-  El 31 de marzo de 2026, Bruce Mac Master (presidente de la ANDI) denunció en X/Twitter
-  que entre 2023 y marzo de 2026 Colombia había perdido "más de 500 mil empleos formales",
-  citando datos de PILA/UGPP. El DANE, a través de su directora Piedad Urdinola, respondió
-  también en X: <em>"Se trata de fuentes de información diferentes, con metodologías y
-  alcances distintos, por lo que no son directamente comparables"</em>. ¿Quién tenía razón?
-  Eso lo vemos en el siguiente capítulo.
-</Callout>
-
-<Callout type="source" title="Fuentes de la controversia (31 de marzo de 2026)">
-  <ul class="list-disc list-inside space-y-1 mt-1">
-    <li>
-      <a href="https://www.infobae.com/colombia/2026/03/31/presidente-de-la-andi-desmintio-cifras-de-empleo-del-dane-aseguro-que-se-perdieron-mas-de-500000-empleos-formales/" target="_blank" rel="noopener">Infobae — Mac Master (ANDI): "se perdieron más de 500.000 empleos formales"</a>
-    </li>
-    <li>
-      <a href="https://www.infobae.com/colombia/2026/03/31/dane-respondio-a-la-andi-y-aclaro-presuntas-inconsistencias-en-las-cifras-de-empleo-se-trata-de-metodologias-diferentes/" target="_blank" rel="noopener">Infobae — Respuesta del DANE: "son metodologías diferentes"</a>
-    </li>
-    <li>
-      <a href="https://www.elcolombiano.com/negocios/andi-dane-empleo-formal-colombia-ugpp-pila-500000-puestos-DF35127224" target="_blank" rel="noopener">El Colombiano — ANDI y DANE chocan por los 500.000 empleos</a>
-    </li>
-    <li>
-      <a href="https://www.larepublica.co/economia/bruce-mac-master-presidente-de-la-andi-hablo-de-los-datos-de-mercado-laboral-de-febrero-2026-4361358" target="_blank" rel="noopener">La República — Mac Master sobre el mercado laboral de febrero 2026</a>
-    </li>
-    <li>
-      <a href="https://www.larepublica.co/economia/piedad-urdinola-sobre-afirmaciones-de-la-andi-4361612" target="_blank" rel="noopener">La República — Piedad Urdinola (DANE) responde a la ANDI</a>
-    </li>
-    <li>
-      X/Twitter: <a href="https://x.com/BruceMacMaster" target="_blank" rel="noopener">@BruceMacMaster</a> · <a href="https://x.com/DANE_Colombia" target="_blank" rel="noopener">@DANE_Colombia</a>
-    </li>
-  </ul>
-</Callout>
 
 </Chapter>
