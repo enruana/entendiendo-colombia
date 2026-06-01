@@ -1,0 +1,279 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import ComposicionPoblacion from "../../../components/temas/empleo/charts/ComposicionPoblacion.tsx";
+import TasasHistorico from "../../../components/temas/empleo/charts/TasasHistorico.tsx";
+---
+
+<Chapter
+  number="02"
+  title="Cómo se divide la población"
+  subtitle="De los 53 millones de colombianos, solo una fracción aparece en las estadísticas de empleo. Aquí está quién, cuántos, y por qué importa."
+  chapterNumber={2}
+  totalChapters={7}
+  prevHref="/temas/empleo/01-demografia"
+  prevTitle="¿Cuántos colombianos hay?"
+  nextHref="/temas/empleo/03-empleo-formal"
+  nextTitle="Empleo formal: dos fuentes, dos verdades"
+  accentColor="violet"
+>
+
+<h2>Tres categorías, tres mundos</h2>
+
+<p>
+  Cada vez que el DANE publica un dato de empleo, está dividiendo a los colombianos
+  en tres grupos mutuamente excluyentes. Todo adulto de 15 años o más entra en
+  exactamente uno de ellos:
+</p>
+
+<ul>
+  <li><strong>Ocupados</strong>: tienen algún tipo de trabajo (incluso 1 hora remunerada a la semana cuenta)</li>
+  <li><strong>Desocupados</strong>: no trabajan pero están buscando activamente</li>
+  <li><strong>Población fuera de la fuerza de trabajo (PFFT)</strong>: ni trabajan ni buscan trabajo</li>
+</ul>
+
+<p>
+  La tercera categoría es la más grande después de los ocupados, pero casi nadie habla
+  de ella. Son <strong>14.5 millones de colombianos invisibles</strong> en los titulares.
+</p>
+
+<ComposicionPoblacion client:load />
+
+<Callout type="key" title="Lo que ves arriba (febrero 2026)">
+  De los <strong>53.4 millones</strong> de habitantes que proyecta el DANE para 2026,
+  unos <strong>12.4 millones son menores de 15 años</strong>. Los otros
+  <strong>41 millones son la PET</strong> (Población en Edad de Trabajar, 15 años o más).
+  Y de esos 41 millones: <strong>24.1 millones trabajan</strong>,
+  <strong>2.5 millones buscan trabajo</strong>, y
+  <strong>14.5 millones no están en ninguna de las dos categorías</strong>.
+</Callout>
+
+<h2>¿Cómo decide el DANE quién es "ocupado"?</h2>
+
+<p>
+  Esta es una pregunta más profunda de lo que parece. La respuesta determina si tú
+  apareces o no en las cifras de empleo. Y la definición que usa el DANE es
+  sorprendentemente flexible: <strong>basta con haber trabajado al menos una hora
+  en la semana de referencia, remunerada o no, para contar como ocupado</strong>.
+</p>
+
+<p>
+  Sí, leíste bien. Una hora a la semana es suficiente. Esto incluye al vendedor
+  ambulante que solo salió un día, al estudiante que dio una clase particular, o a
+  quien ayudó en el negocio familiar sin recibir pago. Todos cuentan como "ocupados"
+  según la definición oficial.
+</p>
+
+<Callout type="info" title="Definición oficial del DANE (cita literal)">
+  <p class="italic">
+    "Población Ocupada (OC): Corresponde a las personas de 15 años y más que,
+    durante el período de referencia: trabajaron por lo menos una hora
+    remunerada en la semana de referencia; no trabajaron la semana de
+    referencia, pero tenían un trabajo o negocio, y trabajaron en la semana de
+    referencia por lo menos una hora sin remuneración."
+  </p>
+  <p class="mt-2 text-xs text-neutral-600">
+    Fuente: <strong>Metodología General Gran Encuesta Integrada de Hogares
+    GEIH</strong>, versión 11, junio 2023, página 6, sección
+    <strong>2.1.4 Marco de referencia → II. Marco conceptual</strong>. Código
+    DANE <code>DSO-GEIH-MET-001</code>.
+    <br />
+    <a href="https://www.dane.gov.co/files/operaciones/GEIH/DSO-GEIH-MET-001-V11.pdf" target="_blank" rel="noopener">
+      Descargar PDF oficial →
+    </a>
+  </p>
+  <p class="mt-3">
+    O sea, las tres condiciones son:
+  </p>
+  <ul class="mt-1 list-disc list-inside space-y-1">
+    <li>Trabajó al menos <strong>1 hora remunerada</strong> en la semana de referencia, <strong>O</strong></li>
+    <li>No trabajó en la semana, pero <strong>tenía un trabajo o negocio</strong>
+      del que estaba ausente temporalmente (vacaciones, licencia, enfermedad), <strong>O</strong></li>
+    <li>Trabajó al menos <strong>1 hora sin remuneración</strong> (típicamente en
+      un negocio familiar)</li>
+  </ul>
+  <p class="mt-2">
+    El mismo documento aclara que este criterio sigue los estándares de la
+    <strong>Organización Internacional del Trabajo (OIT)</strong>: las resoluciones
+    de las Conferencias Internacionales de Estadísticos del Trabajo
+    <strong>CIET 13ª (1982)</strong> para empleo y desempleo, y
+    <strong>CIET 19ª (2013)</strong> para la subutilización de la fuerza de trabajo.
+    Por eso las cifras de Colombia son comparables con las de otros países.
+  </p>
+</Callout>
+
+<Callout type="warning" title="Un cambio importante en 2023">
+  Hasta 2023, el DANE consideraba como Población en Edad de Trabajar (PET) a las
+  personas de <strong>12 años en zonas urbanas y 10 en rurales</strong>. En la
+  versión 11 de la metodología (junio 2023), siguiendo el Convenio 138 de la OIT
+  sobre edad mínima de empleo, esto se actualizó a <strong>15 años en adelante</strong>
+  para todo el país. Por eso los documentos del DANE anteriores a 2023 mencionan
+  edades distintas: la actual es 15+.
+</Callout>
+
+<h2>¿De dónde salen estos datos? La GEIH</h2>
+
+<p>
+  Toda la clasificación de ocupados, desocupados e inactivos viene de una sola
+  fuente: la <strong>Gran Encuesta Integrada de Hogares (GEIH)</strong> del DANE.
+  Es una encuesta presencial que se aplica todos los meses a una muestra de
+  aproximadamente <strong>23 mil hogares al mes</strong>, sumando cerca de
+  <strong>315 mil hogares al año</strong> a nivel nacional.
+</p>
+
+<p>
+  Los encuestadores van casa por casa y le preguntan a cada persona de 15 años
+  o más sobre su situación laboral en la semana anterior (la "semana de referencia").
+  Con base en sus respuestas, el DANE clasifica a cada persona en una de las tres
+  categorías que vimos arriba.
+</p>
+
+<Callout type="source" title="Cómo encontrar la GEIH oficialmente">
+  <p>
+    <strong>Página principal de la encuesta:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo" target="_blank" rel="noopener">
+      dane.gov.co/mercado-laboral/empleo-y-desempleo
+    </a>
+  </p>
+  <p class="mt-2">
+    Allí encuentras: el boletín técnico mensual (PDF con el resumen de cifras),
+    el anexo estadístico (Excel con todas las series), la ficha metodológica
+    (cómo se hace la encuesta), y los microdatos (los datos crudos de cada hogar
+    encuestado, anonimizados).
+  </p>
+  <p class="mt-2">
+    <strong>Documentos oficiales con las definiciones técnicas:</strong>
+  </p>
+  <ul class="mt-1 list-disc list-inside space-y-1">
+    <li>
+      <a href="https://www.dane.gov.co/files/operaciones/GEIH/DSO-GEIH-MET-001-V11.pdf" target="_blank" rel="noopener">
+        Metodología GEIH V11 (PDF)
+      </a>
+      &mdash; documento técnico vigente, junio 2023. Tiene la definición
+      actualizada de ocupado, desocupado y PET
+    </li>
+    <li>
+      <a href="https://www.dane.gov.co/files/investigaciones/fichas/empleo/ficha_metodologica_GEIH-01_V10.pdf" target="_blank" rel="noopener">
+        Ficha metodológica V10 (PDF)
+      </a>
+      &mdash; resumen técnico anterior, 2015 (algunas definiciones desactualizadas)
+    </li>
+    <li>
+      <a href="https://www.dane.gov.co/files/investigaciones/fichas/glosario_GEIH13.pdf" target="_blank" rel="noopener">
+        Glosario GEIH (PDF)
+      </a>
+      &mdash; glosario de términos, 2012 (la edad de la PET ya cambió)
+    </li>
+  </ul>
+</Callout>
+
+<h2>¿Por qué importa la categoría "invisible"?</h2>
+
+<p>
+  La tasa de desempleo que sale en los titulares se calcula así:
+</p>
+
+<div class="my-6 rounded-xl border border-neutral-200 bg-neutral-50 p-5 font-mono text-sm text-center">
+  Tasa de Desempleo = Desocupados ÷ (Ocupados + Desocupados) × 100
+</div>
+
+<p>
+  Fíjate que en el denominador NO están los 14.5 millones de inactivos. Es decir,
+  <strong>la tasa de desempleo ignora completamente</strong> a más de una de cada tres personas en edad de trabajar.
+</p>
+
+<p>
+  Esto tiene una consecuencia sutil pero importante: si una persona desempleada se
+  cansa de buscar y deja de intentar, <strong>sale automáticamente del cálculo de desempleo</strong>.
+  Pasa de "desocupado" (numerador) a "inactivo" (fuera del cálculo). La tasa de desempleo
+  BAJA sin que nadie haya conseguido trabajo.
+</p>
+
+<Callout type="warning" title="El sesgo oculto">
+  Cuando la tasa de desempleo baja, hay dos posibles explicaciones:
+  <ol class="mt-2 list-decimal list-inside space-y-1">
+    <li>Más gente consiguió trabajo (buena noticia)</li>
+    <li>Más gente dejó de buscar (mala noticia)</li>
+  </ol>
+  <p class="mt-2">
+    Para distinguirlas, hay que mirar la <strong>Tasa Global de Participación (TGP)</strong>:
+    si la TGP sube, es buena noticia. Si baja, es sospechoso.
+  </p>
+</Callout>
+
+<h2>25 años de historia en una gráfica</h2>
+
+<p>
+  La siguiente gráfica muestra tres indicadores clave desde 2001 hasta 2026. Son
+  datos mensuales reales del DANE. El shock de COVID-19 en 2020-2021 es visible a
+  simple vista:
+</p>
+
+<TasasHistorico client:load />
+
+<p>
+  Tres cosas que saltan a la vista:
+</p>
+
+<ol>
+  <li><strong>El desempleo (rojo) tocó un pico del 17.4% a nivel nacional</strong>
+    en agosto de 2020, durante el peor momento de la pandemia. En las 13 ciudades
+    principales llegó al 20.2% ese mismo mes.</li>
+  <li><strong>La ocupación (verde) cayó dramáticamente</strong> en el mismo período,
+    mientras la participación (morado) también se desplomó.</li>
+  <li><strong>Desde 2023, el desempleo viene bajando</strong>, llegando en 2025 al
+    nivel más bajo desde 2001: un promedio anual del 8.9%.</li>
+</ol>
+
+<p>
+  Pero esta historia es incompleta. En el capítulo siguiente veremos por qué este
+  "mínimo histórico" generó una polémica entre el DANE y los empresarios: dos fuentes
+  oficiales dan números completamente distintos sobre el mismo fenómeno.
+</p>
+
+<h2>Cómo verificar estos datos tú mismo</h2>
+
+<Callout type="source" title="Boletín mensual GEIH del DANE">
+  <p>Cada mes, el DANE publica un boletín con las cifras del mes anterior.</p>
+  <p class="mt-2">
+    URL: <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo" target="_blank" rel="noopener">
+      dane.gov.co/mercado-laboral/empleo-y-desempleo
+    </a>
+  </p>
+  <p class="mt-2">
+    El boletín trae los valores de TGP, TO, TD mes a mes, desagregados por total
+    nacional, 13 ciudades principales, 23 ciudades, y centros poblados + rural.
+  </p>
+</Callout>
+
+<Callout type="tip" title="El anexo estadístico es oro puro">
+  Cada boletín viene acompañado de un archivo Excel llamado <code>anex-GEIH-[mes].xlsx</code>
+  con las series históricas completas desde 2001. La hoja más valiosa es
+  <strong>"Total nacional"</strong>, que tiene una tabla con 300+ columnas (una por mes)
+  y filas con cada indicador. Si vas a hacer análisis propio, descarga ese archivo.
+</Callout>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>La PET (Población en Edad de Trabajar, 15+ años) se divide en
+    <strong>Ocupados (24.1M)</strong>, <strong>Desocupados (2.5M)</strong> e
+    <strong>Inactivos (14.5M)</strong>. Cifras a febrero 2026.</li>
+  <li>La <strong>tasa de desempleo solo considera a los primeros dos grupos</strong>,
+    ignorando a los 14.5M inactivos</li>
+  <li>Si alguien deja de buscar trabajo, desaparece del numerador y del denominador:
+    la tasa baja artificialmente</li>
+  <li>Para detectar ese sesgo, hay que mirar la
+    <strong>Tasa Global de Participación (TGP)</strong> junto con la tasa de desempleo</li>
+  <li>La pandemia llevó el desempleo a un pico del <strong>17.4%</strong> a nivel
+    nacional en agosto 2020 (20.2% en las 13 ciudades principales). En 2025 llegó
+    al mínimo histórico del <strong>8.9%</strong> anual</li>
+</ul>
+
+<Callout type="key" title="La pregunta incómoda">
+  Si el desempleo está en mínimos históricos, ¿por qué los gremios empresariales dicen
+  que se perdieron 500 mil empleos? ¿Quién tiene razón? La respuesta está en el
+  próximo capítulo.
+</Callout>
+
+</Chapter>

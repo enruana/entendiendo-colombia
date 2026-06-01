@@ -12,11 +12,12 @@ const year = new Date().getFullYear();
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
             </svg>
           </div>
-          <span class="font-bold text-neutral-900">Empleo Colombia</span>
+          <span class="font-bold text-neutral-900">Entendiendo Colombia</span>
         </div>
         <p class="mt-3 text-sm text-neutral-600 max-w-md">
-          Un recorrido paso a paso por el mercado laboral colombiano. Datos
-          abiertos, metodología transparente, explicaciones para todo el público.
+          Análisis temáticos de Colombia con datos abiertos, metodología transparente
+          y explicaciones para todo el público. Cada tema es un recorrido paso a paso
+          por una dimensión del país.
         </p>
       </div>
 
@@ -25,10 +26,11 @@ const year = new Date().getFullYear();
           Navegar
         </h3>
         <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="/empezar-aqui" class="text-neutral-600 hover:text-indigo-600">Empezar aquí</a></li>
-          <li><a href="/#capitulos" class="text-neutral-600 hover:text-indigo-600">Capítulos</a></li>
-          <li><a href="/glosario" class="text-neutral-600 hover:text-indigo-600">Glosario</a></li>
-          <li><a href="/datos" class="text-neutral-600 hover:text-indigo-600">Descargar datos</a></li>
+          <li><a href="/" class="text-neutral-600 hover:text-indigo-600">Inicio (todos los temas)</a></li>
+          <li><a href="/temas/empleo" class="text-neutral-600 hover:text-indigo-600">Tema: Empleo</a></li>
+          <li><a href="/temas/empleo/empezar-aqui" class="text-neutral-600 hover:text-indigo-600">Empezar aquí (empleo)</a></li>
+          <li><a href="/temas/empleo/glosario" class="text-neutral-600 hover:text-indigo-600">Glosario</a></li>
+          <li><a href="/temas/empleo/datos" class="text-neutral-600 hover:text-indigo-600">Descargar datos</a></li>
         </ul>
       </div>
 
@@ -46,7 +48,7 @@ const year = new Date().getFullYear();
     </div>
 
     <div class="mt-10 sm:mt-12 flex flex-col gap-2 border-t border-neutral-200 pt-6 sm:pt-8 text-xs text-neutral-500 sm:flex-row sm:justify-between">
-      <p>&copy; {year} Empleo Colombia. Contenido bajo Creative Commons BY 4.0.</p>
+      <p>&copy; {year} Entendiendo Colombia. Contenido bajo Creative Commons BY 4.0.</p>
       <p>Los datos son propiedad de sus fuentes originales (DANE, UGPP, etc).</p>
     </div>
   </div>

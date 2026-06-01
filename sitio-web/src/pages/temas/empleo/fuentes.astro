@@ -1,0 +1,149 @@
+---
+import Base from "../../../layouts/Base.astro";
+
+const sources = [
+  {
+    category: "Fuentes oficiales primarias",
+    items: [
+      {
+        name: "DANE - Gran Encuesta Integrada de Hogares (GEIH)",
+        description: "La fuente oficial de todas las estadisticas de empleo en Colombia. Encuesta mensual a ~315 mil hogares al ano.",
+        url: "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo",
+        what: "Empleo, desempleo, informalidad, ingresos",
+      },
+      {
+        name: "DANE - Proyecciones de poblacion",
+        description: "Modelos matematicos de poblacion total, por edad, sexo y territorio.",
+        url: "https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion",
+        what: "Demografia (2018-2070)",
+      },
+      {
+        name: "DANE - Estadisticas Vitales (EEVV)",
+        description: "Registro de nacimientos y defunciones.",
+        url: "https://www.dane.gov.co/index.php/estadisticas-por-tema/salud/nacimientos-y-defunciones",
+        what: "Natalidad, mortalidad",
+      },
+      {
+        name: "UGPP - Tablero de Control de Cotizaciones",
+        description: "Registro administrativo de cotizantes al sistema de seguridad social (PILA).",
+        url: "https://www.ugpp.gov.co/Evolucion-cotizaciones-Sistema-Proteccion-Social",
+        what: "Empleo formal (cotizaciones reales)",
+      },
+      {
+        name: "Ministerio de Salud - PILA",
+        description: "Pagina oficial del sistema PILA con marco normativo y anexos tecnicos.",
+        url: "https://www.minsalud.gov.co/proteccionsocial/Paginas/pila.aspx",
+        what: "Seguridad social",
+      },
+      {
+        name: "Banco de la Republica",
+        description: "Series estadisticas y analisis del mercado laboral.",
+        url: "https://www.banrep.gov.co/es/estadisticas",
+        what: "Analisis macroeconomico",
+      },
+    ],
+  },
+  {
+    category: "Estandares internacionales",
+    items: [
+      {
+        name: "OIT - 17a CIET (2003)",
+        description: "Las directrices internacionales sobre empleo informal que usa Colombia.",
+        url: "https://webapps.ilo.org/public/spanish/bureau/stat/download/guidelines/defempl.pdf",
+        what: "Metodologia empleo informal",
+      },
+      {
+        name: "OCDE - Panorama de la Educacion 2025",
+        description: "Comparacion internacional donde Colombia aparece como la unica economia OCDE con 'mas educacion = mas desempleo'.",
+        url: "https://www.oecd.org/en/publications/education-at-a-glance-2025_851e7a7f-en.html",
+        what: "Comparacion internacional",
+      },
+    ],
+  },
+  {
+    category: "Centros de analisis y gremios",
+    items: [
+      {
+        name: "ANDI",
+        description: "Asociacion Nacional de Empresarios. Protagonista de la controversia de marzo 2026.",
+        url: "https://www.andi.com.co",
+        what: "Posicion empresarial",
+      },
+      {
+        name: "Fedesarrollo",
+        description: "Centro de analisis economico independiente.",
+        url: "https://fedesarrollo.org.co",
+        what: "Analisis economico",
+      },
+      {
+        name: "ANIF",
+        description: "Centro de Estudios Economicos.",
+        url: "https://www.anif.com.co",
+        what: "Analisis financiero-economico",
+      },
+      {
+        name: "ENS (Escuela Nacional Sindical)",
+        description: "Centro de investigacion sobre trabajo decente y sindicalismo.",
+        url: "https://ail.ens.org.co",
+        what: "Analisis laboral desde perspectiva sindical",
+      },
+      {
+        name: "ONU Mujeres Colombia",
+        description: "Co-publica con el DANE el estudio 'Mujeres y Hombres: Brechas de Genero'.",
+        url: "https://colombia.unwomen.org",
+        what: "Brechas de genero en el trabajo",
+      },
+    ],
+  },
+];
+---
+
+<Base title="Fuentes">
+  <section class="border-b border-neutral-200 mesh-gradient-hero">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20 text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-700 backdrop-blur">
+        Transparencia
+      </div>
+      <h1 class="mt-5 text-4xl sm:text-5xl font-extrabold tracking-tighter text-neutral-900">
+        Fuentes
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+        Todo en este sitio está respaldado por fuentes oficiales y públicas.
+        Aquí están todas las que usamos, con links directos.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 space-y-12 sm:space-y-14">
+    {sources.map((group) => (
+      <div>
+        <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">{group.category}</h2>
+        <div class="mt-5 sm:mt-6 grid gap-4">
+          {group.items.map((item) => (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group block rounded-xl border border-neutral-200 bg-white p-4 sm:p-5 hover:border-indigo-300 hover:shadow-sm transition-all"
+            >
+              <div class="flex items-start justify-between gap-3 sm:gap-4">
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-sm sm:text-base font-bold text-neutral-900 group-hover:text-indigo-700 transition-colors">
+                    {item.name}
+                  </h3>
+                  <p class="mt-1.5 text-xs sm:text-sm text-neutral-600 leading-relaxed">{item.description}</p>
+                  <div class="mt-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                    {item.what}
+                  </div>
+                </div>
+                <svg class="h-4 w-4 text-neutral-400 group-hover:text-indigo-600 transition-colors flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+</Base>

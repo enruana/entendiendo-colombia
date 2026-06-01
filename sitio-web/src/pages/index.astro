@@ -1,315 +1,208 @@
 ---
 import Base from "../layouts/Base.astro";
-import StatCard from "../components/ui/StatCard.astro";
-import ChapterCard from "../components/ui/ChapterCard.astro";
+import { TEMAS } from "../lib/temas";
 
-const chapters = [
+// Static class maps - Tailwind purga clases dinamicas, asi que las listamos aqui.
+const gradients: Record<string, string> = {
+  indigo: "from-indigo-500 to-indigo-600",
+  violet: "from-violet-500 to-violet-600",
+  pink: "from-pink-500 to-pink-600",
+  cyan: "from-cyan-500 to-cyan-600",
+  amber: "from-amber-500 to-amber-600",
+  emerald: "from-emerald-500 to-emerald-600",
+  rose: "from-rose-500 to-rose-600",
+  sky: "from-sky-500 to-sky-600",
+};
+const bgTints: Record<string, string> = {
+  indigo: "hover:bg-indigo-50/40",
+  violet: "hover:bg-violet-50/40",
+  pink: "hover:bg-pink-50/40",
+  cyan: "hover:bg-cyan-50/40",
+  amber: "hover:bg-amber-50/40",
+  emerald: "hover:bg-emerald-50/40",
+  rose: "hover:bg-rose-50/40",
+  sky: "hover:bg-sky-50/40",
+};
+
+const upcoming = [
   {
-    number: "01",
-    title: "Cuantos colombianos hay",
-    description: "Poblacion, nacimientos, muertes y migracion. El contexto demografico que todo lo explica.",
-    href: "/capitulos/01-demografia",
-    icon: "🌎",
-    color: "indigo" as const,
-    available: true,
+    nombre: "Educación",
+    tagline: "Cobertura, calidad y abandono escolar — desde primera infancia hasta posgrado",
+    icono: "🎓",
+    color: "amber" as const,
   },
   {
-    number: "02",
-    title: "Como se divide la poblacion",
-    description: "Quienes trabajan, quienes buscan trabajo, y los 14.9 millones que no aparecen en ningun titular.",
-    href: "/capitulos/02-clasificacion",
-    icon: "📊",
-    color: "violet" as const,
-    available: true,
-  },
-  {
-    number: "03",
-    title: "Empleo formal: dos fuentes, dos verdades",
-    description: "GEIH y PILA dan numeros distintos. Entendemos por que y cual usar cuando.",
-    href: "/capitulos/03-empleo-formal",
-    icon: "💼",
-    color: "cyan" as const,
-    available: true,
-  },
-  {
-    number: "04",
-    title: "Empleo informal",
-    description: "13 millones de colombianos trabajan sin proteccion social. Por que y quienes son.",
-    href: "/capitulos/04-empleo-informal",
-    icon: "🏗️",
+    nombre: "Seguridad",
+    tagline: "Violencia, percepción de seguridad y dinámicas territoriales",
+    icono: "🛡️",
     color: "rose" as const,
-    available: true,
   },
   {
-    number: "05",
-    title: "Desempleo",
-    description: "La tasa esta en minimos historicos. Pero es enganosa. Por que y como leerla.",
-    href: "/capitulos/05-desempleo",
-    icon: "📉",
-    color: "pink" as const,
-    available: true,
-  },
-  {
-    number: "06",
-    title: "Los invisibles: la PEI",
-    description: "14.9 millones de personas que no trabajan ni buscan trabajo. La mayoria son mujeres. Por que.",
-    href: "/capitulos/06-poblacion-inactiva",
-    icon: "👥",
-    color: "sky" as const,
-    available: true,
-  },
-  {
-    number: "07",
-    title: "Calidad del empleo",
-    description: "Subempleo, brechas de genero, NINIs, working poor. Mas alla del numero agregado.",
-    href: "/capitulos/07-calidad-empleo",
-    icon: "⭐",
+    nombre: "Salud",
+    tagline: "Acceso, cobertura, brechas regionales y resultados",
+    icono: "🩺",
     color: "emerald" as const,
-    available: true,
   },
 ];
 ---
 
-<Base title="Empleo Colombia">
+<Base title="Entendiendo Colombia">
   <!-- HERO -->
   <section class="relative overflow-hidden mesh-gradient-hero">
     <div class="relative mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-28 md:pb-32">
-      <!-- Badge -->
       <div class="flex justify-center">
         <div class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-white/80 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-medium text-indigo-700 shadow-sm backdrop-blur text-center">
           <span class="flex h-1.5 w-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>
-          Datos oficiales DANE · UGPP · BanRep
+          Datos abiertos · Metodología transparente · Sin jerga
         </div>
       </div>
 
-      <!-- Title -->
       <h1 class="mt-6 sm:mt-8 text-center text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] text-neutral-900">
-        ¿Cuántos colombianos<br />
-        <span class="gradient-text">trabajan realmente?</span>
+        Entendiendo<br />
+        <span class="gradient-text">Colombia</span>
       </h1>
 
-      <!-- Subtitle -->
       <p class="mx-auto mt-5 sm:mt-6 max-w-2xl text-center text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-2">
-        Depende de a quién le preguntes. Un recorrido paso a paso por las cifras,
-        las fuentes y la metodología del mercado laboral colombiano.
+        Análisis temáticos de los grandes problemas del país. Cada tema es un
+        recorrido paso a paso con datos oficiales y gráficas interactivas.
       </p>
 
-      <!-- CTAs -->
-      <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 px-4 sm:px-0">
-        <a href="/empezar-aqui" class="btn-primary justify-center">
-          Empezar el recorrido
+      <div class="mt-8 sm:mt-10 flex justify-center px-4 sm:px-0">
+        <a href="#temas" class="btn-primary justify-center">
+          Ver los temas
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </a>
-        <a href="#capitulos" class="btn-secondary justify-center">
-          Ver los capítulos
-        </a>
-      </div>
-
-      <!-- Stats grid -->
-      <div class="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-        <StatCard
-          value="53.4M"
-          label="Habitantes en Colombia"
-          sublabel="Proyección DANE 2026"
-          accent="indigo"
-        />
-        <StatCard
-          value="24.1M"
-          label="Personas con trabajo"
-          sublabel="GEIH febrero 2026"
-          accent="violet"
-        />
-        <StatCard
-          value="55.3%"
-          label="En la informalidad"
-          sublabel="Trimestre nov 2025 - ene 2026"
-          accent="pink"
-        />
-        <StatCard
-          value="14.5M"
-          label="Población invisible"
-          sublabel="Ni trabaja ni busca (feb 2026)"
-          accent="cyan"
-        />
       </div>
     </div>
-
-    <!-- Bottom fade -->
     <div class="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
   </section>
 
-  <!-- INTRO / PROBLEMA -->
-  <section class="relative mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+  <!-- TEMAS -->
+  <section id="temas" class="relative mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
     <div class="text-center">
       <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
-        El problema
+        Temas
       </div>
       <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
-        Los titulares no te cuentan<br class="hidden sm:inline" />
-        <span class="gradient-text-subtle">la historia completa</span>
+        Por dónde empezar
       </h2>
+      <p class="mt-4 text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+        Empezamos con empleo. Vamos sumando temas con la misma metodología:
+        datos abiertos, fuentes verificables, explicaciones claras.
+      </p>
     </div>
 
-    <div class="mt-10 sm:mt-12 md:mt-16 grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-      <div>
-        <div class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-indigo-600">
-          Titular oficial
-        </div>
-        <blockquote class="mt-3 text-xl sm:text-2xl font-bold text-neutral-900 leading-tight">
-          "Colombia alcanza tasa de desempleo más baja desde 2001: 8.9%"
-        </blockquote>
-        <p class="mt-4 text-neutral-600 leading-relaxed">
-          Es la noticia que sale en todos los medios. Y es cierta. Pero si paras ahí,
-          te quedas con una versión muy parcial de la realidad.
-        </p>
-      </div>
-
-      <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 sm:p-8">
-        <div class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-pink-600">
-          Lo que no te cuentan
-        </div>
-        <ul class="mt-3 space-y-3 text-neutral-700 text-sm sm:text-base">
-          <li class="flex gap-3">
-            <span class="mt-1 text-pink-500">▸</span>
-            <span><strong class="text-neutral-900">48.9%</strong> de los trabajadores gana menos del salario mínimo</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 text-pink-500">▸</span>
-            <span><strong class="text-neutral-900">14.9 millones</strong> no aparecen ni como empleados ni como desempleados</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 text-pink-500">▸</span>
-            <span><strong class="text-neutral-900">La ANDI dice</strong> que se perdieron 500 mil empleos formales. El DANE dice que no.</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 text-pink-500">▸</span>
-            <span><strong class="text-neutral-900">1 hora de trabajo</strong> a la semana te hace "ocupado" en las estadísticas</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="mt-12 sm:mt-16 text-center text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
-      Este sitio te explica <strong class="text-neutral-900">quién reporta los datos</strong>,
-      <strong class="text-neutral-900">cómo los miden</strong>, y <strong class="text-neutral-900">por qué
-      dos fuentes oficiales pueden dar números distintos</strong>. Paso a paso, sin jerga.
-    </p>
-  </section>
-
-  <!-- CAPITULOS -->
-  <section id="capitulos" class="relative bg-neutral-50 border-y border-neutral-200">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
-      <div class="text-center">
-        <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
-          El recorrido
-        </div>
-        <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
-          8 capítulos para entenderlo todo
-        </h2>
-        <p class="mt-4 text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
-          Cada capítulo explica un aspecto distinto del mercado laboral colombiano.
-          Puedes empezar desde el principio o saltar al que te interese.
-        </p>
-      </div>
-
-      <div class="mt-10 sm:mt-12 md:mt-14 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {chapters.map((ch) => <ChapterCard {...ch} />)}
-      </div>
-
-      <div class="mt-10 sm:mt-12 text-center">
-        <a href="/empezar-aqui" class="btn-primary justify-center">
-          Empezar por el principio
-          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
+    <div class="mt-10 sm:mt-12 md:mt-14 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {TEMAS.map((t) => (
+        <a
+          href={`/temas/${t.slug}`}
+          class:list={[
+            "group relative flex flex-col gap-4 rounded-2xl border border-neutral-200 bg-white p-6 sm:p-7 transition-all",
+            "hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer",
+            bgTints[t.color],
+          ]}
+        >
+          <div class="flex items-start justify-between gap-4">
+            <div class:list={[
+              "flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br shadow-sm",
+              gradients[t.color],
+            ]}>
+              <span class="text-2xl">{t.icono}</span>
+            </div>
+            <div class="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400">
+              {t.capitulos.length} caps
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-neutral-900 leading-snug">{t.nombre}</h3>
+            <p class="mt-2 text-sm text-neutral-600 leading-relaxed">{t.tagline}</p>
+          </div>
+          <div class="flex items-center gap-1 text-sm font-semibold text-indigo-600 group-hover:gap-2 transition-all">
+            Explorar tema
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </div>
         </a>
-      </div>
+      ))}
+
+      {upcoming.map((t) => (
+        <div class="relative flex flex-col gap-4 rounded-2xl border border-dashed border-neutral-200 bg-neutral-50/50 p-6 sm:p-7 opacity-70">
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-neutral-200">
+              <span class="text-2xl grayscale">{t.icono}</span>
+            </div>
+            <div class="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400">
+              Pronto
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-neutral-700 leading-snug">{t.nombre}</h3>
+            <p class="mt-2 text-sm text-neutral-500 leading-relaxed">{t.tagline}</p>
+          </div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-neutral-400">
+            En investigación
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 
   <!-- METODOLOGIA / QUE HACE DIFERENTE -->
-  <section class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
-    <div class="text-center">
-      <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
-        Qué hace diferente este sitio
-      </div>
-      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
-        No solo datos.<br />
-        <span class="gradient-text-subtle">El cómo y el por qué.</span>
-      </h2>
-    </div>
-
-    <div class="mt-10 sm:mt-12 md:mt-16 grid gap-5 sm:gap-6 md:grid-cols-3">
-      <div class="card">
-        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-50">
-          <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-          </svg>
+  <section class="bg-neutral-50 border-y border-neutral-200">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+      <div class="text-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          Cómo trabajamos
         </div>
-        <h3 class="mt-4 text-lg font-bold text-neutral-900">Fuentes oficiales</h3>
-        <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
-          Todos los datos vienen del DANE, UGPP, Banco de la República y OIT.
-          Cada cifra tiene un link directo a la fuente primaria.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-50">
-          <svg class="h-5 w-5 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
-          </svg>
-        </div>
-        <h3 class="mt-4 text-lg font-bold text-neutral-900">Gráficas interactivas</h3>
-        <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
-          Cada dato tiene su gráfica. Pasa el mouse, filtra, explora. Los datos
-          hablan más cuando los puedes tocar.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-pink-50">
-          <svg class="h-5 w-5 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-          </svg>
-        </div>
-        <h3 class="mt-4 text-lg font-bold text-neutral-900">Metodología transparente</h3>
-        <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
-          Te explicamos cómo se mide cada cosa, por qué algunas fuentes se contradicen,
-          y cómo verificarlo tú mismo en las páginas oficiales.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
-    <div class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-indigo-600 via-violet-600 to-pink-500 p-8 sm:p-12 md:p-16 text-center shadow-xl">
-      <div class="relative">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
-          ¿Listo para empezar?
+        <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+          Tres principios<br class="hidden sm:inline" />
+          <span class="gradient-text-subtle">para cada análisis</span>
         </h2>
-        <p class="mx-auto mt-4 max-w-xl text-base sm:text-lg text-white/90">
-          Te tomará unos 30 minutos recorrer los 8 capítulos. Al final vas a
-          entender más sobre el mercado laboral colombiano que la mayoría.
-        </p>
-        <div class="mt-8">
-          <a
-            href="/empezar-aqui"
-            class="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-base font-semibold text-indigo-700 shadow-lg hover:bg-neutral-50 hover:shadow-xl transition-all hover:-translate-y-0.5"
-          >
-            Empezar el recorrido
-            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </a>
-        </div>
       </div>
 
-      <!-- Decorative dots -->
-      <div class="absolute top-8 right-8 h-20 w-20 rounded-full bg-white/10 blur-2xl"></div>
-      <div class="absolute bottom-8 left-8 h-24 w-24 rounded-full bg-white/10 blur-2xl"></div>
+      <div class="mt-10 sm:mt-12 md:mt-16 grid gap-5 sm:gap-6 md:grid-cols-3">
+        <div class="card">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-50">
+            <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+            </svg>
+          </div>
+          <h3 class="mt-4 text-lg font-bold text-neutral-900">Fuentes oficiales</h3>
+          <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
+            DANE, UGPP, Banco de la República, ministerios. Cada cifra tiene su
+            link directo a la fuente primaria, sin intermediarios.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-50">
+            <svg class="h-5 w-5 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+            </svg>
+          </div>
+          <h3 class="mt-4 text-lg font-bold text-neutral-900">Gráficas interactivas</h3>
+          <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
+            Cada dato tiene su gráfica. Pasa el mouse, filtra, explora. Los datos
+            hablan más cuando los puedes tocar.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-pink-50">
+            <svg class="h-5 w-5 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <h3 class="mt-4 text-lg font-bold text-neutral-900">Metodología transparente</h3>
+          <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
+            Te explicamos cómo se mide cada cosa, por qué algunas fuentes se
+            contradicen, y cómo verificarlo tú mismo.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 </Base>

@@ -1,0 +1,202 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import PEIEvolucion from "../../../components/temas/empleo/charts/PEIEvolucion.tsx";
+import TrampaEstadistica from "../../../components/temas/empleo/charts/TrampaEstadistica.tsx";
+---
+
+<Chapter
+  number="06"
+  title="Los invisibles: la Poblacion Inactiva"
+  subtitle="14.9 millones de colombianos no aparecen en ningun titular de empleo. Ni estan ocupados ni estan buscando. Aqui entiendes quienes son, por que importan, y la trampa estadistica que crean."
+  chapterNumber={6}
+  totalChapters={7}
+  prevHref="/temas/empleo/05-desempleo"
+  prevTitle="Desempleo"
+  nextHref="/temas/empleo/07-calidad-empleo"
+  nextTitle="Calidad del empleo"
+  accentColor="sky"
+>
+
+<h2>El tercer grupo que nadie menciona</h2>
+
+<p>
+  Ya vimos que la Poblacion en Edad de Trabajar (PET) se divide en tres categorias
+  mutuamente excluyentes. En los capitulos anteriores nos concentramos en las dos
+  primeras: ocupados y desocupados. En este capitulo nos dedicamos a la tercera:
+  la <strong>Poblacion Economicamente Inactiva (PEI)</strong>.
+</p>
+
+<div class="my-6 rounded-xl border border-sky-200 bg-sky-50/40 p-5">
+  <div class="text-sm font-bold text-sky-900">Definicion oficial del DANE</div>
+  <p class="mt-2 text-sm text-sky-900/80 leading-relaxed">
+    Son personas de 15 anos o mas que, en la semana de referencia, <strong>no trabajaron
+    Y no buscaron trabajo</strong>. En 2026 son aproximadamente <strong>14.9 millones
+    de colombianos</strong>.
+  </p>
+</div>
+
+<p>
+  El DANE actualmente prefiere el termino "poblacion fuera de la fuerza de trabajo"
+  sobre "economicamente inactiva", porque reconoce que muchas de estas personas SI
+  trabajan (en el hogar, cuidando familiares). Solo que su trabajo no es remunerado
+  ni contabilizado como "empleo".
+</p>
+
+<h2>Quienes son los 14.9 millones</h2>
+
+<p>
+  La PEI no es un grupo homogeneo. El DANE la divide en tres subcategorias:
+</p>
+
+<PEIEvolucion client:load />
+
+<div class="my-6 grid md:grid-cols-3 gap-4">
+  <div class="rounded-xl border border-pink-200 bg-pink-50/40 p-5">
+    <div class="text-xs font-semibold uppercase tracking-wider text-pink-700">55.7%</div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">Oficios del hogar</div>
+    <div class="mt-1 text-2xl font-extrabold text-pink-900 font-mono">8.3M</div>
+    <p class="mt-2 text-xs text-pink-900/70">
+      Personas dedicadas al cuidado de la casa, hijos, adultos mayores. El 94% son mujeres.
+    </p>
+  </div>
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-semibold uppercase tracking-wider text-cyan-700">18.5%</div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">Estudiando</div>
+    <div class="mt-1 text-2xl font-extrabold text-cyan-900 font-mono">2.8M</div>
+    <p class="mt-2 text-xs text-cyan-900/70">
+      Jovenes y adultos en universidades, colegios y formacion tecnica.
+    </p>
+  </div>
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="text-xs font-semibold uppercase tracking-wider text-violet-700">25.9%</div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">Otros</div>
+    <div class="mt-1 text-2xl font-extrabold text-violet-900 font-mono">3.9M</div>
+    <p class="mt-2 text-xs text-violet-900/70">
+      Pensionados, jubilados, incapacitados, <strong>y desalentados</strong> (los que se rindieron).
+    </p>
+  </div>
+</div>
+
+<h2>Por que 7 de cada 10 inactivos son mujeres</h2>
+
+<p>
+  La PEI tiene una dominancia femenina abrumadora: aproximadamente <strong>69% son
+  mujeres</strong>. Por cada hombre inactivo, hay 2.2 mujeres inactivas. La razon no es
+  que las mujeres sean "perezosas". Es que estan haciendo un trabajo que no se cuenta:
+</p>
+
+<div class="my-6 grid grid-cols-2 gap-4 text-center">
+  <div class="rounded-xl border border-pink-200 bg-pink-50/30 p-5">
+    <div class="text-xs font-semibold uppercase tracking-wider text-pink-700">Mujeres</div>
+    <div class="mt-2 text-3xl font-extrabold text-pink-900 font-mono">7h 44m</div>
+    <div class="mt-1 text-xs text-pink-700">de trabajo no remunerado al dia</div>
+  </div>
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/30 p-5">
+    <div class="text-xs font-semibold uppercase tracking-wider text-cyan-700">Hombres</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">3h 06m</div>
+    <div class="mt-1 text-xs text-cyan-700">de trabajo no remunerado al dia</div>
+  </div>
+</div>
+
+<p>
+  Las mujeres colombianas dedican mas del <strong>doble de tiempo</strong> al trabajo
+  de cuidado no remunerado que los hombres. Este trabajo sostiene la economia (sin el,
+  el mercado laboral formal colapsaria), pero no se paga ni se cuenta en el PIB.
+</p>
+
+<Callout type="key" title="La paradoja">
+  Si las mujeres en oficios del hogar cobraran un salario minimo por su trabajo, el
+  sector "oficios del hogar" seria el empleador mas grande del pais. Mas grande que
+  comercio, mas grande que agricultura. El trabajo de cuidado existe, tiene valor
+  economico, pero es <strong>invisible</strong> en las estadisticas oficiales.
+</Callout>
+
+<h2>La trampa estadistica</h2>
+
+<p>
+  Aqui es donde la PEI se vuelve critica para entender las cifras de desempleo.
+  Recuerdas que la tasa de desempleo solo mide a quienes buscan trabajo activamente?
+  Bueno, aqui esta la consecuencia:
+</p>
+
+<TrampaEstadistica client:load />
+
+<p>
+  Las dos lineas son indicadores complementarios. La <strong>TD (rojo)</strong> es el
+  desempleo. La <strong>TGP (azul)</strong> es la Tasa Global de Participacion:
+  de cada 100 personas de 15+ anos, cuantas estan activas en el mercado laboral
+  (trabajando o buscando).
+</p>
+
+<p>
+  Si el desempleo baja <strong>porque la gente consigue trabajo</strong>, la TGP
+  deberia mantenerse o subir. Si el desempleo baja <strong>porque la gente deja de
+  buscar</strong>, la TGP tambien baja.
+</p>
+
+<Callout type="warning" title="Lo que ves en la grafica">
+  En los ultimos trimestres de 2025 y principios de 2026, AMBAS indicadores bajan
+  juntos. Eso es una señal de alerta: al menos parte del "progreso" en desempleo
+  podria explicarse por personas que se rindieron y dejaron de buscar, no por
+  personas que consiguieron empleo.
+</Callout>
+
+<h2>El caso extraño de agosto 2025</h2>
+
+<p>
+  En agosto de 2025, la prensa reporto un dato particularmente inquietante:
+  <strong>de las 422 mil personas que salieron del mercado laboral</strong>
+  (dejaron de buscar trabajo), <strong>416 mil fueron mujeres</strong>. Eso es el
+  98.6%. Un porcentaje estadisticamente atipico.
+</p>
+
+<p>
+  Economistas como German Machado calcularon que si esas 416 mil mujeres se
+  hubieran quedado buscando, la tasa de desempleo de agosto 2025 seria del 10%
+  en lugar del 8.6% oficial. Una diferencia de 1.4 puntos porcentuales que
+  provendria de desaliento, no de creacion de empleo.
+</p>
+
+<h2>Los desalentados: el angulo muerto total</h2>
+
+<p>
+  Dentro de la categoria "Otros", el DANE incluye (sin desagregar) a las personas
+  que <strong>quieren trabajar pero dejaron de buscar</strong> porque "no hay trabajo",
+  "no estan calificados", "estan cansadas", o "la edad les impide". Se llaman
+  <strong>desalentados</strong>.
+</p>
+
+<p>
+  El DANE no publica la cifra exacta de desalentados en sus boletines mensuales.
+  Los mezcla con pensionados, jubilados e incapacitados en la categoria "Otros".
+  Los calculos no oficiales estiman que hay <strong>al menos 1.3 millones</strong>
+  de desalentados en Colombia, y la cifra crece.
+</p>
+
+<Callout type="info" title="Por que Colombia tiene tantos desalentados">
+  A diferencia de paises con seguro de desempleo, en Colombia cuando pierdes tu
+  trabajo no hay ningun beneficio automatico que te ayude a seguir buscando. La
+  presion economica es inmediata. Resultado: la gente acepta cualquier trabajo
+  informal (y pasa a ser "ocupado"), o se rinde por completo (y pasa a "inactivo").
+  Muy pocos se mantienen en "desocupado" formal por mucho tiempo.
+</Callout>
+
+<h2>Resumen del capitulo</h2>
+
+<ul>
+  <li>La <strong>PEI</strong> son las 14.9 millones de personas que no trabajan ni buscan trabajo</li>
+  <li>Se dividen en: <strong>oficios del hogar (8.3M, 56%)</strong>, <strong>estudiando (2.8M, 19%)</strong>, y <strong>otros (3.9M, 26%)</strong></li>
+  <li>El <strong>69% son mujeres</strong>, principalmente por el trabajo de cuidado no remunerado</li>
+  <li>Si el desempleo baja mientras la participacion tambien baja, puede ser una senal de <strong>desaliento</strong></li>
+  <li>Los desalentados son <strong>al menos 1.3 millones</strong> y no aparecen en los titulares</li>
+  <li>Sin seguro de desempleo, el desempleo formal se "escapa" hacia la informalidad o la inactividad</li>
+</ul>
+
+<Callout type="key" title="El ultimo capitulo">
+  Ya sabes quien trabaja, quien busca, quien esta fuera, y por que los titulares son
+  incompletos. El ultimo capitulo cierra el circulo con una pregunta que no hemos
+  tocado: <strong>que tan bueno es el empleo que si existe?</strong>
+</Callout>
+
+</Chapter>

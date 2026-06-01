@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "colombia-empleo",
+  "name": "entendiendo-colombia",
   "compatibility_date": "2025-04-01",
   "assets": {
     "directory": "./sitio-web/dist",

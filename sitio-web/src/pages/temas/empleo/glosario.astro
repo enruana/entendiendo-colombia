@@ -1,0 +1,113 @@
+---
+import Base from "../../../layouts/Base.astro";
+
+const terms = [
+  {
+    term: "DANE",
+    definition: "Departamento Administrativo Nacional de Estadistica. La entidad del gobierno colombiano encargada de producir las estadisticas oficiales del pais. Es como el 'contador oficial' de Colombia: cuenta cuantos somos, cuantos nacen, cuantos mueren, cuantos trabajan, etc.",
+  },
+  {
+    term: "GEIH",
+    definition: "Gran Encuesta Integrada de Hogares. Es la encuesta que el DANE hace continuamente a ~315 mil hogares al ano para medir empleo, desempleo, ingresos y pobreza. Es LA fuente unica de clasificacion laboral en Colombia.",
+  },
+  {
+    term: "PILA",
+    definition: "Planilla Integrada de Liquidacion de Aportes. Es el sistema electronico por donde los empleadores pagan mensualmente los aportes de seguridad social de sus trabajadores. A diferencia de la GEIH, PILA registra pagos reales, no autorreportes.",
+  },
+  {
+    term: "UGPP",
+    definition: "Unidad de Gestion Pensional y Parafiscales. Entidad del Ministerio de Hacienda que administra los datos PILA y publica estadisticas mensuales de cotizantes.",
+  },
+  {
+    term: "PET",
+    definition: "Poblacion en Edad de Trabajar. Todas las personas de 15 anos o mas. Es el 'universo' del mercado laboral: todas las personas que PODRIAN trabajar. Que lo hagan o no es otra cosa.",
+  },
+  {
+    term: "PEA / Fuerza de trabajo",
+    definition: "Poblacion Economicamente Activa. Las personas de la PET que SI participan en el mercado laboral: o tienen un trabajo, o lo estan buscando activamente.",
+  },
+  {
+    term: "PEI",
+    definition: "Poblacion Economicamente Inactiva, tambien llamada 'poblacion fuera de la fuerza de trabajo'. Personas de 15+ anos que NO trabajan Y NO buscan trabajo. En Colombia son ~14.9 millones (2026). Son invisibles en las estadisticas de desempleo.",
+  },
+  {
+    term: "Tasa Global de Participacion (TGP)",
+    definition: "De cada 100 personas de 15+ anos, cuantas trabajan o buscan trabajo. Si es 64%, de cada 100, 64 estan 'activas' en el mercado laboral.",
+  },
+  {
+    term: "Tasa de Ocupacion (TO)",
+    definition: "De cada 100 personas de 15+ anos, cuantas tienen algun tipo de trabajo. Incluye formales e informales.",
+  },
+  {
+    term: "Tasa de Desocupacion (TD)",
+    definition: "De las personas que trabajan o buscan trabajo (PEA), cuantas no consiguen. OJO: solo cuenta a quienes buscan activamente. Si alguien dejo de buscar, no aparece aqui.",
+  },
+  {
+    term: "Empleo formal",
+    definition: "En Colombia, segun el DANE (siguiendo a la OIT), un asalariado es formal si su empleador le paga cotizacion a salud y pension. Un independiente es formal si su negocio tiene registro en Camara de Comercio y lleva contabilidad.",
+  },
+  {
+    term: "Empleo informal",
+    definition: "Trabajadores que no cotizan a salud ni pension por su vinculo laboral (asalariados), o que trabajan en empresas sin registro mercantil ni contabilidad (independientes). En Colombia son el 55.4% del total.",
+  },
+  {
+    term: "Desalentado",
+    definition: "Persona que quiere trabajar pero dejo de buscar porque cree que no hay trabajo para ella, esta cansada de buscar, o por edad/enfermedad. No aparece como desempleada. Desaparece de las estadisticas oficiales de desempleo.",
+  },
+  {
+    term: "NINI",
+    definition: "Jovenes entre 15 y 28 anos que Ni estudian Ni trabajan. En Colombia son ~2.3 millones, 67% de ellos mujeres.",
+  },
+  {
+    term: "Subempleo",
+    definition: "Persona que tiene empleo pero quiere mejorar: mas horas, mejor salario, o un trabajo acorde con sus habilidades. Indica que el mercado no aprovecha bien a esa persona.",
+  },
+  {
+    term: "Trabajo decente (OIT)",
+    definition: "Concepto de la Organizacion Internacional del Trabajo que abarca 4 pilares: empleo productivo, derechos en el trabajo, proteccion social, y dialogo social.",
+  },
+  {
+    term: "Salario minimo",
+    definition: "El menor salario legal que un empleador puede pagar a un trabajador de tiempo completo. En 2026 en Colombia es de $1.750.905 COP al mes (sin auxilio de transporte).",
+  },
+  {
+    term: "Censo (CNPV)",
+    definition: "Censo Nacional de Poblacion y Vivienda. Conteo directo de TODAS las personas del pais, casa por casa. El ultimo en Colombia fue 2018. Entre censos, todo es proyeccion.",
+  },
+  {
+    term: "Proyeccion de poblacion",
+    definition: "Estimacion matematica de cuantas personas hay en Colombia entre un censo y otro. Se calcula usando el ultimo censo y aplicando tendencias de nacimientos, muertes y migracion. Es un modelo, no un conteo real.",
+  },
+  {
+    term: "Bono demografico",
+    definition: "Periodo en que un pais tiene mas personas en edad de trabajar que personas dependientes (ninos + adultos mayores). Es una 'ventana de oportunidad' economica. Cuando se cierra, hay menos gente trabajando para sostener a mas gente.",
+  },
+];
+---
+
+<Base title="Glosario">
+  <section class="border-b border-neutral-200 mesh-gradient-hero">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20 text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-700 backdrop-blur">
+        Referencia
+      </div>
+      <h1 class="mt-5 text-4xl sm:text-5xl font-extrabold tracking-tighter text-neutral-900">
+        Glosario
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+        Los términos técnicos del mercado laboral explicados en lenguaje simple.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16">
+    <div class="grid gap-4">
+      {terms.map(({ term, definition }) => (
+        <div class="rounded-xl border border-neutral-200 bg-white p-4 sm:p-5 hover:border-indigo-200 hover:shadow-sm transition-all">
+          <h3 class="text-base sm:text-lg font-bold text-neutral-900">{term}</h3>
+          <p class="mt-2 text-neutral-700 leading-relaxed text-sm sm:text-[15px]">{definition}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>
