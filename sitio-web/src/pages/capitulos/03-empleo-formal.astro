@@ -3,6 +3,7 @@ import Chapter from "../../layouts/Chapter.astro";
 import Callout from "../../components/ui/Callout.astro";
 import FormalVsInformal from "../../components/charts/FormalVsInformal.tsx";
 import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
+import CaidaEstacionalNovFeb from "../../components/charts/CaidaEstacionalNovFeb.tsx";
 ---
 
 <Chapter
@@ -130,8 +131,11 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
 <p>
   PILA registra cada año una caída entre noviembre (máximo anual) y febrero (mínimo
   del primer trimestre), asociada al cierre de contratos temporales de fin de año.
-  La tabla compara la magnitud de esa caída en los tres últimos ciclos.
+  La gráfica y la tabla comparan la magnitud de esa caída en los cuatro últimos
+  ciclos.
 </p>
+
+<CaidaEstacionalNovFeb client:load />
 
 <div class="my-6 overflow-x-auto rounded-xl border border-neutral-200 bg-white">
   <table class="w-full text-sm border-collapse">
@@ -146,17 +150,24 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
     </thead>
     <tbody>
       <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">nov 2022 → feb 2023</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">13,834,317</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12,881,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−953,317</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−6,89%</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
         <td class="py-3 px-4 text-neutral-800">nov 2023 → feb 2024</td>
-        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">13,604,000</td>
-        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12,844,000</td>
-        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−760,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">13,604,765</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12,844,462</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−760,303</td>
         <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−5,59%</td>
       </tr>
       <tr class="border-b border-neutral-100">
         <td class="py-3 px-4 text-neutral-800">nov 2024 → feb 2025</td>
         <td class="text-right py-3 px-4 tabular-nums text-neutral-800">13,910,000</td>
-        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12,972,000</td>
-        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−938,000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12,972,258</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−937,742</td>
         <td class="text-right py-3 px-4 tabular-nums text-neutral-800">−6,74%</td>
       </tr>
       <tr class="bg-amber-50 border-l-4 border-amber-400 font-semibold">
@@ -171,10 +182,19 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
 </div>
 
 <p class="text-sm text-neutral-600 mt-2">
-  La caída <strong>nov 2025 → feb 2026 es la mayor de los tres ciclos</strong>, tanto
-  en cotizantes perdidos como en porcentaje. Fuente: serie cotizantes PILA reportada
-  por la UGPP (informes oficiales para 2024-2026) y prensa económica para 2023.
+  En los cuatro ciclos disponibles, <strong>nov 2025 → feb 2026 es la mayor caída</strong>,
+  tanto en cotizantes perdidos (−1,08 M) como en porcentaje (−7,56%).
 </p>
+
+<Callout type="info" title="Nota sobre la cobertura de la serie">
+  Los informes mensuales públicos de la UGPP están disponibles desde mayo 2025 en
+  adelante en el formato HTML actual; para 2022-2024 las cifras provienen de las
+  presentaciones oficiales UGPP de nov-2023 y dic-2023 (que reportan nov-2022 y
+  nov-2023) y de los datos UGPP citados públicamente en prensa económica. Las
+  cifras de 2020-2021 corresponden al periodo de pandemia COVID-19, donde la
+  estacionalidad nov → feb se invirtió por el shock económico, por lo que no son
+  comparables con el patrón estructural de los ciclos posteriores.
+</Callout>
 
 <h2>¿Cuál debo usar?</h2>
 
