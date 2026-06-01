@@ -1,0 +1,235 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import StockPorTamano from "../../../components/temas/empresas/charts/StockPorTamano.tsx";
+import ParadojaMipymes from "../../../components/temas/empresas/charts/ParadojaMipymes.tsx";
+import EmpleoPorTamano from "../../../components/temas/empresas/charts/EmpleoPorTamano.tsx";
+---
+
+<Chapter
+  number="03"
+  title="Mipymes: el 99% que produce poco"
+  subtitle="Casi todo el tejido empresarial colombiano es micro o pequeño. Pero el peso económico está en el 0,5% de grandes empresas. Esta es la paradoja central del modelo productivo del país."
+  chapterNumber={3}
+  totalChapters={7}
+  prevHref="/temas/empresas/02-clasificacion"
+  prevTitle="Cómo se clasifican"
+  nextHref="/temas/empresas/04-distribucion-regional"
+  nextTitle="Dónde están las empresas"
+  accentColor="amber"
+>
+
+<h2>La frase que esconde una paradoja</h2>
+
+<p>
+  "Colombia es un país de Mipymes: representan el 99% del tejido empresarial".
+  Esta frase aparece en discursos presidenciales, columnas de opinión, planes de
+  gobierno y reportes gremiales. Es cierta. Pero también es <strong>incompleta</strong>:
+  esconde una asimetría brutal entre cuántas empresas son y cuánto producen.
+</p>
+
+<p>
+  En este capítulo entendemos qué tan grande es esa asimetría, por qué existe, y por
+  qué importa para cualquier política pública seria sobre productividad y empleo.
+</p>
+
+<h2>Primero, el cuadro completo</h2>
+
+<p>
+  Al cierre de 2024, el RUES tenía registradas <strong>1.734.636 empresas activas</strong>.
+  Confecámaras las clasifica por tamaño usando el criterio histórico (valor de activos en
+  SMMLV), con esta distribución:
+</p>
+
+<StockPorTamano client:load />
+
+<div class="my-6 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+  <div class="rounded-xl border-2 border-amber-300 bg-amber-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-amber-700">91,8%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Microempresas</div>
+    <div class="mt-1 text-xs text-neutral-600">1.593.103 empresas</div>
+  </div>
+  <div class="rounded-xl border-2 border-violet-300 bg-violet-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-violet-700">6,1%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Pequeñas</div>
+    <div class="mt-1 text-xs text-neutral-600">106.120 empresas</div>
+  </div>
+  <div class="rounded-xl border-2 border-indigo-300 bg-indigo-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-indigo-700">1,6%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Medianas</div>
+    <div class="mt-1 text-xs text-neutral-600">27.238 empresas</div>
+  </div>
+  <div class="rounded-xl border-2 border-rose-300 bg-rose-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-rose-700">0,5%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Grandes</div>
+    <div class="mt-1 text-xs text-neutral-600">8.175 empresas</div>
+  </div>
+</div>
+
+<p>
+  Si sumas las tres primeras categorías (micro + pequeña + mediana) tienes el 99,5%
+  del tejido. Estas son las <strong>Mipymes</strong>. El 0,5% restante son las grandes.
+</p>
+
+<Callout type="info" title="¿Qué cuenta como Mipyme?">
+  En Colombia hay <strong>tres definiciones convivientes</strong> de tamaño empresarial:
+  por activos (Ley 905/2004), por ingresos (Decreto 957/2019), y por número de
+  trabajadores (la que usa el DANE en la GEIH). Cada estudio que leas usa una distinta —
+  y por eso las cifras a veces no coinciden. Para este capítulo usamos sobre todo la
+  definición de Confecámaras (activos) para tejido y la del DANE (trabajadores) para
+  empleo.
+</Callout>
+
+<h2>La paradoja en un solo gráfico</h2>
+
+<p>
+  Aquí está el dato que la frase "Colombia es un país de Mipymes" oculta. Cuando
+  miramos cuánto producen, cuánto facturan o cuánto empleo formal generan, la asimetría
+  se invierte:
+</p>
+
+<ParadojaMipymes client:load />
+
+<p>
+  Léelo despacio:
+</p>
+
+<ul>
+  <li>Las mipymes son el <strong>99,5%</strong> de las empresas pero generan solo
+    <strong>~40%</strong> del PIB.</li>
+  <li>Las grandes — apenas el <strong>0,5%</strong> de las empresas — concentran
+    <strong>~60%</strong> del PIB.</li>
+  <li>En empleo formal, la división es <strong>53% mipymes / 47% grandes</strong>.
+    Una empresa grande genera, en promedio, cientos de veces más empleo formal que
+    una microempresa.</li>
+</ul>
+
+<Callout type="key" title="La aritmética detrás">
+  Si 0,5% de las empresas (8.175 grandes) producen 60% del PIB, y 99,5%
+  (1.726.461 mipymes) producen 40%, entonces cada empresa grande aporta en promedio
+  unas <strong>250 veces</strong> más al PIB que una mipyme típica. Esa diferencia
+  de productividad no es un error de medición: es el problema estructural del
+  modelo productivo colombiano.
+</Callout>
+
+<h2>Dónde está el empleo realmente</h2>
+
+<p>
+  Si la pregunta es "¿dónde trabajan los colombianos?", la respuesta no se parece a la
+  distribución del PIB. La fragmentación del empleo tiene su propia lógica:
+</p>
+
+<EmpleoPorTamano client:load />
+
+<p>
+  El 62% de los ocupados trabaja en microempresas, otro 17% en pymes, y solo 21% en
+  grandes. Pero ese 62% en micros tiene una característica decisiva: <strong>solo el
+  15% es empleo formal</strong>. Las microempresas son donde más colombianos trabajan,
+  pero también donde menos colombianos tienen protección social, ahorro pensional o
+  estabilidad contractual.
+</p>
+
+<Callout type="warning" title="Las micros son el motor de la informalidad">
+  Las microempresas generan el <strong>94% del empleo informal nacional</strong>.
+  Cuando lees titulares sobre "informalidad colombiana" — ese 55% de ocupados sin
+  protección social del que hablamos en el tema empleo — estás leyendo, en gran
+  medida, sobre lo que ocurre dentro del tejido micro. Política para combatir la
+  informalidad laboral = política para fortalecer (o formalizar) las microempresas.
+</Callout>
+
+<h2>¿Por qué tan poca productividad?</h2>
+
+<p>
+  La pregunta natural es: <strong>por qué</strong> las mipymes colombianas son tan poco
+  productivas en términos relativos. La literatura económica identifica al menos cinco
+  factores estructurales que actúan juntos:
+</p>
+
+<div class="my-8 space-y-3">
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Factor 1</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Sectores de baja escalabilidad</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      La mayoría de las micros operan en comercio al detal y servicios personales:
+      peluquerías, papelerías, restaurantes pequeños, taxis. Son negocios con poca
+      capacidad de escalar y márgenes estructuralmente bajos.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Factor 2</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Brecha de acceso al crédito</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Las micros enfrentan tasas de interés más altas y mayores exigencias de garantías.
+      Una empresa que no puede invertir no puede automatizar, especializarse ni crecer.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Factor 3</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Carga regulatoria que penaliza crecer</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Pasar de micro a pequeña, o de pequeña a mediana, dispara obligaciones tributarias,
+      contables y laborales que muchas empresas evitan permaneciendo informales o
+      subdivididas. Hay un <em>incentivo de tamaño</em> en contra del crecimiento.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Factor 4</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Baja formación del empresario</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Una porción importante de quienes crean micros lo hacen como
+      <em>emprendimiento de necesidad</em> (por desempleo o complemento de ingreso), no
+      por una visión estratégica. La probabilidad de morir es alta: solo 3 de cada 10
+      personas naturales que abren empresa siguen vivas a los 5 años (capítulo 5).
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Factor 5</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Acceso restringido a mercados grandes</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Las mipymes participan marginalmente en exportaciones (solo el 10% de las
+      exportaciones colombianas salen de mipymes) y en compras públicas. El mercado
+      doméstico local es su único cliente, y eso limita el techo de crecimiento.
+    </p>
+  </div>
+</div>
+
+<h2>¿Cómo se compara con otros países?</h2>
+
+<p>
+  La concentración en mipymes no es exclusiva de Colombia, pero la magnitud sí es
+  llamativa. En países OCDE las pymes (sin micros) suelen generar entre el
+  <strong>50% y 60% del valor agregado</strong>; en Colombia, ese rango lo cubren
+  las grandes empresas. La diferencia no está en cuántas mipymes hay, sino en
+  <strong>qué tan productivas son las que existen</strong>.
+</p>
+
+<Callout type="info" title="Una lectura alternativa">
+  Hay una visión optimista: que el 99,5% de mipymes <em>incluya</em> a muchas empresas
+  pequeñas con alto potencial de crecimiento ("gacelas") que aún no se ven en agregados.
+  La política pública que las identifica y ayuda a escalar — <em>tránsito</em> de micro
+  a pequeña, de pequeña a mediana — es probablemente más efectiva que repartir apoyo
+  por igual a las 1,6 millones de micros.
+</Callout>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>En Colombia el <strong>99,5%</strong> de las empresas formales son mipymes (1.726.461 unidades), <strong>0,5%</strong> son grandes (8.175).</li>
+  <li>Las mipymes generan <strong>~40% del PIB</strong>; las grandes <strong>~60%</strong>. Cada empresa grande aporta ~<strong>250x</strong> más al PIB que una mipyme promedio.</li>
+  <li>En empleo formal nacional: <strong>53% mipymes / 47% grandes</strong>. Pero el <strong>62%</strong> de los ocupados trabaja en micros (donde el 85% del empleo es informal).</li>
+  <li>Las microempresas generan el <strong>94% del empleo informal del país</strong>. Formalización laboral y fortalecimiento de micros son el mismo problema con dos nombres.</li>
+  <li>La baja productividad relativa de las mipymes responde a <strong>cinco factores estructurales</strong>: sectores poco escalables, acceso a crédito, carga regulatoria, formación del empresario, y acceso limitado a mercados externos.</li>
+</ul>
+
+<Callout type="info" title="Próximo capítulo">
+  Si las grandes empresas concentran el PIB y el empleo formal — y si las micros se
+  reparten desigualmente en el territorio — entonces el siguiente eje a entender es
+  <strong>dónde están físicamente</strong>. Bogotá, Antioquia y Valle concentran cerca
+  del 50% del tejido. Veremos por qué.
+</Callout>
+
+</Chapter>

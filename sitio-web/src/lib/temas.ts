@@ -168,6 +168,74 @@ export const TEMAS: Tema[] = [
       },
     ],
   },
+  {
+    slug: "estado-finanzas",
+    nombre: "Estado y finanzas públicas",
+    tagline: "Cómo opera el gobierno, cuánto cuesta, de dónde sale la plata y cómo se mueve",
+    descripcion:
+      "Recorrido en 7 capítulos por las finanzas públicas y el funcionamiento del Estado colombiano: la estructura de las tres ramas y los servidores que las componen, los sueldos del sector público, el sistema tributario y la recaudación, el Presupuesto General de la Nación, la deuda pública, los flujos de capital privado (IED, remesas, balanza de pagos) y la eficiencia del gasto. Fuentes: DIAN, MinHacienda, DAFP, BanRep, DNP, Contraloría, OCDE.",
+    icono: "🏛️",
+    color: "emerald",
+    available: true,
+    capitulos: [
+      {
+        numero: 1,
+        slug: "01-estructura-estado",
+        titulo: "Estructura del Estado",
+        descripcion:
+          "Tres ramas, organismos autónomos, niveles territoriales y la cantidad de servidores públicos que los componen.",
+        accentColor: "emerald",
+      },
+      {
+        numero: 2,
+        slug: "02-sueldos-publicos",
+        titulo: "Sueldos en el sector público",
+        descripcion:
+          "Cuánto gana el Presidente, los congresistas, los magistrados y los técnicos. Comparado con el salario mínimo y con el sector privado.",
+        accentColor: "amber",
+      },
+      {
+        numero: 3,
+        slug: "03-impuestos",
+        titulo: "Impuestos: de dónde sale la plata",
+        descripcion:
+          "Estructura tributaria, recaudo DIAN, quién paga qué, reformas tributarias y comparación con OCDE.",
+        accentColor: "cyan",
+      },
+      {
+        numero: 4,
+        slug: "04-presupuesto",
+        titulo: "Presupuesto General de la Nación",
+        descripcion:
+          "El PGN aprobado, distribución por sectores, funcionamiento vs inversión, ejecución real y el 85% del presupuesto que no se puede tocar.",
+        accentColor: "violet",
+      },
+      {
+        numero: 5,
+        slug: "05-deuda",
+        titulo: "Deuda pública",
+        descripcion:
+          "Cuánto debe el Estado, a quién, en qué moneda y cuánto cuesta pagarla cada año.",
+        accentColor: "rose",
+      },
+      {
+        numero: 6,
+        slug: "06-capital-privado",
+        titulo: "Capital privado en movimiento",
+        descripcion:
+          "IED, remesas, balanza de pagos. Cómo se mueve la plata privada que entra y sale del país.",
+        accentColor: "sky",
+      },
+      {
+        numero: 7,
+        slug: "07-eficiencia",
+        titulo: "Eficiencia del gasto y comparación internacional",
+        descripcion:
+          "Cuánto del presupuesto llega a donde debería, qué tan transparente es el Estado y cómo se compara Colombia con la OCDE.",
+        accentColor: "pink",
+      },
+    ],
+  },
 ];
 
 export function getTema(slug: string): Tema | undefined {

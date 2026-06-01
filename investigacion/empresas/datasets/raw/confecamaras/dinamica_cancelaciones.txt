@@ -1,0 +1,1674 @@
+CANCELACIONES
+DE EMPRESAS
+EN COLOMBIA:
+UN ANÁLISIS DE SUS
+PARTICULARIDADES
+CANCELACIONES
+DE EMPRESAS
+EN COLOMBIA:
+UN ANÁLISIS DE SUS
+PARTICULARIDADES
+
+
+Julián Domínguez Rivera
+Presidente
+
+Yeinni Andrea Patiño Moya
+Vicepresidenta de Competitividad y Cooperación
+
+Fayber Acosta Pardo
+Jefe de investigaciones económicas
+
+Maria Fernanda Bolívar Bernal
+Investigadora económica
+
+Yeison Javier Buitrago
+Investigador económico
+
+Juan Sebastian Neme Sanchez
+Investigador económico
+
+Agradecimiento a:
+Eliana Londoño Alvarez
+
+                                         Diseño, diagramación y portada
+                                               Luis Fernando Mora Daza
+            Contenido
+
+            Presentación                                                 5
+            Resumen ejecutivo                                             6
+         1 Introducción                                                       8
+
+         2 Cancelación del registro mercantil                                10
+        2.1 Cancelaciones a nivel internacional                               11
+        2.2 Factores internos que motivan las cancelaciones                   13
+        2.3 Factores externos que motivan las cancelaciones                   14
+         3 Características de las empresas canceladas en Colombia             16
+        3.1 Análisis por tipo de cancelación                              25
+         4 Factores del tiempo de funcionamiento de las empresas         30
+
+         5 Consideraciones finales                                       34
+
+         6 Referencias                                               37
+
+            Anexo A                                                 39
+
+
+
+
+    CANCELACIONES DE
+    EMPRESAS EN COLOMBIA:
+4   UN ANÁLISIS DE SUS
+    PARTICULARIDADES
+                                 Presentación
+   La actividad empresarial, además de ser el principal    vorecer la sostenibilidad en el tiempo de las empresas,
+impulsor del crecimiento del país, es un indicador fun-    así como su crecimiento e incursión en mercados más
+damental que da cuenta de la salud y estabilidad de la     exigentes y rentables. En este cometido, las Cámaras
+economía en su conjunto. La creación y expansión de        han ejercido además un rol de liderazgo y articulación,
+empresas no solo contribuye a la generación de rique-      motivando la estructuración de agendas concertadas
+za y bienestar, sino que también facilita la atracción     de desarrollo en las diferentes regiones, de acuerdo
+de inversión y fortalece la sofisticación del mercado,     con las prioridades y necesidades del tejido empresa-
+a través de la innovación y la competencia. En con-        rial en cada territorio.
+traste, la disminución en la creación de empresas o el
+cierre de las existentes se constituye en un indicador        No obstante a la gran importancia de este trabajo
+de ralentización económica, cuyo análisis de causas        de las Cámaras, es necesario que se sumen aun mu-
+debe considerar aspectos de diversa índole. En el nivel    chos más esfuerzos por parte de las entidades públi-
+individual, causas relacionadas con las capacidades y      cas y privadas, para escalar y profundizar las acciones
+características de los emprendedores y su negocio y,       en beneficio de nuestro tejido empresarial, en especial
+en un análisis más amplio, las condiciones de contexto     en las microempresas, pues, sin duda, su cierre tiene
+para hacer empresa, es decir, variables macroeconó-        un impacto significativo en el desarrollo social, afec-
+micas, transformaciones regulatorias o cambios en la       tando la estabilidad financiera de sus propietarios, y
+demanda del mercado, entre otros.                          de su comunidad circundante, con la pérdida de pues-
+                                                           tos de trabajo, lo que impacta en la disminución del
+   Entender las causas detrás de la cancelación de         ingreso de las familias.
+empresas en Colombia no solo es crucial para los
+empresarios, sino que también brinda una perspec-              Es por esto, que Confecámaras presenta el estudio
+tiva valiosa para que los formuladores de políticas y      “Cancelaciones de Empresas en Colombia: un análisis
+tomadores de decisión, logren la generación de un          de sus particularidades”, con el propósito de identifi-
+entorno empresarial más sostenible y resiliente, con       car las características de las empresas canceladas en
+el diseño e implementación de las medidas necesa-          el país, analizando sus datos y circunstancias comunes
+rias para mitigar la situación presente y disminuir el     para detectar patrones a partir de la información dis-
+fenómeno en el futuro.                                     ponible y las causas potenciales, de manera que cada
+                                                           vez los empresarios y emprendedores del país cuen-
+    En este sentido, es de resaltar el esfuerzo efectua-   ten con un entorno más propicio para hacer negocios,
+do por las Cámaras de Comercio, cuya oferta progra-        lo que redunda en la generación de empleo digno y
+mática se enfoca en apoyar a los empresarios de todos      formal y, por ende, en el mejoramiento de las condi-
+los tamaños y sectores en el fortalecimiento de sus ca-    ciones económicas y sociales de los colombianos en
+pacidades técnicas y gerenciales, con el objetivo de fa-   su conjunto.
+
+                                                                                       Julián Domínguez Rivera,
+                                                                                      Presidente Confecámaras.
+
+
+
+
+                                                                                                             5
+                        Resumen ejecutivo
+    Las empresas son fundamentales para el creci-          aquellas cuyo trámite se formaliza de manera volun-
+miento económico, actúan como motores de desarro-          taria por parte de los empresarios; como en aquellas
+llo, innovación y empleo, desencadenando dinámicas         cancelaciones que se llevan a cabo de manera oficio-
+económicas y sociales positivas más allá de la produc-     sa en virtud de la Ley 1727 de 2014, que determina
+ción de bienes y servicios. No obstante, a pesar de los    que las personas jurídicas y naturales que consecuti-
+esfuerzos de los empresarios por hacer crecer sus uni-     vamente, durante un periodo de 5 años, hayan incum-
+dades productivas, sus condiciones particulares y de       plido su obligación de renovar la matrícula mercantil,
+contexto no siempre son las ideales para la expansión      deben ser depuradas del Registro Único Empresarial
+o para el sostenimiento de sus operaciones.                y Social, RUES. En este sentido, para el periodo com-
+                                                           prendido entre los años 2017 a 2023, las empresas
+    El cierre de empresas está condicionado por facto-     canceladas por declaración han pasado a representar
+res internos, como las características, conocimientos      el 76,1% del total de cancelaciones, mientras que las
+y habilidades del empresario y su equipo de trabajo y,     canceladas por depuración han pasado a constituir el
+externos, como la ubicación estratégica del negocio,       23,9%. Las empresas grandes muestran casi un 100%
+fenómenos macroeconómicos y políticas guberna-             de cancelaciones declaradas, seguidas de cerca por las
+mentales. Independiente de la causa, el cierre de las      medianas con un 99,0% y las pequeñas con un 94,6%
+unidades productivas trae evidentes consecuencias          y en menor medida las microempresas con un 76,1%.
+en el ámbito económico y social, por lo que su com-
+prensión, proporcionada por el análisis profundo de           A partir del año 2019, se da aplicación a la Ley
+sus factores relacionados, se constituye en una herra-     1727 de 2014, de este modo, se observó un aumento
+mienta de fundamental importancia para la formula-         en la proporción de empresas que son canceladas por
+ción de estrategias y políticas que permitan disminuir     depuración del Registro Único Empresarial y Social,
+las tasas de cancelación, brindando mejores condicio-      RUES, inducida principalmente por un aumento en las
+nes para hacer empresa en nuestro país.                    cancelaciones por depuración de microempresas, que
+                                                           pasan de presentar una participación en las cancela-
+    A nivel global, en el marco de la OCDE, Finlandia,     ciones de este segmento de empresa de 14% en 2017
+Polonia, Eslovaquia, Hungría y Colombia destacan con       a una participación de 25% en 2023.
+las tasas más altas de empresas cerradas, mientras que
+Bélgica, Chipre, Irlanda, Grecia y Japón registran tasas      Frente a un tejido empresarial conformado en un
+más bajas, indicando entornos empresariales estables       92% de microempresas, 6% de pequeñas empresas, y
+y políticas comerciales sólidas. En Colombia, en los úl-   un 2% de medianas y grandes empresas; la distribu-
+timos 7 años se han cancelado 1.509.111 empresas, lo       ción de empresas canceladas según su tamaño revela
+que significa un promedio de 215.000 cancelaciones         una concentración significativa en las microempresas,
+por año, es decir, aproximadamente el 13,2% de las em-     que representan el 99% de las cancelaciones, seguidas
+presas activas entre 2017-2023. Sin embargo, al com-       por un 0,8% de pequeñas empresas y un 0,2% de me-
+parar estas cifras con las nuevas empresas creadas, cer-   dianas y grandes.
+ca de 300.000 al año, se revela un crecimiento natural
+positivo, indicando un impulso continuo en la actividad       La notoria disparidad en las tasas de cancelación
+empresarial y fortalecimiento del tejido empresarial.      entre personas naturales y sociedades, 93,5% vs.
+                                                           6,5%, respectivamente, pone de relieve la necesidad
+   Este estudio se enfoca tanto en las cancelaciones       de brindar un mayor énfasis en el desarrollo de medi-
+formalizadas ante las cámaras de comercio, es decir,       das para fortalecer la actividad empresarial de las per-
+
+            CANCELACIONES DE
+   6        EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+sonas naturales, lo cual podría incluir estrategias para    las empresas de personas naturales que cancelan su
+facilitar su acceso a programas que les permitan desa-      matrícula en un año, registran una nueva matrícula en
+rrollar capacidades técnicas, gerenciales y habilidades     el año posterior; que un 37,5% de estas empresas se
+blandas, obtener capital de trabajo y recursos para la      desplazan a un sector económico nuevo; y las empre-
+adquisición de tecnología, programas de transferen-         sas que más tienden a moverse hacia otro sector al
+cia de resultados de investigaciones y apoyo para el        cancelarse son aquellas que provienen de actividades
+desarrollo y prueba de prototipos innovadores en el         de servicios administrativos y de apoyo, actividades
+mercado, entre otros.                                       profesionales, científicas y técnicas y actividades ar-
+                                                            tísticas, de entretenimiento y recreación.
+   Por regiones, la Centro Oriente presenta las tasas
+de cancelaciones más baja del país en el periodo anali-         Las empresas canceladas mediante declaración se
+zado, registrando un 12,1% para 2023. A su vez, esta        mantuvieron activas en promedio, durante 6 años y
+región contempla el crecimiento natural más grande,         2 meses, en tanto, las empresas que son canceladas
+con una diferencia positiva entre nacimientos y can-        por depuración tienen un período promedio de acti-
+celaciones de 34 mil firmas. En contraste, las regiones     vidad alrededor de 2 años y 9 meses. Así, el 44,6% de
+Centro sur y Llano han presentado las mayores tasas         las empresas canceladas por depuración presentaban
+de cancelación desde el 2017, con un promedio cerca-        un tiempo de funcionamiento inferior a 1 año, y el
+no al 16% en ambos casos.                                   24,5% de empresas presentaban un tiempo de funcio-
+                                                            namiento de entre 1 y 3 años, caracterizándose estas
+    Los sectores de servicios (14,2%) y comercio            empresas por ser de corta duración.
+(13,9%) experimentan una tasa de cancelación de
+empresas superior a la de otros sectores, como cons-            Por otra parte, considerando las consecuencias eco-
+trucción (9,1%) o agricultura (8,7%). A pesar de esto,      nómicas y sociales de la salida de empresas del merca-
+el sector de servicios destaca por tener la tasa de crea-   do, se encuentra que la cancelación de empresas impli-
+ción de empresas más alta (19,5%), lo que refleja una       ca la pérdida de 170 mil empleos en promedio por año,
+dinámica significativa de entrada y salida de empresas      siendo que las microempresas aportan el 86,7% de los
+en este sector. En contraste, el sector agrícola presen-    empleos perdidos por la cancelación de empresas.
+ta la tasa más baja de nacimiento de empresas, lo que
+sugiere una menor actividad en términos de creación            Lo anterior, subraya la importancia de implemen-
+y cancelación de compañías.                                 tar programas que impulsen la resiliencia empresarial,
+                                                            focalizándose particularmente en las micro y peque-
+   Centrando el análisis en las diferencias entre las em-   ñas empresas y en las personas naturales. Estos seg-
+presas que cancelaron su matrícula de forma declarada,      mentos no solo conforman una parte sustancial del
+es decir aquellas que son formalizadas ante las cámaras     entramado empresarial, sino que también son los más
+de comercio, y aquellas que se depuraron, se observa        susceptibles ante perturbaciones externas. Asimismo,
+como cerca de la totalidad de sociedades realiza la can-    es fundamental tener en cuenta las particularidades
+celación de su matrícula de forma declarada. El 76% de      regionales al formular políticas, reconociendo las dis-
+personas naturales declara su cancelación, y cerca del      paridades en los ecosistemas productivos, así como
+24% se cancela al dejar de renovar su matrícula.            en las condiciones económicas y de desarrollo empre-
+                                                            sarial, lo cual, como se dijo antes, influye de manera
+   De esta forma, los empresarios toman la decisión         importante en las tasas de cancelación de empresas.
+de continuar con su actividad económica al comienzo
+del año. Cerca del 70% de las cancelaciones se realizan
+dentro del primer cuatrimestre de cada año, siguien-
+do los patrones de la temporada de renovación. Así
+mismo, resulta interesante observar que un 4,9% de
+
+
+                                                                                                              7
+                  1
+        Introducción
+
+
+
+
+    CANCELACIONES DE
+    EMPRESAS EN COLOMBIA:
+8   UN ANÁLISIS DE SUS
+    PARTICULARIDADES
+    Aunque los empresarios buscan que sus unidades           nera oficiosa y en virtud de lo dispuesto en la Ley 1727
+productivas crezcan, alcancen la madurez y permanez-         de 2014 quedan disueltas y en estado de liquidación,
+can en el mercado, no siempre encuentran las condicio-       en el caso de las firmas o con su matrícula mercantil
+nes propicias para la expansión o, en situaciones más        cancelada, para el caso de las personas naturales. Esta
+desafiantes, para el sostenimiento de sus operaciones.       categoría se designará como “cancelaciones por depu-
+El cierre de empresas no solo significa el fin de un pro-    ración”. Es preciso aclarar que el registro mercantil de
+yecto productivo, tiene repercusiones económicas y           una empresa también puede cancelarse debido a cam-
+sociales significativas, como la pérdida de empleos, la      bios de domicilio o a procesos llevados a cabo con otras
+inestabilidad financiera de los hogares e incluso, la pos-   empresas, como fusiones, absorciones, escisiones o re-
+tergación o cancelación de proyectos individuales y co-      constituciones. Estos son casos en los cuales la empre-
+lectivos de importancia para la comunidad.                   sa desaparece para reconfigurar su estructura jurídica y
+                                                             que, según la OCDE (2007), no deben incluirse en las
+   El cese en las actividades de una empresa puede           estadísticas de cancelaciones de empresas.
+ser resultado tanto de factores internos, debido a una
+gestión deficiente de los recursos o dificultades finan-         Este documento está constituido por seis capítulos,
+cieras; como de factores externos, por ejemplo, la si-       siendo el primero, la presente introducción; el segun-
+tuación económica a nivel nacional o internacional, e        do, en el que se ofrece una definición más precisa del
+incluso el marco social o político (McCall, Prochaska,       concepto de cancelación, acompañada de un panorama
+& James, 2023). Evidencia de esto se puede encon-            internacional sobre este fenómeno a manera de punto
+trar en el panorama macroeconómico producto de la            de referencia. También se exploran los factores inter-
+pandemia por COVID-19, en el que por las condiciones         nos y externos que impactan en la cancelación de ma-
+desfavorables a las que se vieron enfrentadas, diversas      trículas mercantiles, proporcionando un enfoque más
+empresas tuvieron que disminuir su producción o inclu-       claro sobre los elementos clave que pueden influir en
+so cerrar sus operaciones.                                   la dinámica de cancelación empresarial, aspectos que
+                                                             constituyen el foco central del análisis.
+     Dada la importancia de la supervivencia empresarial
+para el mejoramiento de las condiciones económicas y             El tercer capítulo presenta una caracterización de las
+sociales de las comunidades, siendo en este contexto la      empresas canceladas en Colombia para el año 2017-2023,
+tasa de cancelaciones un indicador fundamental a con-        segmentando los datos según el tipo de organización jurí-
+siderar, se desarrolló el presente estudio, que pretende     dica, la ubicación regional, el sector económico, el tamaño
+brindar elementos para la profundización en el análisis      de las empresas y la cantidad de empleos afectados con la
+de los factores que influyen en la sostenibilidad en el      salida de estas empresas. Así mismo, se realiza un análisis
+tiempo de las empresas, así como para el diseño de po-       de las empresas de acuerdo con su tipo de cancelación,
+líticas y programas que le permitan a los empresarios,       es decir, si se realiza de forma declarada o a través de la
+en especial a los micro y pequeños, contar con mejores       depuración del registro; revisando aspectos relevantes
+oportunidades para una gestión exitosa de sus negocios.      como su comportamiento por organización jurídica, ta-
+                                                             maño de empresa, sector y región, además de un análisis
+    Es así como, para efectos de este estudio, se entiende   del tiempo de funcionamiento de las empresas, y la diná-
+por empresas canceladas aquellas que son eliminadas del      mica dentro del año de las cancelaciones declaradas.
+registro mercantil a causa del cese de sus operaciones,
+dividiéndose principalmente en dos categorías. En pri-          En el cuarto capítulo, a través de un ejercicio de re-
+mer lugar, se encuentran aquellas cancelaciones que se       gresión lineal, se explora la relación de las característi-
+llevan a cabo de manera voluntaria, cuando los propieta-     cas empresariales más frecuentes sobre el tiempo de
+rios deciden concluir la actividad económica desarrolla-     funcionamiento de las firmas. En la sección final, se ex-
+da hasta ese momento. Estas cancelaciones son formali-       ponen las conclusiones y recomendaciones derivadas
+zadas ante las cámaras de comercio del país y marcan el      del análisis con las cuales se espera brindar un punto de
+inicio de un proceso de liquidación de la empresa. A este    partida para futuras investigaciones que busquen pro-
+caso se le denominará “cancelaciones por declaración”.       fundizar aún más en los factores asociados a la cancela-
+                                                             ción de empresas en el país.
+   Por otro lado, están aquellas empresas que, de ma-
+nera consecutiva durante un periodo de 5 años no re-
+nuevan su matrícula mercantil y, por lo tanto, de ma-
+                                                                                                                  9
+                   2
+        Cancelaciones
+         de empresas
+
+
+
+
+     CANCELACIONES DE
+     EMPRESAS EN COLOMBIA:
+10   UN ANÁLISIS DE SUS
+     PARTICULARIDADES
+    La cancelación, en términos generales, se refieren       cautelares vigentes, como embargos sobre el estable-
+al proceso mediante el cual una empresa deja de exis-        cimiento de comercio, procesos concursales, pren-
+tir legalmente, en otras palabras, es el acto formal o       das, fideicomisos, sociedades de hecho, contratos de
+proceso por el cual se pone fin a la existencia jurídica y   arrendamiento o trámites en curso.
+operativa de una firma. En este sentido, la cancelación
+de una empresa puede variar entre decisiones volun-              Si bien en el manual de demografía empresarial de
+tarias como, por ejemplo, la falta de éxito del negocio,     la OCDE (2007), se sugiere un periodo de tres años
+la reestructuración empresarial, fusiones o adquisicio-      en los que consecutivamente una empresa no haya re-
+nes y el cese de actividades, o por decisiones forzosas      novado su registro mercantil, para considerarla como
+como la bancarrota, incumplimientos legales graves,          cancelada, en esta investigación se optó por adoptar
+incumplimiento de regulaciones gubernamentales o             el criterio de la normatividad colombiana vigente (Ley
+decisiones judiciales.                                       1727 de 2014), que clasifica como canceladas a las
+                                                             empresas que durante un período consecutivo de cin-
+   La cancelación de la matrícula mercantil de una           co años no hayan renovado dicho registro. Además,
+sociedad es un proceso de liquidación en el cual es          se excluyen de las estadísticas sobre cancelaciones
+necesario poner al día los años anteriores a la disolu-      de empresas aquellas que cierran debido a fusiones o
+ción y liquidación de la sociedad. Esto conlleva el pago     escisiones de factores de producción, empresas cuyas
+de renovaciones pendientes, conforme al artículo 50          actividades son absorbidas por otra entidad (adquisi-
+de la Ley 1429 de 2010 y el artículo 51 del Decreto          ción), y empresas que se eliminan debido a un cambio
+2042 de 2014. Es crucial subrayar que la cancelación         en su forma jurídica o en su domicilio (OCDE, 2007).
+de las matrículas solo procede en ausencia de medidas
+
+
+
+
+ 2.1 Cancelaciones a nivel internacional
+
+    A nivel internacional cada país tiene su propia re-      los formularios correspondientes, pagar los salarios y
+gulación para identificar una empresa como cance-            compensaciones pendientes a los empleados, pagar
+lada. Por fijar algunos ejemplos, en Reino Unido, por        los impuestos federales y reportar los pagos hechos a
+ejemplo, una empresa puede considerarse “cancela-            trabajadores vinculados como contratistas.
+da” si ha sido eliminada del registro de Companies
+House, entidad encargada del registro público de                 En el contexto de España, el proceso de cancelación
+las empresas del país. La empresa se puede eliminar          inicia con la disolución en la que la empresa detiene su
+voluntariamente del registro si no ha comerciado ni          actividad productiva y continúa a un periodo de liqui-
+cambiado de nombre en los últimos tres meses, no             dación. Durante este proceso, se procede a distribuir
+está en riesgo de liquidación y no tiene deudas pen-         el patrimonio entre los socios después de satisfacer los
+dientes (Townley, 2021).                                     créditos y cumplir con las deudas. Además, las respon-
+                                                             sabilidades de los administradores son transferidas a
+    En Estados Unidos, por su parte, cada estado tiene       liquidadores designados para gestionar estas tareas.
+su propia Secretaría de Estado encargada de gestio-          Finalmente, se inscribe la extinción de la empresa en
+nar los registros de las empresas, por lo que el proceso     el Registro Mercantil, mediante una escritura pública
+puede variar entre estos. Sin embargo, en términos           con el balance final, la declaración de pago a acreedo-
+fiscales el proceso es más uniforme, se debe presen-         res, entre otras (Dirección General de Industria y de la
+tar una declaración final en el año de cierre, junto con     PYME, s.f).
+
+
+
+
+                                                                                                               11
+   Esta diversidad en las regulaciones y sistemas de        doras cerradas, que se calcula dividiendo el número
+registro en diferentes países hace que la definición de     de empresas que cesaron operaciones en un período
+cancelación presente ligeras diferencias. Sin embargo,      dado, entre el número de empresas activas en el mis-
+la OCDE recopila datos relacionados con indicadores         mo período. A continuación, se muestra un mapa que
+clave sobre la dinámica de las empresas, tanto de los       presenta el promedio durante el período de 2011 a
+países miembros como de algunos no miembros. Uno            2020 del porcentaje de empresas que dejaron de ope-
+de estos indicadores es la tasa de empresas emplea-         rar en estos países.
+
+                              Figura 1. Tasa de cancelación de empresas en el mundo
+
+                      Tasa de empresas fallecidas
+                                                          0.89                          14.34
+
+
+
+
+                                 Fuente: elaboración propia con datos de la OCDE.
+
+
+   Finlandia, Polonia, Eslovaquia, Hungría y Colombia       países. En contraste, Bélgica, Chipre, Irlanda, Grecia y
+destacan en la muestra como los países con los nive-        Japón se posicionan como los países con las tasas de
+les más altos de tasas de empresas empleadoras ce-          cancelación más bajas, marcando cifras del 0,9%, 2,1%,
+rradas durante el período analizado, registrando tasas      2,8%, 3,3% y 3,7%, respectivamente. Estos valores más
+del 14,3%, 13,2%, 12,8%, 12,3% y 12,3%, respectiva-         bajos podrían sugerir entornos empresariales más esta-
+mente. Este fenómeno puede ser indicativo de diversos       bles, políticas comerciales sólidas o condiciones econó-
+factores económicos, sociales y políticos que impactan      micas más favorables que propician una mayor supervi-
+la estabilidad de las empresas empleadoras en estos         vencia y continuidad de las empresas empleadoras.
+
+
+
+
+            CANCELACIONES DE
+   12       EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+    Estas cifras ofrecen una perspectiva integral sobre      constituye una parte inherente del ciclo del desarro-
+la frecuencia de las cancelaciones de empresas a es-         llo necesario para mantener una economía saludable.
+cala global, al mismo tiempo que permiten entender           No obstante, un elevado número de disoluciones y
+la posición de Colombia en el contexto internacional,        cierre de empresas puede tener un impacto adverso
+evidenciando una de las tasas de cancelación más ele-        en la movilidad empresarial, así como en los efectos
+vadas entre los países de la OCDE. Es fundamental con-       macroeconómicos en el producto y en el empleo por
+siderar estos datos no solo como un indicador numé-          el cierre de las empresas.
+rico, sino como una herramienta para comprender las
+complejidades del entorno empresarial, promoviendo              Por lo tanto, es imperativo estudiar los factores
+así estrategias y políticas que impulsen un crecimiento      que pueden resultar determinantes en el cierre de las
+empresarial más sólido y sostenible en el país.              empresas. En la literatura estos elementos suelen di-
+                                                             vidirse en dos grandes grupos: los factores internos,
+   Entendiendo la magnitud del fenómeno de la                que incluyen determinantes individuales relacionados
+cancelación de empresas y que es un problema de              con los emprendedores y determinantes organizacio-
+alcance global, es esencial explorar los factores que        nales centrados en el uso de recursos; y los factores
+inciden en el cierre de las organizaciones. McCall           externos, que se refieren a los determinantes macro
+et al, (2023), señalan que el cierre de las empresas         del entorno empresarial.
+
+
+
+2.2 Factores internos que motivan las cancelaciones
+    El cierre de las empresas está condicionado por          un panel de empresas entre 2009 y 2015, utilizando
+una diversidad de factores internos, los cuales se cla-      un análisis de supervivencia de Kaplan-Meier y un mo-
+sifican principalmente en dos categorías fundamenta-         delo de Cox, y definiendo la cancelación de la empresa
+les: aquellos vinculados a las características intrínsecas   para el periodo de estudio t como las empresas activas
+de la empresa y aquellos asociados a las habilidades y       en t-1 pero no en t. En este caso identifican el tamaño
+destrezas del empresario o emprendedor que la lidera.        inicial de la empresa, el capital, los salarios, la rentabi-
+                                                             lidad, la productividad y la publicidad, entre aquellos
+   Las características de la empresa abarcan elemen-         factores relevantes asociados a la empresa.
+tos como su tamaño, tiempo de operación, estructu-
+ra de financiamiento y modelo de negocio. Por otro               En cuanto a las características de los empresarios
+lado, las habilidades del empresario engloban aspec-         resaltan la aversión al riesgo, la capacidad de innova-
+tos cruciales como su visión estratégica, capacidad de       ción, la expectativa de éxito y la experiencia. Este gru-
+gestión, toma de decisiones y habilidades de lideraz-        po de factores lo reducen a las variables con disponi-
+go. Estos factores internos resultan esenciales para         bilidad de información, encontrando que las empresas
+comprender por qué algunas empresas prosperan y              con un tamaño inicial más pequeño, salarios bajos, una
+mantienen su actividad a lo largo del tiempo, mientras       plantilla de trabajadores de mayor edad y baja presen-
+que otras enfrentan desafíos significativos y, en última     cia de mujeres tenían un mayor riesgo de cierre.
+instancia, pueden cerrar sus operaciones.
+                                                                 Mata & Portugal (1994) exploran los determinantes
+   Investigaciones en diferentes países han abordado         de la duración de empresas en el sector manufacture-
+estos factores de manera específica. En Ecuador, Pue-        ro establecidas en 1983 mediante un análisis de riesgo
+bla et al. (2018) llevaron a cabo un estudio utilizando      utilizando tanto un modelo de riesgo como una función
+
+
+
+
+                                                                                                                  13
+logit para calcular la función de riesgo basal. Sus hallaz-   da de capacidad de adaptación a nuevas condiciones
+gos indican que las empresas con menor tamaño ini-            competitivas a medida que las empresas envejecen, lo
+cial, menor número de plantas operativas, menor tasa          que dificulta su respuesta eficaz en el mercado.
+de crecimiento en la industria y un ingreso más alto al
+mercado tienen una probabilidad más elevada de fraca-             Mediante la estimación de una regresión por MCO,
+so. Además, subrayan que las empresas más pequeñas            Arias et al. (2007) identificaron los factores que se re-
+tienden a contar con directivos menos capacitados y           lacionan con la longevidad de las firmas, y un modelo
+son más susceptibles a cerrar en situaciones de aumen-        de regresión logística para identificar los factores que
+to de los costos laborales o del costo de oportunidad de      diferencian a las empresas que cierran antes de los
+emprender. Este estudio destaca la relevancia de diver-       3 años en comparación con aquellas que sobreviven
+sos factores, tanto estructurales como gerenciales, en        en este periodo. Con esto encuentran que no hay un
+la viabilidad a largo plazo de las empresas.                  efecto significativo en cuanto a la productividad del
+                                                              sector en el que operan estas firmas o la productivi-
+   Arias et al. (2007) estudiaron las características         dad propia de las firmas. Adicionalmente, se resalta el
+inherentes a las empresas y el contexto competitivo,          papel que juega el financiamiento en estos resultados,
+formulando cuatro hipótesis para esclarecer los moti-         encontrando que las empresas con mayor proporción
+vos del fracaso empresarial. Estas hipótesis se centran       de fondos propios durante su primer año tienden a so-
+en el nacimiento de la empresa, su tamaño, su anti-           brevivir por más tiempo y a acceder a financiación por
+güedad y su habilidad para adaptarse a las dinámicas          parte de terceros (Arias et al., 2007).
+cambiantes del mercado. A continuación, se presenta
+un resumen de cada una de estas hipótesis.                        En resumen, la cancelación de las empresas está
+                                                              influenciada por una variedad de factores internos,
+   La hipótesis del nacimiento sugiere que las empre-         incluyendo tanto las características de la empresa
+sas tienen una mayor probabilidad de fracaso en sus           como las habilidades del empresario. Estos estudios
+primeros años debido a su falta de experiencia en el          han destacado la importancia del tamaño inicial de la
+mercado y dificultades para acceder a financiamiento          empresa, la inversión, la aversión al riesgo, la capaci-
+adecuado. En cuanto al tamaño, señalan que las em-            dad de adaptación y el financiamiento en la determi-
+presas pequeñas enfrentan limitaciones debido a la            nación de su longevidad. Además, se ha demostrado
+escasez de recursos, existiendo una relación inversa          que las empresas más pequeñas enfrentan un mayor
+entre el tamaño y el cierre empresarial en los primeros       riesgo de cierre, especialmente cuando se ven pre-
+años. La hipótesis de la edad plantea que las empresas        sionadas por costos laborales crecientes. Estos ha-
+tienden a cerrarse en una etapa de “pubertad” después         llazgos son cruciales para comprender las dinámicas
+de evaluar su desempeño o agotar su capital inicial.          empresariales y proporcionan información valiosa
+Finalmente, la hipótesis de la rigidez destaca la pérdi-      para enfocar el presente análisis.
+
+
+
+
+             CANCELACIONES DE
+   14        EMPRESAS EN COLOMBIA:
+             UN ANÁLISIS DE SUS PARTICULARIDADES
+2.3 Factores externos que motivan las cancelaciones
+    Además de las causas internas, también los factores     dustria a mediano plazo contribuye a reducir las tasas
+externos influyen en la dinámica de las cancelaciones.      de cierre de empresas.
+Estos determinantes a menudo son más difíciles de
+controlar por parte de los empresarios e incluyen: ubi-         Los fenómenos económicos son uno de los aspectos
+cación estratégica del negocio, fenómenos macroeco-         que suelen escapar al control de los negocios. Como
+nómicos como el crecimiento del PIB e inflación y las       señala González (2001) en el corto plazo, la prioridad
+políticas gubernamentales como impuestos y subsidios.       debe ser mantener la liquidez como un medio para mi-
+    La ubicación del establecimiento es fundamental,        tigar los impactos de la inflación. Por ejemplo, Benaven-
+debido a que afecta la cantidad de clientes potenciales     te y Külzer (2008) encontraron una correlación entre la
+y está relacionado directamente con los costos opera-       variación del PIB y la tasa de desempleo y como ambas
+tivos. Según Márquez y Ortiz (2011), muchos empre-          variables impactan en el cierre de empresas. Un mayor
+sarios pueden verse atraídos por arrendamientos o al-       crecimiento del PIB reduce la probabilidad de que una
+quileres asequibles, pero a menudo pueden pasar por         empresa opte por su cierre, ya que sugiere una econo-
+alto el hecho de que estas ubicaciones puedan atraer        mía más estable tanto en el presente como en el futu-
+menos clientes. Por otro lado, elegir una ubicación en      ro. Por otro lado, un aumento en la tasa de desempleo
+una zona comercial puede ser beneficioso, pero los cos-     medida con un año de retraso, puede ser un indicador
+tos de alquiler elevados pueden dificultar una cobertura    de dificultades económicas. En respuesta, algunas em-
+eficiente de los gastos operativos. Los elevados costos     presas empiezan a hacer recortes de personal antes de
+vinculados a la ubicación pueden precipitar el cierre de    tomar la decisión de cerrar, adaptándose a la situación
+las empresas. De manera similar, Fotopoulos y Louri         económica que están enfrentando.
+(2000) señalan que las empresas localizadas en áreas
+urbanas de alta demanda tienden a cerrar menos en                El papel de las políticas gubernamentales es funda-
+comparación con aquellas que operan en zonas rurales        mental en el fomento de la actividad empresarial. En
+o en las afueras de la ciudad.                              este sentido, Salami et al. (2023) resaltan que estas po-
+                                                            líticas contribuyen a crear un entorno institucional que
+    Además, el éxito de una empresa puede verse influi-     promueve la sostenibilidad y la creación de empresas.
+do por las particularidades de los sectores en los que      Estas acciones gubernamentales se manifiestan a tra-
+opera. La ausencia de integración en clústeres puede        vés de diversos instrumentos, como subsidios, présta-
+restringir las oportunidades de colaboración e innova-      mos, exenciones fiscales y beneficios regulatorios. Es-
+ción entre las empresas. Según Dumais et al (1997), los     tos mecanismos no solo proporcionan apoyo financiero
+clústeres, como centros de concentración de activida-       a las empresas, sino que también allanan el camino para
+des industriales, desempeñan un papel beneficioso en        su crecimiento al aliviar las cargas económicas y ofrecer
+la creación de nuevas empresas, la atracción de inver-      incentivos para la innovación y la inversión.
+siones, la estimulación del crecimiento empresarial y,
+en última instancia, en el ciclo de vida de las empresas:      Considerando la complejidad de los factores internos
+desde su nacimiento hasta su expansión o cierre.            y externos que influyen en la cancelación de empresas,
+                                                            resulta fundamental adentrarse en el estudio detallado
+    La aglomeración productiva, no solo fomenta la          de las características que estas presentan. Este análisis
+transferencia de conocimiento entre empresas, sino          brinda una base para identificar aquellos factores sobre
+que también desempeña un papel fundamental en la            los cuales futuros estudios podrían profundizar, para
+movilidad de la mano de obra, un elemento crucial para      entender la causalidad detrás de estos y, a partir de ahí,
+el sostenimiento de las empresas. Del mismo modo, se-       proponer políticas públicas y estrategias empresariales
+gún Delgado et al. (2010), la incorporación de empre-       que puedan contrarrestar disminuir tendencia al cierre
+sas emergentes en clústeres sólidos a nivel región-in-      de estos negocios.
+
+
+
+                                                                                                                15
+                   3
+     Características
+     de las empresas
+      canceladas en
+            Colombia
+
+
+
+     CANCELACIONES DE
+     EMPRESAS EN COLOMBIA:
+16   UN ANÁLISIS DE SUS
+     PARTICULARIDADES
+    Esta investigación proporciona información valiosa                                                   desde el año 2017 (Figura 2), con un leve incremen-
+para entender la dinámica empresarial y las razones                                                      to presentado entre el año 2022 y 2023, al pasar de
+fundamentales detrás de las cancelaciones. Es impor-                                                     214.008 cancelaciones en el primer año a 233.044
+tante mencionar que, si bien en algunos apartados se                                                     cancelaciones en el 2023, lo que representa un au-
+hará énfasis para 2023, este estudio se centra en las                                                    mento del 8,8%.
+cancelaciones ocurridas en los últimos 7 años. De la
+misma manera, vale mencionar que dadas las limita-                                                           También es posible evidenciar una reducción en el
+ciones de la información disponible, el análisis efectua-                                                número de cancelaciones en 2020, frente al año 2019.
+do no distingue entre factores externos e internos de                                                    Este fenómeno puede atribuirse a los estímulos pro-
+la cancelación de empresas.                                                                              porcionados por el Gobierno para mantener la conti-
+                                                                                                         nuidad operativa de las empresas, como el Programa
+    Las cancelaciones serán analizadas en dos grupos.                                                    de Apoyo al Empleo Formal¹ (PAEF) y el Programa de
+En primer lugar, las cancelaciones por depuración, que                                                   Apoyo al Pago de la Prima de Servicios² (PAP). Asi-
+se refieren a las cancelaciones a causa de un posible                                                    mismo, se puede evidenciar la disminución en el nú-
+cese de operaciones o, al menos, una pérdida de inte-                                                    mero de cierres para 2021 y 2022 en comparación con
+rés en mantener la empresa activa según la normativa                                                     los periodos anteriores a la pandemia, lo que puede re-
+legal. En este caso, no siempre es posible distinguir en-                                                flejar una mayor resiliencia del tejido empresarial para
+tre las empresas que realmente han cesado sus opera-                                                     esos dos años.
+ciones y aquellas que pueden seguir funcionando sin
+el registro mercantil activo. En segundo lugar, se ana-                                              1 Programa de Apoyo al Empleo Formal (PAEF): creado
+lizarán las cancelaciones por declaración, que abarcan                                               durante la pandemia con el objetivo de proteger el empleo
+situaciones en las cuales los empresarios deciden ce-                                                al proporcionar un subsidio del 40% del salario mínimo
+rrar sus operaciones de manera deliberada y registran                                                para el pago de nóminas por cada empleado y del 50% por
+el procedimiento en las cámaras de comercio.                                                         cada mujer empleada.
+
+                                                                                                     2 Programa de Apoyo al Pago de la Prima de Servicios
+   En Colombia, entre los años 2017 al 2023 se can-                                                  (PAP): creado con el propósito de contribuir al pago de
+celaron 1.509.111 empresas, lo que representa un                                                     la prima de servicios de los trabajadores cuyos ingresos se
+promedio anual de alrededor de 215.000. El número                                                    encontrarán en el rango entre un salario mínimo y un mi-
+de cancelaciones se ha mantenido en cifras similares                                                 llón de pesos.
+
+
+                 Figura 2. Evolución del número de empresas nuevas y canceladas
+                                                                                                                                                     305.997
+                                                                 306.563
+
+
+
+
+                                                                                                             307.679
+
+
+
+
+                                                                                                                                 310.731
+                                             303.027
+                         294.880
+
+
+
+
+                                                                                     278.302
+
+
+
+
+                                                                                                                                                               233.404
+                                                                           222.644
+                                                       217.798
+                                   217.393
+
+
+
+
+                                                                                                                                           214.008
+                                                                                                                       211.454
+                                                                                               195.042
+
+
+
+
+                           2017                 2018                2019                2020                    2021               2022                2023
+
+                                                                              Nuevas           Canceladas
+
+                 Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+
+                                                                                                                                                                         17
+   Tras un análisis de la tasa de creación de empre-                 celaciones es de 13,2%, mientras que la tasa prome-
+sas, que se define como el número de nuevas empre-                   dio de creación de empresas alcanza un 18,5%. Estos
+sas en relación con el total de empresas existentes,                 datos reflejan una expansión sólida y constante del
+en comparación con la tasa de cancelación de em-                     tejido empresarial a lo largo del tiempo, lo que indica
+presas, que se define de manera similar, se destaca                  un panorama favorable para el desarrollo económico
+un patrón interesante. El promedio de la tasa de can-                y empresarial en Colombia.
+
+
+                        Figura 3. Tasa de nacimientos y tasa de cancelaciones
+
+
+
+        18,9%             18,7%           18,6%              18,5%            18,9%
+                                                                                                17,9%           17,6%
+
+                13,9%             13,5%           13,5%                                                                 13,5%
+                                                                     13,0%              13,0%           12,3%
+
+
+
+
+           2017               2018           2019               2020              2021             2022            2023
+
+                                             Tasa creación           Tasa cancelación
+
+                        Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+    En otras palabras, el comportamiento de empresas                 posible indicar que descensos en la actividad econó-
+nuevas y canceladas revela un crecimiento natural po-                mica podrían estar asociados a un mayor número de
+sitivo. Este crecimiento se entiende como la diferencia              cancelaciones y menor número de nacimientos y por
+entre los nacimientos y las cancelaciones, indicando                 ende un crecimiento natural menor. No obstante, es
+que el número de nuevas empresas supera al de las                    necesario abordar esta observación con precaución,
+cancelaciones. Esta diferencia se ha ampliado a través               ya que durante la pandemia algunas empresas reci-
+del tiempo, señalando un aumento constante en el                     bieron ayudas gubernamentales, lo que podría haber
+total de empresas activas en el país. Este fenómeno                  evitado el cierre de operaciones. Por esta razón, a
+sugiere un impulso continuo en la actividad empresa-                 pesar de la disminución en la actividad económica,
+rial, contribuyendo al fortalecimiento y expansión del               se observa un repunte en el crecimiento natural para
+tejido empresarial colombiano.                                       el año 2020. Así mismo, se debe tener en cuenta que
+                                                                     existen otros diversos factores que pueden hacer que
+   El crecimiento natural de las empresas guarda rela-               se presenten variaciones en el crecimiento natural de
+ción con el crecimiento de la economía del país, dado                las empresas que no se correspondan en variaciones
+que se identifica una correlación positiva entre los                 similares del PIB, tales como en los años 2018 y 2023,
+aumentos en el PIB y el incremento de la brecha en-                  entre estos factores se puede encontrar la confianza
+tre nacimientos y cancelaciones (Figura 4). Aunque                   inversionista, y demás aspectos del mercado interno
+no se puede establecer una relación causal directa, es               y externo.
+
+
+
+
+                CANCELACIONES DE
+   18           EMPRESAS EN COLOMBIA:
+                UN ANÁLISIS DE SUS PARTICULARIDADES
+                     Figura 4. Evolución del crecimiento natural de empresas y el PIB
+
+                                                                    10,8%
+                                                                                  7,3%
+                           2,60%            3,2%
+                                                                                             0,6%
+
+
+
+                                                          -7,2%
+
+
+
+                            2018            2019          2020      2021         2022        2023
+
+                                            Crecimiento natural       Crecimiento PIB
+
+
+                     Fuente: elaboración propia a partir de los datos del RUES.
+
+
+Tipo de organización jurídica
+    Durante el período comprendido entre 2017 y 2023,               año anterior, lo que sugiere que el impacto económico
+se observa una marcada tendencia en la composición                  generado por la pandemia afectó de manera más pro-
+del tejido empresarial formal en Colombia. En prome-                nunciada a las empresas conformadas como personas
+dio, el 68,2% de las empresas activas están constituidas            naturales. Este dato refleja la vulnerabilidad de este
+como personas naturales, mientras que el 31,8% co-                  tipo de empresas frente a crisis económicas y eviden-
+rresponden a sociedades. Sin embargo, en cuanto a las               cia la importancia de políticas específicas de apoyo
+cancelaciones, la participación de las personas naturales           para este sector empresarial.
+en el total de cancelaciones es significativamente más
+alta, alcanzando el 93,5%, en contraste con el 6,5% de                  Por otro lado, la baja participación de las socieda-
+las cancelaciones que corresponden a sociedades.                    des en el total de cancelaciones resalta su notoria re-
+                                                                    siliencia y sostenibilidad, virtudes distintivas de este
+   Es interesante destacar que para el año 2020 se                  tipo de entidad jurídica pues, en comparación con las
+observa un incremento en la participación de las per-               personas naturales, las sociedades parecen exhibir una
+sonas naturales en el total de cancelaciones de ese                 mayor capacidad para afrontar desafíos y mantener
+año, alcanzando un 94,3%. Este aumento representa                   una presencia estable en el entorno empresarial (Con-
+un incremento de 1 punto porcentual con respecto al                 fecámaras, 2023).
+
+                                                                                 Figura 5.
+     6,7%     6,5%       6,7%       5,7%           6,7%    6,7%    6,7%          Composición de las
+                                                                                 cancelaciones por tipo de
+                                                                                 organización jurídica
+    93,3%     93,5%      93,3%      94,3%      93,3%       93,3%   93,3%
+
+
+
+
+     2017     2018       2019       2020       2021        2022    2023
+                       P. Natural            Sociedad
+
+Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+                                                                                                                      19
+Tamaño empresarial
+    La distribución de empresas canceladas según su        0,8% de pequeñas empresas y un 0,2% de medianas y
+tamaño revela una concentración significativa en las       grandes. Este hallazgo resalta la vulnerabilidad particular
+microempresas, que han venido representando histó-         de las microempresas y sugiere la necesidad de medidas
+ricamente el 99% de las cancelaciones, seguido por un      específicas para apoyar su estabilidad y sostenibilidad.
+
+
+
+
+             Figura 6. Composición de las cancelaciones por tamaño
+
+
+
+                  0,1%        0,1%        0,1%          0,1%      0,2%         0,2%         0,1%
+
+                  0,7%                                                                      0,7%
+                              0,8%        0,8%          0,9%      0,9%         0,8%
+
+
+
+                  99,2%                                                                     99,2%
+                              99,0%       99,0%         98,9%     98,9%        99,0%
+
+                  2017        2018        2019          2020      2021         2022         2023
+
+                           Microempresa          Pequeña        Mediana         Grande
+
+
+             Fuente: elaboración propia a partir de los datos del RUES.
+
+
+   Al examinar lo anterior a través de la proporción       porcentuales, lo que evidencia una vez más la vulne-
+entre el número de cancelaciones y el número de em-        rabilidad de las microempresas frente a situaciones
+presas en el tejido empresarial de cada tamaño, se         de desaceleración económica.
+observa que las microempresas presentan una tasa
+de cancelación del 14,5% en el año 2023, conside-             Estos resultados van en línea con lo encontrado
+rablemente superior a las demás categorías, que no         por Confecámaras (2023), donde se observa una
+superan el 2%. Extendiendo el análisis a los últimos       tasa de supervivencia empresarial más alta entre las
+7 años, se observa una ligera tendencia general de         empresas de mayor tamaño. La tasa de supervivencia
+descenso en la tasa de cancelaciones de las microem-       a 5 años es del 33,4% para microempresas, del 60,9%
+presas; sin embargo, para el año 2023, esta tenden-        para las pequeñas, 73,7% para las medianas y 85,7%
+cia se revierte mostrando un ascenso de 1,2 puntos         para las grandes.
+
+
+
+
+           CANCELACIONES DE
+  20       EMPRESAS EN COLOMBIA:
+           UN ANÁLISIS DE SUS PARTICULARIDADES
+       Figura 7. Tasa de cancelaciones por tamaño
+
+
+
+
+           14,9%
+
+
+
+
+                                                                                                                                                                                           14,5%
+                                                                     14,5%
+                                        14,4%
+
+
+
+
+                                                                                                  14,0%
+
+
+
+
+                                                                                                                                14,0%
+
+
+
+
+                                                                                                                                                              13,3%
+                                                2,0%
+
+
+
+
+                                                                                                          1,8%
+                                                                             2,0%
+                   1,7%
+
+
+
+
+                                                                                                                                        1,9%
+
+
+
+
+                                                                                                                                                                      1,7%
+
+
+
+
+                                                                                                                                                                                                   1,5%
+                          1,2%
+
+
+
+
+                                                                                                                                               1,3%
+                                 1,1%
+
+
+
+
+                                                       1,2%
+
+
+
+
+                                                                                                                 1,1%
+                                                                                                                         1,2%
+
+
+
+
+                                                                                                                                                                             1,2%
+                                                                                    1,2%
+                                                                                           1,1%
+
+
+
+
+                                                                                                                                                                                                          1,0%
+                                                                                                                                                      1,1%
+
+
+
+
+                                                                                                                                                                                    1,1%
+                                                              0,9%
+
+
+
+
+                                                                                                                                                                                                                 0,9%
+                   2017                         2018                         2019                         2020                          2021                          2022                         2023
+                                                       Microempresa                           Pequeña                     Mediana                     Grande
+
+       Fuente: elaboración propia a partir de los datos del RUES.
+
+
+Región
+   El análisis de las cancelaciones de empresas por re-                                                                     Durante los últimos 7 años, la región Centro Orien-
+gión revela un panorama de variabilidad y cambio a lo                                                                   te se ha destacado por exhibir la tasa más baja de can-
+largo del tiempo. A excepción de la región Caribe, se                                                                   celaciones, aunque se observan aumentos en los años
+han registrado descensos leves en la tasa de cancela-                                                                   2021 y 2023 en comparación con su comportamiento
+ciones entre 2017 y 2021 en las regiones del país. No                                                                   histórico. En contraste, las tasas de cancelaciones más
+obstante, esta tendencia ha experimentado un cam-                                                                       altas se han registrado en las regiones Llano (Arauca,
+bio en los últimos dos años, con un aumento en las                                                                      Casanare, Guainía, Guaviare, Meta, Vichada) y Centro
+tasas de cancelaciones en algunas regiones.                                                                             Sur (Amazonas, Caquetá, Huila, Putumayo, Tolima,
+                                                                                                                        Vaupés) a pesar del descenso leve respecto a sus tasas
+                                                                                                                        de cancelaciones respecto al año 2017.
+
+                          Figura 8. Tasa de cancelaciones por regiones (2017-2023)
+                                 20,0%
+
+                                 18,0%
+
+                                 16,0%
+
+                                 14,0%
+
+                                 12,0%
+
+                                 10,0%
+                                                  2017                2018                    2019                2020                  2021                 2022                   2023
+
+                                                  Caribe                                                  Centro Oriente                                     Centro Sur
+                                                  Eje Cafetero                                            Llano                                              Pacífico
+
+                          Fuente: elaboración propia a
+                          partir de los datos del RUES.
+
+
+                                                                                                                                                                                                                        21
+    Las tasas de cancelaciones en comparación con las ta-                 yores iniciativas de creación de empresas se presenten.
+sas de nacimientos, indica que las regiones con mayores
+tasas de cancelaciones muestran también una mayor ini-                       Estos hallazgos destacan el papel crucial de los fac-
+ciativa en la creación de empresas. Sin embargo, la resta                 tores externos en las cancelaciones empresariales, es-
+de ambas tasas es mayor para las regiones Caribe y Cen-                   pecialmente en regiones donde las condiciones relacio-
+tro Oriente, lo cual indica que la proporción de cancela-                 nadas con la infraestructura, el acceso a mercados y el
+ciones es menor en cuanto a las regiones en donde ma-                     capital humano son particularmente complejas.
+
+                  Tabla 1. Tasa de nacimientos y cancelaciones por región (2023)
+                                                                                         Tasa de     Tasa de
+                       Región              Stock       Creación      Cancelación
+                                                                                       Nacimientos Cancelaciones
+                  Caribe                 225.745       47.357             36.711          21,0%          16,3%
+                  Centro Sur             116.935       21.323             18.834          18,2%          16,1%
+                  Llano                   89.060       15.929             12.883          17,9%          14,5%
+                  Pacífico               225.877       39.795             30.479          17,6%          13,5%
+                  Eje Cafetero           321.114       55.736             43.151          17,4%          13,4%
+                  Centro Oriente         755.331       125.323            91.320          16,6%          12,1%
+                  Total                  1.734.062     305.463            233.378         17,6%          13,5%
+
+                  Fuente: elaboración propia a partir de los datos del RUES.
+
+Sector económico
+    Por sector económico, en promedio, aproxima-                          pación similar del sector de servicios (39,9%); estos
+damente el 80% de las empresas activas de los años                        son seguidos por los sectores de industria (10,0%)
+2017 a 2023 se han concentrado en los sectores de                         y construcción (3,7%), mientras que los sectores de
+comercio y servicios. De esta forma, para el año 2023,                    agricultura (2,0%) y extracción (0,4%) ocupan las
+comercio presenta la mayor participación sobre el to-                     últimas posiciones (tabla 4).
+tal del tejido empresarial (41,9%), con una partici-
+
+         Tabla 2. Tasa de creación y tasa de cancelaciones de acuerdo con el sector (2023)
+              Sector             Stock        Nuevas       Cancelaciones        Tasa de Nacimientos Tasa de Cancelación
+          Servicios          674.848          131.645            95.529                19,5%                 14,2%
+          Comercio           702.147          117.023            97.483                16,7%                 13,9%
+          Resto                 49127          8002               6170                 16,3%                 12,6%
+          Industria            183.223        29.616             22.480                16,2%                 12,3%
+          Extracción            7.043          1.044              803                  14,8%                 11,4%
+          Construcción          83.643        13.424              7.582                16,0%                  9,1%
+          Agricultura           34.605         5.243              3.004                15,2%                  8,7%
+          Total              1.734.636        305.997           233.051                17,6%                 13,4%
+
+         Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+
+            CANCELACIONES DE
+  22        EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+    Al evaluar la proporción de empresas canceladas            traste, los sectores de agricultura y construcción ex-
+con respecto al número total de empresas registradas           perimentaron una disminución en 0,2pp cada uno. De
+en cada sector, se revela que los sectores de servicios,       esta forma, es necesario analizar detalladamente las
+comercio e industria han venido presentando tasas              dinámicas que influyeron dentro de los sectores para
+de cancelación más elevadas en comparación con los             el año 2023, además de ser necesario implementar es-
+sectores de agricultura y extracción. Es relevante se-         trategias para abordar las necesidades sectoriales.
+ñalar que en el sector de servicios se registra la tasa de
+creación más elevada en comparación con otros sec-                Este último hallazgo resalta la relación entre el ta-
+tores, lo que contribuye a compensar la disparidad con         maño de un sector y la cantidad de cancelaciones. Los
+la tasa de cancelación.                                        sectores con una mayor presencia de empresas tien-
+                                                               den a registrar una mayor tasa de cancelación, lo que
+   Si bien la tasa de cancelaciones ha mostrado una            puede estar relacionado con la competencia, la diná-
+tendencia descendente en los últimos años, el retro-           mica del mercado y las cambiantes condiciones eco-
+ceso en esta tendencia presentada en el año 2023 se            nómicas. Además, subraya la necesidad de una gestión
+dio en 5 de los 7 sectores, en donde se presenta un au-        efectiva de empresas en sectores con alta competen-
+mento de la tasa de cancelación. Específicamente, los          cia, incluyendo la planificación estratégica, la adapta-
+sectores en los cuales se presenta el mayor aumento            ción a cambios en el mercado y la búsqueda de opor-
+en la tasa de cancelación son el sector de extracción          tunidades para mantener la sostenibilidad empresarial
+con un aumento de 2,5pp en dicha tasa, seguido por el          en entornos altamente competitivos.
+sector servicios con un incremento de 1,5pp. En con-
+
+             Figura 9. Tasa de cancelaciones por sector económico (2018-2023)
+
+                 16,0%
+
+
+                 14,0%
+
+
+                 12,0%
+
+
+                 10,0%
+
+
+                 8,0%
+
+
+                 6,0%
+                            2018         2019          2020        2021           2022       2023
+
+                         Resto                  Comercio              Servicios           Industria
+                         Agricultura            Construcción          Extracción
+
+
+             Fuente: elaboración propia a partir de los datos del RUES.
+
+   Los resultados previos subrayan la importancia              ante perturbaciones externas. Asimismo, es funda-
+de implementar programas que impulsen la resilien-             mental tener en cuenta las particularidades regionales
+cia empresarial, focalizándose particularmente en las          al formular políticas, reconociendo las disparidades en
+micro y pequeñas empresas. Estos segmentos no solo             las tasas de cancelación y las condiciones económicas
+constituyen la mayor proporción del entramado em-              en distintas partes del país.
+presarial, sino que también son los más susceptibles
+
+
+                                                                                                                23
+Reactivación de empresas
+   Luego de la caracterización de las empresas que              Examinado las dos primeras ramas a detalle, se ob-
+realizaron la cancelación de su matrícula entre los años    serva que en el caso de actividades de servicios ad-
+2017 a 2023, se buscó rastrear las empresas que fue-        ministrativos y de apoyo, los principales flujos se con-
+ron canceladas para determinar si surgieron de nuevo        centran hacia comercio al por mayor y al por menor
+en años posteriores. En el caso de las sociedades, no es    (36,4%), alojamientos y servicios de comida (24,7%)
+factible realizar un seguimiento a lo largo del tiempo,     e industria (8,7%). Por su parte, las empresas de las
+dado que, al iniciar el proceso de liquidación de las so-   actividades profesionales, científicas y técnicas, diri-
+ciedades, la matrícula mercantil se concluye, y con ello    gieron sus reactivaciones hacia comercio al por mayor
+se da el deceso de la persona jurídica con su NIT, no       y al por menor en 38,9%, alojamientos y servicios de
+habiendo manera de rastrear dicha matrícula en el fu-       comida en 19,5%, e industria con 8,1%. En tanto, en
+turo. En cambio, en el caso de las personas naturales,      las empresas que se desempeñaban en la rama de ac-
+dado que el NIT corresponde con el número de cédula,        tividades artísticas, de entretenimiento y recreación,
+es posible efectuar el seguimiento de las personas na-      se presentó una reactivación orientada hacia comer-
+turales que, para 2023, aparecían con un registro en la     cio al por mayor y al por menor (35,3%), alojamientos
+base de datos de empresas formales activas.                 y servicios de comida (34,8%) y otras actividades de
+                                                            servicio en (5,4%).
+    Los resultados indican que dentro de los últimos 5
+años se han reactivado anualmente, en promedio, un              Esta reorientación hacia ciertos sectores clave pue-
+4,9% de las empresas canceladas por personas natura-        de explicarse por diversas razones estratégicas y con-
+les, que para el caso del año 2023 fueron 10.588 que        diciones del mercado, como menores barreras de en-
+habían cancelado su matrícula el año anterior. Al ana-      trada a estos o menores costos de producción y niveles
+lizar los cambios experimentados por estas empresas         de inversión requeridos. El comercio al por mayor y
+reactivadas el último año, se destaca que un 37,5%          al por menor, por ejemplo, a menudo requiere menos
+de ellas optan por reintegrarse en otros subsectores;       capital inicial en comparación con otros sectores más
+entre los subsectores con mayor flujo hacia otros por       especializados. Además, influyen factores como el vo-
+parte de las empresas canceladas se encuentran: acti-       lumen de demanda y la flexibilidad para adaptarse a
+vidades de servicios administrativos y de apoyo, con el     diferentes segmentos del mercado, entre otros facto-
+3,3% de empresas se reactivadas en otra rama econó-         res que hacen que estos sectores sean atractivos para
+mica; actividades profesionales, científicas y técnicas,    la reincorporación de las empresas canceladas.
+con el el 2,7% y actividades artísticas, de entreteni-
+miento y recreación, con el 2,6%.
+
+Pérdida de empleos
+    Finalmente, el cierre de empresas no solo implica       de 170 mil empleos perdidos al año. Esta disminución
+la desaparición de las unidades productivas, sino que       en la fuerza laboral no solo tiene un impacto en la eco-
+también conlleva a que los empleados de estas com-          nomía general, sino que también tiene implicaciones
+pañías se queden temporalmente sin trabajo. Según           sociales sobre las personas desempleadas.
+las cifras de empleo reportadas por las mismas empre-
+sas, las cancelaciones dentro de los últimos 7 años se         La distribución de empleos perdidos durante el pe-
+tradujeron en la pérdida de una cifra cercana a 1,2 mi-     riodo de análisis revela que las empresas pequeñas,
+llones de empleos, alcanzando un promedio de cerca          medianas y grandes contribuyen solo con el 13,3% del
+
+
+
+
+            CANCELACIONES DE
+  24        EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+total de pérdidas de empleo, mientras que el 86,7%                      Tabla 3. Distribución de pérdida de empleos
+restante se atribuye a microempresas. Aunque las em-                    con respecto al tamaño de la empresa
+presas pequeñas, medianas y grandes tienen una fuer-
+                                                                                              Empleos perdidos
+za laboral más numerosa, representan una proporción                           Tamaño                               %
+                                                                                                (2017-2023)
+relativamente baja tanto de las cancelaciones como
+                                                                         Grande                        33.275      2,7%
+del conjunto total de empresas. Por otro lado, las mi-
+                                                                         Mediana                       48.889      3,8%
+croempresas, a pesar de tener un número limitado de
+empleados, constituyen una proporción significativa                      Pequeña                       79.844      6,6%
+tanto en el panorama empresarial general como en las                     Microempresa                1.056.246    86,7%
+cancelaciones, lo que se traduce en una contribución                     Total                       1.218.254    100%
+sustancial al empleo perdido.
+                                                                        Fuente: elaboración propia a
+                                                                        partir de los datos del RUES.
+
+
+3.1 Análisis por tipo de cancelación
+   A continuación, se llevará a cabo un análisis compa-                  En un análisis histórico, se observa que en el año 2019
+rativo entre las empresas canceladas por declaración y               las cancelaciones por depuración aumentaron su partici-
+depuración, que para el año 2023 alcanzan una parti-                 pación sobre el total de cancelaciones en 14,7pp respec-
+cipación sobre el total de cancelaciones del 76,1% en                to al año anterior, al pasar de 17,6% en 2018 a una parti-
+el primer caso, y de 23,9% en el caso de las cancela-                cipación de 32,3% en 2019, lo que sugiere que, conforme
+ciones por depuración. Este análisis tiene como obje-                al momento de la expedición de la ley 1727 del año 2014,
+tivo comprender las diferencias clave entre esos dos                 una alta cantidad de empresas optaron por no declarar la
+tipos de cancelaciones, identificar las variantes más                cancelación de su matrícula y esperar el proceso de depu-
+relevantes entre ellos y señalar patrones y tendencias               ración, las cuales se hicieron efectivas al pasar los 5 años
+sobre los cuales profundizar.                                        estipulados en la ley, es decir en el año 2019.
+
+            Figura 10. Cancelaciones por tipo de cancelación.
+
+
+                 14,1%       17,6%
+                                                             26,4%             24,0%       26,5%      25,5%
+                                             32,3%
+
+
+
+
+                 35,9%
+                             32,4%                                             76,0%
+                                                             73,6%                         73,5%      74,5%
+                                             57,7%
+
+
+
+
+                 2017         2018            2019           2020           2021           2022        2023
+
+                                     Cancelación declarada           Cancelación por depuración
+
+
+            Fuente: elaboración propia a partir de los datos del RUES.
+
+
+                                                                                                                          25
+    Diferenciando por el tamaño de las empresas, de           2019 proviene principalmente de las microempresas,
+acuerdo con sus activos, se destaca una tendencia             sugiriendo que fueron estas las que decidieron espe-
+hacia la cancelación declarada, es decir, aquellas can-       rar el proceso de depuración desde el momento que
+celaciones que son formalizadas ante las cámaras de           se estableció la ley 1727.
+comercio del país. De la misma manera, se observa
+que el aumento en la proporción de cancelaciones                 Para el 2023, las empresas grandes muestran casi
+por depuración es común para todos los tamaños de             un 100% de cancelaciones declaradas, seguidas de
+empresa. En el caso de las microempresas, las cance-          cerca por las medianas con un 99,0% y las pequeñas
+laciones por depuración pasan de representar un 14%           con un 94,6%. Este fenómeno podría atribuirse al he-
+del total de cancelaciones en 2017 a un 25,7% en el           cho de que estas empresas generalmente operan bajo
+año 2023. En las pequeñas empresas, se pasa de una            una figura de persona jurídica y, debido a su tamaño,
+participación de las empresas depuradas de un 0,8%            son más fiscalizables o supervisadas. Esto las obliga
+a un 6,7% en el mismo período. Para las empresas              a mantenerse actualizadas con la documentación ne-
+medianas se pasa de una participación del 0,4% de             cesaria para llevar a cabo sus actividades mercantiles.
+empresas depuradas en 2017 a un 2,1% en el 2023.              Por el contrario, las microempresas muestran una
+Igualmente, se observa que el pico de la participación        menor inclinación a formalizar su cancelación, con un
+de cancelaciones depuradas presentado en el año               76,1% de sus cancelaciones declaradas.
+
+
+                 Figura 11. Porcentaje de cancelaciones por depuración por tamaño de empresa (2017-2023)
+
+                   35,0%                        32,6%
+
+                   30,0%
+                                                                                          25,7%
+                   25,0%
+
+                   20,0%
+                            14,2%
+                   15,0%
+
+                   10,0%                                                                  6,7%
+                                                 4,2%
+                    5,0%                                                                  2,1%
+                             0,8%                0,7%
+                    0,0%
+                             2017     2018      2019        2020      2021        2022    2023
+
+                             Microempresa               Pequeña         Mediana          Grande
+
+
+                 Fuente: elaboración propia a partir de los datos del RUES.
+
+
+   Debido a la participación de una mayor propor-             estas dos categorías empresariales representan el
+ción de cancelaciones por depuración entre las mi-            93,3% del empleo perdido, como se mostró previa-
+cro y pequeñas empresas, y teniendo en cuenta que             mente, es fundamental profundizar en el estudio
+
+
+
+
+            CANCELACIONES DE
+  26        EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+de estos grupos de empresas. Por tanto, el análisis              rresponde a cancelaciones declaradas, mientras que
+comparativo entre los tipos de cancelación se cen-               el 25,6% restante se clasifica como cancelaciones por
+trará exclusivamente en el universo de estudio de las            depuración. En cambio, el 99,9% de las sociedades pe-
+pequeñas y microempresas. Esta decisión se basa en               queñas y microempresas optan por llevar a cabo su
+la relevancia de comprender las particularidades de              cancelación de manera declarada, lo que sugiere que
+estos segmentos empresariales, ya que su estabilidad             han completado su proceso de disolución y liquidación
+y crecimiento tienen un impacto significativo en el              lo que viene asociado a la mayor formalidad y obliga-
+tejido económico y social de Colombia.                           ciones regulatorias que las sociedades enfrentan, pues
+                                                                 suelen estar más reguladas legal y fiscalmente, dado
+    En la Figura 12, se ilustra la distribución entre los        que “los modelos societarios [que] están expuestos a
+dos tipos de cancelaciones según la organización ju-             mayor control y vigilancia” Soto & Sanchez (2014), lo
+rídica. De las 1.394.569 cancelaciones de personas               que lleva a una mayor transparencia y cumplimiento
+naturales pequeñas y microempresas, el 74,4% co-                 de este tipo de procesos.
+
+
+
+                             Figura 12. Cancelaciones de micro y pequeñas
+                             empresas según estructura jurídica (2017-2023)
+
+
+
+
+                                           74,4%                         100,0%
+
+                                           25,6%
+                                           P. Natural                     Sociedad
+
+                                    Cancelación por depuración      Cancelación declarada
+
+
+                             Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+
+    A nivel regional, los datos revelan que las cancelacio-      Huila, Putumayo, Tolima, Vaupés. Esta disparidad refleja
+nes declaradas en Centro Oriente son del 83,3% y en              niveles más altos de informalidad en estas regiones, re-
+el Eje Cafetero representan el 82,0%. De otro modo,              saltando también la incidencia que tienen los factores
+las cancelaciones por depuración son más frecuentes              externos, como el desarrollo institucional, en el proceso
+en la región Llano (Arauca, Casanare, Guainía, Guavia-           de cancelación de empresas. Así mismo, esta disparidad
+re, Meta, Vichada), alcanzando un total del 52,6% de             puede reflejar la incidencia que tiene la presencia de in-
+las cancelaciones, con respecto a Centro Sur (43,3%)             fraestructura productiva y de conectividad sobre el pro-
+que abarca departamentos como: Amazonas, Caquetá,                ceso de cancelación de matrículas mercantil, donde una
+
+
+
+
+                                                                                                                    27
+mayor disponibilidad y mejores condiciones de las vías,        instituciones de apoyo, pueden facilitar la formalidad en
+el acceso a internet, cobertura de servicios, entre otros,     todos los procesos relacionados con la empresarialidad,
+sumados a una mayor presencia y especialización en las         entre ellos, la cancelación de las matrículas.
+
+
+                          Tabla 4. Tipos de cancelación por región 2023
+
+                                               Cancelaciones           Cancelaciones
+                                Región                           %                        %
+                                                declaradas              depuradas
+
+                           Centro Oriente          76.084       83,3       15.234        16,7
+                           Eje Cafetero            35.386       82,0       7.764         18,0
+                           Pacífico                23.109       75,8       7.370         24,2
+                           Caribe                  22.432       61,1       14.279        38,9
+                           Centro Sur              10.670       56,7       8.164         43,3
+                           Llano                    6.103       47,4       6.780         52,6
+                           Total                   173.784      74,5       59.591        25,5
+
+                          Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+   La distribución de cancelaciones de empresas en             (56,7%), agricultura (37,0%) y construcción (31,5%)
+diversos sectores económicos revela algunos patrones           exhiben una proporción significativa de cancelaciones
+claves. Los sectores de comercio, industria y servicios        debido a la falta de renovación. Esto podría señalar di-
+sobresalen al presentar una mayor proporción de em-            ferencias en la dinámica y enfoque operativo de estos
+presas que eligen declarar su cancelación, insinuan-           sectores, donde las empresas pueden ser más propen-
+do una preferencia por un cierre planificado de sus            sas a seguir operando de manera informal sin actuali-
+operaciones. En contraste, los sectores de extracción          zar sus registros.
+
+
+                                      Tabla 5. Tipos de cancelaciones por sector económico 2023
+
+                                                       Cancelaciones Cancelaciones
+                                          Sector
+                                                        depuradas     declaradas
+                                      Extracción          56,7%         43,3%
+                                      Agricultura         37,0%         63,0%
+                                      Construcción        31,5%         68,5%
+                                      Comercio            25,4%         74,6%
+                                      Servicios           25,4%         74,6%
+                                      Industria           24,4%         75,6%
+                                      Otros sectores      16,5%         83,5%
+                                      Total               25,5%         74,5%
+
+                                      Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+
+            CANCELACIONES DE
+   28       EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+    Finalmente, si se examina la dinámica intra-anual                        toman la decisión de si continuar su actividad en los
+de las cancelaciones declaradas, se observa que en to-                       primeros meses del año, adelantándose al periodo de
+dos los años que conforman el periodo de análisis, la                        renovación; lo cual puede darse por el hecho de que la
+mayor parte de las cancelaciones se realizaron en los                        cancelación dentro del periodo de renovación no ge-
+primeros meses del año; teniendo que, a corte de abril,                      nera la necesidad de renovar la matricula mercantil al
+se realizaron cerca del 68% de las cancelaciones decla-                      momento de cancelar.
+radas de cada año. Esto muestra que los empresarios
+
+
+
+               Figura 13. Dinámica intra-anual de las cancelaciones declaradas
+
+
+                  120%
+                                                                                                                      95%
+                  100%
+                                                                             79%
+                  80%                               72%
+
+                  60%
+                                            32%
+                  40%
+
+                  20%             14%
+
+                   0%
+                          Enero
+
+                                  Febrero
+
+                                            Marzo
+
+
+                                                    Abril
+
+                                                              Mayo
+
+                                                                     Junio
+
+
+                                                                              Julio
+
+
+                                                                                      Agosto
+
+                                                                                               Septiembre
+
+
+                                                                                                            Octubre
+
+                                                                                                                      Noviembre
+
+                                                                                                                                    Diciembre
+
+
+
+
+                           2017             2018            2019         2020          2021                 2022                  2023
+
+
+
+               Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+
+                                                                                                                                                29
+Factores del tiempo
+ de funcionamiento
+                   4
+    de las empresas
+
+
+
+
+     CANCELACIONES DE
+     EMPRESAS EN COLOMBIA:
+30   UN ANÁLISIS DE SUS
+     PARTICULARIDADES
+    La longevidad de las empresas hasta su cierre pre-              Los resultados indican que las empresas canceladas
+senta un comportamiento interesante. Para las firmas             mediante declaración se mantuvieron activas en pro-
+que cancelan sus actividades por declaración, el tiem-           medio, durante 6 años y 2 meses, en tanto, las empre-
+po de funcionamiento se calcula como la diferencia               sas que son canceladas por depuración tienen un pe-
+entre el año de registro de la matrícula mercantil y             ríodo aproximado promedio de actividad de casi 2 años
+el año de la fecha de la cancelación. En el caso de las          y 9 meses, lo cual representa una diferencia estadísti-
+cancelaciones por depuración la longevidad es calcu-             camente significativa de 3 años 5 meses, o un tiempo
+lada de manera aproximada como la diferencia entre               de funcionamiento un 55% menor. Esta discrepancia
+el año de la fecha de matrícula mercantil y el último            tiene implicaciones importantes para comprender la
+año de renovación.                                               sostenibilidad de las empresas en ambos grupos.
+
+
+                  Figura 14. Tiempo promedio de funcionamiento de las empresas canceladas (2017-2023)
+
+                       7,0
+                                                                       6,4
+                              6,2                                                            6,2
+
+                       6,0                         5,4                  5,6                  5,4
+
+                       5,0
+
+                       4,0
+                              2,8                                       2,9                  2,8
+                       3,0                         2,3
+
+                       2,0
+
+                       1,0
+
+                        0
+                             2017       2018       2019     2020      2021      2022        2023
+
+                                    Cancelación por depuración      Cancelación declarada
+                                    Total cancelaciones
+
+
+
+                  Fuente: elaboración propia a partir de los datos del RUES.
+
+
+
+   La mayor longevidad promedio de las empre-                        Si se observa para el año 2023 la distribución de
+sas canceladas mediante declaración podría indicar               la edad que presentaban las empresas al momento de
+una planificación más consciente de su cierre, lo que            cancelar se encuentra que las empresas a las que se
+permite una liquidación más ordenada de activos, el              canceló su matrícula por el proceso de depuración se
+cumplimiento de obligaciones pendientes y la gestión             concentran en menores edades; de hecho, el 44,6%
+de aspectos legales y fiscales. Por otro lado, la menor          de las empresas canceladas por depuración presenta-
+longevidad promedio en las empresas canceladas por               ban un tiempo de funcionamiento menor a 1 año, y
+depuración podría sugerir una desconexión entre el               el 24,5% de empresas presentaban un tiempo de fun-
+cierre real de las operaciones y la actualización de re-         cionamiento de entre 1 y 3 años. Por parte de las em-
+gistros, lo que podría resultar en una falta de cumpli-          presas que formalizaron la cancelación de su matrícula
+miento normativo.                                                mercantil, se encuentra que el 32,49% de estas operó
+
+
+
+
+                                                                                                                  31
+entre 3 y 5 años, el 25% operó entre 1 y 3 años, y el       minución de salario de sus dueños. Esto va en linea con
+22,31% operó entre 5 y 10 años.                             lo expuesto en el estudio de movilidad empresarial de
+                                                            Confecámaras (2023), en donde se observa un menor
+   Lo anterior, revela una característica de las empre-     crecimiento en empresas cuyo motivo de creación fue
+sas canceladas por depuración, al mostrar que estas         el hecho de que los propietarios no identificaron otra
+empresas son de corta duración; es decir, pudieron ser      alternativa de ingreso.
+creadas de forma circunstancial, ante la pérdida o dis-
+
+
+               Figura 15. Distribución del tiempo de funcionamiento de las empresas
+               canceladas en 2023 de acuerdo con su motivo de cancelación
+
+
+                            .2
+
+
+                           .15
+                Densidad
+
+
+
+
+                            .1
+
+
+                           .05
+
+                                                                                                 30
+                            .0
+                                 0                10                      20
+                                                    Tiempo funcionamiento
+                                                  Edad cancelación declarada
+                                                  Edad cancelación por depuración
+
+
+               Fuente: elaboración propia a partir de los datos del RUES.
+
+
+    A continuación, se presenta un análisis de regre-       diseño de políticas que fomenten la sostenibilidad y el
+sión, que se centrará en identificar y comprender las       crecimiento de las empresas. Para ello, se procede a
+variables clave que afectan la duración operativa de        estimar un modelo mediante mínimos cuadrados ordi-
+las empresas, desde su creación hasta su eventual           narios (MCO) para identificar los factores que inciden
+cese de actividades. Este enfoque proporciona una           en la duración operativa de las empresas, entendida
+visión integral de los determinantes del tiempo de          como el lapso desde su establecimiento hasta la inte-
+funcionamiento empresarial, contribuyendo así a la          rrupción de sus operaciones. Los resultados de la re-
+comprensión de la dinámica empresarial en el contex-        gresión se presentan en el Anexo A.
+to colombiano y ofreciendo insumos valiosos para el
+
+
+
+
+            CANCELACIONES DE
+  32        EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+   En primer lugar, se observa como para los años        mayor acceso a crédito y servicios financieros, lo que
+2018 y 2019 las empresas canceladas presentaron          influye en que la empresa presente una mayor soste-
+tiempos de funcionamiento inferiores a aquellas can-     nibilidad a lo largo del tiempo.
+celadas en el año 2017, destacando la mayor diferen-
+cia presentada en 2019 de -0,6 años; este cambio en          Las empresas pequeñas, que cancelan su matrícula
+2019 se debe a la entrada de aplicación de la depu-      mercantil, exhiben un tiempo de funcionamiento que
+ración del RUES de la ley 1727 de 2014. A partir del     es 7,2 años más prolongado que el de las microem-
+año 2020, se observan tiempos de operación mayor         presas: lo cual sucede igualmente con las empresas
+entre las empresas canceladas, mostrando como la         medianas y grandes, que presentan una longevidad
+pandemia tuvo también incidencia sobre empresas de       aún mayor, con diferencias de 8,8 y 9,7 años respec-
+mayor longevidad, generando que en los siguientes        tivamente, en comparación con las microempresas.
+años las empresas canceladas también presentaran         Este patrón sugiere que el tamaño de la empresa
+mayores tiempos de operación, respecto al año 2017.      influye significativamente en su permanencia en el
+                                                         mercado. Una posible explicación es que las empresas
+   De la misma manera, se verifica la diferencia en      más grandes y establecidas pueden tener recursos y
+el tiempo de funcionamiento entre las empresas           capacidades para enfrentar desafíos y volatilidades, lo
+que cancelaron su matrícula de manera declarada,         que contribuye a una mayor duración en comparación
+y aquellas que fueron depuradas; estas últimas pre-      con las microempresas, que pueden ser más vulnera-
+sentaron un tiempo de funcionamiento inferior en         bles a factores externos y restricciones de recursos.
+cerca de 3 años respecto a las empresas canceladas
+formalmente.                                                 Las diferencias en la duración de las empresas en-
+                                                         tre regiones en Colombia son notables, evidencian-
+   Las empresas constituidas como sociedades pre-        do que, respecto a la región Centro Sur las empresas
+sentaron un tiempo de funcionamiento que es, en          de todas las regiones presentan un mayor tiempo de
+promedio, 0,14 años más extenso en comparación           funcionamiento promedio, destacan las regiones Ca-
+con las personas naturales. Esta diferencia podría       ribe y Centro Oriente con cerca de 0,8 años de fun-
+deberse a la estructura jurídica y de gestión más for-   cionamiento adicionales con respecto a las empresas
+malizada de las sociedades, lo que potencialmente les    de la región de comparación. Estas disparidades re-
+otorga mayor estabilidad y durabilidad en el tiempo.     gionales podrían estar influidas por diversos factores,
+Lo anterior, demuestra igualmente las ventajas de        tales como las condiciones del entorno empresarial,
+una mayor formalidad, a través de modelos societa-       la accesibilidad a recursos, las dinámicas económicas
+rios, con una mayor protección del patrimonio de los     locales y el respaldo gubernamental, elementos que
+socios, y como este tipo de organización jurídica pre-   juegan un papel crucial en la longevidad y estabilidad
+senta aspectos tales como un mayor crecimiento, un       de las empresas en cada región.
+
+
+
+
+                                                                                                          33
+                   5
+     Consideraciones
+              finales
+
+
+
+
+     CANCELACIONES DE
+     EMPRESAS EN COLOMBIA:
+34   UN ANÁLISIS DE SUS
+     PARTICULARIDADES
+    Este estudio se planteó con el objetivo de com-        ayudar a identificar las problemáticas y necesidades
+prender las características de las empresas cuyo regis-    específicas por región, de manera que puedan focali-
+tro mercantil fue cancelado entre 2017 y 2023. Para        zarse acciones pertinentes para apoyar a las unidades
+esto, se utilizaron datos del Registro Único Empresa-      productivas de cada región en la superación de los de-
+rial y Social (RUES) de las cámaras de comercio con        safíos que se les presentan para mantener y escalar su
+1.509.111 cancelaciones para dicho período. A nivel        operación.
+global, Colombia destaca como uno de los países per-
+tenecientes a la OCDE con una de las tasas de cance-           Una vez centrado el análisis en las micro y pequeñas
+lación más elevadas, manteniéndose constante en va-        empresas, y comparando entre las empresas cancela-
+lores que rondan el 13% durante el periodo analizado.      das por declaración y aquellas canceladas por depu-
+                                                           ración, se encuentran patrones distintivos relevantes.
+   La notoria disparidad en las tasas de cancelación       Mientras que el 74,4% de las cancelaciones de perso-
+entre personas naturales y sociedades pone de relie-       nas naturales son declaradas, el 25,6% se atribuye a
+ve la necesidad de brindar un apoyo específico a las       depuraciones; en contraste, casi el 100% de las socie-
+primeras. Esto podría incluir el acceso a programas        dades optan por cancelaciones declaradas. Lo anterior
+que les permitan desarrollar capacidades técnicas,         da cuenta de la importancia de los mayores niveles de
+gerenciales y habilidades blandas, obtener financia-       formalidad que mantienen las sociedades y como este
+ción, capital de trabajo y recursos para la adquisición    factor influye notablemente en su expectativa de vida,
+de tecnología, programas que le permitan a las micro       razón por la cual, los esfuerzos enfocados en fortale-
+y pequeñas empresas la adopción de normas técnicas         cer los procesos de formalización, tanto a nivel pro-
+de calidad y certificaciones que les permitan insertarse   ductivo como tributario y comercial, no impactan solo
+en mercados más exigentes y de mayor rentabilidad.         en el cumplimiento de la normatividad y la responsabi-
+                                                           lidad de las empresas con la sociedad, sino también en
+    La alta tasa de cancelación de microempresas           el mejoramiento de sus perspectivas de desarrollo y
+(99,03%) en comparación con otras categorías, y el         estabilidad, por lo que una vez más se comprueba que
+alto porcentaje de pérdida de empleos que significa        la formalidad es un buen negocio.
+el cierre de micro y pequeñas empresas (93,3%), su-
+braya la importancia de implementar estrategias en-           La distribución sectorial muestra que comercio, in-
+focadas en mejorar las condiciones para la actividad       dustria y servicios tienden a cancelaciones declaradas,
+económica de estos segmentos empresariales.                mientras que agricultura y extracción tienen una pro-
+                                                           porción significativa de cancelaciones por falta de re-
+    En cuanto a las diferencias regionales, las tasas de   novación. Así mismo, las mayores tasas de cancelación
+cancelación más bajas se evidencian en Centro Orien-       dentro de los sectores de comercio y servicios, frente
+te (12,1%), seguidas del Eje Cafetero (13,4%) y las        a sectores como de extracción, agricultura y construc-
+más altas en la región Caribe (16,3%), lo que seña-        ción, revelan la importancia de entender las dinámicas
+la la importancia de entender los factores detrás de       sectoriales para la formulación de políticas de apoyo
+estas tendencias. Un análisis más profundo permitiría      para los sectores de empresas con mayor vulnerabilidad.
+
+
+
+
+                                                                                                            35
+    En términos de duración, las empresas canceladas       presariales, sino que también ofrecen valiosas pers-
+mediante declaración tienen una longevidad prome-          pectivas para la formulación de políticas y estrategias.
+dio de 6 años y 2 meses, es decir, un tiempo de dura-      Estas cifras permiten identificar patrones, tendencias
+ción un 45% mayor a las empresas que se cancelan por       y desafíos clave, respecto al tipo de empresas con ma-
+depuración, lo que refleja la importancia de fomentar      yor vulnerabilidad frente a la posible salida del merca-
+el surgimiento de emprendimientos por oportunidad,         do, lo que a su vez facilita la creación de enfoques más
+planificados y con recursos y herramientas adecua-         informados y efectivos para promover un tejido em-
+das, lo cual les garantiza unas mayores posibilidades      presarial sólido y sostenible. Al comprender las razo-
+de supervivencia, a diferencia de aquellos que se dan      nes detrás de las cancelaciones, los responsables de la
+por necesidad, los cuales son generalmente los que no      toma de decisiones pueden desarrollar intervenciones
+superan el llamado “valle de la muerte” del empren-        más específicas y dirigidas, abordando las principales
+dimiento, con las consecuencias personales y sociales      debilidades del segmento de empresas con mayor sa-
+que dichos fracasos empresariales conllevan.               lida del tejido empresarial, es decir, de las empresas
+                                                           de menor tamaño y de menor de tiempo de funciona-
+    Las diferencias en la duración de las empresas entre   miento en el mercado.
+regiones en Colombia son notables, evidenciando que
+las empresas en todas las regiones presentan tiempos           Los hallazgos anteriores destacan la necesidad de
+de funcionamiento superiores con respecto a la re-         fortalecer la resiliencia empresarial, con un enfoque
+gión Centro Sur. Estas disparidades regionales podrían     específico en las micro y pequeñas empresas consti-
+estar influidas por diversos factores, tales como las      tuidas como personas naturales. Estos segmentos no
+condiciones del entorno empresarial, la accesibilidad      solo son una parte significativa del entramado empre-
+a recursos, las dinámicas económicas locales y el res-     sarial, sino que también exhiben una mayor suscepti-
+paldo gubernamental, elementos que juegan un papel         bilidad ante perturbaciones externas. Para tal efecto,
+crucial en la longevidad y estabilidad de las empresas     es preciso considerar las particularidades regionales al
+en cada región.                                            desarrollar políticas, lo cual puede efectuarse de ma-
+                                                           nera eficiente, a través del diálogo y diseño concerta-
+    Finalmente, se resalta el hecho de que la cancela-     do de medidas con los actores públicos y privados de
+ción de empresas implica la pérdida de 170 mil em-         cada región, quienes pueden ofrecer de primera mano
+pleos en promedio por año, confirmado la importancia       un panorama claro de las circunstancias que afectan la
+de las empresas como motores de desarrollo, innova-        actividad empresarial en cada territorio, para así, de-
+ción y empleo, y su influencia económica y social más      sarrollar medidas efectivas, que reconozcan las dispa-
+allá de la producción de bienes y servicios.               ridades subregionales y sectoriales, que permitan me-
+                                                           jorar las tasas de creación y supervivencia empresarial
+   Las cifras proporcionadas por el análisis no solo       y así contribuir efectivamente al mejoramiento de las
+arrojan luz sobre la dinámica de cancelaciones em-         condiciones de vida y bienestar en el país.
+
+
+
+
+            CANCELACIONES DE
+  36        EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+   6
+Referencias
+
+
+
+
+           CANCELACIONES DE
+       EMPRESAS EN COLOMBIA:
+           UN ANÁLISIS DE SUS   37
+           PARTICULARIDADES
+Arias, A., Jung, A., & Peña, I. (2007). Factores aso-      Mata, J., & Portugal, P. (1994). Life duration of new
+       ciados al cese de actividades de nuevas firmas            firms. The journal of industrial economics, 227-
+       españolas. Cuaderno de Economía, Universidad              245.
+       Católica de Uruguay.
+                                                           McCall, J., Prochaska, N., & James, O. (2023). Identi-
+Benavente, J., & Külzer, C. (2008). Creación y Des-             fying Reasons for Small & Medium-Sized Firm
+     trucción de Empresas en Chile. Estudios de Eco-            Closures in North Carolina: An Exploratory Fra-
+     nomía, 215-239.                                            mework Leveraging Administrative Data. Caro-
+                                                                lina Small Business Development Fund.
+Confecámaras. (2023). La supervivivencia empresa-
+     rial en Colombia: estudio de los factores clave       OCDE. (2007). Manual on Business Demography Sta-
+     que impulsan la permanencia de las empresas               tistics.
+     en el mercado.
+                                                           Oficina de la OIT para los Países Andinos. (2020). Im-
+Delgado, M., Porter, M. E., & Stern, S. (2010). Clus-            pacto de la COVID-19 en las Mipymes colombia-
+     ters and entrepreneurship. Journal of Economic              nas.
+     Geography, 495-518.
+                                                           OIT. (2015). La importancia del empleo y los medios
+Dirección General de Industria y de la PYME. (n.d.). Ce-         de vida en la agenda para el desarrollo con poste-
+      rrar una empresa. Retrieved February 1, 2024,              rioridad. Obtenido de https://www.ilo.org/wc-
+      from       https://administracion.gob.es/pag_              msp5/groups/public/---dgreports/---dcomm/
+      Home/Tu-espacio-europeo/derechos-obliga-                   documents/statement/wcms_206443.pdf
+      ciones/empresas/inicio-gestion-cierre/regis-
+      tro-cambio-cierre/cerrar.html#-0f5ffc00885b          Salami, C., Ekakitie, E., & Ebinim, L. (2023). IMPACT
+                                                                OF GOVERNMENT POLICY ON ENTREPRE-
+Dumais, G., Ellison, G., & Glaeser, E. (1997). Geogra-          NEURSHIP GROWTH AND DEVELOPMENT OF
+    phic Concentration as a Dynamic Process. The                SMALL-SCALE BUSINESS. Journal of Global So-
+    Review of Economics and Statistics, 193-204.                cial Sciences , 73-102.
+
+Fotopoulos, G., & Louri, H. (2000). Location and Sur-      Sánchez, R. M., Salazar, A. L., & Soto, R. C. (2014).
+     vival of New Entry. Small Business Economics,              El emprendimiento y crecimiento de las Pymes.
+     311-321.                                                   Acta Universitaria, 59-72.
+
+Gonzalez, N. M. (2001). ¿Cómo impacta “esta infla-          Townley, G. (2021). Closing your company and
+     ción” en las finanzas empresarias y cuáles son            applying for voluntary strike off. https://com-
+     las estrategias a desarrollar? FACES, 75-83.              panieshouse.blog.gov.uk/2021/08/10/clo-
+                                                               sing-your-company-and-applying-for-volun-
+Márquez, P., & Ortíz, A. (2011). Por qué fracasan las          tary-strike-off/
+     empresas. Memorias del V Congreso Internacio-
+     nal de Contaduría Pública, 157-170.
+
+
+
+
+            CANCELACIONES DE
+  38        EMPRESAS EN COLOMBIA:
+            UN ANÁLISIS DE SUS PARTICULARIDADES
+                                       Anexo A
+
+
+                               Tiempo de                                            Tiempo de
+VARIABLES                                     VARIABLES
+                             funcionamiento                                       funcionamiento
+2018                           -0.0684***     Sociedad                               0.147***
+                               (0.0183)                                             (0.0201)
+2019                           -0.630***      Agricultura                            1.019***
+                               (0.0182)                                             (0. .0415)
+2020                            0.286***      Comercio                               0.703***
+                               (0.0188)                                              (0.010)
+2021                            0.207***      Construcción                           0.789***
+                               (0.0184)                                              (0.026)
+2022                           0.0566***      Extracción                             0.868***
+                               (0.0183)                                              (0.086)
+2023                           0.0943***      Industria                              1.562***
+                               (0.0180)                                              (0.016)
+Cancelación por depuración     -3.234***      Resto                                  1.508***
+                               (0.0117)                                              (0.033)
+Grande                          9.713***      Constante                              4.986***
+                                (0.248)                                             (0.0217)
+Mediana                         8.872***
+                                (0.129)       Observations                          1,466,956
+Pequeña                         7.257***
+                               (0.0545)       Errores estándar entre paréntesis
+Caribe                          0.828***      *** p<0.01, ** p<0.05, * p<0.1
+                               (0.0210)
+Centro Oriente                  0.827***
+                               (0.0184)
+Eje Cafetero                   0.0945***
+                               (0.0201)
+Llano                           0.173***
+                               (0.0254)
+Pacífico                        0.594***
+                               (0.0214)
+
+
+
+
+                                                                                                 39
+

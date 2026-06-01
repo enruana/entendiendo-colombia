@@ -1,0 +1,12 @@
+dimension,categoria,porcentaje,fuente
+Tipo,Cancelacion declarada (voluntaria),76.1,Confecamaras_Cancelaciones_2017_2023
+Tipo,Cancelacion por depuracion (Ley 1727),23.9,Confecamaras_Cancelaciones_2017_2023
+Forma juridica,Personas naturales,93.5,Confecamaras_Cancelaciones_2017_2023
+Forma juridica,Sociedades,6.5,Confecamaras_Cancelaciones_2017_2023
+Tamano,Microempresas,99.0,Confecamaras_Cancelaciones_2017_2023
+Tamano,Pequenas,0.8,Confecamaras_Cancelaciones_2017_2023
+Tamano,Medianas y grandes,0.2,Confecamaras_Cancelaciones_2017_2023
+Tasa por sector,Servicios,14.2,Confecamaras_Cancelaciones_2017_2023
+Tasa por sector,Comercio,13.9,Confecamaras_Cancelaciones_2017_2023
+Tasa por sector,Construccion,9.1,Confecamaras_Cancelaciones_2017_2023
+Tasa por sector,Agricultura,8.7,Confecamaras_Cancelaciones_2017_2023

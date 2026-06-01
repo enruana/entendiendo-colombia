@@ -1,0 +1,196 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import DistribucionRegional from "../../../components/temas/empresas/charts/DistribucionRegional.tsx";
+import GrandesPorDepartamento from "../../../components/temas/empresas/charts/GrandesPorDepartamento.tsx";
+---
+
+<Chapter
+  number="04"
+  title="Dónde están las empresas"
+  subtitle="El tejido empresarial colombiano está concentrado en un puñado de departamentos. Y entre más grande la empresa, más concentrada está la geografía."
+  chapterNumber={4}
+  totalChapters={7}
+  prevHref="/temas/empresas/03-mipymes"
+  prevTitle="Mipymes: el 99% que produce poco"
+  nextHref="/temas/empresas/05-dinamica"
+  nextTitle="Nacen, mueren, sobreviven"
+  accentColor="cyan"
+>
+
+<h2>El mapa del tejido empresarial</h2>
+
+<p>
+  Colombia es un país de regiones, y eso se ve en la economía con la misma claridad con
+  que se ve en el lenguaje, la geografía o la política. El tejido empresarial sigue la
+  misma lógica de concentración: <strong>cuatro departamentos concentran más de la
+  mitad</strong> de las empresas activas del país, y los 29 restantes se reparten lo
+  que sobra.
+</p>
+
+<DistribucionRegional client:load />
+
+<p>
+  Al cierre de 2025, había <strong>1.805.564 empresas activas</strong> en el Registro
+  Único Empresarial (RUES). La distribución por jurisdicción quedó así:
+</p>
+
+<div class="my-6 grid sm:grid-cols-2 md:grid-cols-4 gap-3">
+  <div class="rounded-xl border-2 border-violet-300 bg-violet-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-violet-700">23,7%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Bogotá</div>
+    <div class="mt-1 text-xs text-neutral-600">~428 mil empresas</div>
+  </div>
+  <div class="rounded-xl border-2 border-indigo-300 bg-indigo-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-indigo-700">13,8%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Antioquia</div>
+    <div class="mt-1 text-xs text-neutral-600">~249 mil empresas</div>
+  </div>
+  <div class="rounded-xl border-2 border-cyan-300 bg-cyan-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-cyan-700">8,8%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Valle del Cauca</div>
+    <div class="mt-1 text-xs text-neutral-600">~159 mil empresas</div>
+  </div>
+  <div class="rounded-xl border-2 border-amber-300 bg-amber-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-amber-700">6,7%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Cundinamarca</div>
+    <div class="mt-1 text-xs text-neutral-600">~121 mil empresas</div>
+  </div>
+</div>
+
+<Callout type="key" title="La aritmética de la concentración">
+  Si sumas Bogotá + Antioquia + Valle + Cundinamarca tienes el <strong>53%</strong> del
+  tejido empresarial nacional. Pero <strong>también más del 50% del PIB</strong> —
+  estos cuatro departamentos son donde se produce, se compra, se invierte y se vende
+  la mayor parte de Colombia formal. La concentración empresarial replica la
+  concentración productiva.
+</Callout>
+
+<h2>¿Qué pasa en el resto del país?</h2>
+
+<p>
+  El 47% restante se distribuye en los 29 departamentos restantes. Algunos —
+  Santander, Atlántico, Bolívar, Caldas — tienen tejidos empresariales relevantes
+  pero modestos comparados con los cuatro líderes. Otros departamentos
+  amazónicos y de la Orinoquia (Vaupés, Vichada, Guainía, Amazonas) suman apenas
+  unas miles de empresas cada uno: representan menos del 0,5% del tejido nacional
+  cada uno.
+</p>
+
+<Callout type="info" title="Crecimiento periférico, peso central">
+  El RUES 2025 reporta que los departamentos con mayor variación porcentual fueron
+  Vaupés (+19,2%), Guainía (+9,4%), Córdoba (+9,4%), Amazonas (+8,4%) y Meta (+8,2%).
+  Pero en cifras absolutas el mayor crecimiento se concentró en Antioquia (+15.511
+  empresas) y Santander (+5.699). Crecer en porcentaje siendo pequeño es relativamente
+  fácil; crecer en magnitudes absolutas requiere base.
+</Callout>
+
+<h2>Y las grandes? Aún más concentradas</h2>
+
+<p>
+  Si miras el segmento de las <strong>1.000 empresas más grandes</strong> (las que
+  reportan a SuperSociedades), la concentración geográfica se intensifica. Bogotá
+  tiene casi la mitad. El centro económico es, además del demográfico, el cerebro
+  corporativo del país.
+</p>
+
+<GrandesPorDepartamento client:load />
+
+<p>
+  Tres lecturas:
+</p>
+
+<ul>
+  <li><strong>Bogotá tiene 480 de las 1.000 más grandes</strong> (48%) — más del doble de su peso en tejido total. La capital concentra sedes corporativas, financieras, multinacionales.</li>
+  <li><strong>Bogotá concentra el 59,2% de los ingresos</strong> del top 1.000 — $700,6 billones de los $1.183 billones totales. Cada empresa grande bogotana factura, en promedio, $1,46 billones; vs $1,08 billones en Antioquia y $0,79 billones en Valle.</li>
+  <li><strong>El Pacífico (sin Valle), Amazonía y Orinoquia están casi ausentes</strong> del ranking. Si una región no tiene grandes empresas, su economía formal está estructuralmente limitada al consumo local — no exporta servicios ni capital.</li>
+</ul>
+
+<h2>Por qué Bogotá concentra tanto</h2>
+
+<p>
+  La concentración empresarial en la capital responde a una mezcla de factores
+  acumulados durante un siglo:
+</p>
+
+<div class="my-8 space-y-3">
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Factor 1</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Centralización política y administrativa</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Bogotá concentra ministerios, superintendencias, embajadas, organismos
+      multilaterales y la sede de la Corte Constitucional. Cualquier empresa que
+      lobby, contrate con el Estado o se relacione con reguladores tiene incentivo
+      para estar cerca.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Factor 2</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Mercado doméstico más grande</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      El área metropolitana Bogotá-Cundinamarca tiene cerca de 10 millones de
+      habitantes y mayor capacidad de compra promedio que cualquier otra región.
+      Para muchos negocios B2C, Bogotá <em>es</em> el mercado nacional.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Factor 3</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Capital humano calificado</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Las principales universidades, el sistema financiero, los servicios
+      profesionales avanzados (banca de inversión, consultoría, legal corporativo)
+      tienen base bogotana. Una empresa que necesita talento de élite tiende a
+      moverse — o quedarse — cerca.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Factor 4</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Efectos de aglomeración</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Cuando muchas empresas están cerca, los costos de transacción bajan: hay
+      proveedores especializados, redes profesionales, infraestructura. Esto crea
+      un círculo virtuoso (para quienes están dentro) y una barrera (para quienes
+      están fuera).
+    </p>
+  </div>
+</div>
+
+<h2>El impacto en el empleo formal regional</h2>
+
+<p>
+  La concentración empresarial no es solo un dato curioso de tabla: tiene
+  consecuencias para el empleo formal. Donde no hay empresas grandes, hay menos
+  empleo formal cotizante. Donde no hay tejido empresarial diverso, los jóvenes
+  emigran a buscar oportunidades.
+</p>
+
+<Callout type="warning" title="El círculo de la desigualdad territorial">
+  Sin empresas grandes, los departamentos periféricos dependen de: (1) microempresas
+  locales con poca productividad, (2) empleo público, y (3) actividades primarias
+  (minería, agricultura) con poca elaboración local. Esto explica por qué la
+  informalidad laboral en algunos departamentos llega al 70-80% mientras Bogotá
+  está en ~40%. La fórmula <em>empresarialidad → empleo formal → desarrollo</em>
+  no es simétrica entre regiones.
+</Callout>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>Colombia tiene <strong>1.805.564 empresas activas</strong> en RUES al cierre de 2025, distribuidas muy desigualmente.</li>
+  <li><strong>Bogotá + Antioquia + Valle + Cundinamarca = 53%</strong> del tejido empresarial. Los otros 29 departamentos suman el 47%.</li>
+  <li>En el segmento de grandes empresas la concentración se intensifica: Bogotá tiene el <strong>48% de las 1.000 más grandes</strong> y concentra el <strong>59% de sus ingresos</strong>.</li>
+  <li>Cuatro factores explican la concentración: centralización política, mercado doméstico, capital humano y efectos de aglomeración. Todos se refuerzan entre sí.</li>
+  <li>El crecimiento porcentual está en los departamentos chicos (Vaupés +19%, Guainía +9%) pero el crecimiento absoluto sigue acumulándose en Antioquia y Santander.</li>
+</ul>
+
+<Callout type="info" title="Próximo capítulo">
+  Las empresas no son una cosa estática: cada año nacen unas 300 mil y mueren unas 215 mil.
+  En el siguiente capítulo entramos a la <strong>dinámica empresarial</strong> —
+  natalidad, mortalidad, supervivencia. La pregunta clave: de cada 10 empresas
+  que nacen hoy, ¿cuántas seguirán vivas en 2031?
+</Callout>
+
+</Chapter>
