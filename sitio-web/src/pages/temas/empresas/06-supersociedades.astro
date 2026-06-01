@@ -1,0 +1,239 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import Top10SuperSociedades from "../../../components/temas/empresas/charts/Top10SuperSociedades.tsx";
+import ConcentracionPareto from "../../../components/temas/empresas/charts/ConcentracionPareto.tsx";
+import MacrosectorIngresoUtilidad from "../../../components/temas/empresas/charts/MacrosectorIngresoUtilidad.tsx";
+---
+
+<Chapter
+  number="06"
+  title="El Colombia productivo: las que reportan"
+  subtitle="De 1,8 millones de empresas, solo unas 30 mil reportan estados financieros completos a SuperSociedades. Pero allí está el grueso del PIB privado. Es la elite productiva del país."
+  chapterNumber={6}
+  totalChapters={7}
+  prevHref="/temas/empresas/05-dinamica"
+  prevTitle="Nacen, mueren, sobreviven"
+  nextHref="/temas/empresas/07-empresas-y-empleo"
+  nextTitle="Empresas y empleo"
+  accentColor="sky"
+>
+
+<h2>Qué es SuperSociedades y por qué importa</h2>
+
+<p>
+  La <strong>Superintendencia de Sociedades</strong> (SuperSociedades) es la autoridad
+  que vigila e inspecciona a las sociedades comerciales colombianas no financieras.
+  No todas las empresas le reportan: solo aquellas que superan ciertos umbrales de
+  activos, ingresos o número de trabajadores. En la práctica, son las
+  <strong>empresas vigiladas</strong> y representan un universo de aproximadamente
+  <strong>30 mil compañías</strong> al año.
+</p>
+
+<p>
+  ¿Por qué este corte es relevante? Porque las que reportan a SuperSociedades son:
+</p>
+
+<ul>
+  <li>Casi la totalidad de las grandes empresas privadas del país</li>
+  <li>Casi todas las medianas formalmente constituidas como sociedades</li>
+  <li>Una porción significativa de las pequeñas con cierta sofisticación contable</li>
+</ul>
+
+<p>
+  Es <strong>el universo que mueve la mayor parte del PIB privado</strong>. Cuando un
+  economista habla en serio de "Colombia productiva formal", normalmente está hablando
+  de este conjunto.
+</p>
+
+<Callout type="info" title="Qué reportan a SuperSociedades">
+  Anualmente, con corte al 31 de diciembre, las vigiladas envían:
+  <ul class="mt-2 ml-5 list-disc space-y-1">
+    <li>Balance general (activos, pasivos, patrimonio)</li>
+    <li>Estado de resultados (ingresos, costos, utilidad)</li>
+    <li>Estado de flujos de efectivo y de cambios en el patrimonio</li>
+    <li>Notas a los estados financieros</li>
+  </ul>
+  <p class="mt-2">
+    Toda la información cumple las normas internacionales NIIF. Las Grupo 1 reportan
+    NIIF Plenas (las más grandes); las Grupo 2 reportan NIIF Pymes; las Grupo 3
+    micros con régimen simplificado.
+  </p>
+</Callout>
+
+<h2>El podio: las 10 más grandes de Colombia</h2>
+
+<p>
+  El informe anual que más resonancia tiene es el de las <strong>1.000 empresas más
+  grandes</strong>. Estas son las cabezas más visibles del Colombia productivo formal.
+  Al cierre del año fiscal 2024 (publicado en 2025):
+</p>
+
+<Top10SuperSociedades client:load />
+
+<p>
+  Notas para leer mejor el podio:
+</p>
+
+<ul>
+  <li><strong>Ecopetrol domina</strong> con $113,9 billones en ingresos — casi cuatro veces el segundo lugar. Es el ancla del sector hidrocarburos colombiano y, durante años, el mayor contribuyente al fisco nacional.</li>
+  <li><strong>Refinería de Cartagena (Reficar)</strong> ocupa el segundo lugar con $25,9 billones — aunque reportó pérdidas de $262 mil millones en 2024, un recordatorio de que facturar no es lo mismo que ganar.</li>
+  <li><strong>Terpel, EPM, D1, Éxito, Claro</strong> y <strong>Enel-Emgesa</strong> son los nombres familiares del consumo, energía y telecomunicaciones colombianas.</li>
+  <li>El top 10 mezcla <strong>cuatro macrosectores</strong>: hidrocarburos (Ecopetrol, Reficar, Terpel), servicios (EPM, Claro, Enel), comercio (D1, Éxito) y manufactura (resto).</li>
+</ul>
+
+<h2>La curva de concentración</h2>
+
+<p>
+  Las 10 más grandes facturaron juntas $281 billones en 2024 — el <strong>23,7%
+  del total del top 1.000</strong>. Pero la concentración no se detiene ahí:
+</p>
+
+<ConcentracionPareto client:load />
+
+<div class="my-6 grid sm:grid-cols-2 md:grid-cols-4 gap-3">
+  <div class="rounded-xl border-2 border-rose-300 bg-rose-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-rose-700">23,7%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Top 10</div>
+    <div class="mt-1 text-xs text-neutral-600">$280B en ingresos</div>
+  </div>
+  <div class="rounded-xl border-2 border-amber-300 bg-amber-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-amber-700">42,1%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Top 50</div>
+    <div class="mt-1 text-xs text-neutral-600">$499B en ingresos</div>
+  </div>
+  <div class="rounded-xl border-2 border-violet-300 bg-violet-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-violet-700">51,9%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Top 100</div>
+    <div class="mt-1 text-xs text-neutral-600">$614B en ingresos</div>
+  </div>
+  <div class="rounded-xl border-2 border-emerald-300 bg-emerald-50/50 p-4 text-center">
+    <div class="text-3xl font-extrabold text-emerald-700">84,2%</div>
+    <div class="mt-1 text-sm font-semibold text-neutral-900">Top 500</div>
+    <div class="mt-1 text-xs text-neutral-600">$996B en ingresos</div>
+  </div>
+</div>
+
+<Callout type="key" title="La regla 80/20 amplificada">
+  En el top 1.000 colombiano, el 10% superior concentra el 51,9% de los ingresos.
+  El 50% superior concentra el 84,2%. La regla de Pareto (80/20) aquí se cumple
+  con creces. <strong>Si pudieras eliminar a las 500 empresas inferiores del
+  ranking, perderías solo el 16% del valor agregado</strong>; si eliminas las
+  100 superiores, pierdes la mitad.
+</Callout>
+
+<h2>Quién gana y quién solo factura</h2>
+
+<p>
+  Facturar no es lo mismo que ganar. La rentabilidad varía drásticamente entre
+  macrosectores, y eso reorganiza la lectura de quién está bien:
+</p>
+
+<MacrosectorIngresoUtilidad client:load />
+
+<div class="my-6 overflow-x-auto">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="border-b-2 border-neutral-300">
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Macrosector</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Empresas</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Ingresos 2024</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Utilidad</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Margen neto</th>
+      </tr>
+    </thead>
+    <tbody class="text-neutral-700">
+      <tr class="border-b border-neutral-200">
+        <td class="py-2 pr-4 font-semibold">Comercio</td>
+        <td class="py-2 pr-4 text-right">309</td>
+        <td class="py-2 pr-4 text-right">$366B</td>
+        <td class="py-2 pr-4 text-right">$6,7B</td>
+        <td class="py-2 pr-4 text-right text-rose-700 font-bold">1,8%</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-2 pr-4 font-semibold">Servicios</td>
+        <td class="py-2 pr-4 text-right">262</td>
+        <td class="py-2 pr-4 text-right">$307B</td>
+        <td class="py-2 pr-4 text-right">$50,8B</td>
+        <td class="py-2 pr-4 text-right text-emerald-700 font-bold">16,5%</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-2 pr-4 font-semibold">Manufactura</td>
+        <td class="py-2 pr-4 text-right">292</td>
+        <td class="py-2 pr-4 text-right">$274B</td>
+        <td class="py-2 pr-4 text-right">$10,7B</td>
+        <td class="py-2 pr-4 text-right text-amber-700 font-bold">3,9%</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-2 pr-4 font-semibold">Minero-Hidrocarburos</td>
+        <td class="py-2 pr-4 text-right">49</td>
+        <td class="py-2 pr-4 text-right">$184B</td>
+        <td class="py-2 pr-4 text-right">$18,3B</td>
+        <td class="py-2 pr-4 text-right text-emerald-700 font-bold">10,0%</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-2 pr-4 font-semibold">Construcción</td>
+        <td class="py-2 pr-4 text-right">64</td>
+        <td class="py-2 pr-4 text-right">$36B</td>
+        <td class="py-2 pr-4 text-right">$3,0B</td>
+        <td class="py-2 pr-4 text-right text-amber-700 font-bold">8,2%</td>
+      </tr>
+      <tr>
+        <td class="py-2 pr-4 font-semibold">Agropecuario</td>
+        <td class="py-2 pr-4 text-right">24</td>
+        <td class="py-2 pr-4 text-right">$17B</td>
+        <td class="py-2 pr-4 text-right">$0,7B</td>
+        <td class="py-2 pr-4 text-right text-amber-700 font-bold">4,1%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<Callout type="warning" title="La paradoja del comercio">
+  El comercio mueve la mayor cantidad de dinero del top 1.000 ($366B en ingresos)
+  pero deja apenas 1,8% de margen. Es un sector de <strong>alta facturación pero
+  baja rentabilidad</strong>: marginalmente rentable, intensivo en capital de
+  trabajo y vulnerable a la competencia. Por contraste, <strong>servicios — con
+  menos facturación — genera siete veces más utilidad</strong> que el comercio.
+  Cuando se discute "fortalecer la industria colombiana", la rentabilidad debe
+  entrar al cálculo, no solo el peso en PIB.
+</Callout>
+
+<h2>El año 2024 fue duro</h2>
+
+<p>
+  El informe de SuperSociedades muestra que las 1.000 empresas más grandes
+  facturaron <strong>$1.183 billones en 2024</strong>, ligeramente arriba de los
+  $1.161 billones de 2023. Pero la <strong>utilidad bajó</strong>: de $97,6B a
+  $90,2B (-7,6%). El año fiscal 2024 se caracterizó por márgenes apretados —
+  inflación elevada al inicio del año, tasas de interés altas y una demanda
+  doméstica desacelerada.
+</p>
+
+<Callout type="info" title="¿Quiénes ganaron más?">
+  El ranking de utilidades 2024 lo encabezan: <strong>Ecopetrol</strong> (lejos),
+  seguido por <strong>Grupo Sura, Cenit Transportes, EPM y Ocensa</strong>. Es un
+  mix de hidrocarburos, transporte de crudo, servicios financieros y energía.
+  La <strong>Refinería de Cartagena (Reficar)</strong> aparece en el podio de
+  ingresos pero registró $263 mil millones de pérdida — una de las pocas grandes
+  empresas que cerró 2024 en rojo significativo.
+</Callout>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>SuperSociedades vigila ~<strong>30 mil empresas</strong>. Las 1.000 más grandes facturaron $<strong>1.183 billones</strong> en 2024.</li>
+  <li>El <strong>top 10</strong> concentra 23,7% del ingreso; el <strong>top 50</strong>, 42,1%; el <strong>top 100</strong>, 51,9%. Concentración estilo Pareto amplificada.</li>
+  <li><strong>Ecopetrol</strong> sola factura $113,9B — casi 10% del top 1.000. Domina el podio por amplio margen.</li>
+  <li>La <strong>rentabilidad varía mucho</strong> entre sectores: servicios 16,5%, minero/hidrocarburos 10%, manufactura 3,9%, comercio apenas 1,8%.</li>
+  <li><strong>2024 fue un año duro</strong>: utilidades del top 1.000 bajaron -7,6% pese a crecimiento marginal de los ingresos.</li>
+</ul>
+
+<Callout type="info" title="Próximo capítulo">
+  Cerramos el tema con el puente más importante: <strong>empresas y empleo</strong>.
+  Cómo se cruza el tejido empresarial colombiano con el mercado laboral. Quién
+  emplea formalmente a quién, y por qué saber esto cambia cualquier debate sobre
+  política productiva.
+</Callout>
+
+</Chapter>

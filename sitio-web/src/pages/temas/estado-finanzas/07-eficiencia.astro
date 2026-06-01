@@ -1,0 +1,297 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import CpiColombia from "../../../components/temas/estado-finanzas/charts/CpiColombia.tsx";
+---
+
+<Chapter
+  number="07"
+  title="Eficiencia del gasto y comparación internacional"
+  subtitle="Hasta acá vimos cuánta plata maneja el Estado. La pregunta final: ¿qué tan bien la maneja? ¿Cómo nos comparamos con el mundo?"
+  chapterNumber={7}
+  totalChapters={7}
+  prevHref="/temas/estado-finanzas/06-capital-privado"
+  prevTitle="Capital privado en movimiento"
+  accentColor="pink"
+>
+
+<h2>La pregunta de cierre del tema</h2>
+
+<p>
+  En los 6 capítulos anteriores aprendimos cuánto recauda el Estado, en qué lo
+  gasta, cuánto debe y cómo se mueve el capital privado. Pero hay una pregunta que
+  no hemos respondido: <strong>¿el Estado gasta bien?</strong>. O dicho de otra
+  forma: ¿cuánto del presupuesto realmente llega a los beneficiarios?, ¿qué tan
+  transparente es el manejo del dinero público?, ¿cómo nos comparamos con países
+  que enfrentan retos parecidos?
+</p>
+
+<p>
+  Este capítulo cierra el tema. No toma posiciones políticas: presenta indicadores
+  estandarizados que cualquier lector puede comparar.
+</p>
+
+<h2>Percepción de corrupción: lo que dice el CPI</h2>
+
+<p>
+  El indicador más conocido para medir corrupción a nivel internacional es el
+  <strong>Corruption Perceptions Index (CPI)</strong> de Transparencia
+  Internacional. Mide la percepción experta sobre el sector público.
+</p>
+
+<CpiColombia client:load />
+
+<Callout type="warning" title="Lo que el CPI mide (y lo que no)">
+  El CPI mide <strong>percepción</strong>, no realidad. Se construye agregando
+  encuestas a expertos y empresarios sobre prácticas como sobornos, contratación
+  irregular y desvío de fondos públicos. <strong>No mide cantidad de corrupción
+  efectiva ni casos judicializados.</strong> Sirve como termómetro y para
+  comparaciones longitudinales, pero un cambio de 1-2 puntos no es estadísticamente
+  significativo.
+</Callout>
+
+<h2>Government at a Glance: la mirada OCDE</h2>
+
+<p>
+  La OCDE publica cada dos años <strong>"Government at a Glance"</strong>, una base
+  de datos comparativa sobre el funcionamiento de los gobiernos de sus 38 países
+  miembros. Algunos indicadores donde Colombia aparece:
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="font-bold text-emerald-900">Tamaño del Estado (gasto público / PIB)</div>
+    <p class="text-sm text-emerald-900/80 mt-1">
+      <strong>Colombia: ~30%</strong> · Promedio OCDE: 47% · Mínimos: México (25%),
+      Chile (28%). Máximos: Francia (58%), Finlandia (56%).
+      Somos un Estado relativamente pequeño en gasto.
+    </p>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/40 p-4">
+    <div class="font-bold text-cyan-900">Empleo público sobre empleo total</div>
+    <p class="text-sm text-cyan-900/80 mt-1">
+      <strong>Colombia: ~4,5%</strong> · Promedio OCDE: 18%. Es decir, Colombia
+      tiene menos servidores públicos por habitante que el promedio de países
+      desarrollados.
+    </p>
+  </div>
+  <div class="rounded-lg border border-violet-200 bg-violet-50/40 p-4">
+    <div class="font-bold text-violet-900">Confianza en el gobierno</div>
+    <p class="text-sm text-violet-900/80 mt-1">
+      Colombia se ubica entre los países con <strong>menor confianza ciudadana en el
+      gobierno</strong> de la OCDE. Solo ~30% de los colombianos confía en el
+      gobierno nacional, frente al promedio OCDE de ~45%.
+    </p>
+  </div>
+</div>
+
+<h2>El gasto vs los resultados: ¿cuánto vale la educación?</h2>
+
+<p>
+  Una forma directa de evaluar eficiencia: comparar cuánto gasta el país en un
+  sector vs los resultados que obtiene. Tomemos educación como ejemplo:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Gasto en educación</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">Colombia: ~4,7% del PIB</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Es un porcentaje cercano al promedio OCDE (~4,9%) y a la meta latinoamericana.
+      Por estudiante de educación pública, Colombia gasta cerca de USD 3.000 al año
+      (PPP).
+    </p>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Resultados PISA 2022</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">Colombia: en el cuartil bajo</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Colombia obtuvo 383 en matemáticas, 411 en lectura y 411 en ciencias.
+      Promedio OCDE: 472, 476 y 485. <strong>Un estudiante colombiano promedio
+      está ~3 años escolares atrás</strong> de un estudiante OCDE promedio.
+    </p>
+  </div>
+</div>
+
+<Callout type="key" title="La paradoja del gasto similar, resultados muy distintos">
+  Colombia gasta cerca del promedio OCDE en educación como % del PIB, pero obtiene
+  resultados PISA significativamente menores. La explicación no es "se gasta poco":
+  es <strong>la distribución del gasto</strong>. Una parte muy alta del presupuesto
+  educativo va a nómina docente y pensiones de docentes retirados; queda poco para
+  infraestructura, materiales y formación pedagógica continua.
+</Callout>
+
+<h2>Contratación pública: el espejo de las decisiones</h2>
+
+<p>
+  El portal <strong>SECOP II</strong> (Sistema Electrónico de Contratación Pública)
+  publica todos los contratos que firman las entidades del Estado. Es una de las
+  bases de datos más ricas de Colombia: cada contrato con su objeto, su valor, su
+  contratista y su modalidad.
+</p>
+
+<h3>Modalidades de contratación</h3>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="font-bold text-emerald-900">Más transparente: Licitación pública</div>
+    <p class="text-sm text-emerald-900/80 mt-1">
+      Proceso abierto, con pliegos y selección por puntaje. Es la modalidad por
+      defecto para montos altos. Permite competencia.
+    </p>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/40 p-4">
+    <div class="font-bold text-cyan-900">Concurso de méritos</div>
+    <p class="text-sm text-cyan-900/80 mt-1">
+      Para consultorías y servicios especializados. Selección por capacidad técnica
+      del proponente.
+    </p>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-4">
+    <div class="font-bold text-amber-900">Selección abreviada</div>
+    <p class="text-sm text-amber-900/80 mt-1">
+      Procesos simplificados por monto bajo o por características del bien
+      (subasta inversa, mínima cuantía).
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="font-bold text-rose-900">Menos transparente: Contratación directa</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Selección sin competencia. Está prevista por ley para casos puntuales:
+      urgencia manifiesta, prestación de servicios profesionales, idoneidad
+      acreditada. Pero su uso ha crecido como vía de menor resistencia.
+    </p>
+  </div>
+</div>
+
+<Callout type="warning" title="La señal de alerta: alta concentración de contratistas">
+  Cuando una entidad pública concentra contratos en un grupo pequeño de
+  proveedores año tras año, vale la pena revisar. No siempre indica corrupción
+  (puede haber especialización legítima), pero es una <strong>bandera amarilla</strong>
+  que el SECOP II permite identificar fácilmente. La <strong>Contraloría</strong> y
+  los periodistas de datos usan este tipo de análisis para detectar irregularidades.
+</Callout>
+
+<h2>La Contraloría: el guardián externo</h2>
+
+<p>
+  La <strong>Contraloría General de la República</strong> es el órgano de control
+  fiscal externo. Audita cómo el Estado ejecuta su presupuesto. Sus principales
+  productos:
+</p>
+
+<ul>
+  <li>
+    <strong>Hallazgos fiscales</strong>: cuando detecta que un gasto no se ajustó a la
+    norma. Si hay daño al patrimonio del Estado, abre proceso de responsabilidad
+    fiscal.
+  </li>
+  <li>
+    <strong>Cuenta General del Presupuesto y del Tesoro</strong>: informe anual sobre
+    la ejecución consolidada del PGN.
+  </li>
+  <li>
+    <strong>Informe Financiero de la Nación</strong>: estados financieros consolidados.
+  </li>
+</ul>
+
+<p>
+  Los hallazgos de la Contraloría suelen sumar cuantías significativas cada año.
+  Pero el porcentaje que efectivamente se <strong>recupera</strong> es bajo: una
+  parte de los procesos prescribe, otra se diluye en apelaciones. La Contraloría
+  detecta, pero su capacidad de recobrar es limitada.
+</p>
+
+<h2>¿Estado pequeño o Estado ineficiente?</h2>
+
+<p>
+  El balance del tema lleva a una conclusión incómoda. Por un lado, Colombia es un
+  Estado fiscalmente <strong>pequeño</strong>:
+</p>
+
+<ul>
+  <li>Recaudo / PIB: ~20% (OCDE: ~34%)</li>
+  <li>Gasto público / PIB: ~30% (OCDE: ~47%)</li>
+  <li>Empleo público / empleo total: ~4,5% (OCDE: ~18%)</li>
+</ul>
+
+<p>
+  Por otro lado, los resultados que produce ese Estado tienen problemas
+  estructurales:
+</p>
+
+<ul>
+  <li>El 85% del presupuesto es inflexible: poco margen para reformas.</li>
+  <li>El servicio de la deuda ya supera la inversión.</li>
+  <li>La percepción de corrupción es estable pero baja (CPI 39).</li>
+  <li>Los resultados educativos están por debajo del gasto que se hace.</li>
+</ul>
+
+<Callout type="key" title="La pregunta abierta del tema">
+  ¿Colombia necesita un Estado <em>más grande</em> o un Estado <em>mejor administrado</em>?
+  Este tema no toma posición. Los datos sostienen ambas lecturas:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Más grande</strong>: si comparamos con la OCDE, hay mucho espacio para crecer el recaudo y el gasto si se quieren resultados comparables.</li>
+    <li><strong>Mejor administrado</strong>: aunque crezca, los problemas de inflexibilidad, baja ejecución y debilidad en contratación seguirían limitando los resultados.</li>
+  </ul>
+  La respuesta política depende de cada quien. Lo importante es que ahora tienes los
+  datos para defender tu posición con cifras verificables.
+</Callout>
+
+<h2>Resumen del capítulo y del tema</h2>
+
+<ul>
+  <li>El <strong>CPI de Colombia</strong> ha oscilado entre 36 y 40 puntos en 13 años, sin mejora estructural. Por debajo del promedio A. Latina (43) y muy lejos del OCDE (66).</li>
+  <li>Colombia tiene un <strong>Estado pequeño en gasto, recaudo y empleo público</strong> frente a la OCDE.</li>
+  <li>Pero los <strong>resultados (PISA, salud, infraestructura)</strong> están por debajo de lo que el gasto sugeriría.</li>
+  <li><strong>SECOP II</strong> es una base de datos abierta para revisar la contratación pública. La modalidad y la concentración de contratistas son señales clave.</li>
+  <li>La <strong>Contraloría</strong> detecta hallazgos pero recobra poco.</li>
+  <li>La pregunta abierta: ¿más Estado o mejor Estado? Los datos sostienen ambas lecturas.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>Transparencia Internacional — CPI:</strong>
+    <a href="https://www.transparency.org/en/cpi" target="_blank" rel="noopener">transparency.org/en/cpi</a>
+    publica el índice anual con metodología pública y descargable.
+  </p>
+  <p class="mt-2">
+    <strong>Transparencia por Colombia:</strong>
+    <a href="https://transparenciacolombia.org.co" target="_blank" rel="noopener">transparenciacolombia.org.co</a>
+    publica el ITEP (Índice de Transparencia de Entidades Públicas) específico para Colombia.
+  </p>
+  <p class="mt-3">
+    <strong>OECD — Government at a Glance:</strong>
+    <a href="https://stats.oecd.org" target="_blank" rel="noopener">stats.oecd.org</a>
+    contiene la base de datos completa con indicadores comparables.
+  </p>
+  <p class="mt-3">
+    <strong>SECOP II:</strong>
+    <a href="https://www.colombiacompra.gov.co" target="_blank" rel="noopener">colombiacompra.gov.co</a>
+    permite descargar todos los contratos públicos en formato abierto.
+  </p>
+  <p class="mt-3">
+    <strong>Contraloría General de la República:</strong>
+    <a href="https://www.contraloria.gov.co" target="_blank" rel="noopener">contraloria.gov.co</a>
+    publica el Informe Financiero de la Nación, el Informe de Auditoría Anual y la Cuenta General del Presupuesto.
+  </p>
+</Callout>
+
+<Callout type="key" title="Fin del tema 'Estado y finanzas públicas'">
+  Si llegaste hasta aquí, ahora sabes:
+  <ol class="mt-2 list-decimal list-inside space-y-1">
+    <li>Cómo está estructurado el Estado colombiano y cuántos servidores lo componen.</li>
+    <li>Cuánto ganan los altos cargos y cómo se compara con el resto del país.</li>
+    <li>De dónde sale la plata: impuestos, su composición y reformas.</li>
+    <li>En qué se gasta: el PGN, su distribución sectorial y su inflexibilidad.</li>
+    <li>Cuánto debe el Estado, a quién y cómo se está acelerando.</li>
+    <li>Cómo se mueve el capital privado: IED, remesas y balanza de pagos.</li>
+    <li>Qué tan bien gasta el Estado y cómo se compara internacionalmente.</li>
+  </ol>
+  Eso es más conocimiento concreto sobre las finanzas del Estado colombiano que el
+  que tiene la mayoría de los colombianos. Si querés profundizar más, todas las
+  fuentes están enlazadas. Si querés verificar algo: las URLs te llevan a la fuente
+  primaria.
+</Callout>
+
+</Chapter>

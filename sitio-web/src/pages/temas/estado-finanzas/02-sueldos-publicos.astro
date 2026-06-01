@@ -1,0 +1,281 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import PiramideSueldos from "../../../components/temas/estado-finanzas/charts/PiramideSueldos.tsx";
+---
+
+<Chapter
+  number="02"
+  title="Sueldos en el sector público"
+  subtitle="$36.6 millones gana el Presidente. $18.6 millones gana un congresista. $1.75 millones es el salario mínimo. Aquí entiendes la escala completa, con las trampas que esconde."
+  chapterNumber={2}
+  totalChapters={7}
+  prevHref="/temas/estado-finanzas/01-estructura-estado"
+  prevTitle="Estructura del Estado"
+  nextHref="/temas/estado-finanzas/03-impuestos"
+  nextTitle="Impuestos: de dónde sale la plata"
+  accentColor="amber"
+>
+
+<h2>Un debate eterno: "los sueldos del Estado son altos"</h2>
+
+<p>
+  Cada año, el Gobierno expide los decretos de aumento salarial para el sector
+  público. Y cada año, la discusión es la misma: "los congresistas se subieron el
+  sueldo otra vez", "el Presidente gana 20 veces el mínimo", "los magistrados ganan
+  más que el Presidente". Las cifras existen. Son públicas. Están en el Diario
+  Oficial. Pero rara vez se ponen en contexto comparable.
+</p>
+
+<p>
+  Este capítulo desarma el debate: <strong>quién gana cuánto, cómo se determina
+  ese sueldo, y cómo se compara con el resto del país.</strong>
+</p>
+
+<h2>Los decretos de 2026: la base legal</h2>
+
+<p>
+  El aumento salarial del sector público para 2026 quedó fijado en el
+  <strong>7%</strong> (Decreto 0335 de 2026), por encima de la inflación esperada
+  pero por debajo del aumento del salario mínimo (23%). Los principales decretos
+  expedidos el 25 de marzo de 2026 son:
+</p>
+
+<div class="my-6 space-y-2 text-sm">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-emerald-700 mt-1 flex-shrink-0">0297</div>
+    <div>Escala de asignaciones para los empleados del Senado y Cámara (excepto congresistas).</div>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-amber-700 mt-1 flex-shrink-0">0303</div>
+    <div><strong>Escala de asignación básica para los congresistas</strong>: rango de $4.781.327 a $18.601.803.</div>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/40 p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-cyan-700 mt-1 flex-shrink-0">0312</div>
+    <div>Empleados de la Procuraduría y Defensoría del Pueblo.</div>
+  </div>
+  <div class="rounded-lg border border-violet-200 bg-violet-50/40 p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-violet-700 mt-1 flex-shrink-0">0313</div>
+    <div>Funcionarios y empleados de la Rama Judicial (jueces, magistrados auxiliares).</div>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-rose-700 mt-1 flex-shrink-0">0316</div>
+    <div>Magistrados de las Altas Cortes (Suprema, Constitucional, Consejo de Estado, Judicatura).</div>
+  </div>
+  <div class="rounded-lg border border-sky-200 bg-sky-50/40 p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-sky-700 mt-1 flex-shrink-0">0030</div>
+    <div>Derogó el Decreto 2170 de 2013: eliminó la <strong>prima especial</strong> de congresistas (~$16,9 millones mensuales adicionales al básico).</div>
+  </div>
+</div>
+
+<h2>La pirámide salarial del Estado</h2>
+
+<PiramideSueldos client:load />
+
+<Callout type="warning" title="Cuidado: estas son asignaciones BÁSICAS">
+  La cifra que muestra el decreto es la <em>asignación básica</em>. El ingreso real
+  puede ser bastante mayor por:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Prima técnica</strong>: para cargos especializados (puede llegar al 50% del básico).</li>
+    <li><strong>Gastos de representación</strong>: para Ministros, Magistrados y altos cargos.</li>
+    <li><strong>Bonificación por compensación</strong>: para servidores con alta carga laboral.</li>
+    <li><strong>Prima de servicios y de navidad</strong>: equivalentes a un mes adicional cada una.</li>
+    <li><strong>Cesantías y vacaciones</strong>: provisión salarial diferida.</li>
+  </ul>
+  La diferencia entre asignación básica y compensación total puede ser del <strong>30%
+  al 70%</strong>. Cuando alguien dice "el ministro gana $30 millones", probablemente
+  está sumando todas estas compensaciones.
+</Callout>
+
+<h2>Caso 1: el Presidente de la República</h2>
+
+<p>
+  El Presidente colombiano percibe en 2026 una asignación básica mensual cercana a
+  los <strong>$36,65 millones</strong> de pesos (~20,9 SMMLV). A esto se suman gastos
+  de representación y la asignación constitucional. Su ingreso total mensualizado se
+  acerca a los $40 millones.
+</p>
+
+<p>
+  En términos comparativos:
+</p>
+
+<ul>
+  <li>Es <strong>~21 veces el salario mínimo</strong> colombiano.</li>
+  <li>Es <strong>~20 veces la mediana del trabajador ocupado</strong> según la GEIH.</li>
+  <li>En SMMLV, está por debajo del Presidente de México (~26 SMMLV mexicanos) pero por encima del de Chile (~16 SMMLV chilenos).</li>
+</ul>
+
+<h2>Caso 2: los congresistas</h2>
+
+<p>
+  Los congresistas tienen un régimen especial: la Constitución (art. 187) los vincula
+  a la asignación del Presidente con un tope. El Decreto 0303 de 2026 fijó la nueva
+  escala según el grado del cargo, con un máximo de <strong>$18.601.803</strong> de
+  asignación básica.
+</p>
+
+<Callout type="key" title="El golpe a la 'prima especial'">
+  Hasta enero de 2026, los congresistas recibían una <strong>prima especial de
+  servicios</strong> creada por el Decreto 2170 de 2013, equivalente a casi $17
+  millones mensuales <em>adicionales</em> al sueldo básico. El Decreto 0030 de 2026
+  la <strong>derogó</strong>. En la práctica, el ingreso total de un congresista bajó
+  significativamente con esa derogatoria. La medida fue uno de los puntos más
+  divisivos del primer semestre del año.
+</Callout>
+
+<h2>Caso 3: los magistrados — más altos que el Presidente</h2>
+
+<p>
+  Los <strong>magistrados de las Altas Cortes</strong> tienen un caso curioso:
+  legalmente pueden ganar <strong>más que el Presidente</strong>. La explicación es
+  histórica: la Constitución blindó la asignación de los magistrados para protegerlos
+  de presiones políticas. El Decreto 0316 de 2026 ajustó sus asignaciones con el 7%
+  general, manteniéndolos por encima del Ejecutivo.
+</p>
+
+<p>
+  Esto suele generar titulares como "los magistrados ganan más que el Presidente".
+  Es cierto, pero la lógica detrás es la independencia judicial.
+</p>
+
+<h2>Caso 4: las Fuerzas Militares y la Policía</h2>
+
+<p>
+  La <strong>Fuerza Pública</strong> tiene régimen propio (Decretos 1211, 1212, 1213
+  y 1214 de 1990 con modificaciones). Sus escalafones, asignaciones, primas y
+  retiros se rigen por normas distintas al régimen civil. Comparar 1:1 un coronel
+  con un asesor grado 19 no tiene sentido: son carreras diseñadas con lógicas
+  distintas (riesgo, edad de retiro, asignación de retiro vitalicia).
+</p>
+
+<p>
+  Sin embargo, los oficiales de mayor rango (Comandante General, Comandantes de
+  Fuerza) reciben asignaciones comparables a las de los magistrados. Eso es público
+  y se ajusta cada año en decretos específicos.
+</p>
+
+<h2>Caso 5: los técnicos y profesionales</h2>
+
+<p>
+  Donde realmente está la masa salarial del Estado no es en los altos cargos. Es en
+  los <strong>técnicos operativos, profesionales y profesionales especializados</strong>
+  que conforman el grueso de la planta.
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Técnico operativo grado 12</div>
+    <div class="mt-2 text-2xl font-extrabold text-emerald-900 font-mono">~$2,5M</div>
+    <div class="mt-1 text-xs text-emerald-700">~1,4× SMMLV</div>
+  </div>
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Profesional grado 11 (entrada)</div>
+    <div class="mt-2 text-2xl font-extrabold text-cyan-900 font-mono">~$3,5M</div>
+    <div class="mt-1 text-xs text-cyan-700">~2,0× SMMLV</div>
+  </div>
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Profesional especializado grado 15</div>
+    <div class="mt-2 text-2xl font-extrabold text-violet-900 font-mono">~$6,5M</div>
+    <div class="mt-1 text-xs text-violet-700">~3,7× SMMLV</div>
+  </div>
+</div>
+
+<p>
+  Es decir, la mayoría de los servidores públicos gana entre 1,5 y 4 SMMLV. La
+  pirámide tiene mucha base y poca cumbre.
+</p>
+
+<h2>¿Cómo se compara el sector público con el privado?</h2>
+
+<p>
+  La pregunta más interesante no es "cuánto gana el Presidente", sino:
+  <strong>¿paga el Estado mejor o peor que el sector privado para cargos
+  equivalentes?</strong>
+</p>
+
+<p>
+  Estudios del Banco de la República y del DANE muestran que, controlando por
+  educación, experiencia y región:
+</p>
+
+<ul>
+  <li>
+    <strong>En cargos bajos y técnicos</strong>, el Estado tiende a pagar
+    <strong>similar o ligeramente mejor</strong> que el privado (por la estabilidad
+    de la carrera administrativa y las prestaciones plenas).
+  </li>
+  <li>
+    <strong>En cargos profesionales y especializados</strong>, el sector privado
+    paga <strong>mejor</strong> en sectores como finanzas, consultoría, tecnología.
+    El Estado paga similar o peor.
+  </li>
+  <li>
+    <strong>En la cumbre</strong>, los altos cargos del Estado están topados; los
+    altos directivos del sector privado pueden ganar 5-10× más.
+  </li>
+</ul>
+
+<Callout type="info" title="La estabilidad como compensación implícita">
+  La carrera administrativa ofrece estabilidad laboral que el sector privado no
+  ofrece. Un servidor de carrera no puede ser despedido sin causal: tiene fuero. Eso
+  hace que muchos profesionales acepten sueldos por debajo del mercado privado a
+  cambio de estabilidad de 20+ años. Es una compensación no monetaria que vale mucho.
+</Callout>
+
+<h2>El problema del "sueldo público alto"</h2>
+
+<p>
+  Cuando alguien dice "los sueldos del Estado son demasiado altos", normalmente está
+  pensando en uno de tres casos:
+</p>
+
+<ol>
+  <li>
+    <strong>Los pocos cargos en la cumbre</strong> (Presidente, ministros, congresistas,
+    magistrados). Son visibles, pero su masa salarial es despreciable frente al total
+    del PGN.
+  </li>
+  <li>
+    <strong>Casos puntuales de regímenes especiales</strong> (gerentes de empresas
+    estatales, asignaciones de retiro de la Fuerza Pública con beneficios). Existen,
+    son legales, y generan controversia justificada.
+  </li>
+  <li>
+    <strong>Casos de corrupción o irregularidades</strong>: nombramientos sin
+    requisitos, "carrusel de contratistas", contratos con sobrecostos. Esos no son
+    "sueldos altos": son hechos punibles que deben ser investigados.
+  </li>
+</ol>
+
+<p>
+  Confundir las tres situaciones lleva a debates estériles. La pirámide salarial del
+  Estado tiene mucho más en común con la del sector privado de lo que el debate
+  público suele admitir.
+</p>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>Los aumentos salariales del sector público se fijan por <strong>decreto anual</strong>. En 2026 fue del 7% (Decretos 0297-0316 del 25-mar-2026).</li>
+  <li>El <strong>Presidente</strong> recibe asignación básica de ~$36,65M (21× SMMLV); los <strong>congresistas</strong> hasta $18,6M (10,6× SMMLV).</li>
+  <li>El Decreto 0030 de 2026 <strong>derogó la prima especial</strong> de congresistas (~$17M adicionales).</li>
+  <li>Los <strong>magistrados de Altas Cortes</strong> ganan más que el Presidente por blindaje constitucional a la independencia judicial.</li>
+  <li>La mayoría de los servidores públicos (técnicos y profesionales) gana <strong>entre 1,5 y 4 SMMLV</strong>: no es la cumbre lo que pesa en la masa salarial.</li>
+  <li>El sector público paga <strong>similar o mejor en cargos bajos</strong>, y peor en cargos profesionales altos. La estabilidad de la carrera administrativa funciona como compensación implícita.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>Diario Oficial — Decretos de asignación salarial:</strong> publicados anualmente,
+    típicamente en enero o marzo. Los del 2026 están en <a href="https://dapre.presidencia.gov.co/normativa/normativa" target="_blank" rel="noopener">dapre.presidencia.gov.co/normativa</a>.
+  </p>
+  <p class="mt-2">
+    <strong>DAFP — Función Pública:</strong> <a href="https://www.funcionpublica.gov.co/empleo-publico" target="_blank" rel="noopener">funcionpublica.gov.co/empleo-publico</a> publica los manuales específicos de funciones por entidad y los conceptos sobre interpretación de los regímenes salariales.
+  </p>
+  <p class="mt-3">
+    <strong>DANE — GEIH</strong> microdatos: para comparar con la mediana del sector privado por nivel educativo y rama.
+  </p>
+</Callout>
+
+</Chapter>

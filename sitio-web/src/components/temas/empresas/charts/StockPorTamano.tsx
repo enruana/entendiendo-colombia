@@ -5,7 +5,6 @@ import {
   Cell,
   Tooltip,
   ResponsiveContainer,
-  Legend,
 } from "recharts";
 import ChartFrame, { LegendItem } from "../../../charts/ChartFrame";
 import { COLORS, tooltipStyle, tooltipLabelStyle } from "../../../charts/shared";

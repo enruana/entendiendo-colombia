@@ -1,0 +1,304 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import PgnComposicion from "../../../components/temas/estado-finanzas/charts/PgnComposicion.tsx";
+import PgnSectores from "../../../components/temas/estado-finanzas/charts/PgnSectores.tsx";
+---
+
+<Chapter
+  number="04"
+  title="Presupuesto General de la Nación"
+  subtitle="$546,9 billones aprobados para 2026. Aquí entiendes en qué se gasta, qué se ejecuta de verdad, y por qué el 85% del presupuesto no se puede tocar."
+  chapterNumber={4}
+  totalChapters={7}
+  prevHref="/temas/estado-finanzas/03-impuestos"
+  prevTitle="Impuestos: de dónde sale la plata"
+  nextHref="/temas/estado-finanzas/05-deuda"
+  nextTitle="Deuda pública"
+  accentColor="violet"
+>
+
+<h2>El PGN: la decisión política más concreta de cada año</h2>
+
+<p>
+  Una vez recaudados los impuestos (capítulo anterior), el Estado tiene que decidir
+  en qué gastarlos. Esa decisión se llama <strong>Presupuesto General de la Nación
+  (PGN)</strong>. Es una ley anual que aprueba el Congreso después de un proceso
+  político intenso entre julio y octubre del año previo.
+</p>
+
+<p>
+  El PGN 2026 fue aprobado por el Congreso el 16 de octubre de 2025 por un total de
+  <strong>$546,9 billones de pesos</strong>. Para dimensionar la cifra:
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">PGN 2026</div>
+    <div class="mt-2 text-3xl font-extrabold text-violet-900 font-mono">$546,9 B</div>
+    <div class="mt-1 text-xs text-violet-700">USD ~$135 mil millones</div>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Per cápita</div>
+    <div class="mt-2 text-3xl font-extrabold text-emerald-900 font-mono">$10,2 M</div>
+    <div class="mt-1 text-xs text-emerald-700">Por cada colombiano vivo</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">% del PIB</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">~30%</div>
+    <div class="mt-1 text-xs text-amber-700">PIB Colombia 2025 ≈ $1.840B</div>
+  </div>
+</div>
+
+<h2>El proceso: cómo se aprueba el PGN</h2>
+
+<p>
+  El presupuesto sigue un calendario constitucional fijo:
+</p>
+
+<div class="my-6 space-y-2">
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-violet-600 mt-1 flex-shrink-0">Junio</div>
+    <div class="text-sm text-neutral-700">
+      <strong>MFMP — Marco Fiscal de Mediano Plazo</strong>: MinHacienda fija el techo de
+      gasto coherente con la regla fiscal y las proyecciones de ingreso. Es el ancla
+      macroeconómica del proceso.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-violet-600 mt-1 flex-shrink-0">Julio</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Anteproyecto del PGN</strong>: el Gobierno radica el proyecto al Congreso. Cada
+      ministerio propone sus prioridades; MinHacienda y DNP consolidan.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-violet-600 mt-1 flex-shrink-0">Agosto</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Mensaje Presidencial al Congreso</strong>: el Presidente presenta el proyecto al
+      Congreso en su instalación de sesiones (20 de julio normalmente).
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-violet-600 mt-1 flex-shrink-0">Sep-Oct</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Discusión en Congreso</strong>: las Comisiones III y IV (Económicas) de Senado
+      y Cámara deliberan. Se hacen modificaciones (típicamente aumentos por presión
+      regional o sectorial).
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-violet-600 mt-1 flex-shrink-0">Oct-Nov</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Ley anual del PGN</strong>: el Congreso aprueba o el ejecutivo lo expide por
+      decreto si no hubo trámite. El PGN 2026 se aprobó el 16-oct-2025.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-violet-600 mt-1 flex-shrink-0">Diciembre</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Decreto de liquidación</strong>: MinHacienda detalla la asignación específica
+      a cada entidad y rubro.
+    </div>
+  </div>
+</div>
+
+<h2>Los tres grandes rubros: funcionamiento, deuda, inversión</h2>
+
+<PgnComposicion client:load />
+
+<h3>1. Funcionamiento (~65%): la maquinaria del Estado en operación</h3>
+
+<p>
+  Es el gasto recurrente para que el Estado funcione. Incluye:
+</p>
+
+<ul>
+  <li><strong>Servicios personales</strong>: sueldos de los servidores públicos (capítulo anterior).</li>
+  <li><strong>Gastos generales</strong>: arriendos, servicios públicos, papelería, viáticos, mantenimiento.</li>
+  <li><strong>Transferencias corrientes</strong>: aportes a entidades autónomas, subsidios, pensiones que paga directamente la Nación, Sistema General de Participaciones (SGP) a entidades territoriales.</li>
+</ul>
+
+<p>
+  Las <strong>pensiones</strong> son el rubro grande dentro de funcionamiento.
+  Colombia tiene un sistema dual: parte privado (AFP) y parte público (Colpensiones).
+  El Estado financia directamente las pensiones de regímenes especiales (docentes,
+  Fuerza Pública) y subsidia el régimen público cuando los aportes no alcanzan. Solo
+  esa subvención pensional pesa más de $50 billones al año.
+</p>
+
+<h3>2. Servicio de la deuda (~19%): pagar lo que se debe</h3>
+
+<p>
+  Incluye <strong>amortización</strong> (capital que se devuelve a los acreedores) e
+  <strong>intereses</strong>. En 2026 el servicio de la deuda asciende a ~$103,5
+  billones — más que la inversión completa.
+</p>
+
+<p>
+  Detalle de la deuda y sus tenedores en el capítulo 5.
+</p>
+
+<h3>3. Inversión (~16%): los proyectos del Banco de Programas</h3>
+
+<p>
+  Son los proyectos formalmente registrados en el Banco de Programas y Proyectos de
+  Inversión Nacional del DNP. Cada proyecto tiene su ficha técnica, sus metas y su
+  cronograma. El PGN 2026 aprobó $88,4 billones para inversión.
+</p>
+
+<Callout type="warning" title="Pero no todo lo que se llama 'inversión' es inversión">
+  Una parte de lo clasificado como inversión es en realidad gasto corriente disfrazado:
+  contratos de prestación de servicios, mantenimiento de programas sociales,
+  operación de subsidios. La distinción contable de "funcionamiento vs inversión" es
+  más porosa de lo que parece. La verdadera inversión en infraestructura física suele
+  ser menor del 50% del rubro "inversión".
+</Callout>
+
+<h2>Distribución por sectores</h2>
+
+<PgnSectores client:load />
+
+<h3>Educación: la gran apuesta del PGN</h3>
+
+<p>
+  Educación es el sector con mayor presupuesto en 2026: <strong>$88,2 billones</strong>,
+  un aumento del 8,1% frente a 2025. Pero atención: la mayor parte va a
+  <strong>funcionamiento</strong> (nómina docente, transferencias del SGP a
+  educación, financiación de Colpensiones para docentes pensionados). La inversión
+  directa en infraestructura escolar y calidad es una fracción menor del total.
+</p>
+
+<h3>Hacienda: el peso de la deuda</h3>
+
+<p>
+  El sector Hacienda aparece grande porque incluye el <strong>servicio de la
+  deuda</strong>. No es que el Ministerio gaste $103 billones en operar: es que ese
+  rubro consolida los pagos a tenedores de TES y bonos externos.
+</p>
+
+<h3>Salud, Defensa, Trabajo: los grandes operativos</h3>
+
+<p>
+  Estos tres sectores tienen masa salarial enorme. Defensa por la Fuerza Pública
+  (Ejército, Armada, Fuerza Aérea, Policía). Trabajo por las pensiones públicas.
+  Salud por el régimen subsidiado y el aporte solidario.
+</p>
+
+<h2>El 85% inflexible: la trampa estructural</h2>
+
+<Callout type="key" title="Por qué reformar el gasto es tan difícil">
+  Cerca del <strong>85% del PGN está comprometido por ley antes de que empiece el
+  año fiscal</strong>:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Pensiones</strong>: obligación constitucional. No se pueden recortar.</li>
+    <li><strong>SGP</strong>: transferencias a educación (~22%) y salud (~24%) por Ley.</li>
+    <li><strong>Servicio de la deuda</strong>: incumplir es <em>default</em>; impensable.</li>
+    <li><strong>Salarios de servidores con vínculo legal</strong>: tienen estabilidad protegida.</li>
+    <li><strong>Vigencias futuras</strong>: compromisos plurianuales de gobiernos anteriores.</li>
+  </ul>
+  Solo el <strong>~15% del presupuesto es discrecional</strong>: gastos generales,
+  algunos contratos, inversión nueva no comprometida. Cuando un Presidente quiere
+  cambiar prioridades, opera dentro de ese margen pequeño. El resto está atado.
+</Callout>
+
+<h2>SGP: el dinero que va a las regiones</h2>
+
+<p>
+  Dentro del PGN, una parte importante no la ejecuta el nivel nacional: se
+  <strong>transfiere automáticamente a departamentos y municipios</strong> vía el
+  <strong>Sistema General de Participaciones (SGP)</strong>, regulado por la Ley 715
+  de 2001 y modificaciones.
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">SGP Educación</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">~58%</div>
+    <div class="mt-1 text-xs text-cyan-700">del total SGP</div>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">SGP Salud</div>
+    <div class="mt-2 text-3xl font-extrabold text-emerald-900 font-mono">~24%</div>
+    <div class="mt-1 text-xs text-emerald-700">del total SGP</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">SGP Propósito general</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">~17%</div>
+    <div class="mt-1 text-xs text-amber-700">agua, deporte, cultura...</div>
+  </div>
+</div>
+
+<p>
+  Las entidades territoriales reciben estos fondos con destinación específica.
+  Educación va a financiar la nómina docente, los textos, la alimentación escolar.
+  Salud al régimen subsidiado, los programas de salud pública. Los recursos
+  territoriales son auditados por la Contraloría y las Personerías locales.
+</p>
+
+<h2>Ejecución real vs apropiación: el PGN que no se gasta</h2>
+
+<p>
+  Lo aprobado en el PGN no siempre se ejecuta. Cada año hay un porcentaje del
+  presupuesto apropiado que no se ejecuta efectivamente, por razones que van desde
+  la lentitud administrativa hasta cambios de prioridades.
+</p>
+
+<div class="my-6 rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+  <h3 class="text-lg font-bold text-rose-900">Por qué no se ejecuta todo</h3>
+  <ul class="mt-2 space-y-2 text-sm text-rose-900/80">
+    <li><strong>Lentitud en contratación</strong>: el proceso de licitación toma meses.</li>
+    <li><strong>Cambios en cronogramas de proyectos</strong>: los grandes proyectos de inversión se demoran más de lo planeado.</li>
+    <li><strong>Rezagos en ejecución de SGP</strong>: las alcaldías a veces no tienen capacidad de gastar el dinero recibido.</li>
+    <li><strong>Decretos de aplazamiento</strong>: el Gobierno puede aplazar gastos para cumplir la regla fiscal.</li>
+  </ul>
+</div>
+
+<h2>Vigencias futuras: el presupuesto de los próximos gobiernos</h2>
+
+<p>
+  Un gobierno puede comprometer recursos para años futuros vía <strong>vigencias
+  futuras</strong>. Por ejemplo, un proyecto de infraestructura plurianual se firma
+  con compromisos de pago a 3-5 años. Esto significa que <strong>parte del PGN del
+  próximo gobierno ya está comprometido</strong> por los anteriores.
+</p>
+
+<p>
+  Las vigencias futuras suelen aprobarse por el Confis (Consejo Superior de Política
+  Fiscal) y son una herramienta de planeación. Pero también pueden ser una forma de
+  amarrar presupuesto futuro a decisiones del gobierno saliente.
+</p>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>El <strong>PGN 2026</strong> es de <strong>$546,9 billones</strong> (~30% del PIB).</li>
+  <li>Se compone en <strong>65% funcionamiento, 19% deuda, 16% inversión</strong>.</li>
+  <li>El <strong>servicio de la deuda</strong> ($103,5B) ya supera la inversión total ($88,4B).</li>
+  <li>Por sector: <strong>educación lidera</strong> ($88,2B), seguida de Hacienda (incluye deuda), salud y defensa.</li>
+  <li>El <strong>85% del PGN es inflexible</strong> por ley: pensiones, SGP, deuda, salarios. Solo el 15% es discrecional.</li>
+  <li>El <strong>SGP</strong> transfiere automáticamente recursos a departamentos y municipios para educación, salud y propósito general.</li>
+  <li>El siguiente capítulo profundiza en la deuda: cuánto debemos, a quién y por qué crece.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>MinHacienda — PGN:</strong> <a href="https://www.minhacienda.gov.co" target="_blank" rel="noopener">minhacienda.gov.co</a>
+    publica el anteproyecto del PGN, el Mensaje Presidencial al Congreso, la ley
+    anual aprobada y la ejecución mensual. El Marco Fiscal de Mediano Plazo (MFMP)
+    se publica en junio.
+  </p>
+  <p class="mt-2">
+    <strong>DNP — Inversión pública:</strong> <a href="https://www.dnp.gov.co" target="_blank" rel="noopener">dnp.gov.co</a>
+    administra el Banco de Programas y Proyectos de Inversión Nacional y publica el
+    Plan Plurianual de Inversiones.
+  </p>
+  <p class="mt-3">
+    <strong>Congreso de la República:</strong> las discusiones del PGN ocurren en las
+    Comisiones Económicas III y IV. Las actas son públicas en
+    <a href="https://www.camara.gov.co" target="_blank" rel="noopener">camara.gov.co</a>
+    y <a href="https://www.senado.gov.co" target="_blank" rel="noopener">senado.gov.co</a>.
+  </p>
+</Callout>
+
+</Chapter>

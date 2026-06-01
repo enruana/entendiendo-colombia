@@ -1,0 +1,280 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import BalanzaPagos from "../../../components/temas/estado-finanzas/charts/BalanzaPagos.tsx";
+---
+
+<Chapter
+  number="06"
+  title="Capital privado en movimiento"
+  subtitle="IED, remesas, balanza de pagos. La plata privada que entra y sale del país es tan importante como la del Estado. Aquí entiendes cómo se mueve."
+  chapterNumber={6}
+  totalChapters={7}
+  prevHref="/temas/estado-finanzas/05-deuda"
+  prevTitle="Deuda pública"
+  nextHref="/temas/estado-finanzas/07-eficiencia"
+  nextTitle="Eficiencia y comparación internacional"
+  accentColor="sky"
+>
+
+<h2>Hasta acá hablamos del Estado. Falta el resto del país</h2>
+
+<p>
+  Los capítulos anteriores se concentraron en el Estado: cuánta gente trabaja para
+  él, cuánto les paga, cuánto recauda en impuestos, en qué gasta, cuánto debe. Pero
+  la economía colombiana es mucho más que el Estado.
+</p>
+
+<p>
+  Este capítulo es sobre el otro lado de la moneda: cómo se mueve la <strong>plata
+  privada</strong>. Específicamente, los flujos de dólares que entran y salen del
+  país: inversión extranjera, remesas de migrantes, comercio internacional, salida
+  de capitales especulativos. Todo eso se resume en un solo documento del Banco de
+  la República: la <strong>balanza de pagos</strong>.
+</p>
+
+<h2>La balanza de pagos: la contabilidad externa del país</h2>
+
+<p>
+  La balanza de pagos registra todas las transacciones económicas entre
+  <strong>residentes en Colombia y residentes en el exterior</strong>. Se compone
+  de dos cuentas grandes:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-sky-200 bg-sky-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-sky-700">Cuenta corriente</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">El flujo "normal" de la economía</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Suma de:
+    </p>
+    <ul class="mt-1 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Balanza comercial (exportaciones - importaciones)</li>
+      <li>Balanza de servicios (turismo, fletes, software)</li>
+      <li>Renta primaria (intereses, dividendos pagados al exterior)</li>
+      <li>Transferencias (remesas, donaciones)</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Cuenta financiera</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">El movimiento de capital</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Suma de:
+    </p>
+    <ul class="mt-1 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Inversión extranjera directa (IED, entrante y saliente)</li>
+      <li>Inversión de portafolio (bonos, acciones)</li>
+      <li>Otros préstamos y créditos</li>
+      <li>Cambio en reservas internacionales</li>
+    </ul>
+  </div>
+</div>
+
+<Callout type="info" title="Por construcción contable">
+  Cuenta corriente + cuenta financiera + errores y omisiones = 0. Si la cuenta
+  corriente está en déficit (salen más dólares que entran), por contabilidad debe
+  haber un superávit equivalente en la cuenta financiera (entran capitales o se
+  reducen reservas) que lo financie.
+</Callout>
+
+<h2>La cuenta corriente: el termómetro de la economía</h2>
+
+<BalanzaPagos client:load />
+
+<p>
+  Colombia ha tenido <strong>déficit en cuenta corriente todos los años</strong> de
+  la última década. Eso significa que la economía colombiana <strong>consume y gasta
+  más de lo que produce</strong> en términos de dólares: la diferencia se financia
+  con capital externo.
+</p>
+
+<p>
+  La buena noticia: el déficit ha bajado dramáticamente. Del 6,1% del PIB en 2022
+  pasó al 1,6% del PIB en 2024 — el nivel más bajo en 15 años. Tres factores
+  ayudaron:
+</p>
+
+<ol>
+  <li>
+    <strong>Caída de las importaciones</strong>: desaceleración del consumo interno
+    redujo la demanda de bienes importados.
+  </li>
+  <li>
+    <strong>Aumento de las remesas</strong>: USD 11,9 mil millones en 2024, récord
+    histórico (+16,5% interanual a noviembre).
+  </li>
+  <li>
+    <strong>Mejor balanza comercial</strong>: exportaciones (incluyendo café y
+    petróleo) recuperaron precios.
+  </li>
+</ol>
+
+<h2>Remesas: la economía paralela de los migrantes</h2>
+
+<p>
+  Las <strong>remesas</strong> son los envíos de dinero que hacen los colombianos
+  que viven en el exterior a sus familias en Colombia. Son una de las fuentes más
+  importantes y crecientes de dólares para el país.
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-sky-200 bg-sky-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-sky-700">Remesas 2024 (11 meses)</div>
+    <div class="mt-2 text-3xl font-extrabold text-sky-900 font-mono">USD 11,66 B</div>
+    <div class="mt-1 text-xs text-sky-700">~$50 billones de pesos</div>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Crecimiento interanual</div>
+    <div class="mt-2 text-3xl font-extrabold text-emerald-900 font-mono">+16,5%</div>
+    <div class="mt-1 text-xs text-emerald-700">A noviembre 2024</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Top emisor</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">EEUU</div>
+    <div class="mt-1 text-xs text-amber-700">Seguido por España y Chile</div>
+  </div>
+</div>
+
+<Callout type="key" title="El peso de las remesas">
+  USD 12 mil millones equivale aproximadamente al <strong>0,8 veces el ingreso anual
+  del sector petrolero colombiano</strong>. Es decir, los migrantes colombianos
+  envían casi lo mismo que vale el petróleo que exporta el país. Sin esas remesas,
+  el déficit corriente sería casi el doble.
+</Callout>
+
+<p>
+  Los principales departamentos receptores son <strong>Valle del Cauca, Antioquia,
+  Cundinamarca, Risaralda y Quindío</strong> (eje cafetero, históricamente con alta
+  migración a Estados Unidos y España). En esos departamentos, las remesas
+  representan un porcentaje significativo del ingreso familiar.
+</p>
+
+<h2>Inversión extranjera directa (IED): qué compran y dónde invierten</h2>
+
+<p>
+  La IED es cuando una empresa o persona extranjera adquiere o construye un activo
+  productivo en Colombia: una fábrica, una participación accionaria mayor al 10%,
+  una explotación minera, una franquicia. Es capital productivo, no especulativo.
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <h3 class="text-base font-bold text-neutral-900">IED entrante (típica)</h3>
+    <p class="mt-2 text-sm text-neutral-700">
+      <strong>USD 13-17 mil millones al año</strong> en años normales. Va
+      principalmente a sector petrolero, energía, manufactura y servicios
+      financieros. El pico fue ~USD 18B en 2022.
+    </p>
+  </div>
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <h3 class="text-base font-bold text-neutral-900">IED saliente (creciente)</h3>
+    <p class="mt-2 text-sm text-neutral-700">
+      <strong>~USD 4-10 mil millones al año</strong>. Empresas colombianas grandes
+      (Bancolombia, ISA, Grupo Argos, Grupo Sura, EPM, Almacenes Éxito) invierten en
+      el exterior. Reflejan la transnacionalización del capital colombiano.
+    </p>
+  </div>
+</div>
+
+<h3>El "lavado" geográfico de la IED</h3>
+
+<Callout type="warning" title="Por qué tantas inversiones vienen de paraísos fiscales">
+  Una porción significativa de la "IED desde Panamá" o "desde Países Bajos" no es
+  realmente inversión panameña u holandesa: son empresas multinacionales que usan
+  esas jurisdicciones por razones tributarias. El inversionista último puede ser
+  estadounidense, español, alemán o incluso colombiano. Las cifras "por país de
+  origen" sobreestiman a las jurisdicciones de tránsito.
+</Callout>
+
+<h2>Reservas internacionales: el colchón del país</h2>
+
+<p>
+  Las <strong>reservas internacionales</strong> son los dólares (y otros activos
+  externos) que mantiene el Banco de la República. Sirven como amortiguador en
+  crisis: si una corrida cambiaria saca dólares del país, el banco puede vender
+  reservas para sostener el peso.
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Reservas 2025</div>
+    <div class="mt-2 text-3xl font-extrabold text-emerald-900 font-mono">~USD 60 B</div>
+    <div class="mt-1 text-xs text-emerald-700">BanRep activos externos</div>
+  </div>
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Meses de importaciones</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">~9 meses</div>
+    <div class="mt-1 text-xs text-cyan-700">Cobertura ante un shock</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Línea FMI extra</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">USD ~9 B</div>
+    <div class="mt-1 text-xs text-amber-700">Línea de crédito flexible (FCL)</div>
+  </div>
+</div>
+
+<p>
+  El criterio convencional es que un país debe tener al menos <strong>3 meses de
+  importaciones</strong> en reservas. Colombia tiene 9 meses, holgadamente sobre el
+  umbral. Adicionalmente, el FMI le ha aprobado una <strong>Línea de Crédito
+  Flexible (FCL)</strong> de ~USD 9 mil millones que opera como seguro.
+</p>
+
+<h2>El precio del peso: por qué importa todo lo anterior</h2>
+
+<p>
+  Toda esta plata que entra y sale del país determina la <strong>tasa de cambio</strong>:
+  cuántos pesos vale un dólar. Cuando entra más capital, el peso se aprecia (se
+  fortalece). Cuando sale, se devalúa.
+</p>
+
+<p>
+  La tasa de cambio importa para cosas muy concretas:
+</p>
+
+<ul>
+  <li><strong>Inflación</strong>: una devaluación encarece las importaciones (combustibles, electrónica, alimentos importados). Eso se traslada a precios.</li>
+  <li><strong>Deuda externa</strong>: una devaluación encarece los USD 354 billones de deuda externa medidos en pesos.</li>
+  <li><strong>Exportaciones</strong>: una devaluación hace más competitivas las exportaciones (café, flores, petróleo).</li>
+  <li><strong>Turismo</strong>: un peso devaluado hace más barato visitar Colombia y más caro viajar al exterior.</li>
+</ul>
+
+<Callout type="key" title="¿Quién decide el tipo de cambio?">
+  En Colombia, el régimen cambiario es <strong>flotante</strong>: la tasa la decide
+  el mercado, no el Banco de la República. El banco puede intervenir comprando o
+  vendiendo dólares en momentos de volatilidad extrema, pero no fija un valor. Eso
+  es un cambio fundamental desde 1999, cuando se abandonó la "banda cambiaria" tras
+  la crisis. Hoy el peso es una de las monedas más volátiles de la región.
+</Callout>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>La <strong>balanza de pagos</strong> resume las transacciones entre Colombia y el resto del mundo. Cuenta corriente + cuenta financiera.</li>
+  <li>Colombia tiene <strong>déficit en cuenta corriente todos los años</strong>, pero ha caído al 1,6% del PIB en 2024 (mínimo en 15 años).</li>
+  <li>Las <strong>remesas</strong> son una fuente clave: USD 11,66B en 11 meses de 2024 (+16,5%). Casi el mismo monto que las exportaciones de petróleo.</li>
+  <li>La <strong>IED</strong> ronda los USD 13-17B/año. Una parte importante entra vía paraísos fiscales (Panamá, Países Bajos).</li>
+  <li>Las <strong>reservas internacionales</strong> de Colombia (~USD 60B) cubren 9 meses de importaciones, holgadamente sobre el mínimo recomendado.</li>
+  <li>Todo este movimiento de capital determina la <strong>tasa de cambio</strong>, que impacta inflación, deuda externa y competitividad.</li>
+  <li>El próximo y último capítulo del tema: la eficiencia del gasto público y la comparación internacional.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>BanRep — Balanza de pagos:</strong>
+    <a href="https://www.banrep.gov.co/es/estadisticas/balanza-pagos" target="_blank" rel="noopener">banrep.gov.co/es/estadisticas/balanza-pagos</a>.
+    Publica trimestralmente el informe completo con metodología y desagregaciones.
+  </p>
+  <p class="mt-2">
+    <strong>BanRep — Remesas:</strong> serie mensual con desagregación por país emisor
+    y departamento receptor.
+  </p>
+  <p class="mt-3">
+    <strong>ProColombia:</strong>
+    <a href="https://www.procolombia.co" target="_blank" rel="noopener">procolombia.co</a>
+    publica análisis de IED desde la perspectiva promocional, con detalle por sector
+    y región.
+  </p>
+</Callout>
+
+</Chapter>

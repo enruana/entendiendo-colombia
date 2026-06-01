@@ -1,0 +1,275 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import EmpleoPublicoTipo from "../../../components/temas/estado-finanzas/charts/EmpleoPublicoTipo.tsx";
+---
+
+<Chapter
+  number="01"
+  title="Estructura del Estado colombiano"
+  subtitle="Tres ramas, organismos autónomos, niveles territoriales. Y casi 1,4 millones de personas trabajando para que todo funcione."
+  chapterNumber={1}
+  totalChapters={7}
+  nextHref="/temas/estado-finanzas/02-sueldos-publicos"
+  nextTitle="Sueldos en el sector público"
+  accentColor="emerald"
+>
+
+<h2>Antes de hablar de cuánto cuesta, hay que saber qué Estado existe</h2>
+
+<p>
+  Cuando alguien dice "hay que reducir el tamaño del Estado" o "el Estado no funciona",
+  la pregunta inmediata debería ser: <strong>¿cuál Estado?</strong>. Porque el Estado
+  colombiano no es una sola cosa: son tres ramas del poder, una decena de organismos
+  autónomos que no responden a ninguna de las tres, 32 departamentos, 1.103 municipios
+  y un sistema de empresas estatales con regímenes mixtos.
+</p>
+
+<p>
+  Este capítulo es la base del tema. Antes de discutir sueldos, presupuesto, impuestos
+  o deuda, hay que saber qué hay y qué tamaño tiene.
+</p>
+
+<h2>Las tres ramas del poder público</h2>
+
+<p>
+  La Constitución de 1991 estableció en su artículo 113 que el Estado colombiano se
+  organiza en tres ramas independientes: <strong>ejecutiva, legislativa y judicial</strong>.
+  Cada una tiene cabeza propia y autonomía funcional.
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Rama ejecutiva</div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">Presidencia + 19 ministerios</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      El Presidente es jefe de Estado, jefe de gobierno y suprema autoridad administrativa.
+      Bajo su dirección operan los ministerios, departamentos administrativos (DAPRE, DAFP,
+      DNP, DANE), superintendencias y entidades adscritas o vinculadas.
+    </p>
+    <div class="mt-3 text-xs text-emerald-700">Concentra el grueso del empleo público</div>
+  </div>
+
+  <div class="rounded-xl border border-amber-200 bg-amber-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Rama legislativa</div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">Congreso de la República</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      <strong>Senado</strong> (108 senadores, incluidos 2 indígenas y 2 de las
+      circunscripciones especiales) y <strong>Cámara de Representantes</strong> (188
+      representantes). Hacen leyes y ejercen control político al ejecutivo.
+    </p>
+    <div class="mt-3 text-xs text-amber-700">296 congresistas + planta administrativa</div>
+  </div>
+
+  <div class="rounded-xl border border-violet-200 bg-violet-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Rama judicial</div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">4 Altas Cortes</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      <strong>Corte Suprema de Justicia</strong>, <strong>Consejo de Estado</strong>,
+      <strong>Corte Constitucional</strong> y <strong>Consejo Superior de la Judicatura</strong>.
+      Bajo ellas: jurisdicciones ordinaria, contencioso-administrativa, constitucional y
+      disciplinaria. Plus la <strong>JEP</strong> (Jurisdicción Especial para la Paz, 2017).
+    </p>
+    <div class="mt-3 text-xs text-violet-700">Magistrados + jueces + funcionarios</div>
+  </div>
+</div>
+
+<Callout type="info" title="Las tres no son iguales en tamaño">
+  El 95% de los servidores públicos están en la rama ejecutiva. La judicial concentra
+  cerca del 4%, y la legislativa apenas el 1%. La discusión sobre "los sueldos de los
+  congresistas" siempre toca un universo pequeño, pero muy visible.
+</Callout>
+
+<h2>Los organismos autónomos: el cuarto poder no escrito</h2>
+
+<p>
+  Además de las tres ramas, la Constitución creó instituciones que no responden a
+  ninguna de ellas. Son entidades autónomas con regímenes propios, presupuesto
+  independiente y autoridades nombradas con mecanismos que las protegen del juego
+  político del momento.
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-3 text-sm">
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <strong class="text-neutral-900">Banco de la República</strong>
+    <p class="text-neutral-600 mt-1">Autoridad monetaria y cambiaria. Maneja política monetaria, reservas internacionales y la inflación.</p>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <strong class="text-neutral-900">Contraloría General de la República</strong>
+    <p class="text-neutral-600 mt-1">Control fiscal: vigila cómo se gastan los recursos públicos. Independiente del ejecutivo.</p>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <strong class="text-neutral-900">Procuraduría General</strong>
+    <p class="text-neutral-600 mt-1">Control disciplinario sobre los servidores públicos. Investigación y sanción.</p>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <strong class="text-neutral-900">Defensoría del Pueblo</strong>
+    <p class="text-neutral-600 mt-1">Promoción y protección de los derechos humanos.</p>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <strong class="text-neutral-900">Fiscalía General de la Nación</strong>
+    <p class="text-neutral-600 mt-1">Investigación penal. Adscrita a la rama judicial pero con autonomía operativa.</p>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <strong class="text-neutral-900">Registraduría Nacional + CNE</strong>
+    <p class="text-neutral-600 mt-1">Identificación ciudadana, registro civil y organización electoral.</p>
+  </div>
+</div>
+
+<Callout type="key" title="¿Por qué importan los organismos autónomos?">
+  Son la garantía de que el ejecutivo no controle todos los frenos del poder. Si un
+  presidente quiere hacer algo cuestionable, la Contraloría puede vetar el gasto, la
+  Procuraduría puede investigar al servidor que lo ordene, la Fiscalía puede abrir
+  proceso penal y el BanRep puede negarse a financiarlo con emisión. Sus titulares se
+  eligen con períodos que no coinciden con el presidencial, justamente para esto.
+</Callout>
+
+<h2>Tres niveles de gobierno</h2>
+
+<p>
+  La Constitución también establece la <strong>descentralización territorial</strong>:
+  el Estado no opera solo desde Bogotá. Hay tres niveles superpuestos:
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="flex items-center gap-4 rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="text-3xl">🇨🇴</div>
+    <div class="flex-1">
+      <div class="font-bold text-neutral-900">Nacional</div>
+      <div class="text-sm text-neutral-600">Presidencia, ministerios, entidades adscritas, organismos autónomos. Bogotá DC como sede.</div>
+    </div>
+  </div>
+  <div class="flex items-center gap-4 rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="text-3xl">🗺️</div>
+    <div class="flex-1">
+      <div class="font-bold text-neutral-900">Departamental (32 + 1)</div>
+      <div class="text-sm text-neutral-600">32 departamentos + Bogotá DC como entidad territorial especial. Gobernadores elegidos. Asambleas departamentales como cuerpos colegiados.</div>
+    </div>
+  </div>
+  <div class="flex items-center gap-4 rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="text-3xl">🏘️</div>
+    <div class="flex-1">
+      <div class="font-bold text-neutral-900">Municipal (1.103)</div>
+      <div class="text-sm text-neutral-600">1.103 municipios, de los cuales 5 son <strong>distritos especiales</strong> (Cartagena, Barranquilla, Santa Marta, Buenaventura, Riohacha) con regímenes propios. Alcaldes elegidos. Concejos municipales.</div>
+    </div>
+  </div>
+</div>
+
+<Callout type="warning" title="El Estado no se mide solo en Bogotá">
+  Si tu medida del Estado son los ministerios, te pierdes el 25% del país. Hay más
+  servidores en alcaldías y gobernaciones de lo que la gente suele pensar. Y la
+  ejecución concreta del gasto — escuelas que abren, hospitales que atienden, vías
+  que se pavimentan — ocurre en su mayoría en el nivel territorial, no en el nacional.
+</Callout>
+
+<h2>¿Cuánta gente trabaja para el Estado?</h2>
+
+<p>
+  La cifra exacta depende de qué cuentes. Pero los datos del DAFP (Departamento
+  Administrativo de la Función Pública) para 2024 dan un panorama claro:
+</p>
+
+<EmpleoPublicoTipo client:load />
+
+<h3>Una distinción crítica: planta vs contratistas</h3>
+
+<p>
+  Hay dos formas básicas de trabajar para el Estado:
+</p>
+
+<ul>
+  <li>
+    <strong>Servidores de planta</strong>: tienen vínculo legal con el Estado. Pueden
+    ser de <em>carrera administrativa</em> (entraron por concurso, tienen estabilidad),
+    de <em>libre nombramiento y remoción</em> (cargos de confianza), o
+    <em>provisionales</em> (planta pero sin haber concursado todavía). Todos tienen
+    salud, pensión, primas y prestaciones plenas.
+  </li>
+  <li>
+    <strong>Contratistas por prestación de servicios (CPS)</strong>: no son empleados.
+    Son personas naturales con un contrato civil con el Estado. <strong>Pagan su
+    propia salud y pensión</strong>, no tienen primas, no tienen vacaciones, y el
+    contrato puede no renovarse al final de la vigencia.
+  </li>
+</ul>
+
+<Callout type="info" title="El problema de la 'falsa contratación'">
+  La Ley 909 de 2004 prohíbe usar contratistas para funciones permanentes del Estado
+  (eso debería ser planta). Pero en la práctica, miles de funciones permanentes se
+  cubren con contratos de prestación de servicios — porque es más barato, más rápido
+  y políticamente flexible. La <strong>política de formalización</strong> del DAFP
+  busca convertir esos CPS en cargos de planta. Entre 2023 y 2024 se formalizaron
+  15.149 cargos en el orden nacional.
+</Callout>
+
+<h2>La concentración geográfica</h2>
+
+<p>
+  El orden nacional está fuertemente concentrado en Bogotá DC. Más del 60% de los
+  servidores del orden nacional trabajan en oficinas en Bogotá, aunque las entidades
+  tengan presencia en regiones. Esto es importante porque el costo de vida bogotano
+  influye en las escalas salariales y porque la mayoría de los servidores no tiene
+  contacto directo con los territorios donde se ejecutan las políticas que diseña.
+</p>
+
+<h2>Regímenes especiales: cuando "trabajar para el Estado" significa algo distinto</h2>
+
+<p>
+  Existen sectores del Estado con regímenes laborales propios, distintos al régimen
+  general del servidor público:
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-rose-200 bg-rose-50/30 p-4">
+    <div class="font-bold text-rose-900">Fuerza Pública: Fuerzas Militares y Policía Nacional</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Regímenes propios establecidos en los decretos 1211 (Ejército), 1212 (Armada),
+      1213 (Fuerza Aérea), 1214 (Policía) y modificaciones. Escalafones, retiros,
+      asignaciones de retiro y prestaciones distintos. No se pueden comparar 1:1 con
+      el régimen civil.
+    </p>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/30 p-4">
+    <div class="font-bold text-cyan-900">Universidades públicas</div>
+    <p class="text-sm text-cyan-900/80 mt-1">
+      Los profesores tienen régimen propio (Decreto 1279 de 2002) basado en puntos
+      académicos. Un profesor titular categoría especial con productividad puede
+      ganar más que un ministro.
+    </p>
+  </div>
+  <div class="rounded-lg border border-violet-200 bg-violet-50/30 p-4">
+    <div class="font-bold text-violet-900">Magisterio (docentes públicos)</div>
+    <p class="text-sm text-violet-900/80 mt-1">
+      Régimen del Decreto 1278 de 2002 (estatuto profesional docente) y el anterior
+      régimen del Decreto 2277 de 1979 que aún cobija a maestros antiguos. Más de
+      300.000 docentes públicos a nivel nacional.
+    </p>
+  </div>
+</div>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>El Estado colombiano tiene <strong>3 ramas + organismos autónomos + 3 niveles territoriales</strong>: una estructura diseñada para los frenos y contrapesos del poder.</li>
+  <li><strong>~1,4 millones de personas</strong> trabajan para el Estado en 2024 (1,04M en orden nacional + 354K en orden territorial), según el DAFP.</li>
+  <li>De ese total, <strong>~17% son contratistas por prestación de servicios</strong> — sin estabilidad, sin prestaciones plenas.</li>
+  <li>La rama ejecutiva concentra el 95% del empleo público; legislativa y judicial son universos pequeños pero muy visibles.</li>
+  <li>Existen <strong>regímenes especiales</strong> (Fuerza Pública, universidades, docentes, judicial) que no se comparan 1:1 con el régimen general.</li>
+  <li>El siguiente capítulo entra en el detalle de cuánto gana cada quien.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>DAFP — Empleo público:</strong> <a href="https://www.funcionpublica.gov.co/empleo-publico" target="_blank" rel="noopener">funcionpublica.gov.co/empleo-publico</a>
+  </p>
+  <p class="mt-2">
+    Publica el <em>Informe del estado del empleo público</em> anual con cifras por
+    rama, sector y tipo de vinculación.
+  </p>
+  <p class="mt-3">
+    <strong>Constitución Política, arts. 113-117 y 286-302:</strong> la estructura
+    completa del Estado y la organización territorial.
+  </p>
+</Callout>
+
+</Chapter>

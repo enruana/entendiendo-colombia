@@ -17,7 +17,15 @@ const iconos: Record<string, string> = {
 };
 
 // Capítulos publicados hasta ahora.
-const builtSlugs = new Set(["01-conteo-fuentes", "02-clasificacion", "03-mipymes"]);
+const builtSlugs = new Set([
+  "01-conteo-fuentes",
+  "02-clasificacion",
+  "03-mipymes",
+  "04-distribucion-regional",
+  "05-dinamica",
+  "06-supersociedades",
+  "07-empresas-y-empleo",
+]);
 
 const chapters = tema.capitulos.map((c) => ({
   number: String(c.numero).padStart(2, "0"),

@@ -1,0 +1,230 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import NatalidadMortalidad from "../../../components/temas/empresas/charts/NatalidadMortalidad.tsx";
+import Supervivencia from "../../../components/temas/empresas/charts/Supervivencia.tsx";
+---
+
+<Chapter
+  number="05"
+  title="Nacen, mueren, sobreviven"
+  subtitle="Cada año en Colombia nacen unas 300 mil empresas y mueren unas 215 mil. Pero solo 1 de cada 3 sobrevive a los 5 años. Esta es la dinámica real del tejido empresarial."
+  chapterNumber={5}
+  totalChapters={7}
+  prevHref="/temas/empresas/04-distribucion-regional"
+  prevTitle="Dónde están las empresas"
+  nextHref="/temas/empresas/06-supersociedades"
+  nextTitle="El Colombia productivo: las que reportan"
+  accentColor="rose"
+>
+
+<h2>El tejido empresarial es un río, no un lago</h2>
+
+<p>
+  Hablar de "1,8 millones de empresas activas en Colombia" puede dar la impresión de
+  un universo estable. No lo es. <strong>Cada año, una de cada ocho empresas activas
+  se cancela</strong>. Otras se constituyen. El stock crece (lentamente) pero la
+  rotación es enorme: el tejido empresarial es un río más que un lago.
+</p>
+
+<NatalidadMortalidad client:load />
+
+<p>
+  Las cifras del último periodo disponible:
+</p>
+
+<ul>
+  <li><strong>Creaciones 2024:</strong> 297.475 empresas nuevas (-2,8% vs 2023).</li>
+  <li><strong>Cancelaciones 2023:</strong> 233.044 — la cifra más reciente confirmada por Confecámaras (+8,8% vs 2022, cuando fueron 214.008).</li>
+  <li><strong>Tasa anual de cancelación:</strong> 13,2% del stock activo cada año (acumulado 2017–2023).</li>
+  <li><strong>Saldo neto:</strong> el crecimiento neto del stock está bajando: pasó de ~97 mil empresas/año en 2021–2022 a ~57 mil estimadas para 2024.</li>
+</ul>
+
+<Callout type="key" title="Por qué importa la mortalidad">
+  El stock empresarial colombiano creció solo ~5 mil empresas entre 2023 y 2024
+  (de 1,733,636 a 1,739,405). Pero internamente: nacieron 297 mil y se cancelaron
+  unas 240 mil. <strong>La economía empresarial colombiana tiene una tasa de
+  turnover de casi 30% al año</strong>. Muchas de las que mueren son nuevas:
+  el segundo año es el más crítico.
+</Callout>
+
+<h2>Por qué se cancelan tantas empresas</h2>
+
+<p>
+  Cancelar una empresa en Colombia ocurre por dos vías:
+</p>
+
+<div class="my-6 grid sm:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-rose-200 bg-rose-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">76,1%</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Cancelación declarada</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      El empresario formaliza el cierre voluntariamente ante la cámara de comercio.
+      Es el camino "honesto": liquida activos, paga obligaciones, da de baja al
+      personal y cancela el registro. Las grandes empresas casi siempre van por
+      esta vía.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-amber-200 bg-amber-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">23,9%</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Cancelación por depuración</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      La <strong>Ley 1727 de 2014</strong> ordena dar de baja del RUES a empresas
+      que dejan de renovar la matrícula durante 5 años consecutivos. Es la "muerte
+      silenciosa" — el negocio dejó de operar pero nadie firmó el cierre. Casi
+      exclusivamente personas naturales y micros.
+    </p>
+  </div>
+</div>
+
+<Callout type="warning" title="La asimetría brutal por forma jurídica">
+  De las cancelaciones registradas entre 2017 y 2023:
+  <ul class="mt-2 ml-5 space-y-1 list-disc">
+    <li><strong>93,5%</strong> eran personas naturales</li>
+    <li><strong>6,5%</strong> eran sociedades</li>
+  </ul>
+  <p class="mt-2">
+    Y por tamaño: <strong>99%</strong> eran microempresas, 0,8% pequeñas, y 0,2%
+    medianas y grandes combinadas. La mortalidad empresarial es, abrumadoramente,
+    un fenómeno del segmento más pequeño y menos formal.
+  </p>
+</Callout>
+
+<h2>Quién sobrevive — y por cuánto</h2>
+
+<p>
+  El estudio más completo de supervivencia empresarial en Colombia es la
+  <em>Cartilla 17</em> de Confecámaras, que rastrea a las empresas creadas en
+  2017 hasta 2022 — cinco años exactos. La pregunta: de las 100 empresas que
+  nacieron entonces, ¿cuántas seguían vivas?
+</p>
+
+<Supervivencia client:load />
+
+<p>
+  Tres lecturas potentes:
+</p>
+
+<ul>
+  <li><strong>Forma jurídica importa muchísimo:</strong> sobrevive el <strong>47,1%</strong> de las sociedades pero solo el <strong>30,9%</strong> de las personas naturales. Constituirse como SAS o SA — incluso con un solo accionista — agrega disciplina, capital y planeación que mejora la supervivencia 50% más.</li>
+  <li><strong>Tamaño importa todavía más:</strong> las grandes sobreviven <strong>72,7%</strong>, las medianas 69,1%, las pequeñas 67,2%. Las microempresas: solo <strong>34,4%</strong>. Cada salto de tamaño dispara la probabilidad de quedarse en el mercado.</li>
+  <li><strong>Sector importa menos de lo que parece:</strong> construcción 38,8%, industria 37,3%, comercio 34,2%, servicios 33,7%. El sector pesa menos que el tamaño o la forma jurídica.</li>
+</ul>
+
+<Callout type="key" title="El mensaje implícito para política pública">
+  Si quieres aumentar la supervivencia empresarial colombiana, el mejor predictor
+  no es <em>en qué sector</em> opera la empresa, sino <em>con qué tamaño y forma
+  jurídica</em> entra al mercado. Ayudar a que las micros transiten a pequeñas
+  — o a constituirse como sociedades en lugar de personas naturales — tiene
+  efectos medibles en supervivencia. Esto es coherente con la lectura del
+  capítulo 3.
+</Callout>
+
+<h2>El primer año es el más mortal</h2>
+
+<p>
+  Aunque la cartilla mide la supervivencia a 5 años, los estudios complementarios
+  de Confecámaras muestran que <strong>la mayor parte de la mortalidad ocurre en
+  los primeros 24 meses</strong>. De las empresas canceladas por depuración:
+</p>
+
+<div class="my-6 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+  <div class="rounded-lg border border-rose-200 bg-rose-50/30 p-4 text-center">
+    <div class="text-2xl font-extrabold text-rose-700">&lt;1 año</div>
+    <div class="mt-1 text-neutral-700">Una parte significativa muere antes del primer año</div>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/30 p-4 text-center">
+    <div class="text-2xl font-extrabold text-amber-700">24,5%</div>
+    <div class="mt-1 text-neutral-700">Operó solo entre 1 y 3 años</div>
+  </div>
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/30 p-4 text-center">
+    <div class="text-2xl font-extrabold text-emerald-700">Resto</div>
+    <div class="mt-1 text-neutral-700">Empresas de más larga duración (3+ años)</div>
+  </div>
+</div>
+
+<p>
+  Sumado: la mitad de las empresas que terminan cerradas operaron menos de 3
+  años. Esto es coherente con la literatura internacional sobre <em>early stage
+  mortality</em>: emprender es un experimento, y el mercado responde rápido.
+</p>
+
+<h2>Tasas de cancelación por sector</h2>
+
+<p>
+  No todos los sectores mueren al mismo ritmo. La tasa de cancelación anual
+  (acumulado 2017–2023) varía significativamente:
+</p>
+
+<div class="my-6 overflow-x-auto">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="border-b-2 border-neutral-300">
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Sector</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Tasa anual</th>
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Lectura</th>
+      </tr>
+    </thead>
+    <tbody class="text-neutral-700">
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold">Servicios</td>
+        <td class="py-3 pr-4 text-right text-rose-700 font-bold">14,2%</td>
+        <td class="py-3 pr-4">La más alta — sector con más entrada y salida</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold">Comercio</td>
+        <td class="py-3 pr-4 text-right text-rose-700 font-bold">13,9%</td>
+        <td class="py-3 pr-4">Bajas barreras de entrada → alta rotación</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold">Construcción</td>
+        <td class="py-3 pr-4 text-right text-emerald-700 font-bold">9,1%</td>
+        <td class="py-3 pr-4">Más capital intensivo, menos rotación</td>
+      </tr>
+      <tr>
+        <td class="py-3 pr-4 font-semibold">Agricultura</td>
+        <td class="py-3 pr-4 text-right text-emerald-700 font-bold">8,7%</td>
+        <td class="py-3 pr-4">La más baja — alta inercia operacional</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Lo que las "gacelas" sugieren</h2>
+
+<p>
+  Hay una clase especial de empresas que crece de forma sostenida y rápida:
+  Confecámaras identificó <strong>221 empresas gacela</strong> (crecimiento
+  >20% anual durante 3 años) y <strong>1.056 empresas de alto crecimiento</strong>
+  entre las creadas en 2012. <strong>Estas empresas generaron más de 156 mil
+  empleos formales</strong> en cuatro años — una contribución desproporcionada
+  al empleo formal colombiano.
+</p>
+
+<Callout type="info" title="Las gacelas son raras, pero gigantes">
+  Las gacelas son solo el 1,3% del total de empresas que sobrevivieron de la
+  cohorte 2012. Pero concentran una fracción muy importante del empleo creado
+  por la cohorte. Identificarlas temprano — y ayudarlas a escalar — es probablemente
+  la palanca de política pública con mayor retorno por peso invertido.
+</Callout>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li><strong>Natalidad ~ 300 mil empresas/año. Mortalidad ~ 215-240 mil/año.</strong> El saldo neto es positivo pero se está reduciendo.</li>
+  <li><strong>Supervivencia a 5 años: 34,6% promedio.</strong> Pero las grandes 72,7%, las medianas 69,1%, las pequeñas 67,2%, las micros solo 34,4%.</li>
+  <li><strong>Sociedades 47,1% / Personas naturales 30,9%.</strong> La forma jurídica predice supervivencia.</li>
+  <li>El <strong>76,1%</strong> de las cancelaciones son voluntarias; el <strong>23,9%</strong> por depuración tras 5 años sin renovar.</li>
+  <li>El <strong>99% de las cancelaciones</strong> son microempresas; <strong>93,5%</strong> son personas naturales. La mortalidad es un fenómeno del segmento más pequeño.</li>
+  <li>Sectores con mayor mortalidad: servicios (14,2%) y comercio (13,9%). Menor: construcción (9,1%) y agricultura (8,7%).</li>
+</ul>
+
+<Callout type="info" title="Próximo capítulo">
+  Hemos visto el tejido completo y su dinámica. Ahora apuntemos el foco a la elite
+  productiva: las <strong>~30 mil empresas que sí reportan estados financieros a la
+  Superintendencia de Sociedades</strong>. Allí está el "Colombia productivo formal"
+  que más mueve el PIB.
+</Callout>
+
+</Chapter>

@@ -16,8 +16,16 @@ const iconos: Record<string, string> = {
   "07-eficiencia": "⚖️",
 };
 
-// Capítulos publicados hasta ahora. Vacío mientras está en investigación.
-const builtSlugs = new Set<string>([]);
+// Capítulos publicados hasta ahora.
+const builtSlugs = new Set<string>([
+  "01-estructura-estado",
+  "02-sueldos-publicos",
+  "03-impuestos",
+  "04-presupuesto",
+  "05-deuda",
+  "06-capital-privado",
+  "07-eficiencia",
+]);
 
 const chapters = tema.capitulos.map((c) => ({
   number: String(c.numero).padStart(2, "0"),
@@ -36,7 +44,7 @@ const chapters = tema.capitulos.map((c) => ({
       <div class="flex justify-center">
         <div class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/80 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-medium text-emerald-700 shadow-sm backdrop-blur text-center">
           <span class="flex h-1.5 w-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>
-          Tema 03 · Estado y finanzas públicas · En investigación
+          Tema 03 · Estado y finanzas públicas
         </div>
       </div>
 

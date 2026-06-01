@@ -1,0 +1,235 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import EmpleoEmpresasPuente from "../../../components/temas/empresas/charts/EmpleoEmpresasPuente.tsx";
+---
+
+<Chapter
+  number="07"
+  title="Empresas y empleo: el puente"
+  subtitle="El último capítulo une los dos temas. Quién emplea formalmente a quién, y cómo cambia la lectura cuando combinamos lo que vimos sobre empresas con lo que vimos sobre el mercado laboral colombiano."
+  chapterNumber={7}
+  totalChapters={7}
+  prevHref="/temas/empresas/06-supersociedades"
+  prevTitle="El Colombia productivo: las que reportan"
+  nextHref="/temas/empleo/"
+  nextTitle="Tema: Empleo y mercado laboral"
+  accentColor="emerald"
+>
+
+<h2>El puente entre dos temas</h2>
+
+<p>
+  En el tema <a href="/temas/empleo/" class="text-emerald-700 underline">Empleo y mercado laboral</a>
+  vimos a los trabajadores: cuántos están ocupados, cuántos cotizan a PILA, qué
+  pasa con la informalidad y la población inactiva. En este tema vimos a las
+  empresas: cuántas son, cómo se clasifican, dónde están, cuántas duran.
+</p>
+
+<p>
+  Este capítulo cruza las dos lecturas. Porque no se entiende el mercado laboral
+  sin entender quién emplea. Y no se entiende el tejido empresarial sin entender
+  a quién y cómo emplea.
+</p>
+
+<EmpleoEmpresasPuente client:load />
+
+<h2>Las cuatro lecturas que se conectan</h2>
+
+<p>
+  Cuatro datos vistos por separado, ahora juntos:
+</p>
+
+<div class="my-8 space-y-3">
+  <div class="rounded-xl border border-amber-300 bg-amber-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Las micros (91,8% del tejido)</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      <strong>1,59 millones de microempresas</strong> emplean al 62% de los ocupados
+      del país. Pero solo el <strong>15% del empleo que generan es formal</strong>.
+      Concentran el <strong>94% del empleo informal nacional</strong>. Sobreviven
+      apenas el 34,4% a 5 años. Son el motor de la economía visible — pero también
+      del trabajo sin protección social.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-cyan-300 bg-cyan-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Las pequeñas y medianas (7,7% del tejido)</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      <strong>133 mil empresas</strong> emplean al 17% de los ocupados pero generan
+      una porción significativa del empleo formal nacional. Tienen tasas de
+      supervivencia altas (~67-69% a 5 años) y son las "naturales graduadas" del
+      mundo micro. Son donde mejor funciona la fórmula <em>empresa → empleo
+      formal</em>.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-violet-300 bg-violet-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Las grandes (0,5% del tejido)</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      <strong>8.175 grandes empresas</strong> emplean al 21% de los ocupados pero
+      generan el <strong>47% del empleo formal del país</strong>. Sobreviven el
+      72,7% a 5 años. Cada una emplea, en promedio, cientos o miles de personas
+      con protección social. Son la palanca más concentrada de empleo formal.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-emerald-300 bg-emerald-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Las 30 mil de SuperSociedades</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Es el subconjunto donde mejor se mide. Las 1.000 más grandes facturaron
+      $1.183 billones en 2024. Emplean a millones de cotizantes PILA con sueldos
+      generalmente más altos que el promedio nacional. Cuando hablamos de
+      "Colombia productivo formal" — el que paga impuestos, importa, exporta y
+      cotiza — hablamos en gran medida de este grupo.
+    </p>
+  </div>
+</div>
+
+<h2>Promedio de empleados por empresa</h2>
+
+<p>
+  Una manera útil de pensarlo: ¿cuántos trabajadores tiene una empresa típica
+  según su tamaño? Las cifras aproximadas son:
+</p>
+
+<div class="my-8 overflow-x-auto">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="border-b-2 border-neutral-300">
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Tamaño</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Empresas en RUES</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Empleados promedio (estimado)</th>
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Estimación de empleo total</th>
+      </tr>
+    </thead>
+    <tbody class="text-neutral-700">
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold text-amber-700">Micro</td>
+        <td class="py-3 pr-4 text-right">1.593.103</td>
+        <td class="py-3 pr-4 text-right">2-3</td>
+        <td class="py-3 pr-4">~5-6 millones de ocupados (mayoría informales)</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold text-violet-700">Pequeña</td>
+        <td class="py-3 pr-4 text-right">106.120</td>
+        <td class="py-3 pr-4 text-right">11-50</td>
+        <td class="py-3 pr-4">~2-3 millones de ocupados (mezcla formal/informal)</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold text-indigo-700">Mediana</td>
+        <td class="py-3 pr-4 text-right">27.238</td>
+        <td class="py-3 pr-4 text-right">51-200</td>
+        <td class="py-3 pr-4">~2-3 millones de ocupados (mayoría formal)</td>
+      </tr>
+      <tr>
+        <td class="py-3 pr-4 font-semibold text-rose-700">Grande</td>
+        <td class="py-3 pr-4 text-right">8.175</td>
+        <td class="py-3 pr-4 text-right">200+</td>
+        <td class="py-3 pr-4">~3-4 millones de ocupados (casi todos formales)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<Callout type="warning" title="Los rangos son aproximados">
+  Estos promedios son referenciales y dependen de la definición usada. El DANE
+  (GEIH) clasifica tamaño por número de trabajadores, Confecámaras por activos,
+  y el Decreto 957/2019 por ingresos. Los empleos totales por tamaño no salen
+  como cifra oficial directa, sino se infieren de cruces entre el RUES, PILA y
+  GEIH. La idea cualitativa — pirámide con poca cabeza pero gigantesca base — es
+  robusta a cualquier elección metodológica.
+</Callout>
+
+<h2>Qué dicen los datos sobre política pública</h2>
+
+<p>
+  Si la meta es <strong>aumentar el empleo formal en Colombia</strong> (que pasó
+  de 10,5M a 10,8M entre 2023 y 2025, mientras la informalidad ronda 55%), hay
+  tres palancas teóricas. Cada una con su lógica:
+</p>
+
+<div class="my-8 space-y-3">
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Palanca 1</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Ayudar a las micros a transitar a pequeñas</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Las micros generan 6% del empleo formal nacional; las pequeñas + medianas
+      generan 47%. Si un porcentaje pequeño de las 1,59M de micros pudiera escalar
+      a pequeña, el efecto sobre formalización del empleo sería significativo.
+      Es la lógica de las "<em>gacelas</em>" y de los programas de aceleración.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Palanca 2</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Atraer y retener inversión que cree empresas grandes</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Las 8.175 grandes generan 47% del empleo formal. Cada nueva gran empresa
+      — multinacional que aterriza, scale-up doméstico, expansión de un grupo
+      empresarial — crea miles de empleos formales de un golpe. La pregunta es
+      qué obstáculos (regulatorios, infraestructura, seguridad) las disuaden.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-white p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Palanca 3</div>
+    <div class="mt-1 text-base font-bold text-neutral-900">Reducir el costo de formalidad</div>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Si una micro no formaliza el empleo de sus 2-3 trabajadores es, en parte,
+      porque los costos no salariales (parafiscales, salud, pensión) son altos
+      para su nivel de productividad. Reducir esa cuña — directamente vía
+      reducción o vía subsidios tipo PAEF — convierte empleo informal en formal
+      sin tener que crear nuevas empresas.
+    </p>
+  </div>
+</div>
+
+<h2>El cierre del círculo</h2>
+
+<p>
+  Hicimos un recorrido completo. En el tema <strong>empleo</strong> vimos que la
+  mitad del mercado laboral colombiano opera en condiciones de informalidad. En
+  este tema vimos que esa informalidad tiene un correlato empresarial muy claro:
+  el 99,5% del tejido son mipymes con baja capacidad de generar empleo formal.
+  Los dos problemas son uno solo, mirado desde dos lentes.
+</p>
+
+<Callout type="key" title="La conclusión central de todo el tema">
+  Colombia tiene <strong>1,8 millones de empresas</strong> y <strong>24 millones
+  de ocupados</strong>. Pero el grueso del PIB, del empleo formal y del capital
+  invertido se concentra en menos de <strong>10 mil empresas grandes</strong>.
+  El tejido empresarial colombiano es radicalmente desigual — y eso explica la
+  forma del mercado laboral. Cualquier diagnóstico productivo serio tiene que
+  empezar por entender esa asimetría.
+</Callout>
+
+<h2>Resumen del capítulo y del tema</h2>
+
+<ul>
+  <li>Las micros (91,8% del tejido) emplean al 62% de los ocupados pero generan apenas el ~6% del empleo formal nacional.</li>
+  <li>Las pequeñas y medianas (7,7%) emplean al 17% y generan una porción significativa del empleo formal.</li>
+  <li>Las grandes (0,5%) emplean al 21% pero generan el <strong>47% del empleo formal</strong> — son las más densas en empleo con protección social.</li>
+  <li>Las tres palancas de política son: <strong>transitar micros</strong>, <strong>atraer grandes</strong>, o <strong>reducir el costo de formalidad</strong>. Cada una con un ámbito y costo diferentes.</li>
+  <li>El tema cierra el círculo abierto en empleo y mercado laboral: <strong>la informalidad laboral colombiana es, en lo estructural, una expresión del tipo de tejido empresarial que existe.</strong></li>
+</ul>
+
+<div class="my-10 p-6 rounded-2xl border-2 border-emerald-200 bg-emerald-50/50">
+  <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">¿Quieres profundizar?</div>
+  <h3 class="mt-2 text-xl font-bold text-neutral-900">Vuelve al tema empleo con lentes nuevos</h3>
+  <p class="mt-3 text-sm text-neutral-700 leading-relaxed">
+    Ahora que sabes la forma del tejido empresarial colombiano, los capítulos
+    sobre empleo formal, informalidad, desempleo y calidad del empleo se leen
+    distinto. Las cifras que parecían sueltas — <em>"55% en la informalidad"</em>,
+    <em>"14,5M en la PEI"</em>, <em>"43% gana menos del salario mínimo"</em> —
+    cobran sentido cuando entiendes en qué empresas trabaja (o no trabaja) la
+    gente.
+  </p>
+  <a href="/temas/empleo/" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+    Ir al tema Empleo y mercado laboral
+    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+    </svg>
+  </a>
+</div>
+
+</Chapter>

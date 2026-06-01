@@ -1,0 +1,305 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import RecaudoHistorico from "../../../components/temas/estado-finanzas/charts/RecaudoHistorico.tsx";
+import ComposicionRecaudo2025 from "../../../components/temas/estado-finanzas/charts/ComposicionRecaudo2025.tsx";
+---
+
+<Chapter
+  number="03"
+  title="Impuestos: de dónde sale la plata"
+  subtitle="$294 billones recaudó la DIAN en 2025. Quién paga, qué pesa más, y por qué cada año aparece una nueva reforma tributaria."
+  chapterNumber={3}
+  totalChapters={7}
+  prevHref="/temas/estado-finanzas/02-sueldos-publicos"
+  prevTitle="Sueldos en el sector público"
+  nextHref="/temas/estado-finanzas/04-presupuesto"
+  nextTitle="Presupuesto General de la Nación"
+  accentColor="cyan"
+>
+
+<h2>El Estado no produce: el Estado redistribuye</h2>
+
+<p>
+  Toda la plata que el Estado gasta — en educación, salud, defensa, infraestructura,
+  sueldos, pensiones, intereses de la deuda — sale primero del bolsillo de alguien.
+  De ti, si eres asalariado y te retienen renta. De tu compra del supermercado, vía
+  IVA. De la empresa donde trabajas, vía renta corporativa. De cada transacción
+  bancaria, vía GMF. De cada importación, vía arancel.
+</p>
+
+<p>
+  La <strong>DIAN</strong> (Dirección de Impuestos y Aduanas Nacionales) administra
+  los impuestos del orden nacional. En 2025 recaudó <strong>$294,5 billones de
+  pesos</strong>. Para poner esa cifra en contexto: equivale a unos $5,5 millones por
+  cada colombiano vivo, o al PIB completo de Bolivia.
+</p>
+
+<h2>Cómo ha crecido el recaudo</h2>
+
+<RecaudoHistorico client:load />
+
+<Callout type="info" title="Por qué hay que mirar el % del PIB, no solo el monto">
+  El recaudo en pesos crece todos los años, en parte por la inflación, en parte
+  porque la economía crece. Una mejor medida del esfuerzo tributario real es la
+  <strong>relación recaudo/PIB</strong>: cuánto del producto interno bruto pasa por
+  los impuestos. En Colombia esa relación ronda el <strong>20%</strong> (sumando
+  DIAN + tributos territoriales + parafiscales). El promedio OCDE está cerca del
+  34%. Para los niveles de gasto que demanda el país, somos un Estado fiscalmente
+  pequeño.
+</Callout>
+
+<h2>La composición: cuatro impuestos cubren más del 90%</h2>
+
+<ComposicionRecaudo2025 client:load />
+
+<h3>1. Renta y complementarios (~47% del recaudo)</h3>
+
+<p>
+  Es el impuesto sobre los ingresos. Lo pagan tanto <strong>personas naturales</strong>
+  (asalariados y autónomos sobre lo que ganan al año) como <strong>personas jurídicas</strong>
+  (las empresas sobre sus utilidades). En 2025 generó $137 billones.
+</p>
+
+<p>
+  Las personas jurídicas aportan la mayor parte (~75% del recaudo de renta) y de
+  esas, los <strong>~5.000 Grandes Contribuyentes</strong> aportan la mayoría. La
+  tarifa nominal corporativa pasó del 35% al 30% (Ley 2155 de 2021) y volvió a subir
+  a 35% (Ley 2277 de 2022, reforma tributaria de Petro). Para personas naturales, la
+  tarifa es progresiva: va del 0% a quien gana poco, hasta el 39% para los ingresos
+  más altos.
+</p>
+
+<Callout type="key" title="El secreto de la renta: la retención en la fuente">
+  Cuando ves "Renta y complementarios" en el recaudo, casi todo es <em>retención en la
+  fuente</em>: el impuesto que el pagador retiene <strong>antes</strong> de pagar al
+  receptor. Si trabajas por nómina, ese pedazo de tu salario nunca pasa por tu cuenta:
+  va directo a la DIAN. Lo mismo con dividendos, intereses, honorarios. La declaración
+  anual de renta solo ajusta lo retenido contra lo realmente debido.
+</Callout>
+
+<h3>2. IVA — Impuesto al Valor Agregado (~40% sumado interno + externo)</h3>
+
+<p>
+  El IVA es el segundo motor del recaudo. Se cobra sobre el consumo: cada vez que
+  compras algo gravado, una parte va a la DIAN. La tarifa general es del
+  <strong>19%</strong>; hay tarifa reducida del 5% para algunos bienes (medicamentos
+  específicos, ciertos alimentos procesados); y tarifa 0% (exentos) para canasta básica.
+</p>
+
+<p>
+  El recaudo de IVA se divide en dos:
+</p>
+
+<ul>
+  <li>
+    <strong>IVA interno (consumo interno):</strong> $75,5 billones en 2025. Lo pagas cada vez
+    que compras un teléfono, un electrodoméstico, un servicio profesional. El comerciante
+    lo recauda y lo gira a la DIAN.
+  </li>
+  <li>
+    <strong>IVA externo (importaciones):</strong> $40,7 billones en 2025. Se cobra en la
+    aduana cuando se importa un bien. Aparece separado porque lo recaudan las
+    administraciones aduaneras, no el comercio interno.
+  </li>
+</ul>
+
+<h3>3. GMF — el "4 por 1.000" (~5,5% del recaudo)</h3>
+
+<p>
+  El Gravamen a los Movimientos Financieros nació en 1998 (Decreto 2331, durante la
+  emergencia económica de la crisis) como un impuesto <strong>temporal</strong> para
+  salvar al sector financiero. 28 años después, sigue ahí.
+</p>
+
+<p>
+  Cobra 4 pesos por cada 1.000 que muevas en una transacción financiera: retiros,
+  transferencias, débitos automáticos. Las cuentas de ahorro tienen una exención por
+  un monto (alrededor de 350 UVT al mes), pero las cuentas corrientes y las
+  transacciones empresariales lo pagan completo. Recaudó $16,3 billones en 2025.
+</p>
+
+<Callout type="warning" title='El impuesto "temporal" que no se va'>
+  Cada gobierno desde 1998 ha prometido eliminar o reducir el GMF. La Ley 1819 de
+  2016 incluyó un cronograma para su eliminación gradual. Cada reforma posterior lo
+  ha aplazado. Cuando un impuesto fácil de cobrar (porque las entidades financieras
+  lo cobran automáticamente) genera $16 billones al año, es muy difícil dejarlo ir.
+</Callout>
+
+<h3>4. Otros: aranceles, consumo, gasolina, riqueza... (~10%)</h3>
+
+<p>
+  El resto del recaudo lo aportan tributos de menor cuantía pero relevantes para
+  ciertos debates:
+</p>
+
+<ul>
+  <li><strong>Arancel</strong>: tarifa sobre las importaciones (separada del IVA externo). Sus tarifas han caído por los TLC firmados desde 2010.</li>
+  <li><strong>Impuesto al consumo</strong>: cigarrillo, licores, vehículos de gama alta, telefonía móvil, plásticos de un solo uso, comidas y bebidas ultraprocesadas.</li>
+  <li><strong>Impuesto a la gasolina y ACPM</strong>: sobretasa nacional que financia parcialmente al sector transporte y energía.</li>
+  <li><strong>Impuesto al carbono</strong>: creado en 2016 (Ley 1819) sobre combustibles fósiles, en pesos por tonelada de CO₂.</li>
+  <li><strong>Impuesto al patrimonio / riqueza</strong>: ha aparecido, desaparecido y reaparecido en cada reforma. Hoy aplica a patrimonios líquidos superiores a un umbral.</li>
+  <li><strong>Régimen simple de tributación (SIMPLE)</strong>: para pequeños contribuyentes que quieren consolidar varios impuestos en una sola tarifa.</li>
+</ul>
+
+<h2>Lo que el Estado no recauda: los tributos territoriales</h2>
+
+<p>
+  Hasta acá hablamos solo de impuestos nacionales (DIAN). Pero los <strong>departamentos
+  y municipios</strong> tienen su propio sistema tributario:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-4">
+    <div class="font-bold text-amber-900">Municipales</div>
+    <ul class="mt-2 space-y-1 text-sm text-amber-900/80">
+      <li><strong>ICA</strong>: Industria y Comercio. Lo paga toda empresa que opera en un municipio.</li>
+      <li><strong>Predial</strong>: sobre el valor catastral del inmueble.</li>
+      <li><strong>Plusvalía</strong>: cuando una decisión urbanística aumenta el valor de un predio.</li>
+      <li><strong>Estampillas, alumbrado, etc.</strong></li>
+    </ul>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/40 p-4">
+    <div class="font-bold text-cyan-900">Departamentales</div>
+    <ul class="mt-2 space-y-1 text-sm text-cyan-900/80">
+      <li><strong>Vehículos</strong>: impuesto sobre el parque automotor.</li>
+      <li><strong>Licores y cervezas</strong>: tributos al consumo licoroso.</li>
+      <li><strong>Cigarrillos y tabaco</strong>.</li>
+      <li><strong>Registro</strong>: sobre los actos sujetos a registro.</li>
+    </ul>
+  </div>
+</div>
+
+<p>
+  Los tributos territoriales aportan otro <strong>~4-5% del PIB</strong> al recaudo
+  consolidado. Pero su distribución es muy desigual: Bogotá DC, Medellín y los
+  municipios industriales recaudan mucho; municipios pequeños rurales casi nada,
+  dependen del Sistema General de Participaciones (SGP) del nivel nacional.
+</p>
+
+<h2>Reformas tributarias 2010-2024: el ciclo eterno</h2>
+
+<p>
+  Colombia ha tenido <strong>una reforma tributaria mayor cada 2-3 años</strong>
+  desde 2010. La razón siempre es la misma: el Estado necesita más plata para cubrir
+  un faltante. La estructura tributaria es tan compleja que cada gobierno termina
+  ajustando algo.
+</p>
+
+<div class="my-6 space-y-2">
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-emerald-600 mt-1 flex-shrink-0">2012</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Ley 1607</strong>: reforma de Santos I. Crea el CREE (impuesto especial sobre la renta empresarial para financiar SENA/ICBF), aumenta IVA en algunos sectores, baja parafiscales para empleo.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-emerald-600 mt-1 flex-shrink-0">2014</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Ley 1739</strong>: reforma de Santos II. Sobretasa al CREE, mantiene el GMF, introduce el impuesto a la riqueza.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-emerald-600 mt-1 flex-shrink-0">2016</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Ley 1819</strong>: la reforma estructural de Santos III. Subió IVA del 16% al 19%, eliminó el CREE, creó impuesto al carbono y al consumo de bolsas plásticas, cronograma de eliminación del GMF (no se cumplió).
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-emerald-600 mt-1 flex-shrink-0">2018-19</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Ley 1943 (Duque)</strong> declarada inexequible. Reemplazada por la <strong>Ley 2010 de 2019</strong> ("Ley de Crecimiento"). Bajó tarifa corporativa al 33%, creó el régimen SIMPLE.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-emerald-600 mt-1 flex-shrink-0">2021</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Ley 2155 (Inversión Social)</strong>: reforma post-pandemia de Duque. Reemplazo de la reforma fallida (estallido social de 2021). Sobretasa al sector financiero, impuesto al patrimonio.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-start gap-3">
+    <div class="font-mono text-xs font-bold text-emerald-600 mt-1 flex-shrink-0">2022</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Ley 2277 (Petro)</strong>: subió tarifa corporativa al 35%, creó impuestos saludables (bebidas azucaradas, ultraprocesados, plásticos de un solo uso), endureció patrimonio, eliminó exenciones a hidrocarburos.
+    </div>
+  </div>
+</div>
+
+<Callout type="key" title="Lo que las reformas no han logrado">
+  Cada reforma promete <em>simplificar</em> el sistema tributario y <em>ampliar la
+  base</em>. Lo que se ha hecho en la práctica es: subir tarifas a quienes ya pagan,
+  crear nuevos impuestos pequeños y mantener exenciones. La <strong>base tributaria
+  sigue siendo estrecha</strong>: ~2,5 millones de personas declaran renta en un país
+  de 53 millones. El otro lado de la informalidad laboral (capítulo 4 del tema empleo)
+  es la informalidad tributaria.
+</Callout>
+
+<h2>¿Cómo nos comparamos con la OCDE?</h2>
+
+<p>
+  Colombia entró a la OCDE en 2018. Eso permite comparar nuestro sistema tributario
+  con el de los 38 países miembros usando metodología estandarizada (OECD Revenue
+  Statistics).
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Colombia</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">~20%</div>
+    <div class="mt-1 text-sm text-cyan-700">Recaudo / PIB</div>
+    <div class="mt-2 text-xs text-cyan-600">DIAN + territorial + parafiscales</div>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Promedio OCDE</div>
+    <div class="mt-2 text-3xl font-extrabold text-emerald-900 font-mono">~34%</div>
+    <div class="mt-1 text-sm text-emerald-700">Recaudo / PIB</div>
+    <div class="mt-2 text-xs text-emerald-600">Dinamarca lidera con ~47%</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">América Latina</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">~22%</div>
+    <div class="mt-1 text-sm text-amber-700">Recaudo / PIB</div>
+    <div class="mt-2 text-xs text-amber-600">Promedio regional CEPAL</div>
+  </div>
+</div>
+
+<p>
+  Colombia recauda <strong>14 puntos del PIB menos</strong> que el promedio OCDE. Eso
+  son ~$280 billones al año que no entran al fisco. La pregunta clave: ¿es porque
+  nuestras tarifas son bajas o porque la base es estrecha? La respuesta es
+  principalmente la segunda. Las tarifas nominales son comparables. Lo que cambia es
+  que en la OCDE casi todos los trabajadores son formales y pagan, casi todas las
+  empresas declaran, y la evasión es perseguida con eficacia.
+</p>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>En 2025 la DIAN recaudó <strong>$294,5 billones</strong> ($5,5 millones por colombiano).</li>
+  <li>La <strong>renta</strong> (47%), el <strong>IVA interno</strong> (26%), el <strong>IVA externo</strong> (14%) y el <strong>GMF</strong> (5,5%) cubren >90% del recaudo.</li>
+  <li>El sistema se complementa con <strong>tributos territoriales</strong> (ICA, predial, vehículos) que aportan otro 4-5% del PIB.</li>
+  <li>Ha habido <strong>6 reformas tributarias mayores</strong> entre 2010 y 2022. Cada una sube tarifas a quienes ya pagan, sin ampliar significativamente la base.</li>
+  <li>Recaudo total Colombia ≈ <strong>20% del PIB</strong>; OCDE ≈ 34%. Somos un Estado tributariamente pequeño para los niveles de gasto que demanda el país.</li>
+  <li>El próximo capítulo entra al detalle de en qué se gasta esa plata: el Presupuesto General de la Nación.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>DIAN — Estadísticas de recaudo:</strong> <a href="https://www.dian.gov.co/dian/cifras/Paginas/EstadisticasRecaudo.aspx" target="_blank" rel="noopener">dian.gov.co/dian/cifras/Paginas/EstadisticasRecaudo.aspx</a>
+  </p>
+  <p class="mt-2">
+    Descarga el ZIP con la serie anual 1970-2026 y la mensual 2000-2026. Los datos de
+    este capítulo se procesaron desde el archivo
+    <code>Estadisticas-de-recaudo-anual-por-tipo-de-impuesto-1970-2026.xlsx</code> que
+    publica la Subdirección de Estudios Económicos de la DIAN.
+  </p>
+  <p class="mt-3">
+    <strong>OCDE Revenue Statistics:</strong> <a href="https://stats.oecd.org" target="_blank" rel="noopener">stats.oecd.org</a>
+  </p>
+  <p class="mt-2">
+    Para la comparación internacional de recaudo/PIB por país y tipo de impuesto.
+    Colombia aparece en la base a partir de 2018 cuando se hizo miembro.
+  </p>
+</Callout>
+
+</Chapter>

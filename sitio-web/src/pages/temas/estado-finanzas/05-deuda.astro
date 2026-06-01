@@ -1,0 +1,261 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import DeudaComposicion from "../../../components/temas/estado-finanzas/charts/DeudaComposicion.tsx";
+---
+
+<Chapter
+  number="05"
+  title="Deuda pública"
+  subtitle="$1.192,6 billones (64,7% del PIB). La segunda más alta de la historia. Aquí entiendes cuánto debemos, a quién y por qué importa para el resto del país."
+  chapterNumber={5}
+  totalChapters={7}
+  prevHref="/temas/estado-finanzas/04-presupuesto"
+  prevTitle="Presupuesto General de la Nación"
+  nextHref="/temas/estado-finanzas/06-capital-privado"
+  nextTitle="Capital privado en movimiento"
+  accentColor="rose"
+>
+
+<h2>Endeudarse no es malo en sí mismo</h2>
+
+<p>
+  Los Estados, como las empresas y las familias, se endeudan. Lo importante no es
+  el monto absoluto sino dos cosas: <strong>la capacidad de pago</strong> (¿podemos
+  sostener el servicio?) y <strong>en qué se gasta lo que se pide prestado</strong>
+  (¿genera retornos futuros o solo paga gasto corriente?).
+</p>
+
+<p>
+  En 2025, Colombia cerró con una deuda pública del Gobierno Central de
+  <strong>$1.192,6 billones de pesos</strong>, equivalentes al <strong>64,7% del
+  PIB</strong>. Es la segunda relación deuda/PIB más alta de la historia, solo
+  superada por el pico de pandemia (~65% en 2020). En pesos absolutos, es la mayor
+  de toda la serie histórica que arranca en 2001.
+</p>
+
+<h2>Lo que debemos hoy</h2>
+
+<DeudaComposicion client:load />
+
+<h2>Deuda interna vs externa: dos lógicas distintas</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Deuda interna ($838,5B · 45,5% PIB)</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">TES — Títulos de Tesorería</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Son bonos en pesos colombianos emitidos por la Tesorería. Los compran fondos de
+      pensiones nacionales, bancos colombianos, el Banco de la República, fondos del
+      exterior. Pagan una tasa fija o indexada a la inflación. Su gran ventaja: si la
+      moneda se devalúa, la deuda no se encarece en pesos.
+    </p>
+    <div class="mt-3 text-xs text-amber-700"><strong>Plazo promedio</strong>: ~9 años.</div>
+  </div>
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Deuda externa ($354,1B · 19,2% PIB)</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">Bonos internacionales y multilaterales</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Bonos emitidos en USD, EUR y otras monedas en mercados internacionales (Nueva
+      York, Londres, Tokio). Más créditos de banca multilateral (BID, Banco Mundial,
+      CAF, FMI) y bilateral (gobiernos extranjeros). Riesgo: si el peso se devalúa,
+      la deuda en USD se encarece en pesos.
+    </p>
+    <div class="mt-3 text-xs text-violet-700"><strong>Plazo promedio</strong>: ~10 años.</div>
+  </div>
+</div>
+
+<Callout type="info" title="Por qué Colombia prefiere endeudarse en pesos">
+  Antes de los 2000, la mayor parte de la deuda colombiana estaba en USD. Eso fue
+  desastroso en las crisis cambiarias de 1999 y 2002, cuando el peso se devaluó y la
+  deuda se disparó. Desde entonces, el Estado ha aumentado deliberadamente la
+  proporción de deuda interna. Hoy 70% de la deuda está en pesos. Eso reduce
+  drásticamente el riesgo cambiario.
+</Callout>
+
+<h2>¿A quién le debemos?</h2>
+
+<p>
+  Por tipo de acreedor, la deuda externa de Colombia se distribuye así:
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Bonos internacionales</div>
+    <div class="mt-2 text-3xl font-extrabold text-violet-900 font-mono">65%</div>
+    <div class="mt-1 text-xs text-violet-700">Inversionistas privados</div>
+  </div>
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Banca multilateral</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">21%</div>
+    <div class="mt-1 text-xs text-cyan-700">BID, BM, FMI, CAF</div>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Banca bilateral</div>
+    <div class="mt-2 text-3xl font-extrabold text-emerald-900 font-mono">14%</div>
+    <div class="mt-1 text-xs text-emerald-700">Gobiernos y comercial</div>
+  </div>
+</div>
+
+<p>
+  Los <strong>tenedores de bonos</strong> son la mayoría: fondos de pensiones del
+  mundo, bancos centrales, fondos soberanos. Compran los bonos colombianos buscando
+  una tasa más alta que la de mercados desarrollados. Cuando hay turbulencia global
+  o riesgo país, venden y la tasa que Colombia paga por nueva deuda sube.
+</p>
+
+<h2>El costo: cuánto cuesta servir la deuda</h2>
+
+<p>
+  Cada año, el Estado tiene que pagar:
+</p>
+
+<ul>
+  <li><strong>Intereses</strong> sobre el saldo total (la "renta" que pagamos por usar el dinero).</li>
+  <li><strong>Amortización</strong> del capital que vence (devolver lo prestado en su fecha de vencimiento).</li>
+</ul>
+
+<p>
+  En el PGN 2026, el <strong>servicio de la deuda asciende a $103,5 billones</strong>:
+  ~19% del presupuesto total. Para dimensionar: es <strong>más de lo que recibirá
+  la educación</strong> ese mismo año.
+</p>
+
+<Callout type="key" title="El efecto desplazamiento ('crowding out')">
+  Cuando el servicio de la deuda crece más rápido que el ingreso tributario, va
+  ocupando más espacio en el presupuesto. Eso significa <strong>menos plata para
+  educación, salud, infraestructura, ciencia</strong>. Es el "efecto desplazamiento":
+  la deuda desplaza inversiones futuras. Si la deuda crece más rápido que el PIB,
+  ese desplazamiento es estructural.
+</Callout>
+
+<h2>Calificación crediticia: qué piensan los mercados</h2>
+
+<p>
+  Las <strong>calificadoras de riesgo</strong> (S&P, Moody's, Fitch) evalúan
+  periódicamente la deuda soberana de Colombia. Su calificación determina la tasa
+  que el país paga por endeudarse nuevamente.
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-neutral-700">S&P</div>
+    <div class="mt-2 text-2xl font-extrabold text-neutral-900 font-mono">BB+</div>
+    <div class="mt-1 text-xs text-neutral-600">Bajó de BBB- en 2021</div>
+  </div>
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-neutral-700">Moody's</div>
+    <div class="mt-2 text-2xl font-extrabold text-neutral-900 font-mono">Baa2</div>
+    <div class="mt-1 text-xs text-neutral-600">Grado de inversión</div>
+  </div>
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-neutral-700">Fitch</div>
+    <div class="mt-2 text-2xl font-extrabold text-neutral-900 font-mono">BB+</div>
+    <div class="mt-1 text-xs text-neutral-600">Bajó de BBB- en 2021</div>
+  </div>
+</div>
+
+<p>
+  Colombia <strong>perdió el grado de inversión con S&P y Fitch en 2021</strong>
+  durante el gobierno Duque (crisis fiscal pospandemia + estallido social).
+  Moody's lo mantiene en Baa2 (grado de inversión). Esa pérdida del grado de
+  inversión significa <strong>tasas más altas</strong>: pagamos ~150-200 puntos
+  básicos más en los bonos externos que cuando teníamos grado completo.
+</p>
+
+<h2>La regla fiscal: el ancla institucional</h2>
+
+<p>
+  Para evitar que la deuda crezca sin control, Colombia tiene una <strong>Regla
+  Fiscal</strong> establecida por la Ley 1473 de 2011 y modificada por la Ley 2155
+  de 2021. La regla establece techos al déficit estructural y a la deuda como % del
+  PIB.
+</p>
+
+<Callout type="warning" title="El ancla fiscal de la Ley 2155 de 2021">
+  La reforma fiscal post-pandemia estableció:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Ancla de deuda</strong>: <strong>55% del PIB</strong> como objetivo de largo plazo.</li>
+    <li><strong>Límite máximo</strong>: <strong>71% del PIB</strong> (techo no negociable).</li>
+    <li><strong>Déficit estructural</strong>: convergencia hacia el 2,3% del PIB en 2026.</li>
+  </ul>
+  La realidad 2025 es que estamos en <strong>64,7%</strong>, lejos del ancla del 55%
+  pero todavía dentro del techo del 71%. El espacio se está agotando rápidamente.
+</Callout>
+
+<h2>Comparación regional: ¿cómo estamos frente a vecinos?</h2>
+
+<div class="my-6 grid md:grid-cols-4 gap-3 text-center">
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <div class="text-xs font-bold uppercase tracking-wider text-neutral-700">Brasil</div>
+    <div class="mt-1 text-xl font-bold text-neutral-900 font-mono">~85%</div>
+    <div class="text-[10px] text-neutral-500">Deuda/PIB</div>
+  </div>
+  <div class="rounded-lg border border-rose-300 bg-rose-50 p-3">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Colombia</div>
+    <div class="mt-1 text-xl font-bold text-rose-900 font-mono">65%</div>
+    <div class="text-[10px] text-rose-500">Deuda/PIB</div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <div class="text-xs font-bold uppercase tracking-wider text-neutral-700">México</div>
+    <div class="mt-1 text-xl font-bold text-neutral-900 font-mono">~52%</div>
+    <div class="text-[10px] text-neutral-500">Deuda/PIB</div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3">
+    <div class="text-xs font-bold uppercase tracking-wider text-neutral-700">Chile</div>
+    <div class="mt-1 text-xl font-bold text-neutral-900 font-mono">~40%</div>
+    <div class="text-[10px] text-neutral-500">Deuda/PIB</div>
+  </div>
+</div>
+
+<p>
+  Estamos <strong>más endeudados que Chile y México</strong>, pero menos que Brasil
+  o Argentina. Sin embargo, lo que más preocupa no es el nivel sino la
+  <strong>velocidad</strong>: la deuda colombiana ha crecido del 47% del PIB en 2019
+  al 64,7% en 2025. En 6 años subió 18 puntos del PIB. Esa trayectoria es la que
+  llama la atención de las calificadoras.
+</p>
+
+<h2>Pasivos contingentes: lo que no aparece pero importa</h2>
+
+<p>
+  La "deuda pública directa" no cuenta todo lo que el Estado debe. Hay obligaciones
+  futuras que no aparecen en el saldo pero generan presión fiscal:
+</p>
+
+<ul>
+  <li><strong>Pasivo pensional</strong>: regímenes especiales con beneficios garantizados (docentes, FFMM, sector salud). Valor presente estimado: <strong>~80% del PIB</strong> adicional.</li>
+  <li><strong>Vigencias futuras</strong>: compromisos plurianuales aprobados (obras, contratos APP).</li>
+  <li><strong>Garantías</strong>: avales de la Nación a entidades subnacionales o empresas estatales.</li>
+  <li><strong>Sentencias judiciales</strong>: condenas en firme pendientes de pago.</li>
+</ul>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>La deuda pública del Gobierno Central cerró 2025 en <strong>$1.192,6 billones (64,7% del PIB)</strong>.</li>
+  <li><strong>70% es deuda interna</strong> (TES en pesos) y 30% externa (bonos USD/EUR + multilateral).</li>
+  <li><strong>Crece $170,6 billones al año (+16,7%)</strong> desde 2024.</li>
+  <li>El <strong>servicio anual</strong> ($103,5B en PGN 2026) ya supera el presupuesto de educación.</li>
+  <li>Colombia <strong>perdió el grado de inversión</strong> con S&P y Fitch en 2021.</li>
+  <li>La <strong>regla fiscal</strong> fija un techo del 71% del PIB. Estamos en 64,7%: queda poco espacio.</li>
+  <li>El próximo capítulo aborda el otro lado de la moneda: cómo se mueve el capital privado.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>MinHacienda — Deuda pública:</strong>
+    <a href="https://www.minhacienda.gov.co/deuda-publica" target="_blank" rel="noopener">minhacienda.gov.co/deuda-publica</a>.
+    La DGCPTN publica el saldo mensual, la composición y el perfil de vencimientos.
+  </p>
+  <p class="mt-2">
+    <strong>BanRep — Deuda externa:</strong>
+    <a href="https://www.banrep.gov.co/economia/pli/bdeudax_t.pdf" target="_blank" rel="noopener">PDF estadístico</a>
+    actualizado mensualmente. Incluye deuda pública + privada del país completo.
+  </p>
+  <p class="mt-3">
+    <strong>Marco Fiscal de Mediano Plazo (MFMP):</strong> publicado en junio cada año por MinHacienda. Contiene la proyección de deuda y la senda fiscal de mediano plazo.
+  </p>
+</Callout>
+
+</Chapter>
