@@ -100,6 +100,74 @@ export const TEMAS: Tema[] = [
       },
     ],
   },
+  {
+    slug: "empresas",
+    nombre: "Empresas en Colombia",
+    tagline: "Quiénes producen, dónde están y cuántas duran",
+    descripcion:
+      "Recorrido por el tejido empresarial colombiano: cuántas empresas hay (RUES, DIAN y Censo Económico dan tres cifras distintas), cómo se clasifican, dónde se concentran, cuántas nacen y mueren cada año, y qué pasa con las ~30 mil empresas que sí reportan estados financieros a SuperSociedades. Datos de Confecámaras, DANE, DIAN y SuperSociedades.",
+    icono: "🏢",
+    color: "violet",
+    available: true,
+    capitulos: [
+      {
+        numero: 1,
+        slug: "01-conteo-fuentes",
+        titulo: "¿Cuántas empresas hay?",
+        descripcion:
+          "RUES, DIAN y Censo Económico cuentan cosas distintas. Por qué la cifra que cites cambia el debate.",
+        accentColor: "violet",
+      },
+      {
+        numero: 2,
+        slug: "02-clasificacion",
+        titulo: "Cómo se clasifican",
+        descripcion:
+          "Tamaño (Decreto 957/2019), forma jurídica (SAS, SA, Ltda) y actividad económica (CIIU). La taxonomía que ordena todo.",
+        accentColor: "indigo",
+      },
+      {
+        numero: 3,
+        slug: "03-mipymes",
+        titulo: "Mipymes: el 99% que produce poco",
+        descripcion:
+          "Las micro son el 92% del tejido pero generan menos del 10% de las ventas. La paradoja del tamaño en Colombia.",
+        accentColor: "amber",
+      },
+      {
+        numero: 4,
+        slug: "04-distribucion-regional",
+        titulo: "Dónde están las empresas",
+        descripcion:
+          "Bogotá, Antioquia y Valle concentran la mitad del tejido empresarial. El mapa de la desigualdad regional.",
+        accentColor: "cyan",
+      },
+      {
+        numero: 5,
+        slug: "05-dinamica",
+        titulo: "Nacen, mueren, sobreviven",
+        descripcion:
+          "Cuántas empresas se crean cada año, cuántas cierran y por qué solo una de cada tres sobrevive a los cinco años.",
+        accentColor: "rose",
+      },
+      {
+        numero: 6,
+        slug: "06-supersociedades",
+        titulo: "El Colombia productivo: las que reportan",
+        descripcion:
+          "Las ~30 mil empresas que envían estados financieros a SuperSociedades concentran la mayoría de la producción formal del país.",
+        accentColor: "sky",
+      },
+      {
+        numero: 7,
+        slug: "07-empresas-y-empleo",
+        titulo: "Empresas y empleo",
+        descripcion:
+          "Cuántos empleos genera cada tamaño y sector. El puente con el tema de empleo y mercado laboral.",
+        accentColor: "emerald",
+      },
+    ],
+  },
 ];
 
 export function getTema(slug: string): Tema | undefined {

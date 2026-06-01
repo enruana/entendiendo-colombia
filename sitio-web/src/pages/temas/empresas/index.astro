@@ -1,0 +1,161 @@
+---
+import Base from "../../../layouts/Base.astro";
+import StatCard from "../../../components/ui/StatCard.astro";
+import ChapterCard from "../../../components/ui/ChapterCard.astro";
+import { getTema, getCapituloHref } from "../../../lib/temas";
+
+const tema = getTema("empresas")!;
+
+const iconos: Record<string, string> = {
+  "01-conteo-fuentes": "🔢",
+  "02-clasificacion": "🏷️",
+  "03-mipymes": "🌱",
+  "04-distribucion-regional": "🗺️",
+  "05-dinamica": "🔄",
+  "06-supersociedades": "🏛️",
+  "07-empresas-y-empleo": "🤝",
+};
+
+// Capítulos publicados hasta ahora.
+const builtSlugs = new Set(["01-conteo-fuentes", "02-clasificacion"]);
+
+const chapters = tema.capitulos.map((c) => ({
+  number: String(c.numero).padStart(2, "0"),
+  title: c.titulo,
+  description: c.descripcion,
+  href: getCapituloHref(tema.slug, c.slug),
+  icon: iconos[c.slug] ?? "📄",
+  color: c.accentColor,
+  available: builtSlugs.has(c.slug),
+}));
+---
+
+<Base title="Empresas en Colombia">
+  <section class="relative overflow-hidden mesh-gradient-hero">
+    <div class="relative mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-28 md:pb-32">
+      <div class="flex justify-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-white/80 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-medium text-violet-700 shadow-sm backdrop-blur text-center">
+          <span class="flex h-1.5 w-1.5 rounded-full bg-violet-500 flex-shrink-0"></span>
+          Tema 02 · Empresas en Colombia
+        </div>
+      </div>
+
+      <h1 class="mt-6 sm:mt-8 text-center text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] text-neutral-900">
+        Quiénes producen,<br />
+        <span class="gradient-text">dónde están y cuántas duran</span>
+      </h1>
+
+      <p class="mx-auto mt-5 sm:mt-6 max-w-2xl text-center text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-2">
+        El tejido empresarial colombiano explicado paso a paso. Tres fuentes oficiales,
+        tres conteos distintos, y por qué la cifra que cites cambia el debate.
+      </p>
+
+      <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 px-4 sm:px-0">
+        <a href="/temas/empresas/01-conteo-fuentes" class="btn-primary justify-center">
+          Empezar el recorrido
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+        <a href="#capitulos" class="btn-secondary justify-center">
+          Ver los capítulos
+        </a>
+      </div>
+
+      <div class="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        <StatCard value="1.74M" label="Empresas activas en RUES" sublabel="Confecámaras, 2024" accent="violet" />
+        <StatCard value="2.58M" label="Unidades económicas censadas" sublabel="DANE CNE 2021" accent="indigo" />
+        <StatCard value="297K" label="Empresas creadas en 2024" sublabel="2.8% menos que en 2023" accent="amber" />
+        <StatCard value="99.7%" label="De las nuevas son micro" sublabel="Primer semestre 2025" accent="pink" />
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+  </section>
+
+  <section class="relative mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+    <div class="text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        El problema
+      </div>
+      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+        "¿Cuántas empresas hay?"<br />
+        <span class="gradient-text-subtle">no tiene una sola respuesta</span>
+      </h2>
+    </div>
+
+    <div class="mt-10 sm:mt-12 md:mt-16 grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+      <div>
+        <div class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-violet-600">
+          Lo que escuchas en titulares
+        </div>
+        <blockquote class="mt-3 text-xl sm:text-2xl font-bold text-neutral-900 leading-tight">
+          "Colombia es un país de Mipymes: 99% del tejido empresarial."
+        </blockquote>
+        <p class="mt-4 text-neutral-600 leading-relaxed">
+          Es cierto en número de empresas. Pero esconde dos cosas: cuáles son las
+          fuentes y por qué difieren, y cuánto producen realmente esas micro.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 sm:p-8">
+        <div class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-pink-600">
+          Lo que no te cuentan
+        </div>
+        <ul class="mt-3 space-y-3 text-neutral-700 text-sm sm:text-base">
+          <li class="flex gap-3">
+            <span class="mt-1 text-pink-500">▸</span>
+            <span>El RUT de la DIAN tiene <strong class="text-neutral-900">3-4 veces</strong> más inscritos que el RUES</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-pink-500">▸</span>
+            <span>El DANE en su censo de 2021 contó <strong class="text-neutral-900">2,58 millones</strong> de unidades económicas, incluyendo informales</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-pink-500">▸</span>
+            <span>Solo <strong class="text-neutral-900">3 grandes empresas</strong> se crearon en todo el primer semestre de 2025</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-pink-500">▸</span>
+            <span>Solo <strong class="text-neutral-900">3 de cada 10</strong> personas naturales que crean empresa sobreviven 5 años</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="mt-12 sm:mt-16 text-center text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+      Este tema te explica <strong class="text-neutral-900">cuántas empresas hay según cada fuente</strong>,
+      <strong class="text-neutral-900">cómo se clasifican</strong>, <strong class="text-neutral-900">dónde están concentradas</strong>,
+      y <strong class="text-neutral-900">cuántas sobreviven</strong>. Paso a paso, sin jerga.
+    </p>
+  </section>
+
+  <section id="capitulos" class="relative bg-neutral-50 border-y border-neutral-200">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+      <div class="text-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          El recorrido
+        </div>
+        <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+          {chapters.length} capítulos para entenderlo
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+          Cada capítulo aborda una dimensión distinta del tejido empresarial.
+          Por ahora está disponible el primero; los demás van publicándose en orden.
+        </p>
+      </div>
+
+      <div class="mt-10 sm:mt-12 md:mt-14 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {chapters.map((ch) => <ChapterCard {...ch} />)}
+      </div>
+
+      <div class="mt-10 sm:mt-12 text-center">
+        <a href="/temas/empresas/01-conteo-fuentes" class="btn-primary justify-center">
+          Leer el capítulo 1
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

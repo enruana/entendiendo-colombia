@@ -1,0 +1,549 @@
+ Informe de dinámica
+ de creación de
+ empresas
+
+
+
+
+2022
+Resumen
+
+Confecámaras presenta su informe de Dinámica de Creación de Empresas, en el que se analiza el
+comportamiento de la constitución de sociedades y matrícula de personas naturales entre enero y
+diciembre de 2022. La fuente de las estadísticas reportadas en este informe es el Registro Único
+Empresarial y Social (RUES), el cual recoge información registral de las Cámaras de Comercio del
+país y permite hacer seguimiento a la demografía de empresas por organización jurídica, sectores y
+tamaño. Entre los principales hallazgos destacamos:
+
+Entre enero y diciembre de 2022 se crearon 310.731 unidades productivas, 1% más que en el
+mismo periodo de 2021, cuando nacieron 307.679 empresas. Del total de unidades registradas
+durante el 2022, el 73,8% corresponden a personas naturales y 26,2% a sociedades.
+
+La creación de sociedades y personas naturales aumentó en el acumulado de enero a
+diciembre. Las personas naturales pasaron de 228.799 a 229.381, lo que representa una variación
+positiva de 0,3%. Del mismo modo, las sociedades crecieron 3,1% respecto a 2021, al pasar de 78.880
+en 2021 a 81.350 en 2022.
+
+Servicios fue el sector que más contribuyó al crecimiento anual. Los subsectores que más crecieron
+fueron expendio de bebidas alcohólicas para consumo dentro del establecimiento, peluquería y otros
+tratamientos de belleza, y otros tipos de alojamiento para visitantes.
+
+De acuerdo con el tamaño de la empresa medido por el valor de sus activos, se evidencia que las
+nuevas unidades productivas están conformadas por microempresas (99,6%), seguido por las
+pequeñas empresas (0,4%).
+
+El 48,9% de las empresas para el periodo comprendido entre enero a diciembre de 2022 crearon al
+menos un empleo. Los tres sectores con mayor participación en la creación de empleos son: comercio
+al por mayor y al por menor y reparación de vehículos (33,3%), alojamiento y servicios de comida
+(15,7%), e industrias manufactureras (11,3%).
+
+
+
+
+                                                 2
+     1. Unidades productivas creadas
+Al evaluar los resultados del año se observa que entre enero y diciembre de 2022 se crearon 310.731
+unidades productivas, 1% más que en el mismo periodo de 2021, cuando nacieron 307.679 empresas.
+Al analizar por organización jurídica, de las empresas creadas de enero a diciembre, se observa que
+el 73,8% corresponde a personas naturales y 26,2% a sociedades, además, se evidencia un
+crecimiento para ambos tipos de organización, específicamente, el mayor incremento se presenta en
+las sociedades con un aumento del 3,1%, mientras que las personas naturales crecieron en 0,3%.
+
+                      Gráfico 2. Unidades productivas creadas según organización jurídica
+                                           Enero a diciembre 2022/21
+            350.000
+
+                                                      3,1%            307.679 310.731                  3,5%
+
+
+
+
+                        228.799 229.381
+            300.000                                                                                    3,0%
+
+
+
+
+            250.000                                                                                    2,5%
+
+
+
+
+            200.000                                                                                    2,0%
+
+
+
+
+                                                        78.880       81.350
+            150.000                                                                                    1,5%
+
+
+
+
+            100.000                                                                                    1,0%
+
+
+
+
+                         0,3%
+                                                                                              1,0%
+             50.000                                                                                    0,5%
+
+
+
+
+                 0                                                                                     0,0%
+
+
+
+
+                           P. Natural                      Sociedades                          Total
+
+                                        Ene-Dic 2021           Ene - Dic 2022            Variación
+
+
+                                        Fuente: RUES – Registro Único Empresarial y Social.
+
+     1.1. Dinámica por sectores económicos
+Por sectores económicos, agrupados en la tabla 1, se encuentra que el sector con mayor contribución
+al crecimiento es el de servicios que contribuye en 2,4 pp a la variación. De otro modo, en el sector de
+comercio se crearon menos empresas entre enero a diciembre de 2022, en relación con 2021, por lo
+que este grupo de actividades contribuyó con -1,8 pp a la variación total en la creación de empresas
+en el país. (tabla 1).
+                                Tabla 1. Unidades productivas por sector económico
+                                                  Ene-Dic 2022/21
+ Sector Agregado                             2021               2022        Variación, %                      Contribución
+ Servicios                                124.378           131.664               5,9                              2,4
+ Agricultura                                5.418              6.012            11,0                               0,2
+ Industria                                 29.455            29.854               1,4                              0,1
+ Extracción                                   943              1.142            21,1                               0,1
+ Construcción                              13.015            13.099               0,6                              0,0
+ Resto                                      7.828              7.892              0,8                              0,0
+ Comercio                                 126.642           121.068              -4,4                             -1,8
+ Total                                    307.679           310.731               1,0                              1,0
+
+Fuente: RUES – Registro Único Empresarial y Social.
+
+
+
+
+                                                                 3
+Particularmente, en servicios, los subsectores que más contribuyeron al crecimiento fueron: expendio
+de bebidas alcohólicas para consumo dentro del establecimiento, peluquería y otros tratamientos de
+belleza, y otros tipos de alojamiento para visitantes. En agricultura, las áreas que más contribuyeron
+al crecimiento fueron: cría de ganado bovino y bufalino, actividades de apoyo a la agricultura, cría de
+aves de corral.
+
+                          2. Unidades productivas por ramas de actividad económica
+                                               Ene-Dic 2022/21
+                                                                                                                 Variación,
+ Actividad Económica                                                                2021              2022           %       Contribución
+ Alojamiento y servicios de comida                                                  45.660            49.213             7,8     1,2
+ Otras actividades de servicios                                                     14.029            16.047           14,4      0,7
+ Actividades de servicios administrativos y de apoyo                                12.967            14.135             9,0     0,4
+ Actividades profesionales, científicas y técnicas                                  17.761            18.847             6,1     0,4
+ Actividades inmobiliarias                                                           5.559             6.470           16,4      0,3
+ Agricultura, ganadería, caza, silvicultura y pesca                                  5.418             6.012           11,0      0,2
+ Industrias manufactureras                                                          29.455            29.854             1,4     0,1
+ Transporte y almacenamiento                                                         8.207             8.452             3,0     0,1
+ Explotación de minas y canteras                                                       943             1.142           21,1      0,1
+ Educación                                                                           2.768             2.955             6,8     0,1
+ Actividades de atención de la salud humana y de asistencia social                   4.294             4.473             4,2     0,1
+ Construcción                                                                       13.015            13.099             0,6     0,0
+ Actividades de los hogares en calidad de empleadores                                   40                45           12,5      0,0
+ Actividades de organizaciones y entidades extraterritoriales                            2                 2             0,0     0,0
+ Administración pública y defensa; seguridad social                                    151               125          -17,2      0,0
+ Suministro de electricidad, gas, vapor y aire acondicionado                           433               362          -16,4      0,0
+ Distribución de agua, saneamiento ambiental                                         2.097             2.007            -4,3     0,0
+ Actividades financieras y de seguros                                                3.125             2.928            -6,3     -0,1
+ Actividad no Homologada a CIIU V4                                                     573               292          -49,0      -0,1
+ Actividades artísticas, de entretenimiento y recreación                             7.139             6.639            -7,0     -0,2
+ Información y comunicaciones                                                        7.401             6.564          -11,3      -0,3
+ Comercio al por mayor y al por menor; Vehículos                                   126.642           121.068            -4,4     -1,8
+ Total                                                                             307.679           310.731             1,0     1,0
+
+
+Fuente: RUES – Registro Único Empresarial y Social.
+*Incluye a las empresas cuya actividad no corresponde con ninguna de las clases de la CIIU Rev.4 Adaptada para Colombia
+
+Por otra parte, al analizar la dinámica por ramas de actividad económica presentada en la tabla 2, se
+observa que la mayor contribución al crecimiento en la creación de empresas se registra en las ramas
+de alojamiento y servicios de comida, otras actividades de servicio, actividades de servicios
+administrativos y de apoyo, y actividades profesionales, científicas y técnicas.
+
+A continuación, se relacionan los principales subsectores que explican el comportamiento observado
+en las ramas de alojamiento y servicios de comida; otras actividades de servicios; actividades de
+servicios administrativos y de apoyo; y actividades profesionales, científicas y técnicas.
+
+
+
+                                                              4
+                                    Alojamiento y servicios de comida
+         Var. 14,5%                  Var. 80,3%                    Var. 2,6%                Var. 25,8%
+
+
+
+
+    Expendio de bebidas                                     Expendio a la mesa de
+                                 Otro tipo de alojamiento                                  Alojamiento rural
+alcohólicas para el consumo                                  comidas preparadas
+                                     para visitantes
+ dentro del establecimiento
+
+
+      Estas actividades contribuyen con el 67,7% de la variación registrada en el sector de alojamiento
+                                           y servicios de comida.
+
+                                       Otras actividades de servicios
+
+      Var. 23,4%                    Var. 11,9%                 Var. 12,6%                        Var. 0,6%
+
+
+
+
+       Peluquería y              Mantenimiento y       Otras actividades de servicios   Mantenimiento y reparación
+    otros tratamientos        reparación de equipos              personales               de aparatos y equipos
+        de belleza               de comunicación
+                                                                                         domésticos de jardinería.
+
+       Estas actividades contribuyen con el 83,8 % de la variación registrada en el sector de otras
+                                       actividades de servicios.
+
+                              Actividades profesionales, científicas y técnicas
+          Var. 14,8%                 Var. 25,8%                  Var. 0,8%                        Var. 0,4%
+
+
+
+
+          Publicidad               Actividades de                                                  Actividades de
+                                   administración             Actividades jurídicas
+                                                                                                consultoría de gestión
+                                    empresarial
+
+
+         Estas actividades contribuyen con el 52,3 % de la variación registrada en el sector de actividades
+                                      profesionales, científicas y técnicas.
+
+
+
+                                                        5
+                            Actividades de servicios administrativos y de apoyo
+
+         Var. 39%                          Var. 25,4%              Var. 38,2%               Var. 70,5%
+
+
+
+
+   Actividades de las              Actividades de operadores     Organización de     Otros servicios de reserva y
+   agencias de viaje                        turísticos           convenciones y       actividades relacionadas
+                                                               eventos comerciales
+
+          Estas actividades contribuyen con el 20,7% de la variación registrada en las actividades
+                                       administrativas y de apoyo.
+
+
+
+Dinámica por tamaño de empresa
+De acuerdo con el tamaño de la empresa medido por el valor de sus activos, se evidencia que las
+nuevas unidades productivas están conformadas por microempresas (99,6%), seguido por las
+pequeñas empresas (0,4%).
+
+                 Tabla 3. Unidades productivas por tamaño y sector agregado (%)
+                                         Ene-Dic 2022
+ Sector Agregado              Microempresa      Pequeña             Mediana                       Grande
+ Agricultura                      98,8%           1,1%               0,0%                          0,0%
+ Comercio                         99,9%           0,1%               0,0%                          0,0%
+ Construcción                     98,8%           1,2%               0,0%                          0,0%
+ Extracción                       97,7%           2,2%               0,1%                          0,0%
+ Industria                        99,9%           0,1%               0,0%                          0,0%
+ Resto                            99,6%           0,4%               0,0%                          0,0%
+ Servicios                        99,4%           0,5%               0,0%                          0,0%
+ Total                            99,6%           0,4%               0,0%                          0,0%
+Fuente: RUES – Registro Único Empresarial y Social.
+
+
+
+Al revisar el comportamiento por tamaño de empresa, la mayor contribución se encuentra en las
+microempresas que muestran un incremento de 1,1%, con una variación del mismo porcentaje;
+siguiendo la misma senda las empresas grandes tienen una variación del 28,6% con respecto al 2021.
+Por otra parte, la creación de empresas pequeñas registra comportamientos negativos con variaciones
+del 20,8%.
+
+
+
+
+                                                         6
+                                     Tabla 4. Unidades productivas por tamaño
+                                                  Ene-Dic 2022/21
+           Tamaño                               2021              2022       Variación, %                         Contribución
+ Microempresa                                  306.140           309.488          1,1%                                1,1%
+ Pequeña                                         1.449             1.147       -20,8%                                -0,1%
+ Mediana                                            69                69          0,0%                                0,0%
+ Grande                                             21                27        28,6%                                 0,0%
+ Total                                         307.679           310.731         1,0%                                 1,0%
+Fuente: RUES – Registro Único Empresarial y Social.
+
+
+
+     1.2. Creación de empresas empleadoras
+
+De acuerdo con el RUES, el 48,9% de las empresas para el periodo comprendido entre enero a
+diciembre de 2022 crearon al menos un empleo. Los tres sectores con mayor participación en la
+creación de empleos son: comercio al por mayor y al por menor y reparación de vehículos (33,3%),
+alojamiento y servicios de comida (15,7%), e industrias manufactureras (11,3%).
+
+                Gráfico 3. Subsectores con mayor creación de empresas empleadoras
+                                                        (Ene-Dic 2022)
+
+                 33,36%
+
+
+                                      15,71%
+                                                           11,36%
+                                                                                 6,36%              6,07%
+
+
+                 Comercio       Servicios de comida y      Industria          Construcción        Actividades
+                                    alojamientos         manufacturera                          profesionales,
+                                                                                             científicas y técnicas
+                                      Fuente: RUES – Registro Único Empresarial y Social.
+
+
+En 2022, la rama de comercio genera la mayor parte del empleo, en especial en los subsectores de
+actividades de comercio al por menor de alimentos, bebidas o tabaco con 11,9%, prendas de vestir y
+sus accesorios con 7,1%, así como comercio al por menor de productos farmacéuticos y medicinales
+con 7%.
+
+Por su parte, en servicios de comida y alojamiento, concentra su aporte en actividades de expendio a
+la mesa de comidas preparadas (2,6%), expendio de bebidas alcohólicas para consumo dentro del
+establecimiento (14,5%) y otros tipos de alojamiento (80,3%).
+
+En industria se destacan los subsectores, confección de prendas de vestir en 16,8%, fabricación de
+joyas, bisutería y artículos conexos en 1,7% y elaboración de productos metálicos para uso estructural
+en 5,1%.
+
+
+                                                              7
+    1.3. Dinámica según tipo de organización jurídica
+
+
+          1.3.1. Sociedades
+
+Entre enero y diciembre de 2022 la constitución de sociedades creció 3,1% al pasar de 78.880
+empresas a 81.350, es decir, se matricularon 2.470 sociedades más en contraste con el mismo periodo
+de 2021.
+
+Los sectores donde se concentra el mayor número de sociedades nuevas son en su orden: comercio
+al por mayor y al por menor, vehículos; actividades profesionales, científicas y técnicas; construcción;
+e industria manufacturera.
+
+                                  Gráfico 4. Participación sectorial de las sociedades
+
+                     Comercio al por mayor y al por menor; Vehículos                                                  22,5
+                                                                                                                             24,6
+                       Actividades profesionales, científicas y técnicas                                       14,3
+                                                                                                              13,9
+                                                            Construcción                              10,4
+                                                                                                       10,9
+                                               Industrias manufactureras                              10,3
+                                                                                                      10,2
+                                          Información y comunicaciones                      5,2
+                                                                                              5,9
+                  Actividades de servicios administrativos y de apoyo                          6,2
+                                                                                             5,5
+                                                 Actividades inmobiliarias                      6,5
+                                                                                             5,6
+                      Agricultura, ganadería, caza, silvicultura y pesca                 4,0
+                                                                                         3,8
+                                           Transporte y almacenamiento                   3,8
+                                                                                        3,7
+                                     Alojamiento y servicios de comida                      4,9
+                                                                                         3,9
+   Actividades de atención de la salud humana y de asistencia social                  2,9
+                                                                                      2,8
+                                   Actividades financieras y de seguros            1,9
+                                                                                   1,9
+                                                               Educación          1,7
+                                                                                  1,7
+                Actividades artísticas, de entretenimiento y recreación           1,7
+                                                                                  1,6
+                                           Otras actividades de servicios        1,3
+                                                                                 1,2
+ Distribución de agua; evacuación y tratamiento de aguas residuales,…          0,7
+                                                                                1,0
+                                       Explotación de minas y canteras         0,8
+                                                                               0,8
+           Suministro de electricidad, gas, vapor y aire acondicionado        0,4
+                                                                              0,5
+                                   Actividad no Homologada a CIIU V4         0,2
+                                                                              0,4
+      Administración pública y defensa; planes de seguridad social de…       0,1
+                                                                             0,1
+  Actividades de los hogares en calidad de empleadores; actividades…         0,0
+                                                                             0,0
+
+                                                           Ene-Dic 2022         Ene-Dic 2021
+
+
+                                         Fuente: RUES – Registro Único Empresarial y Social.
+
+
+
+
+                                                                    8
+Subsectores con mayor dinamismo en la creación de sociedades
+
+
+Los sectores de mayor contribución al crecimiento en el registro de matrículas nuevas de sociedades
+fueron: alojamiento y servicios de comida; actividades de servicios administrativos y de apoyo;
+actividades inmobiliarias; actividades profesionales, científicas y técnicas; los cuales explican el 28,6%
+del crecimiento observado.
+
+                                                           Otros tipos de alojamiento para visitantes,
+                                                           alojamiento    rural,   alojamiento     en
+                    Alojamiento y servicios                apartahoteles y servicio de estancia por
+                          de comida                        horas aportan el 7,4% de la variación
+                        Variación: 31,6%                   registrada.
+
+
+
+
+                                                           Actividades inmobiliarias realizadas con
+                                                           bienes propios o arrendados, actividades
+                    Actividades Inmobiliarias              inmobiliarias realizadas a cambio de una
+                         Variación: 19,7%                  retribución o por contrata aportan el 100% de
+                                                           la variación registrada.
+
+
+
+                                                            Actividades de administración empresarial,
+                            Actividades
+                                                            actividades jurídicas, otras actividades
+                          profesionales,
+                                                            profesionales, científicas y técnicas,
+                       científicas y técnicas
+                                                            publicidad aportan el 37,8% de la variación
+                                                            registrada.
+                          Variación: 6,7%
+
+
+
+                                                           Organización de convenciones y eventos
+                     Actividades de servicios              comerciales, actividades combinadas de
+                       administrativos y de                servicios administrativos de oficina,
+                              apoyo                        actividades de operadores turísticos,
+                                                           alquiler y arrendamiento de equipo
+                        Variación: 16,5%                   recreativo y deportivo aportan el 14,3% de
+                                                           la variación registrada.
+
+
+
+
+                                                    9
+          1.3.2. Personas Naturales
+
+La creación de empresas de personas naturales registró una variación positiva, al pasar de 228.799
+entre enero y diciembre de 2021, a 229.381 en el mismo periodo para 2022. Al igual que para el año
+2021, los sectores donde se concentran el mayor número de empresas constituidas son, en su orden:
+comercio, alojamiento y servicios de comida, industrias manufactureras, y otras actividades de
+servicios.
+
+                            Gráfico 5. Participación sectorial de las personas naturales
+
+                     Comercio al por mayor y al por menor; Vehículos                                      44,8
+                                                                                                             46,9
+                                    Alojamiento y servicios de comida                              19,7
+                                                                                                  18,6
+                                            Industrias manufactureras                       9,3
+                                                                                            9,3
+                                        Otras actividades de servicios                6,5
+                                                                                     5,7
+                  Actividades de servicios administrativos y de apoyo             4,0
+                                                                                 3,8
+                       Actividades profesionales, científicas y técnicas        3,1
+                                                                                3,0
+                Actividades artísticas, de entretenimiento y recreación       2,3
+                                                                               2,6
+                                           Transporte y almacenamiento         2,3
+                                                                               2,3
+                                                           Construcción       2,0
+                                                                              1,9
+                                          Información y comunicaciones      1,0
+                                                                            1,2
+                      Agricultura, ganadería, caza, silvicultura y pesca    1,2
+                                                                            1,1
+   Actividades de atención de la salud humana y de asistencia social        0,9
+                                                                            0,9
+                                   Actividades financieras y de seguros    0,6
+                                                                           0,7
+                                                              Educación    0,7
+                                                                           0,6
+ Distribución de agua; evacuación y tratamiento de aguas residuales,… 0,6  0,6
+
+                                                Actividades inmobiliarias  0,5
+                                                                           0,5
+                                       Explotación de minas y canteras    0,2
+                                                                          0,1
+                                   Actividad no Homologada a CIIU V4      0,1
+                                                                          0,1
+           Suministro de electricidad, gas, vapor y aire acondicionado    0,0
+                                                                          0,0
+      Administración pública y defensa; planes de seguridad social de… 0,00,0
+  Actividades de los hogares en calidad de empleadores; actividades… 0,0  0,0
+          Actividades de organizaciones y entidades extraterritoriales    0,0
+                                                                          0,0
+
+
+                                                            Ene-Dic 2022        Ene-Dic 2021
+
+                                           Fuente: RUES – Registro Único Empresarial y Social.
+
+
+
+
+                                                                   10
+Subsectores con mayor dinamismo en la creación de personas naturales
+
+Los sectores de mayor contribución al crecimiento en el registro de matrículas nuevas de personas naturales
+fueron: alojamiento y servicios de comida, otras actividades de servicio, actividades de servicios administrativos
+y de apoyo, actividades profesionales científicas y técnicas, los cuales explican el 30,9% del crecimiento
+observado.
+
+
+                                                                Expendio de bebidas alcohólicas para
+                                                                consumo dentro del establecimiento, otros
+                         Alojamiento y                          tipos de alojamiento para visitantes,
+                      servicios de comida                       expendio de comidas preparadas en
+                        Variación: 6,07%                        cafeterías, otros tipos de expendio de
+                                                                comidas preparadas contribuyen con el
+                                                                53,8% de la variación del sector.
+
+                                                                Peluquería y otros tratamientos de belleza,
+                                                                otras actividades de servicios personales,
+                                                                Mantenimiento y reparación de otros efectos
+                       Otras actividades de                     personales y enseres domésticos, y
+                            servicios                           mantenimiento y reparación de equipos de
+                        Variación: 14,7%                        comunicaciones contribuyen con 87,8% del
+                                                                crecimiento total.
+
+                                                                Actividades de las agencias de viajes,
+                         Actividades de                         actividades de operadores turísticos,
+                            servicios                           organización de convenciones y eventos
+                        administrativos y                       comerciales, otras actividades de servicio de
+                            de apoyo                            apoyo a las empresas explican el 64,6% de
+                          Variación: 5,2%                       la variación del sector.
+                          Variación: 5,2%
+
+                           Actividades                          Publicidad; otras actividades profesionales,
+                          profesionales,                        científicas    y     técnicas;   actividades
+                           científicas y                        especializadas de diseño; actividades de
+                             técnicas.                          consultoría de gestión; aportan el 56,1% de
+                                                                la variación del sector.
+                           Variación: 5,1%
+
+
+
+
+                                                       11
+12
+

@@ -1,0 +1,215 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import ConteoFuentes from "../../../components/temas/empresas/charts/ConteoFuentes.tsx";
+import CreacionEmpresasAnual from "../../../components/temas/empresas/charts/CreacionEmpresasAnual.tsx";
+import CreacionPorSector from "../../../components/temas/empresas/charts/CreacionPorSector.tsx";
+---
+
+<Chapter
+  number="01"
+  title="¿Cuántas empresas hay en Colombia?"
+  subtitle="Tres fuentes oficiales dan tres respuestas diferentes. Aquí entiendes por qué, cuál mira qué, y cuál usar según la pregunta."
+  chapterNumber={1}
+  totalChapters={7}
+  nextHref="/temas/empresas/02-clasificacion"
+  nextTitle="Cómo se clasifican"
+  accentColor="violet"
+>
+
+<h2>La pregunta más simple no tiene una respuesta única</h2>
+
+<p>
+  Si buscas en Google "cuántas empresas hay en Colombia", vas a encontrar números que van
+  desde <strong>1,7 millones</strong> hasta más de <strong>6 millones</strong>. Y todos
+  son oficiales. ¿Cómo es posible?
+</p>
+
+<p>
+  La respuesta es que en Colombia <strong>existen al menos tres fuentes oficiales</strong>
+  para medir el tejido empresarial, y cada una está mirando algo distinto. Antes de
+  entender el resto del tema, hay que aprender a leer estos tres números.
+</p>
+
+<ConteoFuentes client:load />
+
+<h2>Las tres fuentes, una por una</h2>
+
+<h3>1. RUES — el registro mercantil (Confecámaras)</h3>
+
+<p>
+  El <strong>Registro Único Empresarial y Social (RUES)</strong> es el consolidado
+  nacional de las <strong>57 cámaras de comercio</strong> de Colombia. Toda empresa que
+  quiera operar formalmente — desde una micro de comercio hasta una multinacional — debe
+  inscribirse en la cámara de comercio de su jurisdicción y renovar el registro cada año
+  antes del 31 de marzo.
+</p>
+
+<p>
+  Al cierre de 2024, el RUES tenía <strong>1.739.405 empresas activas</strong>. Esta es
+  la cifra que más se usa en debates sobre tejido empresarial y políticas de formalización.
+</p>
+
+<Callout type="info" title="¿Qué cuenta el RUES?">
+  Toda persona natural o jurídica con matrícula mercantil vigente. Incluye desde una
+  empresa de tecnología con cientos de empleados hasta un comerciante individual con
+  una tienda. <strong>No incluye</strong> empresas que dejaron de pagar la renovación
+  pero tampoco se cancelaron formalmente.
+</Callout>
+
+<h3>2. RUT — el registro tributario (DIAN)</h3>
+
+<p>
+  El <strong>Registro Único Tributario (RUT)</strong> identifica a todas las personas
+  — naturales y jurídicas — con obligaciones ante la DIAN. Esto incluye empresas, pero
+  también millones de personas naturales obligadas a declarar renta, IVA, retención en
+  la fuente, o que simplemente piden facturar.
+</p>
+
+<p>
+  Hay <strong>más de 6 millones de inscritos</strong> activos en el RUT. Pero solo una
+  fracción de esos son "empresas" en sentido empresarial. Por eso esta cifra <strong>NO
+  es comparable directamente</strong> con el RUES.
+</p>
+
+<Callout type="warning" title="Cuando alguien dice 6 millones, sospecha">
+  El número del RUT a veces se usa políticamente para sugerir un tejido empresarial más
+  grande del que realmente hay. La cifra es real, pero el universo es distinto: incluye
+  a un comerciante con régimen simplificado, a un consultor independiente, a un
+  pensionado que arrienda un inmueble. Todos son "inscritos al RUT", pero la mayoría
+  no son empresas en sentido estricto.
+</Callout>
+
+<h3>3. CNE — el censo económico (DANE)</h3>
+
+<p>
+  El <strong>Censo Nacional Económico (CNE)</strong> es el operativo más ambicioso de
+  los tres: el DANE sale a recorrer el territorio físico del país contando todas las
+  unidades económicas <em>visibles</em> — establecimientos con local fijo, puestos
+  móviles, viviendas donde se hacen actividades económicas.
+</p>
+
+<p>
+  El último CNE fue en <strong>2021</strong> (el anterior fue en 1990, hace más de
+  treinta años) y encontró <strong>aproximadamente 2,58 millones de unidades económicas</strong>
+  en zonas urbanas: 2,1 millones de establecimientos fijos, 240 mil viviendas con
+  actividad económica, 89 mil semi-fijos y 103 mil puestos móviles.
+</p>
+
+<Callout type="key" title="Por qué importa el CNE">
+  El CNE es la única fuente que captura el <strong>tejido económico real</strong>,
+  incluyendo unidades informales que no están en RUES ni en DIAN. La diferencia entre
+  el CNE (2,58M) y el RUES (1,74M) es una primera medida — gruesa — del tamaño de
+  la informalidad empresarial en Colombia.
+</Callout>
+
+<h2>Resumen: cuál usar cuándo</h2>
+
+<div class="my-8 overflow-x-auto">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="border-b-2 border-neutral-300">
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Si tu pregunta es...</th>
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Usa esta fuente</th>
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Por qué</th>
+      </tr>
+    </thead>
+    <tbody class="text-neutral-700">
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4">¿Cuántas empresas formalmente registradas hay?</td>
+        <td class="py-3 pr-4 font-semibold text-violet-700">RUES</td>
+        <td class="py-3 pr-4">Es el conteo oficial del registro mercantil</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4">¿Cuántas declaran impuestos?</td>
+        <td class="py-3 pr-4 font-semibold text-indigo-700">RUT (DIAN)</td>
+        <td class="py-3 pr-4">Captura el universo tributario, no solo empresas</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4">¿Cuántos establecimientos económicos hay, incluyendo informales?</td>
+        <td class="py-3 pr-4 font-semibold text-amber-700">CNE (DANE)</td>
+        <td class="py-3 pr-4">Es el único censo que captura informalidad económica</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4">¿Cuántas se crean / cierran cada año?</td>
+        <td class="py-3 pr-4 font-semibold text-violet-700">RUES (Confecámaras)</td>
+        <td class="py-3 pr-4">Publica balances anuales de matrículas y cancelaciones</td>
+      </tr>
+      <tr>
+        <td class="py-3 pr-4">¿Cuántas reportan estados financieros completos?</td>
+        <td class="py-3 pr-4 font-semibold text-sky-700">SuperSociedades</td>
+        <td class="py-3 pr-4">~30 mil empresas vigiladas (lo veremos en el capítulo 6)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>El flujo: cuántas se crean cada año</h2>
+
+<p>
+  Una vez aclarada la base conceptual, vale la pena mirar el <strong>flujo</strong>:
+  cuántas empresas se inscriben en RUES cada año. Aquí Confecámaras publica un informe
+  anual y semestral con cifras consolidadas.
+</p>
+
+<CreacionEmpresasAnual client:load />
+
+<p>
+  La historia tiene tres actos:
+</p>
+
+<ul>
+  <li><strong>El rebote post-pandemia (2021):</strong> tras el bajón de 2020 (278.302 nuevas empresas), 2021 cerró con 307.679 (+10,6%). Mezcla de emprendimientos de oportunidad y de necesidad de personas que perdieron empleo formal.</li>
+  <li><strong>El pico de 2022 (310.731):</strong> el máximo histórico reciente. Coincide con la recuperación general de la economía.</li>
+  <li><strong>La desaceleración (2023 y 2024):</strong> caídas consecutivas de -1,5% y -2,8%. La creación de personas naturales cayó más fuerte (-5,5% en 2024) que la de sociedades (+5,2% en el mismo año) — una primera señal de que el emprendimiento de necesidad pierde fuelle.</li>
+</ul>
+
+<p>
+  El primer semestre de 2025 muestra un repunte leve (+1,9%), pero el dato anual completo
+  aún no se publica (Confecámaras suele publicarlo en enero del año siguiente).
+</p>
+
+<Callout type="key" title="Casi todo lo que nace es micro">
+  De las 173.907 empresas creadas en el primer semestre de 2025, <strong>173.450 fueron
+  microempresas (99,7%)</strong>. Solo se crearon 437 pequeñas, 17 medianas y
+  <strong>3 grandes</strong> en seis meses en todo el país. Cuando un titular celebra
+  "se crearon X mil empresas", está hablando casi exclusivamente de micros — la
+  composición importa tanto como el número total.
+</Callout>
+
+<h2>Por sector: dónde se concentra la creación</h2>
+
+<p>
+  No todos los sectores se mueven al mismo tiempo. La distribución sectorial dice algo
+  sobre dónde se siente más optimismo empresarial y dónde la economía está pidiendo
+  manos.
+</p>
+
+<CreacionPorSector client:load />
+
+<p>
+  Tres lecturas rápidas:
+</p>
+
+<ul>
+  <li><strong>Agricultura (+16%)</strong> fue el de mayor crecimiento relativo. En cifras absolutas son pocos (3.401 en H1-2025), pero la tendencia es marcada.</li>
+  <li><strong>Comercio (+3,3%)</strong> sigue siendo el motor en volumen — sumó 66.626 nuevas unidades, casi 4 de cada 10 empresas creadas.</li>
+  <li><strong>Construcción (-8,2%) e industria (-3,2%)</strong> contrajeron. Son sectores cíclicos: caen cuando hay incertidumbre sobre tasas de interés y demanda interna.</li>
+</ul>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>En Colombia hay <strong>tres fuentes oficiales</strong> distintas para contar empresas: RUES (1,74M), DIAN-RUT (~6M inscritos), DANE-CNE (2,58M unidades).</li>
+  <li>La cifra que cites <strong>cambia el debate</strong>: usar RUT para hablar de empresas exagera el tejido; usar RUES para hablar de informalidad lo subestima.</li>
+  <li>El <strong>flujo anual</strong> está cayendo desde 2022: 2024 fue el segundo año consecutivo en bajada y el repunte de 2025 H1 es marginal.</li>
+  <li>El <strong>99,7%</strong> de las empresas que nacen son <strong>microempresas</strong>. Hablar de "miles de empresas creadas" sin esta caveat es engañoso.</li>
+</ul>
+
+<Callout type="info" title="Próximo capítulo">
+  Ahora que sabemos cuántas hay, viene la pregunta natural: <strong>cómo se clasifican</strong>.
+  Tamaño (micro / pequeña / mediana / grande según el Decreto 957 de 2019), forma jurídica
+  (SAS, SA, Ltda) y actividad económica (CIIU). La taxonomía que ordena todo lo que sigue.
+</Callout>
+
+</Chapter>

@@ -1,0 +1,282 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import CreacionPorTamano from "../../../components/temas/empresas/charts/CreacionPorTamano.tsx";
+import FormaJuridica from "../../../components/temas/empresas/charts/FormaJuridica.tsx";
+import MacrosectorTop1000 from "../../../components/temas/empresas/charts/MacrosectorTop1000.tsx";
+---
+
+<Chapter
+  number="02"
+  title="Cómo se clasifican las empresas"
+  subtitle="Tres ejes oficiales — tamaño, forma jurídica y actividad — ordenan el tejido empresarial. Y la clasificación cambia el tipo de empresa que cuenta como pyme."
+  chapterNumber={2}
+  totalChapters={7}
+  prevHref="/temas/empresas/01-conteo-fuentes"
+  prevTitle="¿Cuántas empresas hay?"
+  nextHref="/temas/empresas/03-mipymes"
+  nextTitle="Mipymes: el 99% que produce poco"
+  accentColor="indigo"
+>
+
+<h2>Tres preguntas, tres taxonomías</h2>
+
+<p>
+  Cuando un funcionario, un gremio o un periodista habla de "una mediana empresa", "una
+  SAS" o "una empresa de servicios", está usando alguna de las tres dimensiones oficiales
+  con las que se clasifica el tejido empresarial colombiano:
+</p>
+
+<ol>
+  <li><strong>Tamaño</strong> — depende del valor de ingresos (o, en algunos reportes, activos)</li>
+  <li><strong>Forma jurídica</strong> — la figura legal con la que se constituyó (SAS, SA, Ltda, etc.)</li>
+  <li><strong>Actividad económica</strong> — el código CIIU del producto o servicio principal</li>
+</ol>
+
+<p>
+  Las tres son útiles, pero responden a preguntas distintas. Vamos una por una.
+</p>
+
+<h2>1. Por tamaño: el cambio del Decreto 957</h2>
+
+<p>
+  Durante años, la regla para clasificar empresas en Colombia fue una mezcla de
+  <strong>activos</strong> y <strong>empleados</strong>, definida por la Ley 590 de 2000
+  y modificada por la Ley 905 de 2004. En 2019, el gobierno la cambió: ahora la
+  clasificación es por <strong>ingresos por actividades ordinarias</strong>, definidos en
+  Unidades de Valor Tributario (UVT) y diferenciados por sector.
+</p>
+
+<div class="my-8 overflow-x-auto">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="border-b-2 border-neutral-300">
+        <th class="text-left py-2 pr-4 font-bold text-neutral-900">Tamaño</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Manufactura (UVT)</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Comercio (UVT)</th>
+        <th class="text-right py-2 pr-4 font-bold text-neutral-900">Servicios (UVT)</th>
+      </tr>
+    </thead>
+    <tbody class="text-neutral-700">
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold text-amber-700">Micro</td>
+        <td class="py-3 pr-4 text-right">≤ 23.563</td>
+        <td class="py-3 pr-4 text-right">≤ 32.988</td>
+        <td class="py-3 pr-4 text-right">≤ 32.988</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold text-violet-700">Pequeña</td>
+        <td class="py-3 pr-4 text-right">23.564 – 204.995</td>
+        <td class="py-3 pr-4 text-right">32.989 – 131.951</td>
+        <td class="py-3 pr-4 text-right">32.989 – 131.951</td>
+      </tr>
+      <tr class="border-b border-neutral-200">
+        <td class="py-3 pr-4 font-semibold text-indigo-700">Mediana</td>
+        <td class="py-3 pr-4 text-right">204.996 – 1.736.565</td>
+        <td class="py-3 pr-4 text-right">131.952 – 483.034</td>
+        <td class="py-3 pr-4 text-right">131.952 – 483.034</td>
+      </tr>
+      <tr>
+        <td class="py-3 pr-4 font-semibold text-rose-700">Grande</td>
+        <td class="py-3 pr-4 text-right">&gt; 1.736.565</td>
+        <td class="py-3 pr-4 text-right">&gt; 483.034</td>
+        <td class="py-3 pr-4 text-right">&gt; 483.034</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<Callout type="info" title="Un cambio que importa más de lo que parece">
+  Pasar de "tamaño por activos" a "tamaño por ingresos" reordena empresas. Una compañía
+  con poca infraestructura pero muchas ventas (típico en servicios y tecnología) puede
+  subir de categoría. Una empresa intensiva en maquinaria pero con ventas bajas puede
+  bajar. <strong>Por eso muchas pymes que existían en el papel ya no lo son</strong>:
+  el cambio normativo es real, no semántico.
+</Callout>
+
+<p>
+  Hay un detalle metodológico importante: <strong>Confecámaras y el RUES todavía
+  publican estadísticas con la clasificación por activos</strong> (el criterio anterior),
+  no con la del Decreto 957. La razón es operativa: en el RUES se reporta el activo, no
+  el ingreso. Esto significa que cuando lees "el 99% del tejido empresarial es micro",
+  estás viendo el criterio de activos.
+</p>
+
+<CreacionPorTamano client:load />
+
+<p>
+  El gráfico de arriba — con el criterio histórico — muestra la radical asimetría: por
+  cada nueva empresa grande, se crean ~58.000 micros. Esta es la "forma" del flujo de
+  creación, y aplica con ambas métricas: el dinamismo empresarial colombiano está
+  abrumadoramente concentrado en el segmento más pequeño y de menor productividad.
+</p>
+
+<h2>2. Por forma jurídica: el reinado de la SAS</h2>
+
+<p>
+  La <strong>forma jurídica</strong> es la figura legal con la que se constituye la
+  empresa. En Colombia las principales son:
+</p>
+
+<div class="my-8 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-violet-200 bg-violet-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">
+      Predominante hoy
+    </div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">S.A.S — Sociedad por Acciones Simplificada</div>
+    <p class="mt-3 text-sm text-neutral-700 leading-relaxed">
+      Creada por la <strong>Ley 1258 de 2008</strong>. Permite constituirse con un
+      accionista único, sin junta directiva ni revisor fiscal obligatorio, y por
+      documento privado (no notarial). Es la forma jurídica más usada en Colombia
+      desde inicios de la década pasada.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-indigo-200 bg-indigo-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-indigo-700">
+      La clásica
+    </div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">S.A. — Sociedad Anónima</div>
+    <p class="mt-3 text-sm text-neutral-700 leading-relaxed">
+      Mínimo 5 accionistas, junta directiva obligatoria, revisor fiscal. Era la figura
+      estándar de las grandes empresas antes de la SAS. Sigue siendo común entre
+      multinacionales, empresas cotizadas en bolsa y compañías muy reguladas.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-amber-200 bg-amber-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">
+      En declive
+    </div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">Ltda — Sociedad Limitada</div>
+    <p class="mt-3 text-sm text-neutral-700 leading-relaxed">
+      Entre 2 y 25 socios. Fue dominante en pequeñas y medianas empresas hasta 2008.
+      La SAS la desplazó casi por completo: hoy es una figura residual y rara vez se
+      escoge para constituir empresas nuevas.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-neutral-200 bg-neutral-50/30 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-neutral-600">
+      Especializadas
+    </div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">E.S.P, BIC, Cooperativa, Sucursal extranjera</div>
+    <p class="mt-3 text-sm text-neutral-700 leading-relaxed">
+      Empresas de servicios públicos (E.S.P), Beneficio e Interés Colectivo (BIC),
+      cooperativas, y sucursales de sociedades extranjeras. Cada una con régimen
+      jurídico propio. Suman poco en número pero a veces mucho en facturación.
+    </p>
+  </div>
+</div>
+
+<FormaJuridica client:load />
+
+<Callout type="key" title="Por qué importa la dominancia de la SAS">
+  La SAS bajó tanto las barreras formales que <strong>permitió que cualquier persona
+  natural se "incorporara" sin necesidad de socios, notarios ni revisores fiscales</strong>.
+  Esto explica gran parte del boom de creación de empresas desde 2010 — pero también
+  buena parte de la mortalidad empresarial: muchas SAS son shells de un solo dueño
+  que se cierran o no se renuevan al primer tropiezo. Veremos esto en el capítulo 5.
+</Callout>
+
+<h2>3. Por actividad económica: el código CIIU</h2>
+
+<p>
+  El <strong>CIIU</strong> (Clasificación Internacional Industrial Uniforme) es la
+  taxonomía con la que el DANE — siguiendo los estándares de Naciones Unidas — ordena
+  todas las actividades económicas del país. La versión vigente en Colombia es la
+  <strong>CIIU Rev. 4 A.C.</strong> (Adaptada para Colombia).
+</p>
+
+<p>La jerarquía tiene cuatro niveles:</p>
+
+<div class="my-6 grid sm:grid-cols-2 gap-3 text-sm">
+  <div class="rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="font-mono font-bold text-violet-700">SECCIÓN</div>
+    <div class="mt-1 text-neutral-700">21 letras (A–U). Ejemplo: <code class="bg-neutral-100 px-1.5 py-0.5 rounded">G — Comercio</code></div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="font-mono font-bold text-violet-700">DIVISIÓN (2 dígitos)</div>
+    <div class="mt-1 text-neutral-700">87 divisiones. Ejemplo: <code class="bg-neutral-100 px-1.5 py-0.5 rounded">47 — Comercio al detal</code></div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="font-mono font-bold text-violet-700">GRUPO (3 dígitos)</div>
+    <div class="mt-1 text-neutral-700">240+ grupos. Ejemplo: <code class="bg-neutral-100 px-1.5 py-0.5 rounded">472 — Tiendas de alimentos</code></div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-4">
+    <div class="font-mono font-bold text-violet-700">CLASE (4 dígitos)</div>
+    <div class="mt-1 text-neutral-700">470+ clases. Ejemplo: <code class="bg-neutral-100 px-1.5 py-0.5 rounded">4711 — Supermercados</code></div>
+  </div>
+</div>
+
+<p>
+  Para hacerlo legible, SuperSociedades agrupa todas las secciones CIIU en <strong>seis
+  macrosectores</strong>: Servicios, Comercio, Manufactura, Minero, Construcción y
+  Agropecuario. Es la lente más usada en informes empresariales.
+</p>
+
+<MacrosectorTop1000 client:load />
+
+<p>
+  Dos observaciones que vale la pena leer despacio:
+</p>
+
+<ul>
+  <li><strong>Densidad de ingresos por empresa</strong>: el sector minero tiene apenas 44 empresas en el top 1.000, pero genera el 16% de los ingresos del segmento. Una empresa minera grande factura, en promedio, mucho más que una de comercio o servicios.</li>
+  <li><strong>Concentración de servicios y comercio</strong>: juntos suman casi el 60% de las empresas grandes. Pero su contribución al ingreso es proporcional al conteo, lo que sugiere productividades laborales más modestas frente al sector primario y la manufactura.</li>
+</ul>
+
+<Callout type="warning" title="No confundir 'macrosector' con 'sector económico'">
+  El DANE y Confecámaras a veces usan el término "sector" para referirse a una sección
+  CIIU específica (ej. "sector construcción"); SuperSociedades usa "macrosector" para
+  agrupaciones más amplias (ej. el macrosector minero incluye carbón, petróleo y
+  metales). Cuando compares cifras sectoriales entre fuentes, <strong>verifica primero
+  qué nivel de agregación están usando</strong>.
+</Callout>
+
+<h2>Las tres taxonomías en una misma empresa</h2>
+
+<p>
+  Una empresa real combina las tres clasificaciones. Por ejemplo:
+</p>
+
+<div class="my-6 rounded-2xl border border-neutral-200 bg-neutral-50 p-5 sm:p-6">
+  <div class="text-xs font-bold uppercase tracking-wider text-violet-700">
+    Ejemplo
+  </div>
+  <div class="mt-2 text-lg font-bold text-neutral-900">
+    "Acme Soluciones S.A.S"
+  </div>
+  <div class="mt-3 grid sm:grid-cols-3 gap-4 text-sm">
+    <div>
+      <div class="font-semibold text-neutral-900">Tamaño</div>
+      <div class="text-neutral-600">Pequeña (según ingresos en UVT del Decreto 957)</div>
+    </div>
+    <div>
+      <div class="font-semibold text-neutral-900">Forma jurídica</div>
+      <div class="text-neutral-600">S.A.S — Sociedad por Acciones Simplificada</div>
+    </div>
+    <div>
+      <div class="font-semibold text-neutral-900">Actividad económica</div>
+      <div class="text-neutral-600">CIIU 6201 — Desarrollo de software (Sección J · Macrosector Servicios)</div>
+    </div>
+  </div>
+</div>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>Hay <strong>tres ejes oficiales</strong> de clasificación empresarial en Colombia: tamaño, forma jurídica y actividad económica (CIIU).</li>
+  <li>El <strong>Decreto 957 de 2019</strong> cambió la clasificación por tamaño de <em>activos</em> a <em>ingresos</em>, diferenciado por sector. Confecámaras todavía reporta con el criterio anterior.</li>
+  <li>La <strong>S.A.S</strong> domina: casi la mitad de las grandes empresas la usan. La S.A. mantiene un 30%, la Ltda quedó residual.</li>
+  <li>Los <strong>macrosectores</strong> agrupan las secciones CIIU. Servicios, comercio y manufactura suman 87% del top 1.000 en número; pero el sector minero, con solo 4% de las empresas, genera 16% de los ingresos.</li>
+</ul>
+
+<Callout type="info" title="Próximo capítulo">
+  Ya entendemos las dimensiones. En el siguiente capítulo profundizamos en la paradoja
+  más importante del tejido empresarial colombiano: <strong>el 99% son Mipymes pero
+  generan menos del 30% del valor agregado</strong>. Por qué, y qué implica para la
+  política pública.
+</Callout>
+
+</Chapter>
