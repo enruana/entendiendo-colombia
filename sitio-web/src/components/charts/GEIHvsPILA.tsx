@@ -31,6 +31,8 @@ const pilaData: { fecha: string; cotizantes: number }[] = [
   { fecha: "2025-08", cotizantes: 13774 },  // UGPP informe Agosto25 oficial
   { fecha: "2025-11", cotizantes: 14240 },  // UGPP informe Noviembre25 - PICO HISTORICO REAL
   { fecha: "2025-12", cotizantes: 13352 },  // UGPP informe Diciembre25 oficial
+  { fecha: "2026-01", cotizantes: 13039 },  // UGPP informe Enero26 oficial (13,039,466)
+  { fecha: "2026-02", cotizantes: 13164 },  // UGPP informe Febrero26 oficial (13,163,895) - primer YoY negativo (-1,2%)
 ];
 
 // Dato ANDI marzo 2026: ~11.3M privados formales (NO comparable directamente con los
@@ -130,10 +132,10 @@ export default function GEIHvsPILA() {
 
   return (
     <ChartFrame
-      number="Grafica 2 · La controversia"
-      title="Dos fuentes oficiales, dos numeros diferentes"
-      description="GEIH (DANE, autorreporte) marca ~10.7M formales. PILA (UGPP, cotizaciones reales) llego a su PICO HISTORICO en noviembre 2025 con 14.24M cotizantes, antes de caer fuerte en diciembre. La brecha de ~2.5M entre ambas fuentes no es un error: miden cosas distintas. La controversia DANE-ANDI estallo el 31 de marzo de 2026."
-      source="DANE GEIH (extension feb 2026) + UGPP PILA (datos oficiales verificados)"
+      number="Gráfica 2 · La controversia"
+      title="Dos fuentes oficiales, dos números diferentes"
+      description="GEIH (DANE, autorreporte) ronda los 10.7M formales. PILA (UGPP, cotizaciones reales) llegó a su pico histórico en noviembre 2025 con 14.24M cotizantes, cayó a 13.35M en diciembre por estacionalidad y siguió bajando a 13.04M en enero 2026. En febrero rebotó parcialmente a 13.16M, pero con caída anual de -1,2%, la primera variación interanual negativa de la serie. La brecha estructural frente a GEIH no es un error: miden cosas distintas."
+      source="DANE GEIH (trimestre móvil nov'25-ene'26) + UGPP PILA (informes oficiales feb'23-feb'26)"
       legend={
         <>
           <LegendItem color={COLORS.indigo} label="GEIH: Formales (autorreporte)" shape="line" />
@@ -224,27 +226,22 @@ export default function GEIHvsPILA() {
         </LineChart>
       </ResponsiveContainer>
 
-      <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50/50 p-3 text-xs text-amber-900">
-        <strong>El pico real fue noviembre 2025, no septiembre 2024:</strong> Cuando la
-        ANDI denuncio en marzo 2026 que se habian "perdido 500 mil empleos formales",
-        comparo el pico de 2024 con datos posteriores. Pero los informes mensuales
-        oficiales de UGPP muestran que el verdadero pico historico fue
-        <strong> noviembre 2025 con 14.24 millones</strong> de cotizantes. Despues de
-        ese pico cayo fuerte (efecto estacional fuerte: muchos contratos temporales
-        terminan en diciembre).
-        <br /><br />
-        <strong>Por que la grafica para en diciembre 2025:</strong> Los datos publicos
-        del DANE sobre formales se publican <em>trimestre movil</em> con ~45 dias de
-        rezago. El ultimo disponible al 11 de abril 2026 es <strong>noviembre 2025 -
-        enero 2026</strong>. Para PILA, el ultimo informe publico de UGPP es Diciembre25.
-        Los datos de enero, febrero y marzo 2026 se publicaran progresivamente entre
-        marzo y mayo 2026.
-        <br /><br />
-        <strong>Sobre la cifra ANDI de "11.3 millones":</strong> Mac Master citó esa cifra
-        para marzo 2026, pero se refiere <em>solo a trabajadores privados formales</em>
-        (excluye sector público e independientes). No es directamente comparable con los
-        ~13-14M de cotizantes totales que muestra la serie PILA. Esa diferencia conceptual
-        es parte central del enredo: cada lado usa una rebanada distinta del mismo universo.
+      <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50/50 p-3 text-xs text-amber-900 leading-relaxed">
+        <strong>El pico real fue noviembre 2025, no septiembre 2024.</strong> Mac Master (ANDI)
+        comparó el pico de sept-2024 (13.82M) contra abril-2025 (13.27M) para construir la
+        cifra de "~500 mil empleos perdidos". Pero los informes oficiales UGPP muestran que
+        la serie tocó un máximo posterior en <strong>noviembre de 2025 con 14,239,988
+        cotizantes</strong> (<a href="https://www.ugpp.gov.co/wp-content/uploads/2026/03/Noviembre25.html" target="_blank" rel="noopener" className="underline">informe UGPP Nov-2025</a>).
+        Desde ese pico, PILA cayó a <strong>13.35M en dic-2025</strong>, siguió bajando hasta
+        <strong>13.04M en ene-2026</strong> (-1.20M acumulados desde el pico) y apenas
+        rebotó a <strong>13.16M en feb-2026</strong> — con caída anual de -1.2%, primera
+        variación interanual negativa de la serie reciente
+        (<a href="https://www.ugpp.gov.co/wp-content/uploads/2026/04/Informe_UGPP_Enero_2026.html" target="_blank" rel="noopener" className="underline">informe UGPP Ene-2026</a>,
+        <a href="https://www.ugpp.gov.co/wp-content/uploads/2026/04/Informe_UGPP_Febrero_2026.html" target="_blank" rel="noopener" className="underline">informe UGPP Feb-2026</a>).
+        La cifra ANDI de "11.3M" se refiere solo a <em>privados formales</em> (excluye
+        sector público y buena parte de independientes), por eso no es comparable con la
+        serie PILA total. El último informe UGPP disponible al 31-may-2026 es febrero
+        de 2026; los datos DANE cierran en el trimestre móvil nov'25-ene'26.
       </div>
     </ChartFrame>
   );

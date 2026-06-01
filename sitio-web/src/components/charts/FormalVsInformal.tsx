@@ -17,6 +17,31 @@ interface Row {
   informales: number;
 }
 
+const endMonthMap: Record<string, string> = {
+  "Ene - mar": "mar",
+  "Feb - abr": "abr",
+  "Mar - may": "may",
+  "Abr - jun": "jun",
+  "May - jul": "jul",
+  "Jun - ago": "ago",
+  "Jul - sep": "sep",
+  "Ago - oct": "oct",
+  "Sep - nov": "nov",
+  "Oct - dic": "dic",
+};
+
+function formatTrim(trim: string): string {
+  if (trim.includes("Nov 25 - ene 26")) return "ene'26";
+  if (trim.includes("Dic 25 - feb 26")) return "feb'26";
+  if (trim.includes("Ene 26 - mar 26") || trim.includes("Ene - mar 26")) return "mar'26";
+  const yearMatch = trim.match(/(\d{4})/);
+  const year = yearMatch ? yearMatch[1].slice(2) : "??";
+  for (const [k, v] of Object.entries(endMonthMap)) {
+    if (trim.includes(k)) return `${v}'${year}`;
+  }
+  return trim;
+}
+
 export default function FormalVsInformal() {
   const [data, setData] = useState<Row[]>([]);
   const [loading, setLoading] = useState(true);
@@ -28,9 +53,8 @@ export default function FormalVsInformal() {
         const lines = csv.trim().split("\n");
         const rows: Row[] = lines.slice(1).map((line) => {
           const v = line.split(",");
-          // Columnas: trimestre_movil, Ocupados_TN, Formales_TN, Informales_TN, ...
           return {
-            trimestre: v[0].replace("2025 ", "").replace("2024 ", "'24 ").replace("2023 ", "'23 ").replace("2022 ", "'22 ").replace("2021 ", "'21 "),
+            trimestre: formatTrim(v[0]),
             formales: Number(v[2]) || 0,
             informales: Number(v[3]) || 0,
           };
@@ -48,31 +72,28 @@ export default function FormalVsInformal() {
     );
   }
 
-  // Show every 4th point for readability
-  const displayData = data.filter((_, i) => i % 4 === 0 || i === data.length - 1);
-
   return (
     <ChartFrame
-      number="Grafica 1"
-      title="Trabajadores formales vs informales en Colombia (2021-2025)"
-      description="En 2025, por cada trabajador formal hay aproximadamente 1.3 informales. La proporcion apenas ha cambiado en 5 anos."
-      source="DANE — GEIH Ocupacion Informal, trimestre movil"
+      number="Gráfica 1"
+      title="Trabajadores formales vs informales en Colombia (2021-2026)"
+      description="En el trimestre móvil nov 2025 - ene 2026, por cada trabajador formal hay aproximadamente 1.24 informales. La brecha se ha cerrado lentamente: era 1.54 en el primer trimestre de 2021."
+      source="DANE — GEIH Ocupación Informal, trimestre móvil · 60 trimestres"
       legend={
         <>
-          <LegendItem color={COLORS.emerald} label="Formales (~10.8M)" />
-          <LegendItem color={COLORS.rose} label="Informales (~13.4M)" />
+          <LegendItem color={COLORS.emerald} label="Formales (10.7M)" />
+          <LegendItem color={COLORS.rose} label="Informales (13.3M)" />
         </>
       }
     >
       <ResponsiveContainer width="100%" height={360}>
-        <AreaChart data={displayData} margin={{ top: 10, right: 20, left: 0, bottom: 20 }}>
+        <AreaChart data={data} margin={{ top: 10, right: 20, left: 0, bottom: 20 }}>
           <defs>
             <linearGradient id="fFormal" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor={COLORS.emerald} stopOpacity={0.4} />
-              <stop offset="95%" stopColor={COLORS.emerald} stopOpacity={0.05} />
+              <stop offset="5%" stopColor={COLORS.emerald} stopOpacity={0.5} />
+              <stop offset="95%" stopColor={COLORS.emerald} stopOpacity={0.08} />
             </linearGradient>
             <linearGradient id="fInformal" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor={COLORS.rose} stopOpacity={0.4} />
+              <stop offset="5%" stopColor={COLORS.rose} stopOpacity={0.35} />
               <stop offset="95%" stopColor={COLORS.rose} stopOpacity={0.05} />
             </linearGradient>
           </defs>
@@ -83,9 +104,10 @@ export default function FormalVsInformal() {
             tickLine={false}
             axisLine={false}
             fontSize={10}
-            angle={-25}
+            angle={-35}
             textAnchor="end"
-            height={60}
+            height={55}
+            interval={5}
           />
           <YAxis
             stroke="#a3a3a3"
@@ -93,6 +115,7 @@ export default function FormalVsInformal() {
             axisLine={false}
             fontSize={11}
             tickFormatter={(v) => formatNumber(v * 1000)}
+            domain={[6000, 14000]}
           />
           <Tooltip
             contentStyle={tooltipStyle}
@@ -108,17 +131,15 @@ export default function FormalVsInformal() {
           <Area
             type="monotone"
             dataKey="informales"
-            stackId="1"
             stroke={COLORS.rose}
-            strokeWidth={2}
+            strokeWidth={2.5}
             fill="url(#fInformal)"
           />
           <Area
             type="monotone"
             dataKey="formales"
-            stackId="1"
             stroke={COLORS.emerald}
-            strokeWidth={2}
+            strokeWidth={2.5}
             fill="url(#fFormal)"
           />
         </AreaChart>

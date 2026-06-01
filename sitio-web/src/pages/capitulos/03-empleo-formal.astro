@@ -8,65 +8,66 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
 <Chapter
   number="03"
   title="Empleo formal: dos fuentes, dos verdades"
-  subtitle="La GEIH dice una cosa, PILA dice otra. Ambas son oficiales. Aqui entiendes por que difieren y cual usar cuando."
+  subtitle="La GEIH dice una cosa, PILA dice otra. Ambas son oficiales. Aquí entiendes por qué difieren y cuál usar cuando."
   chapterNumber={3}
   totalChapters={8}
   prevHref="/capitulos/02-clasificacion"
-  prevTitle="Como se divide la poblacion"
+  prevTitle="Cómo se divide la población"
   nextHref="/capitulos/04-controversia"
   nextTitle="La controversia DANE vs ANDI"
   accentColor="cyan"
 >
 
-<h2>Que es ser "formal" en Colombia</h2>
+<h2>¿Qué es ser "formal" en Colombia?</h2>
 
 <p>
   Un trabajador formal es, en pocas palabras, uno que tiene <strong>seguridad social pagada
-  por su empleador</strong>. El DANE, siguiendo los estandares de la Organizacion
+  por su empleador</strong>. El DANE, siguiendo los estándares de la Organización
   Internacional del Trabajo (OIT), define a alguien como formal si:
 </p>
 
 <ul>
-  <li>Es <strong>asalariado</strong> y su empleador le paga salud y pension, O</li>
+  <li>Es <strong>asalariado</strong> y su empleador le paga salud y pensión, O</li>
   <li>Es <strong>independiente</strong> y su negocio tiene registro mercantil vigente y contabilidad que permite separar gastos del hogar</li>
 </ul>
 
 <p>
   Si falla cualquiera de esas condiciones, la persona cuenta como <strong>informal</strong>.
-  Hay excepciones: todos los empleados del gobierno son formales por definicion, coticen o no.
+  Hay excepciones: todos los empleados del gobierno son formales por definición, coticen o no.
 </p>
 
-<Callout type="info" title="Por que 'seguridad social' es el criterio">
-  La idea detras de definir formalidad por cotizaciones es sencilla: si un trabajador
-  no tiene salud ni pension pagada por su empleo, en la practica no tiene las protecciones
-  laborales basicas. Puede trabajar todos los dias, pero si se enferma, no tiene respaldo.
-  Si envejece, no tiene pension. La formalidad NO es sobre tener contrato escrito,
-  es sobre tener proteccion social.
+<Callout type="info" title="Por qué 'seguridad social' es el criterio">
+  La idea detrás de definir formalidad por cotizaciones es sencilla: si un trabajador
+  no tiene salud ni pensión pagada por su empleo, en la práctica no tiene las protecciones
+  laborales básicas. Puede trabajar todos los días, pero si se enferma, no tiene respaldo.
+  Si envejece, no tiene pensión. La formalidad NO es sobre tener contrato escrito,
+  es sobre tener protección social.
 </Callout>
 
-<h2>La foto actual: mas informales que formales</h2>
+<h2>La foto actual: más informales que formales</h2>
 
 <FormalVsInformal client:load />
 
 <p>
-  La grafica muestra algo que no ha cambiado en 5 anos: <strong>por cada trabajador formal,
-  hay aproximadamente 1.2-1.3 informales</strong>. La proporcion ha mejorado muy lentamente:
-  la informalidad paso del ~59% en 2021 al ~55% en 2025. A ese ritmo, Colombia tardaria
-  decadas en llegar a una proporcion "normal" de paises OCDE (donde la informalidad
-  ronda el 15-20%).
+  La gráfica muestra una mejora lenta pero real: en el primer trimestre de 2021 había
+  <strong>1.54 informales por cada formal</strong>; en el trimestre móvil noviembre 2025 -
+  enero 2026 la razón bajó a <strong>1.24</strong>. La informalidad pasó del ~60.7% a
+  ~55.3%. Aun así, Colombia sigue entre los países con más informalidad laboral de la OCDE.
+  Para contexto: en la mayoría de países europeos de la OCDE la informalidad no supera
+  el 5-10%; Uruguay, el miembro latinoamericano con la tasa más baja, ronda el 25%.
 </p>
 
-<Callout type="warning" title="Un numero engañoso">
-  El DANE reporto que en 2025 el empleo formal crecio. Y es cierto. Pero tambien crecio
-  el informal al mismo tiempo. La pregunta clave no es "crecio el empleo formal?"
-  sino "<strong>crecio mas rapido que el informal?</strong>". La respuesta en 2025 es:
+<Callout type="warning" title="Un número engañoso">
+  El DANE reportó que en 2025 el empleo formal creció. Y es cierto. Pero también creció
+  el informal al mismo tiempo. La pregunta clave no es "¿creció el empleo formal?"
+  sino "<strong>¿creció más rápido que el informal?</strong>". La respuesta en 2025 es:
   apenas.
 </Callout>
 
-<h2>Ahora lo extraño: dos fuentes oficiales, dos numeros</h2>
+<h2>Ahora lo extraño: dos fuentes oficiales, dos números</h2>
 
 <p>
-  Aqui esta el punto clave de este capitulo. Colombia tiene dos fuentes oficiales
+  Aquí está el punto clave de este capítulo. Colombia tiene dos fuentes oficiales
   distintas que miden empleo formal:
 </p>
 
@@ -77,8 +78,8 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
     </div>
     <div class="mt-2 text-lg font-bold text-neutral-900">DANE — Gran Encuesta Integrada de Hogares</div>
     <p class="mt-3 text-sm text-neutral-700 leading-relaxed">
-      Es una <strong>encuesta</strong> a ~315 mil hogares al anio. Preguntan directamente
-      a las personas: "trabaja? en que? le pagan seguridad social?". La persona responde.
+      Es una <strong>encuesta</strong> a ~315 mil hogares al año. Preguntan directamente
+      a las personas: "¿trabaja?, ¿en qué?, ¿le pagan seguridad social?". La persona responde.
       No se verifica contra registros reales.
     </p>
     <div class="mt-4 text-xs text-neutral-500">
@@ -90,10 +91,10 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
     <div class="text-xs font-bold uppercase tracking-wider text-amber-700">
       Fuente 2: PILA
     </div>
-    <div class="mt-2 text-lg font-bold text-neutral-900">UGPP — Planilla Integrada de Liquidacion de Aportes</div>
+    <div class="mt-2 text-lg font-bold text-neutral-900">UGPP — Planilla Integrada de Liquidación de Aportes</div>
     <p class="mt-3 text-sm text-neutral-700 leading-relaxed">
       Es un <strong>registro administrativo</strong>. Cada mes, todos los empleadores
-      del pais reportan cuanto pagaron de seguridad social por cada trabajador. Son
+      del país reportan cuánto pagaron de seguridad social por cada trabajador. Son
       transacciones reales, verificables.
     </p>
     <div class="mt-4 text-xs text-neutral-500">
@@ -103,28 +104,34 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
 </div>
 
 <p>
-  Deberian dar numeros similares, verdad? Despues de todo, las dos miden empleo formal.
+  ¿Deberían dar números similares, verdad? Después de todo, las dos miden empleo formal.
   Pero en la realidad, divergen. A veces por mucho.
 </p>
 
 <GEIHvsPILA client:load />
 
-<Callout type="key" title="Por que son distintas">
+<Callout type="key" title="Por qué son distintas">
   Las dos fuentes miden cosas distintas, aunque parezcan iguales:
   <ul class="mt-2 list-disc list-inside space-y-1">
-    <li><strong>GEIH</strong> captura a personas que se declaran formales, incluso si pagan su propia seguridad social (autonomos que pagan voluntariamente)</li>
+    <li><strong>GEIH</strong> captura a personas que se declaran formales, incluso si pagan su propia seguridad social (autónomos que pagan voluntariamente)</li>
     <li><strong>PILA</strong> captura solo cotizaciones efectivas del empleador a cada trabajador</li>
     <li><strong>PILA</strong> puede contar dos veces a una persona con dos empleos (cotiza en dos planillas)</li>
-    <li><strong>GEIH</strong> tiene estacionalidad muestral. PILA tiene estacionalidad economica (fin de contratos temporales en enero-febrero)</li>
+    <li><strong>GEIH</strong> tiene estacionalidad muestral; PILA tiene estacionalidad económica (fin de contratos temporales en enero-febrero)</li>
   </ul>
   <p class="mt-2">
-    Fijate en la grafica: el pico de PILA fue en <strong>septiembre 2024 (13.82M)</strong>.
-    Luego cayo hasta ~13.1M en mayo 2025. Esos ~670 mil cotizantes de diferencia son el
-    origen de la controversia de marzo 2026 que veremos en el siguiente capitulo.
+    Fíjate en la gráfica: el pico de la serie PILA fue en <strong>noviembre 2025
+    con 14,239,988 cotizantes</strong> (según el informe oficial de la UGPP). Luego
+    cayó 6.2% en diciembre hasta 13,352,360 por efecto estacional, siguió bajando
+    a <strong>13,039,466 en enero 2026</strong> y apenas rebotó a <strong>13,163,895
+    en febrero</strong> — con caída anual de -1,2%, la primera variación interanual
+    negativa de la serie reciente. La pérdida acumulada desde el pico es de
+    <strong>~1.08M cotizantes en tres meses</strong>. Esa caída, combinada con la
+    brecha estructural frente a GEIH, es el origen de la controversia ANDI-DANE
+    de marzo de 2026 que veremos en el siguiente capítulo.
   </p>
 </Callout>
 
-<h2>Cual debo usar?</h2>
+<h2>¿Cuál debo usar?</h2>
 
 <p>
   Depende de la pregunta:
@@ -135,15 +142,15 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
     <div class="text-sm font-semibold text-indigo-700">Usa GEIH cuando...</div>
     <p class="mt-1 text-sm text-neutral-700">
       Quieres medir el <strong>mercado laboral completo</strong>: formales + informales,
-      desocupados, inactivos. GEIH es la unica fuente que te da el universo entero.
-      Tambien es la fuente oficial para comparaciones internacionales (sigue estandares OIT).
+      desocupados, inactivos. GEIH es la única fuente que te da el universo entero.
+      También es la fuente oficial para comparaciones internacionales (sigue estándares OIT).
     </p>
   </div>
 
   <div class="rounded-lg border border-neutral-200 bg-white p-4">
     <div class="text-sm font-semibold text-amber-700">Usa PILA cuando...</div>
     <p class="mt-1 text-sm text-neutral-700">
-      Quieres medir <strong>empleos formales con certeza maxima</strong>, rastrear
+      Quieres medir <strong>empleos formales con certeza máxima</strong>, rastrear
       entradas y salidas del empleo formal mes a mes, o cruzar con datos tributarios
       (la UGPP cruza PILA con la DIAN).
     </p>
@@ -152,13 +159,13 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
 
 <Callout type="tip" title="La regla del experto">
   Un buen analista del mercado laboral colombiano usa <strong>ambas fuentes juntas</strong>.
-  Si las dos dicen lo mismo, la senal es robusta. Si divergen, vale la pena investigar
-  por que. La divergencia es informacion, no error.
+  Si las dos dicen lo mismo, la señal es robusta. Si divergen, vale la pena investigar
+  por qué. La divergencia es información, no error.
 </Callout>
 
-<h2>Donde acceder a cada fuente</h2>
+<h2>Dónde acceder a cada fuente</h2>
 
-<Callout type="source" title="GEIH — Boletin trimestral de Ocupacion Informal">
+<Callout type="source" title="GEIH — Boletín trimestral de Ocupación Informal">
   <p>
     URL: <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-informal-y-seguridad-social" target="_blank" rel="noopener">dane.gov.co/mercado-laboral/empleo-informal-y-seguridad-social</a>
   </p>
@@ -174,29 +181,65 @@ import GEIHvsPILA from "../../components/charts/GEIHvsPILA.tsx";
     URL: <a href="https://www.ugpp.gov.co/Evolucion-cotizaciones-Sistema-Proteccion-Social" target="_blank" rel="noopener">ugpp.gov.co/Evolucion-cotizaciones-Sistema-Proteccion-Social</a>
   </p>
   <p class="mt-2">
-    Es un tablero interactivo con mas de 107 millones de registros. Puedes filtrar por
-    sector economico, departamento, edad, genero, subsistema. No permite descargar datos
-    crudos, pero muestra graficas agregadas.
+    Es un tablero interactivo que permite filtrar por sector económico, departamento,
+    edad, género y subsistema. No deja descargar datos crudos, pero muestra gráficas
+    agregadas.
   </p>
   <p class="mt-2">
-    Adicionalmente, la UGPP publica informes mensuales en HTML en <code>ugpp.gov.co/wp-content/uploads/</code>.
+    Adicionalmente, la UGPP publica cada mes un informe HTML bajo
+    <code>ugpp.gov.co/wp-content/uploads/</code>. Los más recientes disponibles son:
+    <a href="https://www.ugpp.gov.co/wp-content/uploads/2026/03/Noviembre25.html" target="_blank" rel="noopener">Noviembre 2025</a>
+    (14.24M cotizantes — pico de la serie),
+    <a href="https://www.ugpp.gov.co/wp-content/uploads/2026/03/Diciembre25.html" target="_blank" rel="noopener">Diciembre 2025</a>
+    (13.35M, caída estacional),
+    <a href="https://www.ugpp.gov.co/wp-content/uploads/2026/04/Informe_UGPP_Enero_2026.html" target="_blank" rel="noopener">Enero 2026</a>
+    (13.04M) y
+    <a href="https://www.ugpp.gov.co/wp-content/uploads/2026/04/Informe_UGPP_Febrero_2026.html" target="_blank" rel="noopener">Febrero 2026</a>
+    (13.16M, -1,2% YoY).
   </p>
 </Callout>
 
-<h2>Resumen del capitulo</h2>
+<h2>Resumen del capítulo</h2>
 
 <ul>
-  <li>Un trabajador es <strong>formal</strong> si su empleador le paga salud y pension (o si su negocio independiente esta registrado)</li>
-  <li>En 2025, <strong>~45% de los ocupados son formales</strong> y ~55% son informales</li>
+  <li>Un trabajador es <strong>formal</strong> si su empleador le paga salud y pensión (o si su negocio independiente está registrado)</li>
+  <li>En el trimestre móvil nov 2025 - ene 2026, <strong>44.7% de los ocupados son formales</strong> y 55.3% son informales</li>
   <li>Hay dos fuentes oficiales: <strong>GEIH</strong> (encuesta a hogares) y <strong>PILA</strong> (registro administrativo)</li>
-  <li>Las dos miden cosas parecidas pero no identicas, y sus numeros divergen</li>
+  <li>Las dos miden cosas parecidas pero no idénticas, y sus números divergen en ~2.5M</li>
+  <li>PILA llegó a su pico histórico en nov 2025 (14.24M) y cayó a 13.16M en feb 2026 — <strong>-1,08M cotizantes en tres meses</strong> y primera variación anual negativa de la serie reciente</li>
   <li>Para una vista completa del mercado, hay que usar ambas en conjunto</li>
 </ul>
 
-<Callout type="key" title="La discrepancia entre fuentes creo una polemica">
-  En marzo de 2026, la ANDI uso datos de PILA para denunciar que se habian perdido
-  500 mil empleos formales. El DANE respondio con datos GEIH mostrando que no. Quien
-  tenia razon? Eso lo vemos en el siguiente capitulo.
+<Callout type="key" title="La discrepancia entre fuentes creó una polémica">
+  El 31 de marzo de 2026, Bruce Mac Master (presidente de la ANDI) denunció en X/Twitter
+  que entre 2023 y marzo de 2026 Colombia había perdido "más de 500 mil empleos formales",
+  citando datos de PILA/UGPP. El DANE, a través de su directora Piedad Urdinola, respondió
+  también en X: <em>"Se trata de fuentes de información diferentes, con metodologías y
+  alcances distintos, por lo que no son directamente comparables"</em>. ¿Quién tenía razón?
+  Eso lo vemos en el siguiente capítulo.
+</Callout>
+
+<Callout type="source" title="Fuentes de la controversia (31 de marzo de 2026)">
+  <ul class="list-disc list-inside space-y-1 mt-1">
+    <li>
+      <a href="https://www.infobae.com/colombia/2026/03/31/presidente-de-la-andi-desmintio-cifras-de-empleo-del-dane-aseguro-que-se-perdieron-mas-de-500000-empleos-formales/" target="_blank" rel="noopener">Infobae — Mac Master (ANDI): "se perdieron más de 500.000 empleos formales"</a>
+    </li>
+    <li>
+      <a href="https://www.infobae.com/colombia/2026/03/31/dane-respondio-a-la-andi-y-aclaro-presuntas-inconsistencias-en-las-cifras-de-empleo-se-trata-de-metodologias-diferentes/" target="_blank" rel="noopener">Infobae — Respuesta del DANE: "son metodologías diferentes"</a>
+    </li>
+    <li>
+      <a href="https://www.elcolombiano.com/negocios/andi-dane-empleo-formal-colombia-ugpp-pila-500000-puestos-DF35127224" target="_blank" rel="noopener">El Colombiano — ANDI y DANE chocan por los 500.000 empleos</a>
+    </li>
+    <li>
+      <a href="https://www.larepublica.co/economia/bruce-mac-master-presidente-de-la-andi-hablo-de-los-datos-de-mercado-laboral-de-febrero-2026-4361358" target="_blank" rel="noopener">La República — Mac Master sobre el mercado laboral de febrero 2026</a>
+    </li>
+    <li>
+      <a href="https://www.larepublica.co/economia/piedad-urdinola-sobre-afirmaciones-de-la-andi-4361612" target="_blank" rel="noopener">La República — Piedad Urdinola (DANE) responde a la ANDI</a>
+    </li>
+    <li>
+      X/Twitter: <a href="https://x.com/BruceMacMaster" target="_blank" rel="noopener">@BruceMacMaster</a> · <a href="https://x.com/DANE_Colombia" target="_blank" rel="noopener">@DANE_Colombia</a>
+    </li>
+  </ul>
 </Callout>
 
 </Chapter>
