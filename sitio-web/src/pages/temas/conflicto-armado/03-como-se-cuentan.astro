@@ -1,0 +1,243 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+---
+
+<Chapter
+  number="03"
+  title="Cómo se cuentan combatientes y víctimas"
+  subtitle="Las cifras del conflicto vienen de fuentes con metodologías muy distintas. Aquí entiendes cuál es cuál y por qué a veces dan números diferentes."
+  chapterNumber={3}
+  totalChapters={8}
+  prevHref="/temas/conflicto-armado/02-historia"
+  prevTitle="Historia: 6 décadas de conflicto"
+  nextHref="/temas/conflicto-armado/04-geografia"
+  nextTitle="Geografía del conflicto"
+  accentColor="cyan"
+>
+
+<h2>Una cifra del conflicto siempre necesita preguntar tres cosas</h2>
+
+<p>
+  Antes de aceptar una cifra cualquiera del conflicto armado colombiano, vale la
+  pena preguntarse:
+</p>
+
+<ol>
+  <li><strong>¿Quién la mide?</strong> — Estado, organismos internacionales, ONG, periodistas.</li>
+  <li><strong>¿Cómo la mide?</strong> — Registro voluntario, inteligencia, monitoreo de medios, encuesta.</li>
+  <li><strong>¿Qué cuenta y qué no?</strong> — La definición operativa cambia mucho.</li>
+</ol>
+
+<p>
+  Hay tres tipos de cifras que se confunden con frecuencia: <strong>integrantes
+  armados</strong>, <strong>víctimas</strong> y <strong>hechos victimizantes</strong>.
+  Cada una tiene fuentes y metodologías propias.
+</p>
+
+<h2>Contar combatientes: la inteligencia militar y sus límites</h2>
+
+<p>
+  Las cifras de "cuántos integrantes tiene cada grupo armado" son
+  <strong>estimaciones de inteligencia</strong>. Las producen:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="font-bold text-cyan-900">MinDefensa — Comando General</div>
+    <p class="text-sm text-cyan-900/80 mt-2 leading-relaxed">
+      Cuenta combatientes a partir de inteligencia militar, capturas, deserciones,
+      muertes en combate. Sus cifras se usan para diseñar operaciones. Rara vez
+      las publica desagregadas: son sensibles desde el punto de vista operacional.
+    </p>
+  </div>
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="font-bold text-violet-900">FIP — Fundación Ideas para la Paz</div>
+    <p class="text-sm text-violet-900/80 mt-2 leading-relaxed">
+      ONG independiente. Cruza inteligencia militar (cuando es pública), trabajo
+      de campo, monitoreo de medios y entrevistas con líderes territoriales. Sus
+      cifras suelen ser las que cita la prensa.
+    </p>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="font-bold text-emerald-900">Indepaz</div>
+    <p class="text-sm text-emerald-900/80 mt-2 leading-relaxed">
+      Observatorio civil con red de fuentes territoriales. Mapeo periódico de
+      grupos armados por municipio. Sus cifras tienden a ser ligeramente más altas
+      que FIP porque incluye redes y milicias urbanas.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="font-bold text-amber-900">InSight Crime</div>
+    <p class="text-sm text-amber-900/80 mt-2 leading-relaxed">
+      Organización internacional especializada en crimen organizado. Sus perfiles
+      de grupos son referencia para investigadores y prensa internacional. Cifras
+      compiladas con inteligencia, medios y trabajo de campo.
+    </p>
+  </div>
+</div>
+
+<Callout type="warning" title="Por qué las cifras varían entre fuentes">
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>¿Quién es combatiente vs. miliciano?</strong> Un grupo tiene un núcleo armado (combatientes), una red de apoyo logístico (cocineros, mensajeros, transportistas) y una red de "informantes" o milicianos urbanos. Cada fuente decide qué incluir.</li>
+    <li><strong>¿Quién es FARC desmovilizado vs. disidencia?</strong> Un excombatiente puede oscilar entre el proceso de reincorporación y un retorno al grupo armado. Los conteos se mueven.</li>
+    <li><strong>¿El "Clan del Golfo" incluye redes urbanas?</strong> Hay zonas donde el grupo opera con bandas locales que pueden o no contarse como parte del Clan.</li>
+  </ul>
+  Por estas razones, una buena práctica es <strong>citar rango y fuente</strong>:
+  "entre 25.000 y 30.000 según FIP/Indepaz", no "27.000 integrantes".
+</Callout>
+
+<h2>Contar víctimas: el RUV, su universo y sus huecos</h2>
+
+<p>
+  El sistema oficial colombiano para contar víctimas del conflicto armado se llama
+  <strong>RUV — Registro Único de Víctimas</strong>. Lo administra la Unidad para
+  las Víctimas, creada por la Ley 1448 de 2011 (Ley de Víctimas y Restitución de
+  Tierras).
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Víctimas inscritas RUV</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">9,3 M</div>
+    <div class="mt-1 text-xs text-cyan-700">Cifra acumulada</div>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Sujetos de atención</div>
+    <div class="mt-2 text-3xl font-extrabold text-emerald-900 font-mono">7,4 M</div>
+    <div class="mt-1 text-xs text-emerald-700">Cumplen requisitos para reparación</div>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">% de la población</div>
+    <div class="mt-2 text-3xl font-extrabold text-rose-900 font-mono">17,4%</div>
+    <div class="mt-1 text-xs text-rose-700">De los colombianos vivos</div>
+  </div>
+</div>
+
+<h3>Cómo se llega al RUV</h3>
+
+<p>
+  El registro es <strong>declarativo</strong>: una persona se presenta al Ministerio
+  Público (Personerías, Defensoría, Procuraduría) y declara ser víctima de uno de
+  los hechos cubiertos por la ley. La Unidad para las Víctimas evalúa la solicitud
+  y decide la inclusión. Hay un proceso de revisión y, eventualmente, apelación.
+</p>
+
+<h3>Lo que sí cuenta el RUV</h3>
+
+<p>Hechos victimizantes elegibles, en línea con la Ley 1448 de 2011:</p>
+
+<ul>
+  <li>Homicidio</li>
+  <li>Desplazamiento forzado</li>
+  <li>Desaparición forzada</li>
+  <li>Secuestro</li>
+  <li>Tortura</li>
+  <li>Reclutamiento de niños, niñas y adolescentes</li>
+  <li>Delitos contra la libertad e integridad sexual</li>
+  <li>Lesiones por minas antipersonal, munición sin explotar y artefacto explosivo</li>
+  <li>Actos terroristas / atentados / combates / hostigamientos</li>
+  <li>Despojo y abandono forzado de tierras</li>
+</ul>
+
+<Callout type="info" title="Lo que el RUV NO cuenta">
+  <ul class="list-disc list-inside space-y-1">
+    <li>Hechos <strong>anteriores a 1985</strong>: la Ley 1448 fija enero 1985 como umbral. Las víctimas de La Violencia (1948-58) o de los primeros años del conflicto no están.</li>
+    <li>Víctimas <strong>que no declararon</strong>: subregistro. Personas que no acudieron al Ministerio Público (desconocimiento, miedo, distancia geográfica).</li>
+    <li>Víctimas de <strong>delincuencia común</strong> sin conexión con el conflicto armado.</li>
+    <li><strong>Doble contabilización por persona</strong>: una víctima puede aparecer por varios hechos victimizantes (ej. desplazamiento + homicidio de familiar + amenaza). La cifra de 9,3 M se refiere a víctimas <em>únicas</em>, pero los hechos victimizantes son varios millones más.</li>
+  </ul>
+</Callout>
+
+<h2>El CNMH y el Observatorio de Memoria y Conflicto (OMC)</h2>
+
+<p>
+  El <strong>Centro Nacional de Memoria Histórica</strong> (CNMH) construyó el
+  Observatorio de Memoria y Conflicto, una base de datos histórica que va desde
+  1958 hasta el presente. Su metodología es distinta a la del RUV:
+</p>
+
+<ul>
+  <li>Construye los datos a partir de <strong>fuentes documentales</strong> (medios, archivos judiciales, informes de ONG, sentencias).</li>
+  <li>Cubre el período <strong>1958-actualidad</strong> (no se limita a 1985+).</li>
+  <li>Codifica cada hecho con detalle: fecha, lugar, actor responsable, víctimas individuales.</li>
+  <li>Es una <strong>base académica</strong>: no genera derechos para la víctima (no hay reparación derivada). Sirve para investigación histórica y memoria.</li>
+</ul>
+
+<p>
+  El CNMH y sus informes (especialmente "¡Basta Ya!" de 2013) son la referencia
+  histórica más completa.
+</p>
+
+<h2>La JEP y la cifra de los 450.664</h2>
+
+<p>
+  En 2022, la <strong>JEP</strong> (Jurisdicción Especial para la Paz) publicó —
+  junto con la Comisión de la Verdad y el HRDAG (Human Rights Data Analysis
+  Group) — un análisis estadístico que estimó las víctimas mortales del conflicto
+  entre 1985 y 2018 en <strong>aproximadamente 450.664 personas</strong>.
+</p>
+
+<p>
+  Esta cifra usó técnicas de <strong>estimación por captura-recaptura</strong> que
+  ajustan por subregistro. Es decir: combinaron varias listas de víctimas (CNMH,
+  RUV, ONGs, instituciones forenses) y estimaron cuántas personas no aparecen en
+  ninguna lista pero sí fueron víctimas. La estadística da una cifra esperada con
+  intervalo de confianza.
+</p>
+
+<Callout type="key" title="Las tres cifras de muertos no se contradicen">
+  Las cifras de muertos del conflicto que circulan en medios pueden parecer
+  contradictorias, pero responden a definiciones distintas:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>RUV homicidios</strong>: ~1 millón de víctimas de homicidio (registradas).</li>
+    <li><strong>CNMH</strong>: ~262 mil personas muertas en hechos directos del conflicto.</li>
+    <li><strong>JEP/CEV/HRDAG</strong>: ~450 mil <em>estimadas</em> con corrección por subregistro.</li>
+  </ul>
+  La diferencia entre CNMH y JEP es metodológica: el CNMH cuenta hechos verificados,
+  la JEP estima los no verificados. Ambas son válidas para usos distintos.
+</Callout>
+
+<h2>La regla para usar cifras del conflicto</h2>
+
+<div class="my-6 rounded-2xl border border-emerald-300 bg-emerald-50/50 p-5">
+  <h3 class="text-lg font-bold text-emerald-900">Buenas prácticas</h3>
+  <ul class="mt-3 space-y-2 text-sm text-emerald-900/80">
+    <li>✅ <strong>Citar fuente y fecha</strong>: "FIP enero 2026", "RUV corte 2024", "JEP 2022".</li>
+    <li>✅ <strong>Especificar metodología</strong>: "registrados" vs "estimados" vs "estimados con captura-recaptura".</li>
+    <li>✅ <strong>Usar rangos</strong> cuando hay incertidumbre: "entre 25.000 y 30.000".</li>
+    <li>❌ <strong>No mezclar series</strong>: una cifra del CNMH no se suma con una del RUV (cuentan cosas distintas).</li>
+    <li>❌ <strong>No reportar "exactitud falsa"</strong>: "9.328.499 víctimas" sugiere precisión decimal sobre fenómenos con subregistro.</li>
+  </ul>
+</div>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>Las cifras del conflicto vienen de fuentes con <strong>metodologías muy distintas</strong>: inteligencia, registro declarativo, monitoreo, estimación estadística.</li>
+  <li><strong>FIP, Indepaz, InSight Crime</strong> son las fuentes principales para conteos de integrantes.</li>
+  <li>El <strong>RUV</strong> es el registro oficial de víctimas (1985+, declarativo, 9,3 M inscritos).</li>
+  <li>El <strong>CNMH</strong> cubre 1958+ con metodología documental.</li>
+  <li>La <strong>JEP/CEV</strong> estimó 450.664 víctimas mortales con corrección por subregistro (1985-2018).</li>
+  <li>Al usar cifras del conflicto, siempre cita fuente, fecha y metodología.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>RUV:</strong>
+    <a href="https://www.unidadvictimas.gov.co/registro-unico-de-victimas-ruv/" target="_blank" rel="noopener">unidadvictimas.gov.co/registro-unico-de-victimas-ruv</a>
+    publica reportes mensuales con cifras desagregadas por hecho, departamento y municipio.
+  </p>
+  <p class="mt-2">
+    <strong>CNMH:</strong>
+    <a href="https://centrodememoriahistorica.gov.co" target="_blank" rel="noopener">centrodememoriahistorica.gov.co</a>.
+    El Observatorio de Memoria y Conflicto publica microdatos descargables.
+  </p>
+  <p class="mt-2">
+    <strong>Comisión de la Verdad:</strong>
+    <a href="https://www.comisiondelaverdad.co" target="_blank" rel="noopener">comisiondelaverdad.co</a>
+    publicó el Informe Final en 2022 con todas las estimaciones estadísticas (HRDAG).
+  </p>
+</Callout>
+
+</Chapter>

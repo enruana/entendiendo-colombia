@@ -1,0 +1,255 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import GruposActivos2026 from "../../../components/temas/conflicto-armado/charts/GruposActivos2026.tsx";
+---
+
+<Chapter
+  number="01"
+  title="Quiénes son hoy"
+  subtitle="~27.000 integrantes en grupos armados ilegales en 2026. El conteo más alto desde el Acuerdo de Paz de 2016. Aquí están todos: quiénes, dónde y de dónde vienen."
+  chapterNumber={1}
+  totalChapters={8}
+  nextHref="/temas/conflicto-armado/02-historia"
+  nextTitle="Historia: 6 décadas de conflicto"
+  accentColor="slate"
+>
+
+<h2>El mapa actual del conflicto</h2>
+
+<p>
+  El conflicto armado colombiano no terminó con el Acuerdo de Paz con las FARC en
+  2016. Cambió de forma. La organización guerrillera más grande de América Latina
+  se desmovilizó, pero <strong>otras fuerzas — viejas y nuevas — ocuparon los
+  territorios y las economías ilegales que dejaron</strong>. Diez años después, los
+  grupos armados ilegales suman más integrantes que cuando se firmó el Acuerdo.
+</p>
+
+<GruposActivos2026 client:load />
+
+<h2>Las cuatro grandes categorías</h2>
+
+<p>
+  Los grupos armados ilegales en Colombia se agrupan en cuatro categorías, según su
+  origen y estructura:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">1 · Guerrilla histórica</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">ELN — Ejército de Liberación Nacional</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Fundada en 1964 por estudiantes, sacerdotes y campesinos inspirados en la
+      revolución cubana. Sigue activa. Es la <strong>guerrilla más antigua del
+      continente</strong> aún operando. ~6.810 integrantes. Estructura federada
+      (cinco "frentes de guerra"), lo que ha dificultado los procesos de paz: hay
+      acuerdos que un frente respeta y otros no.
+    </p>
+  </div>
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">2 · Disidencias FARC</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">EMC, EMBF, CNEB, Segunda Marquetalia</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Grupos formados por excombatientes que no se acogieron al Acuerdo de 2016, o
+      por nuevos reclutas. ~9.600 integrantes sumados entre los cuatro principales.
+      Compiten entre sí por territorios y por la coca. Las tres siglas viejas (EMC =
+      Estado Mayor Central; EMBF = Estado Mayor de Bloques y Frentes; CNEB = Coordinadora
+      Nacional Ejército Bolivariano) reflejan disputas internas tras 2020.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">3 · Crimen organizado neoparamilitar</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">Clan del Golfo / AGC</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Autodefensas Gaitanistas de Colombia. ~9.840 integrantes (el grupo más numeroso
+      hoy). Surgieron en 2006-2008 de la desmovilización fallida de las AUC.
+      Mantienen estructura paramilitar pero operan principalmente como red criminal:
+      narcotráfico, extorsión, control territorial. Operan en al menos 280 municipios.
+    </p>
+  </div>
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">4 · GDO/GAO menores y crimen organizado</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">Comuneros del Sur, ACSN, otros</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Grupos de menor tamaño (cientos de integrantes cada uno) con presencia
+      territorial específica. Los Comuneros del Sur (Nariño) firmaron un cese al
+      fuego con el Gobierno en 2024. Las ACSN (Autodefensas Conquistadoras de la
+      Sierra Nevada) operan en el Magdalena. Más estructuras urbanas (Las Convivir,
+      La Cordillera) y bandas locales.
+    </p>
+  </div>
+</div>
+
+<h2>Disidencias FARC: la nueva geografía de los nombres</h2>
+
+<p>
+  Las "disidencias de las FARC" no son una sola organización. Son <strong>al menos
+  cuatro estructuras rivales</strong> que se han fragmentado desde 2017. Vale la
+  pena distinguirlas porque cada una negocia (o no negocia) con el Gobierno por
+  separado:
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-violet-200 bg-violet-50/30 p-4">
+    <div class="font-bold text-violet-900">EMC — Estado Mayor Central</div>
+    <div class="text-sm text-violet-900/80 mt-1">
+      Liderado por alias "<strong>Iván Mordisco</strong>" (Néstor Gregorio Vera). El
+      bloque más grande de las disidencias. Opera en Cauca, Putumayo, Caquetá, Nariño
+      y Meta. Negoció con el Gobierno Petro pero las conversaciones se rompieron en
+      2024 tras hostilidades. ~4.019 integrantes.
+    </div>
+  </div>
+  <div class="rounded-lg border border-violet-200 bg-violet-50/30 p-4">
+    <div class="font-bold text-violet-900">EMBF — Estado Mayor de Bloques y Frentes</div>
+    <div class="text-sm text-violet-900/80 mt-1">
+      Liderado por alias "<strong>Calarcá Córdoba</strong>". Surge de una división
+      del EMC en 2024. Opera en Catatumbo, Arauca y oriente. ~2.958 integrantes.
+      Mantiene mesa de diálogo abierta con el Gobierno.
+    </div>
+  </div>
+  <div class="rounded-lg border border-violet-200 bg-violet-50/30 p-4">
+    <div class="font-bold text-violet-900">CNEB — Coordinadora Nacional Ejército Bolivariano</div>
+    <div class="text-sm text-violet-900/80 mt-1">
+      Escisión de la Segunda Marquetalia. ~2.089 integrantes (+25% en 2025). Sin
+      mesa de diálogo abierta.
+    </div>
+  </div>
+  <div class="rounded-lg border border-violet-200 bg-violet-50/30 p-4">
+    <div class="font-bold text-violet-900">Segunda Marquetalia</div>
+    <div class="text-sm text-violet-900/80 mt-1">
+      Fundada en 2019 por <strong>Iván Márquez</strong> (jefe negociador de las FARC
+      en La Habana). Tras la muerte de varios líderes y la escisión del CNEB, quedó
+      reducida a ~534 integrantes.
+    </div>
+  </div>
+</div>
+
+<Callout type="info" title="Por qué las disidencias se multiplican y dividen">
+  Las disidencias de las FARC no responden a una sola cadena de mando. Cada bloque
+  controla sus propias rentas (coca, oro, extorsión) y tiene autonomía operativa.
+  Las divisiones internas en 2024 se asocian a disputas por liderazgo, por economías
+  ilegales y por la postura frente a las mesas de paz del Gobierno Petro. Lo que en
+  los años 90 era una organización vertical, hoy es un archipiélago competitivo.
+</Callout>
+
+<h2>El ELN: la guerrilla más antigua de América</h2>
+
+<p>
+  El <strong>Ejército de Liberación Nacional</strong> es el grupo armado más antiguo
+  todavía activo en el continente. Fundado en 1964 por Fabio Vásquez Castaño y un
+  grupo de estudiantes, sacerdotes y campesinos inspirados en la revolución cubana
+  y la teología de la liberación, hoy conserva una estructura federada con cinco
+  "frentes de guerra":
+</p>
+
+<ul>
+  <li><strong>Frente Norte</strong>: Cesar, La Guajira, frontera con Venezuela.</li>
+  <li><strong>Frente Nororiental</strong>: Catatumbo, Arauca, Boyacá.</li>
+  <li><strong>Frente de Guerra Occidental</strong>: Chocó, Antioquia.</li>
+  <li><strong>Frente Oriental</strong>: Arauca, Casanare.</li>
+  <li><strong>Frente Suroccidental</strong>: Nariño, Cauca.</li>
+</ul>
+
+<p>
+  El proceso de diálogo con el Gobierno Petro arrancó en noviembre de 2022 pero ha
+  sido intermitente: ceses al fuego firmados, vencidos, renovados parcialmente. La
+  estructura federada complica que un acuerdo nacional sea respetado por todos los
+  frentes.
+</p>
+
+<h2>El Clan del Golfo: el grupo más numeroso hoy</h2>
+
+<p>
+  Aunque históricamente la atención se concentró en las guerrillas, hoy
+  <strong>el grupo armado más grande de Colombia es el Clan del Golfo</strong> (o
+  Autodefensas Gaitanistas de Colombia, AGC). Sus ~9.840 integrantes lo hacen más
+  numeroso que el ELN y todas las disidencias juntas.
+</p>
+
+<p>
+  El Clan emergió a finales de los 2000 de la desmovilización fallida de las AUC.
+  Mientras la mayor parte de los paramilitares se acogió al proceso de Justicia y
+  Paz (Ley 975 de 2005), las estructuras del bajo Cauca antioqueño y el Urabá no
+  entregaron del todo sus armas. Bajo el liderazgo de los hermanos Úsuga y luego
+  de "Otoniel" (capturado en 2021), el grupo creció hasta hacerse el actor
+  hegemónico del narcotráfico colombiano.
+</p>
+
+<Callout type="key" title="¿Es 'guerrilla' o 'paramilitar' o 'crimen organizado'?">
+  La distinción es difícil. El Clan del Golfo:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li>Tiene <strong>estructura militar</strong> (jerarquía, frentes, capacidad combativa).</li>
+    <li>Tiene <strong>discurso político</strong> propio (los AGC se autodefinen como herederos de las AUC).</li>
+    <li>Su <strong>fuente de ingreso principal</strong> es el narcotráfico y la extorsión, no la subversión política.</li>
+  </ul>
+  Por eso el Gobierno los califica como <strong>GAO (Grupo Armado Organizado)</strong>:
+  una categoría jurídica que reconoce la estructura militar sin equipararlos a
+  guerrillas. La Paz Total busca un proceso de "sometimiento a la justicia" distinto
+  del proceso de "diálogo político" con las guerrillas.
+</Callout>
+
+<h2>Por qué crecen en el posconflicto</h2>
+
+<p>
+  El crecimiento del 23,5% en 2025 — más de 5.000 integrantes adicionales en un
+  solo año — tiene varias explicaciones que se entrelazan:
+</p>
+
+<ol>
+  <li>
+    <strong>Las economías ilegales se expandieron</strong>. Las hectáreas de coca
+    crecieron de 204 mil en 2021 a 262 mil en 2024 (capítulo 5). La minería ilegal
+    de oro creció (capítulo 6). Más renta criminal significa más capacidad de
+    reclutamiento.
+  </li>
+  <li>
+    <strong>La implementación rural del Acuerdo de 2016 quedó incompleta</strong>.
+    El Estado no logró ocupar territorialmente las zonas que las FARC dejaron, y
+    otros grupos llenaron el vacío. Esto está documentado tanto por el CNMH como
+    por la propia Misión de la ONU.
+  </li>
+  <li>
+    <strong>El proceso de diálogo de la Paz Total avanzó lento</strong>. Ceses al
+    fuego firmados en 2023-24 permitieron a los grupos consolidar territorios sin
+    necesidad de combatir, lo que en la práctica facilitó el reclutamiento.
+  </li>
+  <li>
+    <strong>La migración desde Venezuela y el deterioro económico rural</strong>
+    han incrementado la base potencial de reclutamiento, especialmente en zonas
+    fronterizas.
+  </li>
+</ol>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>En 2026 hay <strong>~27.000 integrantes</strong> en grupos armados ilegales: el conteo más alto desde el Acuerdo de Paz de 2016.</li>
+  <li><strong>Clan del Golfo</strong> (~9.840) es el grupo más numeroso, seguido del <strong>ELN</strong> (~6.810) y las cuatro disidencias FARC (~9.600 sumadas).</li>
+  <li>Las disidencias se han <strong>fragmentado en cuatro estructuras rivales</strong> (EMC, EMBF, CNEB, Segunda Marquetalia) con dinámicas distintas frente a la paz.</li>
+  <li>El crecimiento del 23,5% en 2025 refleja la expansión de las economías ilegales (coca, oro) y la implementación incompleta del Acuerdo de 2016.</li>
+  <li>El próximo capítulo retrocede 60 años para entender cómo se llegó aquí.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>Fundación Ideas para la Paz (FIP):</strong>
+    <a href="https://ideaspaz.org" target="_blank" rel="noopener">ideaspaz.org</a>
+    publica informes trimestrales y anuales con estimaciones de integrantes por
+    grupo y municipio.
+  </p>
+  <p class="mt-2">
+    <strong>Indepaz:</strong> <a href="https://indepaz.org.co" target="_blank" rel="noopener">indepaz.org.co</a>
+    actualiza periódicamente el mapa de grupos armados.
+  </p>
+  <p class="mt-2">
+    <strong>InSight Crime:</strong>
+    <a href="https://insightcrime.org" target="_blank" rel="noopener">insightcrime.org</a>
+    tiene perfiles detallados de cada estructura.
+  </p>
+  <p class="mt-2">
+    <strong>MinDefensa</strong> publica cifras oficiales de operaciones, pero rara
+    vez estimaciones de integrantes (por razones operacionales).
+  </p>
+</Callout>
+
+</Chapter>

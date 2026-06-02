@@ -1,0 +1,298 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import HectareasCoca from "../../../components/temas/conflicto-armado/charts/HectareasCoca.tsx";
+---
+
+<Chapter
+  number="05"
+  title="Narcotráfico: el motor del conflicto"
+  subtitle="Sin la coca, el conflicto colombiano sería otro. 262.000 hectáreas cultivadas en 2024. 2.664 toneladas de cocaína potenciales. Aquí entiendes cómo se llegó hasta acá y por qué nada lo detiene."
+  chapterNumber={5}
+  totalChapters={8}
+  prevHref="/temas/conflicto-armado/04-geografia"
+  prevTitle="Geografía del conflicto"
+  nextHref="/temas/conflicto-armado/06-otras-economias-ilegales"
+  nextTitle="Otras economías ilegales"
+  accentColor="rose"
+>
+
+<h2>La pregunta más incómoda del conflicto</h2>
+
+<p>
+  ¿Por qué después de cuatro décadas de "guerra contra las drogas", miles de
+  millones de dólares invertidos, fumigaciones masivas, capturas históricas y
+  procesos de paz, <strong>Colombia produce más cocaína que nunca</strong>?
+</p>
+
+<p>
+  La respuesta corta: porque la demanda mundial no ha bajado, los precios siguen
+  siendo altos en países consumidores y los actores que controlan el negocio se
+  reconfiguran más rápido de lo que las políticas pueden adaptarse. Pero esa
+  respuesta corta esconde una historia compleja.
+</p>
+
+<p>
+  Este capítulo es el más importante del tema. Sin entender el narcotráfico, el
+  resto del conflicto colombiano no se entiende.
+</p>
+
+<h2>La trayectoria histórica del cultivo de coca</h2>
+
+<HectareasCoca client:load />
+
+<h2>La curva tiene una historia política, no solo agraria</h2>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-rose-700">1999-2010 · Plan Colombia</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Iniciativa conjunta Colombia-Estados Unidos con financiación de USD ~10 mil
+      millones. Aspersión aérea con glifosato + erradicación manual forzada + apoyo
+      militar. Los cultivos pasaron de <strong>~163.000 ha en 2000 a ~62.000 ha en
+      2010</strong>. La política fue costosa, polémica (impacto ambiental y de salud)
+      pero produjo el descenso más sostenido de la serie.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-rose-700">2012-2014 · Mínimo histórico</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Por dos años consecutivos los cultivos rondaron las 48.000 hectáreas. El
+      gobierno Santos planteó que el "problema cocalero" estaba en vías de
+      resolverse. Las negociaciones de La Habana entraron al punto 4 del Acuerdo
+      Final: "Solución al problema de las drogas ilícitas".
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-rose-700">2015 · Suspensión del glifosato</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      La OMS clasificó el glifosato como "probable carcinógeno" en marzo de 2015.
+      El gobierno Santos suspendió la aspersión aérea. La aspersión terrestre y la
+      erradicación manual continuaron, pero a un ritmo mucho menor. Los cultivos
+      se dispararon: <strong>96.000 ha en 2015, 146.000 en 2016, 171.000 en 2017</strong>.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-rose-700">2016 · Acuerdo FARC y PNIS</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      El Acuerdo Final incluyó el Programa Nacional Integral de Sustitución de
+      Cultivos de Uso Ilícito (PNIS). Idea: cambiar coca por proyectos productivos
+      lícitos con apoyo estatal. <strong>~99.000 familias se inscribieron</strong>,
+      pero la implementación fue lenta. Mientras las familias esperaban
+      transferencias o asesoría, mantenían (o reactivaban) sus cultivos. Efecto
+      perverso: el anuncio del programa atrajo nuevos cultivadores.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-rose-700">2021-2024 · Récord histórico</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Crecimiento sostenido: <strong>204.000 ha (2021) → 230.000 (2022) → 253.000
+      (2023) → 262.000 (2024)</strong>. La capacidad potencial de producción pasó
+      de 1.738 toneladas (2022) a 2.664 toneladas (2023): un salto del 53% en un
+      año, explicado por mayor productividad por hectárea, no solo por más área.
+    </p>
+  </div>
+</div>
+
+<h2>De la hoja al clorhidrato: cómo funciona la cadena</h2>
+
+<p>
+  El proceso productivo tiene varias etapas y actores:
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">1 · Cultivo</div>
+    <h3 class="mt-2 text-base font-bold text-neutral-900">Campesinos cocaleros</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Decenas de miles de familias rurales cultivan coca en zonas remotas. La
+      mayoría no son criminales: son agricultores que producen una planta
+      cuya hoja, transformada, alimenta el negocio. Ganan poco — varios miles
+      de pesos por kilo de hoja — pero más que con cualquier alternativa lícita
+      a su alcance.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">2 · Procesamiento</div>
+    <h3 class="mt-2 text-base font-bold text-neutral-900">Laboratorios (cocinas)</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      La hoja se transforma en <strong>pasta básica</strong>, luego en
+      <strong>base de cocaína</strong> y finalmente en <strong>clorhidrato de
+      cocaína</strong>. Los laboratorios suelen ser rurales, controlados por
+      grupos armados. Requieren precursores químicos (gasolina, cemento, ácido
+      sulfúrico, amoniaco, permanganato de potasio).
+    </p>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">3 · Tráfico</div>
+    <h3 class="mt-2 text-base font-bold text-neutral-900">Rutas y carteles</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      El clorhidrato se transporta a costas (Pacífico y Caribe) y de ahí sale por
+      semisumergibles, lanchas rápidas o buques. Centroamérica y México son
+      jurisdicciones intermedias antes de llegar a Estados Unidos o Europa. Aquí
+      operan los carteles mexicanos (Sinaloa, Cártel Jalisco Nueva Generación) en
+      coordinación con grupos colombianos.
+    </p>
+  </div>
+</div>
+
+<h2>El precio multiplicador: por qué la cocaína es tan rentable</h2>
+
+<p>
+  El margen de la cadena es brutal:
+</p>
+
+<div class="my-6 rounded-2xl border border-amber-300 bg-amber-50/50 p-5">
+  <h3 class="text-lg font-bold text-amber-900">El kilo de cocaína por país</h3>
+  <ul class="mt-3 space-y-2 text-sm text-amber-900/80">
+    <li>Productor (Colombia, en la cocina): <strong>USD ~1.500-2.000 / kg</strong></li>
+    <li>Tránsito (Centroamérica/México): <strong>USD ~10.000-15.000 / kg</strong></li>
+    <li>Frontera EEUU (mayorista): <strong>USD ~25.000-30.000 / kg</strong></li>
+    <li>Ciudad EEUU (mayorista): <strong>USD ~35.000-40.000 / kg</strong></li>
+    <li>Calle (consumo final, dosificado): equivalente a <strong>USD ~100.000-200.000 / kg</strong></li>
+  </ul>
+  <p class="mt-3 text-xs text-amber-700">
+    Fuentes: UNODC, DEA, monitoreo de mercados. Precios varían según calidad y
+    riesgo del corredor.
+  </p>
+</div>
+
+<p>
+  Es decir: <strong>el kilo que el campesino vende por USD 1.500 termina valiendo
+  USD 100.000 en Nueva York o Londres</strong>. Ese diferencial es lo que
+  financia toda la cadena: los grupos armados que controlan rutas, los químicos,
+  el transporte, el sicariato y la corrupción. La hoja en el campo es solo el 1-2%
+  del valor final.
+</p>
+
+<h2>Quién controla qué eslabón hoy</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-lg border border-violet-200 bg-violet-50/30 p-4">
+    <div class="font-bold text-violet-900">Cultivo y procesamiento inicial</div>
+    <p class="text-sm text-violet-900/80 mt-1">
+      Disidencias FARC (EMC, EMBF, CNEB) en sur del país. ELN en Catatumbo y
+      Pacífico. Clan del Golfo (AGC) en Urabá y Bajo Cauca.
+    </p>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/30 p-4">
+    <div class="font-bold text-amber-900">Laboratorios industriales</div>
+    <p class="text-sm text-amber-900/80 mt-1">
+      Cooperación entre grupos colombianos y carteles internacionales. Los
+      mexicanos aportan recursos químicos y financiación, los colombianos la
+      operación territorial.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/30 p-4">
+    <div class="font-bold text-rose-900">Salida marítima</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Clan del Golfo en Caribe (Urabá → Centroamérica). Grupos del Pacífico
+      (AGC, ELN, disidencias) por Tumaco y Buenaventura.
+    </p>
+  </div>
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/30 p-4">
+    <div class="font-bold text-emerald-900">Tránsito internacional</div>
+    <p class="text-sm text-emerald-900/80 mt-1">
+      Cárteles mexicanos (Sinaloa, CJNG), redes balcánicas en Europa, organizaciones
+      brasileñas (PCC, CV) en el sur. Cooperación logística, no jerarquía colombiana.
+    </p>
+  </div>
+</div>
+
+<h2>¿Cuánta plata gira en el negocio?</h2>
+
+<p>
+  Las estimaciones varían. Por orden de magnitud, el <strong>valor de exportación
+  desde Colombia</strong> (clorhidrato a precio mayorista en frontera) ronda los
+  <strong>USD 18-25 mil millones al año</strong> según UNODC y estimaciones
+  académicas. De ese valor:
+</p>
+
+<ul>
+  <li>Una pequeña fracción queda en manos de los <strong>cultivadores y procesadores locales</strong> (USD ~1.500-2.000 millones al año combinados).</li>
+  <li>Una fracción mayor queda con los <strong>grupos armados</strong> que controlan rutas (varios miles de millones).</li>
+  <li>La mayor parte de las ganancias se queda en países de tránsito y consumo (México, EEUU, Europa).</li>
+</ul>
+
+<p>
+  Es decir: <strong>Colombia produce, sufre las violencias asociadas y captura
+  una fracción menor del valor económico</strong>. El resto del beneficio se
+  queda fuera.
+</p>
+
+<h2>Cuánto se incauta vs cuánto se produce</h2>
+
+<p>
+  Las incautaciones de la Fuerza Pública colombiana son históricamente altas:
+  <strong>~700-800 toneladas anuales</strong> de cocaína en años recientes. Pero
+  si la producción potencial alcanzó <strong>2.664 toneladas en 2023</strong>,
+  significa que <strong>el 70-75% de lo producido sale del país</strong>. Las
+  incautaciones marcan máximos históricos al mismo tiempo que los cultivos.
+</p>
+
+<Callout type="warning" title="¿Por qué la guerra contra las drogas no ha funcionado?">
+  Es una pregunta sin respuesta consensual. Las hipótesis predominantes:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Demanda inelástica</strong>: la demanda global de cocaína no cae cuando suben los precios o se cortan rutas. Se adapta.</li>
+    <li><strong>Sustitución geográfica</strong>: cuando se destruyen cultivos en una región, surgen en otra (efecto globo).</li>
+    <li><strong>Adaptación criminal</strong>: cuando cae un grupo, otro lo reemplaza en semanas. La cadena tiene muchos eslabones reemplazables.</li>
+    <li><strong>Falta de alternativa rural</strong>: en muchas zonas cocaleras, la coca es la única siembra rentable dada la falta de infraestructura, mercados y vías.</li>
+    <li><strong>Corrupción en cadena</strong>: la enorme renta del negocio compra cooperación a todos los niveles institucionales.</li>
+  </ul>
+</Callout>
+
+<h2>La política de drogas hoy: posibles caminos</h2>
+
+<p>
+  La discusión global de política de drogas se ha movido en años recientes. El
+  Gobierno Petro ha planteado en foros internacionales:
+</p>
+
+<ul>
+  <li>El <strong>fracaso de la "guerra contra las drogas"</strong> como paradigma.</li>
+  <li>Énfasis en <strong>desarrollo rural alternativo</strong> en zonas cocaleras (caminos, mercados, asistencia técnica) más que en erradicación coercitiva.</li>
+  <li>Diferenciación entre <strong>cultivadores</strong> (a tratar como ciudadanos rurales con derechos) y <strong>grandes traficantes</strong> (a perseguir penalmente).</li>
+  <li>Debate internacional sobre <strong>regulación de mercados</strong> (similar a lo que se ha hecho con el cannabis en algunos países).</li>
+</ul>
+
+<p>
+  El debate sigue abierto. Lo concreto: <strong>mientras siga la demanda
+  internacional, los altos precios y la fragmentación geográfica de la oferta,
+  el conflicto armado colombiano tendrá combustible</strong>.
+</p>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>Los cultivos de coca pasaron de un mínimo de <strong>48.000 ha (2013) a un máximo de 262.000 ha (2024)</strong>: el mayor registro de la serie SIMCI.</li>
+  <li>El cambio se explica por la <strong>suspensión del glifosato (2015)</strong>, el <strong>PNIS (2017) con implementación lenta</strong> y la expansión de los grupos armados.</li>
+  <li>La <strong>capacidad potencial de producción</strong> de cocaína alcanzó <strong>2.664 toneladas en 2023</strong> (+53% YoY).</li>
+  <li>El <strong>valor económico</strong> de la cocaína se multiplica ~50× entre el campesino y el consumidor final. Colombia captura una fracción menor.</li>
+  <li>Las incautaciones (~700-800 ton/año) son alta pero solo el 25-30% de la producción potencial.</li>
+  <li>Mientras siga la demanda global, los altos precios y la fragmentación geográfica, el conflicto seguirá teniendo combustible.</li>
+  <li>El próximo capítulo cubre las otras economías ilegales — incluyendo el oro, que en algunos cálculos ya supera a la cocaína.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>UNODC SIMCI:</strong>
+    <a href="https://www.unodc.org/colombia/es/simci/simci.html" target="_blank" rel="noopener">unodc.org/colombia/es/simci/simci.html</a>
+    publica el censo anual de cultivos. El informe completo se baja como PDF cada año (octubre).
+  </p>
+  <p class="mt-2">
+    <strong>Portal Biesimci:</strong>
+    <a href="https://biesimci.org" target="_blank" rel="noopener">biesimci.org</a>
+    permite explorar los datos georreferenciados por municipio.
+  </p>
+  <p class="mt-2">
+    <strong>UNODC Global:</strong>
+    <a href="https://www.unodc.org/unodc/es/crop-monitoring/index.html" target="_blank" rel="noopener">unodc.org/unodc/es/crop-monitoring</a>
+    monitoreo global de cultivos ilícitos (Colombia, Perú, Bolivia).
+  </p>
+  <p class="mt-2">
+    <strong>Ministerio de Justicia y del Derecho:</strong> publica resúmenes ejecutivos
+    y notas técnicas sobre el censo SIMCI.
+  </p>
+</Callout>
+
+</Chapter>

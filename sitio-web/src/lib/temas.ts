@@ -236,6 +236,82 @@ export const TEMAS: Tema[] = [
       },
     ],
   },
+  {
+    slug: "conflicto-armado",
+    nombre: "Conflicto armado colombiano",
+    tagline: "Quiénes son los grupos, cómo se financian, cuánto ha costado, cómo se ha intentado parar",
+    descripcion:
+      "Recorrido en 8 capítulos por el conflicto armado interno: qué grupos siguen activos en 2026, cómo se llegó aquí en 6 décadas, cómo se cuentan combatientes y víctimas, dónde operan en el territorio, cómo el narcotráfico se volvió el motor del conflicto, otras economías ilegales, el costo humano (más de 9 millones de víctimas registradas) y los procesos de paz desde el M-19 hasta hoy. Fuentes: CNMH, JEP, Comisión de la Verdad, RUV, FIP, Indepaz, UNODC, MinDefensa, ARN.",
+    icono: "🕊️",
+    color: "slate",
+    available: true,
+    capitulos: [
+      {
+        numero: 1,
+        slug: "01-quienes-son-hoy",
+        titulo: "Quiénes son hoy",
+        descripcion:
+          "Mapa actual de los grupos activos en 2026: disidencias FARC, ELN, AGC/Clan del Golfo y crimen organizado. ~27.000 integrantes y creciendo.",
+        accentColor: "slate",
+      },
+      {
+        numero: 2,
+        slug: "02-historia",
+        titulo: "Historia: 6 décadas de conflicto",
+        descripcion:
+          "De la Violencia bipartidista a las guerrillas, de los carteles al paramilitarismo, del Acuerdo de 2016 al posconflicto.",
+        accentColor: "amber",
+      },
+      {
+        numero: 3,
+        slug: "03-como-se-cuentan",
+        titulo: "Cómo se cuentan",
+        descripcion:
+          "Metodologías para contar combatientes (inteligencia militar) y víctimas (RUV, CNMH). Por qué las cifras varían entre fuentes.",
+        accentColor: "cyan",
+      },
+      {
+        numero: 4,
+        slug: "04-geografia",
+        titulo: "Geografía del conflicto",
+        descripcion:
+          "Departamentos más afectados, corredores estratégicos (Pacífico, Catatumbo, Cauca, Chocó) y mapa de Alertas Tempranas.",
+        accentColor: "emerald",
+      },
+      {
+        numero: 5,
+        slug: "05-narcotrafico",
+        titulo: "Narcotráfico: el motor del conflicto",
+        descripcion:
+          "Coca, cocaína, carteles y guerrillas. 262.000 hectáreas cultivadas en 2024, 2.664 toneladas de cocaína potenciales, y por qué cada esfuerzo por reducirlo ha fallado.",
+        accentColor: "rose",
+      },
+      {
+        numero: 6,
+        slug: "06-otras-economias-ilegales",
+        titulo: "Otras economías ilegales",
+        descripcion:
+          "Minería ilegal de oro, extorsión, secuestro y contrabando. El oro hoy financia más que la cocaína.",
+        accentColor: "violet",
+      },
+      {
+        numero: 7,
+        slug: "07-costo-humano",
+        titulo: "El costo humano",
+        descripcion:
+          "Más de 9 millones de víctimas registradas. Series históricas de masacres, desplazamiento, secuestros y desaparición forzada.",
+        accentColor: "rose",
+      },
+      {
+        numero: 8,
+        slug: "08-procesos-de-paz",
+        titulo: "Procesos de paz y reincorporación",
+        descripcion:
+          "M-19 (1990), AUC (Justicia y Paz, 2005), FARC (2016), diálogos con ELN. 14.107 firmantes del Acuerdo Final, JEP y ARN.",
+        accentColor: "indigo",
+      },
+    ],
+  },
 ];
 
 export function getTema(slug: string): Tema | undefined {

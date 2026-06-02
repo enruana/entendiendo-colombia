@@ -1,0 +1,158 @@
+---
+import Base from "../../../layouts/Base.astro";
+import StatCard from "../../../components/ui/StatCard.astro";
+import ChapterCard from "../../../components/ui/ChapterCard.astro";
+import { getTema, getCapituloHref } from "../../../lib/temas";
+
+const tema = getTema("conflicto-armado")!;
+
+const iconos: Record<string, string> = {
+  "01-quienes-son-hoy": "👥",
+  "02-historia": "📜",
+  "03-como-se-cuentan": "🔢",
+  "04-geografia": "🗺️",
+  "05-narcotrafico": "🌿",
+  "06-otras-economias-ilegales": "⛏️",
+  "07-costo-humano": "🕯️",
+  "08-procesos-de-paz": "🕊️",
+};
+
+const builtSlugs = new Set<string>([
+  "01-quienes-son-hoy",
+  "02-historia",
+  "03-como-se-cuentan",
+  "04-geografia",
+  "05-narcotrafico",
+  "06-otras-economias-ilegales",
+  "07-costo-humano",
+  "08-procesos-de-paz",
+]);
+
+const chapters = tema.capitulos.map((c) => ({
+  number: String(c.numero).padStart(2, "0"),
+  title: c.titulo,
+  description: c.descripcion,
+  href: getCapituloHref(tema.slug, c.slug),
+  icon: iconos[c.slug] ?? "📄",
+  color: c.accentColor,
+  available: builtSlugs.has(c.slug),
+}));
+---
+
+<Base title="Conflicto armado colombiano">
+  <section class="relative overflow-hidden mesh-gradient-hero">
+    <div class="relative mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-28 md:pb-32">
+      <div class="flex justify-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white/80 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-medium text-slate-700 shadow-sm backdrop-blur text-center">
+          <span class="flex h-1.5 w-1.5 rounded-full bg-slate-500 flex-shrink-0"></span>
+          Tema 04 · Conflicto armado colombiano
+        </div>
+      </div>
+
+      <h1 class="mt-6 sm:mt-8 text-center text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] text-neutral-900">
+        Seis décadas<br />
+        <span class="gradient-text">de conflicto</span>
+      </h1>
+
+      <p class="mx-auto mt-5 sm:mt-6 max-w-2xl text-center text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-2">
+        Quiénes son los grupos armados, cómo se financian, cuánto ha costado el
+        conflicto, cómo se ha intentado parar. Sin tomar partido. Con cifras oficiales
+        y caveats metodológicos explícitos.
+      </p>
+
+      <div class="mt-8 sm:mt-10 flex justify-center px-4 sm:px-0">
+        <a href="#capitulos" class="btn-primary justify-center">
+          Ver los capítulos
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        <StatCard value="~27.000" label="Integrantes grupos armados" sublabel="FIP enero 2026 (+23,5% vs 2024)" accent="slate" />
+        <StatCard value="9,3 M" label="Víctimas registradas RUV" sublabel="Unidad para las Víctimas" accent="rose" />
+        <StatCard value="262.000 ha" label="Coca cultivada 2024" sublabel="UNODC SIMCI" accent="emerald" />
+        <StatCard value="14.107" label="Firmantes Acuerdo Final FARC" sublabel="85% sigue en reincorporación" accent="indigo" />
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+  </section>
+
+  <section class="relative mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+    <div class="text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        Cómo abordamos el tema
+      </div>
+      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+        Tres principios editoriales
+      </h2>
+    </div>
+
+    <div class="mt-10 sm:mt-12 grid md:grid-cols-3 gap-4 sm:gap-5">
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6">
+        <div class="text-xs font-bold uppercase tracking-wider text-slate-700">1 · Hechos verificados</div>
+        <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+          Cada cifra contra fuente primaria oficial. Sin opiniones políticas. Sin
+          narrativa de un solo bando.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6">
+        <div class="text-xs font-bold uppercase tracking-wider text-amber-700">2 · Caveats explícitos</div>
+        <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+          Cada cifra de víctimas tiene rango por subregistro. Cada conteo de combatientes
+          es estimación. Lo decimos.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6">
+        <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">3 · Términos respetuosos</div>
+        <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+          "Víctimas", "integrantes", "operaciones". No glorificamos ni demonizamos a
+          ningún actor. Los datos hablan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="capitulos" class="relative bg-neutral-50 border-y border-neutral-200">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+      <div class="text-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          El recorrido
+        </div>
+        <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+          {chapters.length} capítulos
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+          Empieza por el panorama actual (cap 1), retrocede a entender cómo se llegó
+          aquí (cap 2), y avanza por las dimensiones del conflicto.
+        </p>
+      </div>
+
+      <div class="mt-10 sm:mt-12 md:mt-14 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {chapters.map((ch) => <ChapterCard {...ch} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+    <div class="rounded-2xl border border-slate-300 bg-slate-50/60 p-6 sm:p-8">
+      <h3 class="text-xl sm:text-2xl font-bold text-neutral-900">Fuentes oficiales que usamos</h3>
+      <p class="mt-3 text-sm sm:text-base text-neutral-700 leading-relaxed">
+        Todo se verifica contra la fuente primaria. Las principales:
+      </p>
+      <ul class="mt-4 grid sm:grid-cols-2 gap-3 text-sm text-neutral-700">
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>CNMH</strong> — Centro Nacional de Memoria Histórica, Observatorio de Memoria y Conflicto</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>JEP</strong> — Jurisdicción Especial para la Paz</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>Comisión de la Verdad</strong> — Informe Final 2022</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>RUV</strong> — Registro Único de Víctimas (Unidad para las Víctimas)</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>FIP</strong> — Fundación Ideas para la Paz</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>Indepaz</strong> — Instituto de Estudios para el Desarrollo y la Paz</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>UNODC SIMCI</strong> — Monitoreo cultivos ilícitos</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>MinDefensa / Policía</strong> — Operaciones y cifras de seguridad</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>Defensoría del Pueblo</strong> — Sistema de Alertas Tempranas (SAT)</li>
+        <li class="flex gap-2"><span class="text-slate-700 font-bold">▸</span> <strong>ARN</strong> — Agencia para la Reincorporación y la Normalización</li>
+      </ul>
+    </div>
+  </section>
+</Base>

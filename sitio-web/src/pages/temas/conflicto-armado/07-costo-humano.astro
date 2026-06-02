@@ -1,0 +1,258 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import MasacresHistorico from "../../../components/temas/conflicto-armado/charts/MasacresHistorico.tsx";
+---
+
+<Chapter
+  number="07"
+  title="El costo humano"
+  subtitle="Más de 9 millones de víctimas registradas. Es uno de los conflictos armados más prolongados y costosos en términos humanos del mundo contemporáneo. Aquí las cifras, con sus limitaciones."
+  chapterNumber={7}
+  totalChapters={8}
+  prevHref="/temas/conflicto-armado/06-otras-economias-ilegales"
+  prevTitle="Otras economías ilegales"
+  nextHref="/temas/conflicto-armado/08-procesos-de-paz"
+  nextTitle="Procesos de paz y reincorporación"
+  accentColor="rose"
+>
+
+<h2>Lo que no se puede medir bien, pero hay que medir</h2>
+
+<p>
+  El conflicto armado colombiano ha dejado, en cifras registradas: más de 9
+  millones de víctimas, cientos de miles de muertos, millones de desplazados,
+  decenas de miles de desaparecidos y miles de secuestrados. Cada número
+  representa familias rotas, comunidades destruidas, futuros truncados.
+</p>
+
+<p>
+  Este capítulo es el más difícil del tema. Las cifras son inadecuadas para
+  capturar el dolor. Pero también son la única forma de tomar conciencia de la
+  escala. Lo que sigue es lo que hay registrado, con los caveats del capítulo 3.
+</p>
+
+<h2>El RUV: el universo oficial de víctimas (1985+)</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-rose-300 bg-rose-50/50 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Víctimas RUV</div>
+    <div class="mt-2 text-4xl font-extrabold text-rose-900 font-mono">9,328,499</div>
+    <p class="mt-2 text-sm text-rose-900/80 leading-relaxed">
+      Personas inscritas en el Registro Único de Víctimas (corte 2022). Equivale a
+      aproximadamente <strong>1 de cada 6 colombianos</strong>. La cifra incluye
+      hechos ocurridos desde 1985, según la Ley 1448 de 2011.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-300 bg-amber-50/50 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Sujetos de atención</div>
+    <div class="mt-2 text-4xl font-extrabold text-amber-900 font-mono">7,410,663</div>
+    <p class="mt-2 text-sm text-amber-900/80 leading-relaxed">
+      Subconjunto de víctimas que cumplen los requisitos para acceder a las
+      medidas de reparación previstas en la ley: indemnización, atención
+      psicosocial, restitución, garantías de no repetición.
+    </p>
+  </div>
+</div>
+
+<h2>La distribución por tipo de hecho victimizante</h2>
+
+<p>
+  Una sola persona puede aparecer por varios hechos. Por eso la suma de los
+  hechos victimizantes supera el número de víctimas únicas:
+</p>
+
+<div class="my-6 space-y-2">
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-center gap-3">
+    <div class="font-mono text-xs font-bold text-rose-700 w-20 text-right flex-shrink-0">~8,5 M</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Desplazamiento forzado</strong>: el hecho más frecuente. Colombia es
+      uno de los países con mayor número de desplazados internos del mundo.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-center gap-3">
+    <div class="font-mono text-xs font-bold text-rose-700 w-20 text-right flex-shrink-0">~1,1 M</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Homicidio</strong>: víctimas de muerte por hechos del conflicto. Incluye familiares declarantes.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-center gap-3">
+    <div class="font-mono text-xs font-bold text-rose-700 w-20 text-right flex-shrink-0">~200 K</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Desaparición forzada</strong>: personas cuyo paradero no se conoce. La UBPD trabaja en su búsqueda.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-center gap-3">
+    <div class="font-mono text-xs font-bold text-rose-700 w-20 text-right flex-shrink-0">~40 K</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Secuestro</strong>: víctimas directas + familiares en el registro.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-center gap-3">
+    <div class="font-mono text-xs font-bold text-rose-700 w-20 text-right flex-shrink-0">~17 K</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Víctimas de minas antipersonal</strong> y otros artefactos explosivos.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-center gap-3">
+    <div class="font-mono text-xs font-bold text-rose-700 w-20 text-right flex-shrink-0">~30 K</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Niños y niñas reclutados</strong>: usados por grupos armados como combatientes, mensajeros, sicarios o víctimas sexuales.
+    </div>
+  </div>
+  <div class="rounded-lg border border-neutral-200 bg-white p-3 flex items-center gap-3">
+    <div class="font-mono text-xs font-bold text-rose-700 w-20 text-right flex-shrink-0">~50 K</div>
+    <div class="text-sm text-neutral-700">
+      <strong>Violencia sexual</strong>: delitos contra la libertad y la integridad sexual reportados. Severo subregistro.
+    </div>
+  </div>
+</div>
+
+<Callout type="info" title="Las cifras del RUV no son exactas, pero son las oficiales">
+  Los números arriba son aproximados y se actualizan continuamente. El RUV se
+  actualiza mensualmente y los conteos por hecho cambian. Para cifras exactas a
+  una fecha, consultar la página de Unidad para las Víctimas.
+</Callout>
+
+<h2>La estimación corregida: 450.664 víctimas mortales</h2>
+
+<p>
+  En 2022, la <strong>JEP, la Comisión de la Verdad y el HRDAG (Human Rights
+  Data Analysis Group)</strong> publicaron una estimación estadística que
+  consolida varias bases (CNMH, RUV, ONGs, instituciones forenses) y corrige por
+  subregistro mediante la metodología de captura-recaptura.
+</p>
+
+<p>
+  El resultado:
+</p>
+
+<div class="my-6 rounded-2xl border border-slate-300 bg-slate-100/50 p-5 text-center">
+  <div class="text-xs font-bold uppercase tracking-wider text-slate-700">Víctimas mortales 1985-2018 (estimación)</div>
+  <div class="mt-2 text-5xl font-extrabold text-slate-900 font-mono">~450,664</div>
+  <p class="mt-3 text-sm text-slate-700">
+    Con intervalo de confianza estadístico. Incluye víctimas civiles y combatientes
+    según definiciones técnicas del análisis.
+  </p>
+</div>
+
+<h2>Masacres: el patrón colectivo de la violencia</h2>
+
+<p>
+  Las masacres — homicidios simultáneos de 3 o más personas — son una modalidad
+  particularmente brutal del conflicto, históricamente asociada a los paramilitares
+  pero usada también por guerrillas y, hoy, por grupos diversos.
+</p>
+
+<MasacresHistorico client:load />
+
+<h3>El período más violento: 1996-2005</h3>
+
+<p>
+  El CNMH ha documentado que <strong>el período 1996-2005 concentra la mayor
+  parte de las masacres del conflicto</strong>. Las AUC, las guerrillas (FARC y
+  ELN) y la Fuerza Pública (en algunos casos en complicidad) fueron responsables
+  de miles de masacres en esa década.
+</p>
+
+<p>
+  La masacre de <strong>El Salado</strong> (Bolívar, 2000), <strong>Bojayá</strong>
+  (Chocó, 2002), <strong>Mapiripán</strong> (Meta, 1997), <strong>El Aro</strong>
+  (Antioquia, 1997) son emblemáticas, pero hay miles más documentadas.
+</p>
+
+<h2>Líderes sociales: el blanco persistente</h2>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Líderes sociales asesinados 2016-2025</div>
+    <div class="mt-2 text-3xl font-extrabold text-rose-900 font-mono">~1.500+</div>
+    <div class="mt-1 text-xs text-rose-700">Indepaz acumulado</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Excombatientes FARC asesinados</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">~470+</div>
+    <div class="mt-1 text-xs text-amber-700">Desde el Acuerdo</div>
+  </div>
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Defensores DD.HH. asesinados</div>
+    <div class="mt-2 text-3xl font-extrabold text-violet-900 font-mono">~200+</div>
+    <div class="mt-1 text-xs text-violet-700">Anualizado en posconflicto</div>
+  </div>
+</div>
+
+<p>
+  Desde la firma del Acuerdo Final en 2016, Colombia se ha convertido en uno de
+  los países más peligrosos del mundo para los líderes sociales y defensores de
+  derechos humanos. <strong>Cada semana son asesinados varios líderes en
+  promedio</strong>. Los responsables incluyen disidencias, AGC, ELN y otros
+  grupos.
+</p>
+
+<h2>El desplazamiento forzado: la mayor cifra "silenciosa"</h2>
+
+<p>
+  El <strong>desplazamiento forzado interno</strong> es la victimización más
+  masiva del conflicto. Colombia ha tenido, en distintos momentos del siglo XXI,
+  el mayor número de desplazados internos del mundo. La cifra acumulada en el RUV
+  es de aproximadamente <strong>8,5 millones de personas</strong>.
+</p>
+
+<p>
+  El desplazamiento puede ser:
+</p>
+
+<ul>
+  <li><strong>Masivo</strong>: cuando una comunidad entera huye al mismo tiempo, por amenaza o por enfrentamientos.</li>
+  <li><strong>Gota a gota</strong>: familias que se van una a una por amenazas individuales.</li>
+  <li><strong>Confinamiento</strong>: comunidades atrapadas en su territorio sin posibilidad de salir ni de recibir ayuda. Particularmente frecuente en Chocó hoy.</li>
+</ul>
+
+<h2>Las víctimas que no aparecen en las cifras</h2>
+
+<Callout type="warning" title="Lo que el RUV no captura plenamente">
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>Víctimas pre-1985</strong>: el universo de La Violencia (200-300 mil muertos) no está en el RUV.</li>
+    <li><strong>Víctimas por minería ilegal y mercurio</strong>: las comunidades intoxicadas suelen no ser registradas como víctimas del conflicto.</li>
+    <li><strong>Víctimas indirectas</strong>: personas que perdieron oportunidades educativas y laborales por crecer en zonas en conflicto.</li>
+    <li><strong>Víctimas urbanas del desplazamiento</strong>: el subempleo y la pobreza urbana derivada del desplazamiento rural.</li>
+    <li><strong>Violencia sexual</strong>: severamente subregistrada por estigma y miedo.</li>
+  </ul>
+</Callout>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>El RUV registra <strong>9,3 millones de víctimas</strong> (1985+) — aproximadamente 1 de cada 6 colombianos.</li>
+  <li>La estimación corregida JEP/CEV/HRDAG calcula <strong>~450.664 víctimas mortales</strong> entre 1985 y 2018.</li>
+  <li>El <strong>desplazamiento forzado</strong> (~8,5 M) es el hecho más masivo; <strong>homicidio</strong> (~1,1 M de personas registradas, contando familiares), <strong>desaparición</strong> (~200 K) y <strong>secuestro</strong> (~40 K registrados, ~39 K documentados por separado) le siguen en gravedad.</li>
+  <li>Las <strong>masacres</strong> han descendido de >300 víctimas/año (2020) a ~256 (2025), pero el inicio de 2026 sugiere repunte.</li>
+  <li>Los <strong>líderes sociales</strong> son blanco persistente del posconflicto: más de 1.500 asesinados desde 2016.</li>
+  <li>Las cifras siempre subestiman: hay víctimas que no se registran por miedo, distancia o desconocimiento.</li>
+  <li>El último capítulo aborda los intentos de detener todo esto: los procesos de paz.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>RUV — Unidad para las Víctimas:</strong>
+    <a href="https://www.unidadvictimas.gov.co" target="_blank" rel="noopener">unidadvictimas.gov.co</a>
+    publica reportes mensuales por hecho victimizante, departamento y municipio.
+  </p>
+  <p class="mt-2">
+    <strong>Indepaz — Observatorio:</strong>
+    <a href="https://indepaz.org.co" target="_blank" rel="noopener">indepaz.org.co</a>
+    actualiza listas detalladas de líderes sociales asesinados y masacres.
+  </p>
+  <p class="mt-2">
+    <strong>CNMH:</strong>
+    <a href="https://centrodememoriahistorica.gov.co" target="_blank" rel="noopener">centrodememoriahistorica.gov.co</a>
+    publica los informes regionales y temáticos más completos.
+  </p>
+  <p class="mt-2">
+    <strong>Comisión de la Verdad:</strong>
+    <a href="https://www.comisiondelaverdad.co" target="_blank" rel="noopener">comisiondelaverdad.co</a>
+    publicó el Informe Final 2022 con las estimaciones estadísticas más rigurosas.
+  </p>
+</Callout>
+
+</Chapter>
