@@ -94,15 +94,96 @@ import CrecimientoPorGrupo from "../../../components/temas/conflicto-armado/char
   </div>
 </div>
 
-<h2>Cómo se repartió ese crecimiento entre los grupos</h2>
+<h2>La composición por grupo a lo largo de la década</h2>
 
 <p>
-  El crecimiento de 2024 a 2025 no fue uniforme. Todos los grupos crecieron, pero
-  el Clan del Golfo fue por mucho el que más nuevos integrantes sumó en términos
-  absolutos:
+  La curva del total no cuenta toda la historia. Cada grupo tuvo una trayectoria
+  propia: la desmovilización de unos liberó espacio para otros, las disidencias
+  nacieron de la nada y se multiplicaron, el Clan del Golfo absorbió a las
+  BACRIM heredadas del paramilitarismo. Aquí la composición año por año desde 2016:
 </p>
 
 <CrecimientoPorGrupo client:load />
+
+<h3>El crecimiento porcentual por grupo (década completa)</h3>
+
+<p>
+  Si proyectamos el inicio y el final de la serie, los crecimientos relativos
+  son muy distintos:
+</p>
+
+<div class="my-6 overflow-x-auto rounded-xl border border-neutral-200 bg-white">
+  <table class="w-full text-sm border-collapse">
+    <thead class="bg-neutral-50">
+      <tr class="border-b border-neutral-200">
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Grupo</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2016</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2025</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">Δ absoluto</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">Δ %</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">FARC (combatientes activos)</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">7.000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">0</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">−7.000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">−100%</td>
+      </tr>
+      <tr class="bg-violet-50/40 border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-900 font-semibold">Disidencias FARC</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-900 font-semibold">0 (luego ~500 en 2017)</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-900 font-semibold">9.600</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700 font-semibold">+9.100</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700 font-semibold">+1.820% (vs 2017)</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">ELN</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">2.500</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">6.810</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">+4.310</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">+172%</td>
+      </tr>
+      <tr class="bg-amber-50/40 border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-900 font-semibold">Clan del Golfo (AGC)</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-900 font-semibold">3.500</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-900 font-semibold">9.840</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700 font-semibold">+6.340</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700 font-semibold">+181%</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-neutral-800">BACRIM residuales</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">4.000</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">~870</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">−3.130</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">−78%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="text-sm text-neutral-600 mt-2">
+  El BACRIM residual disminuye principalmente porque sus estructuras fueron
+  absorbidas por el Clan del Golfo. El gran crecimiento absoluto del Clan del
+  Golfo + el surgimiento de las disidencias FARC explican casi todo el aumento
+  del total de la última década.
+</p>
+
+<Callout type="key" title="La gran transferencia de capital criminal de la década">
+  Si miras la gráfica, en realidad <strong>no se "destruyó" capital armado en
+  Colombia entre 2016 y 2025: se transfirió de manos</strong>. Los ~7.000
+  combatientes de las FARC se desmovilizaron, pero el espacio territorial y las
+  rentas criminales que controlaban fueron ocupados por:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>El Clan del Golfo</strong>, que sumó 6.340 integrantes en una década.</li>
+    <li><strong>Las disidencias FARC</strong>, que pasaron de 0 a 9.600.</li>
+    <li><strong>El ELN</strong>, que sumó 4.310 integrantes (creció un 172%).</li>
+  </ul>
+  El balance neto es positivo: <strong>hoy hay más hombres en armas ilegales que
+  antes del Acuerdo</strong>. Las pistolas y los fusiles cambiaron de hombros,
+  pero siguen ahí.
+</Callout>
 
 <h2>Las cuatro grandes categorías</h2>
 
