@@ -2,6 +2,8 @@
 import Chapter from "../../../layouts/Chapter.astro";
 import Callout from "../../../components/ui/Callout.astro";
 import GruposActivos2026 from "../../../components/temas/conflicto-armado/charts/GruposActivos2026.tsx";
+import EvolucionTotalGrupos from "../../../components/temas/conflicto-armado/charts/EvolucionTotalGrupos.tsx";
+import CrecimientoPorGrupo from "../../../components/temas/conflicto-armado/charts/CrecimientoPorGrupo.tsx";
 ---
 
 <Chapter
@@ -26,6 +28,37 @@ import GruposActivos2026 from "../../../components/temas/conflicto-armado/charts
 </p>
 
 <GruposActivos2026 client:load />
+
+<h2>Cómo se llegó a los 27.000: la curva histórica</h2>
+
+<p>
+  Para entender el panorama actual, hay que mirar la evolución. Las cifras del
+  total de integrantes en grupos armados se han más que duplicado en los últimos
+  ocho años:
+</p>
+
+<EvolucionTotalGrupos client:load />
+
+<Callout type="info" title="Combatientes en armas vs. redes de apoyo">
+  El conteo FIP de 27.121 incluye dos categorías:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Combatientes en armas (48%)</strong>: hombres y mujeres integrados a las estructuras militares de los grupos, con armamento y entrenamiento.</li>
+    <li><strong>Redes de apoyo (52%)</strong>: logística, transporte, mensajeros, cocineros, milicianos urbanos, sicariato, financistas locales.</li>
+  </ul>
+  Esta distinción importa: una cosa es la capacidad militar (los 13.000 combatientes
+  armados) y otra es el "ecosistema" criminal que los sostiene. Algunas fuentes
+  cuentan solo combatientes; otras incluyen la red completa.
+</Callout>
+
+<h2>Cómo se repartió ese crecimiento entre los grupos</h2>
+
+<p>
+  El crecimiento de 2024 a 2025 no fue uniforme. Todos los grupos crecieron, pero
+  el Clan del Golfo fue por mucho el que más nuevos integrantes sumó en términos
+  absolutos:
+</p>
+
+<CrecimientoPorGrupo client:load />
 
 <h2>Las cuatro grandes categorías</h2>
 
