@@ -1,6 +1,7 @@
 ---
 import Chapter from "../../../layouts/Chapter.astro";
 import Callout from "../../../components/ui/Callout.astro";
+import MapaGeografiaTemporal from "../../../components/temas/conflicto-armado/charts/MapaGeografiaTemporal.tsx";
 ---
 
 <Chapter
@@ -32,6 +33,29 @@ import Callout from "../../../components/ui/Callout.astro";
   concentra la presencia de grupos armados, los corredores estratégicos que
   controlan, y por qué esas zonas — y no otras — son las disputadas.
 </p>
+
+<h2>El mapa de Colombia, década a década</h2>
+
+<p>
+  Antes de entrar a las macrorregiones, mira cómo ha cambiado el panorama
+  territorial en los últimos diez años. Cada mapa muestra la intensidad de
+  presencia de grupos armados por departamento en cuatro cortes temporales:
+</p>
+
+<MapaGeografiaTemporal client:load />
+
+<Callout type="info" title="Cómo leer estos mapas">
+  La intensidad cualitativa (sin presencia / baja / media / alta) se basa en los
+  reportes de la Defensoría del Pueblo (Sistema de Alertas Tempranas), FIP e
+  Indepaz para cada año. El conteo de municipios afectados viene de fuentes
+  oficiales y consolidadas: <strong>195 en 2019, 280 en 2016 (pre-Acuerdo),
+  400 en 2022, y 790 en 2025</strong> sobre los 1.103 municipios del país.
+  <br><br>
+  La caída entre 2016 y 2019 refleja la salida de las FARC de sus territorios
+  históricos tras el Acuerdo. La curva ascendente posterior refleja la expansión
+  de las disidencias, el ELN y el Clan del Golfo, que ocuparon esos vacíos y
+  abrieron nuevos frentes.
+</Callout>
 
 <h2>Por qué unos territorios y no otros</h2>
 
