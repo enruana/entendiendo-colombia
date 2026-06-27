@@ -3,6 +3,7 @@ import Chapter from "../../../layouts/Chapter.astro";
 import Callout from "../../../components/ui/Callout.astro";
 import PgnComposicion from "../../../components/temas/estado-finanzas/charts/PgnComposicion.tsx";
 import PgnSectores from "../../../components/temas/estado-finanzas/charts/PgnSectores.tsx";
+import PgnHistorico from "../../../components/temas/estado-finanzas/charts/PgnHistorico.tsx";
 ---
 
 <Chapter
@@ -100,6 +101,89 @@ import PgnSectores from "../../../components/temas/estado-finanzas/charts/PgnSec
       <strong>Decreto de liquidación</strong>: MinHacienda detalla la asignación específica
       a cada entidad y rubro.
     </div>
+  </div>
+</div>
+
+<h2>Cómo ha crecido el PGN en los últimos 12 años</h2>
+
+<p>
+  El PGN no es un monto fijo: crece (y ocasionalmente cae) año tras año, según la
+  inflación, las decisiones políticas, los choques externos y las reformas
+  tributarias. La gráfica muestra la trayectoria desde 2015:
+</p>
+
+<PgnHistorico client:load />
+
+<h3>Quién decide cada cifra y por qué</h3>
+
+<p>
+  El PGN es una decisión compartida entre dos poderes y varios actores técnicos:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Quién propone</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">El Gobierno (Ejecutivo)</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li><strong>MinHacienda</strong> consolida ingresos esperados y techo de gasto.</li>
+      <li><strong>DNP</strong> coordina la parte de inversión (Plan Plurianual).</li>
+      <li>Cada <strong>ministerio</strong> defiende su presupuesto sectorial.</li>
+      <li>El <strong>Confis</strong> (Consejo Superior de Política Fiscal) aprueba el marco macro.</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Quién aprueba</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">El Congreso (Legislativo)</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Las <strong>Comisiones Económicas III y IV</strong> de Senado y Cámara deliberan en sesiones conjuntas.</li>
+      <li>Pueden <strong>aumentar partidas</strong> pero no exceder el monto total propuesto sin nueva fuente de ingreso.</li>
+      <li>Se aprueba por <strong>ley ordinaria</strong>, votada antes del 20 de octubre.</li>
+      <li>Si no se aprueba a tiempo, rige por decreto el del año anterior.</li>
+    </ul>
+  </div>
+</div>
+
+<Callout type="key" title="Por qué el PGN afecta tanto al país">
+  Cada decisión del PGN tiene efectos concretos sobre la vida cotidiana:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Sobre la inflación</strong>: si el gasto crece más rápido que la productividad, presiona los precios al alza.</li>
+    <li><strong>Sobre las tasas de interés</strong>: un PGN muy expansivo lleva a BanRep a subir tasas para enfriar.</li>
+    <li><strong>Sobre el peso</strong>: un déficit fiscal grande deteriora la calificación crediticia y devalúa la moneda.</li>
+    <li><strong>Sobre los hogares</strong>: define cuántos maestros se contratan, cuántas vías se construyen, cuántas familias reciben subsidio.</li>
+    <li><strong>Sobre las regiones</strong>: el SGP (Sistema General de Participaciones) reparte automáticamente recursos a departamentos y municipios.</li>
+  </ul>
+  En cierto sentido, el PGN <strong>traduce las prioridades políticas en pesos</strong>.
+  Lo que se queda fuera del PGN no se hace.
+</Callout>
+
+<h3>Tres saltos significativos en la serie</h3>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-rose-700">2019 → 2020 · +5,0%</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Aprobado antes de la pandemia, pero ejecutado durante ella. El PGN saltó al
+      <strong>27,2% del PIB</strong> porque el PIB cayó. El Gobierno luego adicionó
+      partidas para subsidios COVID (Ingreso Solidario, PAEF).
+    </p>
+  </div>
+  <div class="rounded-lg border border-violet-200 bg-violet-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-violet-700">2022 → 2023 · +15,8%</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Primer PGN completo del gobierno Petro tras la <strong>reforma tributaria de
+      2022 (Ley 2277)</strong>, que aumentó los ingresos previstos en ~$20 billones
+      al año. Refleja el cambio de prioridades hacia gasto social.
+    </p>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-amber-700">2023 → 2024 · +23,8%</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      El mayor salto nominal de la serie: de $405,6 B a $502,6 B en un año. El PGN
+      llegó al <strong>29,7% del PIB</strong>, el nivel más alto desde la pandemia.
+      Discutido en el Congreso por el desbalance entre ingresos proyectados y
+      gasto comprometido. Una parte del salto se asocia a la indexación por
+      inflación alta de 2022-2023.
+    </p>
   </div>
 </div>
 

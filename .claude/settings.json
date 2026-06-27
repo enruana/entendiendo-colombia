@@ -1,0 +1,34 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -k -X POST 'https://localhost:3456/api/sessions/hook?event=Notification' -H 'Content-Type: application/json' --data-binary @-"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -k -X POST 'https://localhost:3456/api/sessions/hook?event=UserPromptSubmit' -H 'Content-Type: application/json' --data-binary @-"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -k -X POST 'https://localhost:3456/api/sessions/hook?event=PreToolUse' -H 'Content-Type: application/json' --data-binary @-"
+          }
+        ]
+      }
+    ]
+  }
+}
