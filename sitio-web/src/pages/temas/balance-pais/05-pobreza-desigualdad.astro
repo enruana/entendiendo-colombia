@@ -1,0 +1,298 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import PobrezaMonetariaBP from "../../../components/temas/balance-pais/charts/PobrezaMonetariaBP.tsx";
+import GiniHistoricoBP from "../../../components/temas/balance-pais/charts/GiniHistoricoBP.tsx";
+import PobrezaMultidimensionalBP from "../../../components/temas/balance-pais/charts/PobrezaMultidimensionalBP.tsx";
+---
+
+<Chapter
+  number="05"
+  title="Pobreza y desigualdad"
+  subtitle="Pobreza monetaria, GINI, IPM. La reducción real y la que se atribuye. Cómo llega el país en su reto social más profundo."
+  chapterNumber={5}
+  totalChapters={8}
+  prevHref="/temas/balance-pais/04-finanzas-estado"
+  prevTitle="Finanzas del Estado"
+  nextHref="/temas/balance-pais/06-seguridad"
+  nextTitle="Seguridad y orden público"
+  accentColor="rose"
+>
+
+<h2>Tres formas de medir la pobreza</h2>
+
+<p>
+  La pobreza no es un solo número: es un fenómeno multidimensional que se mide
+  desde ángulos distintos. Colombia utiliza tres indicadores complementarios:
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4">
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">1 · Pobreza monetaria</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">¿Cuánto ganan?</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Compara el ingreso mensual con la línea oficial. En 2025 la línea es
+      $482.041/persona/mes. Si el hogar suma menos que la línea multiplicada
+      por sus miembros, está en pobreza monetaria.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">2 · GINI</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">¿Cómo se distribuye?</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Mide la desigualdad de ingresos. 0 = todos ganan lo mismo. 1 = un solo
+      hogar concentra todo. Colombia está entre los más desiguales del
+      mundo (~0,53).
+    </p>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">3 · IPM</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">¿Qué les falta?</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Índice de Pobreza Multidimensional. Mide privaciones no monetarias: educación,
+      salud, servicios públicos, condiciones de vivienda. 15 indicadores en 5
+      dimensiones.
+    </p>
+  </div>
+</div>
+
+<h2>1. Pobreza monetaria: bajando desde el pico pandémico</h2>
+
+<PobrezaMonetariaBP client:load />
+
+<h3>La trayectoria completa</h3>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="font-bold text-emerald-900">Santos (2014-2018): reducción sostenida</div>
+    <p class="text-sm text-emerald-900/80 mt-1">
+      De 28,5% (2014) a 27,0% (2018) con metodología antigua. Reducción
+      modesta pero constante. En 2019 el DANE actualizó la metodología y la
+      línea de pobreza subió — no comparar cifras pre y post 2019
+      directamente.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="font-bold text-rose-900">Duque (2018-2022): shock pandémico y recuperación parcial</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Salto de 35,7% (2019 nueva metodología) a 42,5% (2020 pandemia). Bajó a
+      39,3% (2021) y 36,6% (2022) por rebote económico y programas
+      pandémicos. Duque redujo <strong>~6 pp desde el pico</strong>.
+    </p>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-4">
+    <div class="font-bold text-amber-900">Petro (2022-2025): continuación del descenso</div>
+    <p class="text-sm text-amber-900/80 mt-1">
+      De 36,6% (2022) a 28,0% (2025). Reducción de <strong>8,6 pp en 3 años</strong>
+      — la caída más pronunciada de la serie. Se explica por: rebote
+      económico continuado, programas sociales (Renta Ciudadana, Devolución
+      del IVA), y aumento del salario mínimo real.
+    </p>
+  </div>
+</div>
+
+<Callout type="key" title="Fact-check: '28% de pobreza es el logro'">
+  El gobierno saliente destaca la reducción de 36,6% a 28% (2022→2025). Es
+  real y significativa. Contexto que suele omitirse:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>28% sigue siendo alto</strong>: comparable con Perú (27%) y peor que Chile (14%) y Uruguay (11%).</li>
+    <li><strong>El pico fue 42,5% en 2020</strong>: la caída incluye 6,3 pp de rebote pandémico bajo Duque, no todo Petro.</li>
+    <li><strong>~14,5 millones de personas siguen en pobreza monetaria</strong> — 1 de cada 4 colombianos.</li>
+    <li>El nivel 2018 (pre-pandemia con metodología antigua) fue 27,0%. En términos comparables, apenas volvimos a niveles pre-pandemia.</li>
+  </ul>
+</Callout>
+
+<h2>2. Desigualdad (GINI): mejora modesta desde un nivel muy alto</h2>
+
+<GiniHistoricoBP client:load />
+
+<h3>Colombia en el ranking mundial de desigualdad</h3>
+
+<p>
+  El GINI de 0,531 (2025) coloca a Colombia entre los <strong>10 países más
+  desiguales del mundo</strong> según Banco Mundial. Comparaciones:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/30 p-4">
+    <div class="font-bold text-emerald-900">Referencias baja desigualdad</div>
+    <ul class="text-sm text-emerald-900/80 mt-2 space-y-1 list-disc list-inside">
+      <li>Noruega, Dinamarca: ~0,27-0,29</li>
+      <li>OCDE promedio: ~0,32</li>
+      <li>Uruguay (Latam más igual): 0,40</li>
+      <li>Chile: 0,44</li>
+    </ul>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/30 p-4">
+    <div class="font-bold text-rose-900">Referencias alta desigualdad</div>
+    <ul class="text-sm text-rose-900/80 mt-2 space-y-1 list-disc list-inside">
+      <li>Brasil: 0,52</li>
+      <li><strong>Colombia: 0,53</strong></li>
+      <li>Sudáfrica (extremo): 0,63</li>
+      <li>Namibia (extremo): 0,59</li>
+    </ul>
+  </div>
+</div>
+
+<Callout type="warning" title="El mejor Gini de Colombia es de 2017">
+  El Gini de 2017 fue 0,508 — el mejor desde que se mide en Colombia. La
+  reducción bajo Petro (0,556 → 0,531) es real, pero el nivel actual apenas
+  se acerca al que ya alcanzó Colombia hace 8 años. No es un logro histórico;
+  es recuperación de niveles pre-pandemia.
+</Callout>
+
+<h2>3. Pobreza multidimensional (IPM): la mejor noticia estructural</h2>
+
+<PobrezaMultidimensionalBP client:load />
+
+<h3>Por qué el IPM es la señal más sólida</h3>
+
+<p>
+  A diferencia de la pobreza monetaria (que depende mucho del ingreso
+  coyuntural), el IPM mide privaciones estructurales: si un niño va a la
+  escuela, si hay agua potable en el hogar, si el techo es de material
+  adecuado. Estas privaciones cambian más lento pero también son más difíciles
+  de perder.
+</p>
+
+<p>
+  La caída del IPM del 21,9% (2014) al 11,5% (2024) es <strong>10,4 pp en una
+  década</strong>. Y es consistente entre gobiernos:
+</p>
+
+<ul>
+  <li>Santos II: 20,2% → 17,5% (con cambio metodológico en 2018)</li>
+  <li>Duque: 17,5% → 16,0% (pese a pandemia)</li>
+  <li>Petro: 16,0% → 11,5% (continuación)</li>
+</ul>
+
+<Callout type="info" title="Las dimensiones que más redujeron privaciones">
+  Las mayores mejoras han sido en:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Salud</strong>: cobertura del régimen contributivo/subsidiado supera 96%.</li>
+    <li><strong>Acceso a agua mejorada</strong>: aumentó en zonas rurales por PDA y programas territoriales.</li>
+    <li><strong>Rezago escolar</strong>: cayó por retorno post-pandemia.</li>
+  </ul>
+  Las dimensiones que resisten son <strong>trabajo formal</strong> (por
+  informalidad) y <strong>bajo logro educativo</strong>.
+</Callout>
+
+<h2>Fact-check comparativo</h2>
+
+<div class="my-8 overflow-x-auto rounded-xl border border-neutral-200 bg-white">
+  <table class="w-full text-sm border-collapse">
+    <thead class="bg-neutral-50">
+      <tr class="border-b border-neutral-200">
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Métrica</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2018 pre-pandemia</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2020 pico</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2022</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2025</th>
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Veredicto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Pobreza monetaria</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">27,0%*</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">42,5%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">36,6%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">28,0%</td>
+        <td class="py-3 px-4 text-xs text-amber-700 font-semibold">Recuperación con contexto</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Pobreza extrema</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">7,2%*</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">15,1%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">13,8%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">9,6%</td>
+        <td class="py-3 px-4 text-xs text-amber-700 font-semibold">Recuperación con contexto</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Gini</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">0,517</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">0,544</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">0,556</td>
+        <td class="text-right py-3 px-4 tabular-nums text-amber-700">0,531</td>
+        <td class="py-3 px-4 text-xs text-amber-700 font-semibold">Mejora modesta</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-neutral-800">IPM</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">19,6%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">18,1%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12,9%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">11,5%</td>
+        <td class="py-3 px-4 text-xs text-emerald-700 font-semibold">Mejora sostenida</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="text-xs text-neutral-500 mt-2">
+  * 2018 con metodología antigua. La nueva metodología DANE (2019+) elevó la
+  línea de pobreza monetaria. Se muestran ambas para contexto.
+</p>
+
+<h2>Cómo llega el país social al cambio de gobierno</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Avances</div>
+    <ul class="mt-2 text-sm text-emerald-900 space-y-1 list-disc list-inside">
+      <li>Pobreza monetaria en mínimo desde nueva metodología (2019)</li>
+      <li>IPM en mínimo histórico (11,5%)</li>
+      <li>Cobertura de salud sobre 96%</li>
+      <li>Acceso rural a servicios mejoró</li>
+      <li>Programas sociales cubren ~5 millones de hogares</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Desafíos</div>
+    <ul class="mt-2 text-sm text-rose-900 space-y-1 list-disc list-inside">
+      <li>14,5 millones aún en pobreza monetaria</li>
+      <li>Gini 0,531 — entre los 10 más desiguales del mundo</li>
+      <li>Pobreza rural sigue muy por encima de la urbana</li>
+      <li>Brecha étnica y territorial persistente</li>
+      <li>Sostenibilidad fiscal de programas sociales tensada</li>
+      <li>Régimen subsidiado de salud en crisis (afecta IPM salud)</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Agenda pendiente para el próximo gobierno</h2>
+
+<ol>
+  <li><strong>Enfoque en rural</strong>: la brecha urbano-rural en pobreza sigue ~15 pp. Sin política rural, el techo del avance está cerca.</li>
+  <li><strong>Estabilizar programas sociales</strong>: Renta Ciudadana, Colombia Mayor y Devolución IVA son ejemplos de programas exitosos que necesitan sostenibilidad fiscal.</li>
+  <li><strong>Focalización</strong>: mejorar SISBEN IV y evitar fugas y exclusiones. Bases de datos actualizadas.</li>
+  <li><strong>Reforma tributaria progresiva</strong>: sin aumentar recaudo a los ingresos altos, la desigualdad no baja estructuralmente.</li>
+  <li><strong>Educación temprana</strong>: la mejor herramienta contra la reproducción intergeneracional de la pobreza.</li>
+</ol>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>La <strong>pobreza monetaria</strong> pasó de 42,5% (2020 pico pandémico) a 28,0% (2025). Reducción real, pero de la caída 6,3 pp son rebote bajo Duque y 8,6 pp bajo Petro.</li>
+  <li>El <strong>Gini</strong> pasó de 0,556 (2022) a 0,531 (2025). Mejora modesta. Colombia sigue entre los 10 países más desiguales del mundo. El mejor Gini de la serie fue 0,508 en 2017.</li>
+  <li>El <strong>IPM</strong> es la mejor noticia estructural: de 21,9% (2014) a 11,5% (2024). Reducción consistente entre gobiernos, por mejor cobertura de salud, agua y educación.</li>
+  <li>Colombia sigue teniendo <strong>14,5 millones de personas en pobreza monetaria</strong> — 1 de cada 4.</li>
+  <li>El próximo gobierno recibe avances reales pero <strong>una arquitectura social frágil</strong>: los programas dependen de espacio fiscal que se está estrechando.</li>
+</ul>
+
+<Callout type="source" title="Fuentes primarias del capítulo">
+  <p>
+    <strong>DANE Pobreza Monetaria:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-monetaria" target="_blank" rel="noopener">pobreza monetaria y desigualdad</a>
+  </p>
+  <p><strong>DANE Pobreza Multidimensional:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-multidimensional" target="_blank" rel="noopener">IPM anual</a>
+  </p>
+  <p><strong>Banco Mundial:</strong>
+    <a href="https://data.worldbank.org/indicator/SI.POV.GINI" target="_blank" rel="noopener">Serie Gini internacional</a>
+  </p>
+  <p><strong>Prosperidad Social:</strong>
+    <a href="https://prosperidadsocial.gov.co" target="_blank" rel="noopener">Focalización y programas sociales</a>
+  </p>
+</Callout>
+
+</Chapter>
