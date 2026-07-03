@@ -1,0 +1,297 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import HomicidiosBP from "../../../components/temas/balance-pais/charts/HomicidiosBP.tsx";
+import GruposArmadosBP from "../../../components/temas/balance-pais/charts/GruposArmadosBP.tsx";
+import HectareasCocaBP from "../../../components/temas/balance-pais/charts/HectareasCocaBP.tsx";
+---
+
+<Chapter
+  number="06"
+  title="Seguridad y orden público"
+  subtitle="Homicidios, grupos armados, coca, secuestro, extorsión. El deterioro de la seguridad durante la Paz Total y qué recibe el próximo gobierno."
+  chapterNumber={6}
+  totalChapters={8}
+  prevHref="/temas/balance-pais/05-pobreza-desigualdad"
+  prevTitle="Pobreza y desigualdad"
+  nextHref="/temas/balance-pais/07-servicios-sociales"
+  nextTitle="Servicios sociales"
+  accentColor="slate"
+>
+
+<h2>La seguridad se lee en cuatro indicadores</h2>
+
+<p>
+  Cuando se habla de "seguridad" en Colombia, es fácil quedarse en anécdotas
+  y percepciones. Los datos oficiales tienen cuatro indicadores clave para
+  medir realmente qué está pasando: <strong>homicidios</strong> (el más
+  grave), <strong>grupos armados ilegales</strong> (capacidad estructural
+  del conflicto), <strong>cultivos de coca</strong> (financiación) y
+  <strong>delitos de alto impacto</strong> (secuestro, extorsión, hurto).
+</p>
+
+<Callout type="info" title="El tema conflicto-armado tiene el detalle completo">
+  Este capítulo del balance resume las cifras clave para el cambio de
+  gobierno. El tema <a href="/temas/conflicto-armado/">Conflicto armado
+  colombiano</a> tiene 8 capítulos con todo el detalle: quiénes son los
+  grupos, historia de 6 décadas, cómo se cuentan, geografía, narcotráfico,
+  otras economías ilegales, costo humano y procesos de paz.
+</Callout>
+
+<h2>1. Homicidios: el indicador más sensible</h2>
+
+<HomicidiosBP client:load />
+
+<h3>Lo que muestra la serie</h3>
+
+<ul>
+  <li><strong>Santos (2014-2018)</strong>: reducción de 12.806 a 12.130. Tendencia lenta pero sostenida bajo Acuerdo Final.</li>
+  <li><strong>Duque (2018-2022)</strong>: subida a 14.170 en 2021 y 14.047 en 2022. Pandemia produjo dip en 2020, pero repunte fuerte después.</li>
+  <li><strong>Petro (2022-2025)</strong>: dip a 13.342 en 2023, luego repunte 13.540 (2024) y ~14.100 (2025). El proyecto de <strong>Paz Total</strong> no logró contener la tendencia al alza.</li>
+</ul>
+
+<Callout type="warning" title="Tasa de epidemia según OMS">
+  La OMS considera "epidemia de violencia" un nivel superior a 10 homicidios
+  por 100 mil habitantes. Colombia ha estado en 23-27 en todos los años de
+  la serie. El promedio latinoamericano ronda 22; el europeo, ~3.
+  Estamos <strong>2,5 veces la epidemia según estándar OMS</strong>, y
+  volviendo a subir en 2025.
+</Callout>
+
+<h2>2. Grupos armados: la Paz Total y el crecimiento sin precedentes</h2>
+
+<GruposArmadosBP client:load />
+
+<h3>El costo del cese al fuego sin acuerdo</h3>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="font-bold text-emerald-900">2017: mínimo histórico bajo Acuerdo Final</div>
+    <p class="text-sm text-emerald-900/80 mt-1">
+      Con las FARC desmovilizándose, el total cayó de 17.000 a 12.000. Fue el
+      momento en que el país tuvo el menor número de integrantes en grupos
+      armados desde que se mide.
+    </p>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-4">
+    <div class="font-bold text-amber-900">2018-2022: retorno gradual</div>
+    <p class="text-sm text-amber-900/80 mt-1">
+      Bajo Duque las disidencias FARC empezaron a formarse, el ELN se
+      recompuso y el Clan del Golfo se expandió. El total creció de 12.883
+      a 15.120 — <strong>+17% en 4 años</strong>.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="font-bold text-rose-900">2022-2025: aceleración bajo Paz Total</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Bajo Petro el crecimiento se aceleró: <strong>+79% en 3 años</strong>.
+      Los ceses al fuego intermitentes coincidieron con consolidación
+      territorial de los grupos. Ninguna mesa se cerró con acuerdo.
+    </p>
+  </div>
+</div>
+
+<Callout type="key" title="La paradoja de la Paz Total">
+  Cuando el Estado dejó de combatir simultáneamente a los grupos armados
+  para intentar negociar, los grupos aprovecharon el respiro para reclutar,
+  expandir territorio y consolidar economías ilegales. El resultado es
+  contrario al objetivo declarado: <strong>hoy hay más armas en circulación
+  criminal que cuando empezó el mandato</strong>.
+</Callout>
+
+<h2>3. Cultivos de coca: récord histórico</h2>
+
+<HectareasCocaBP client:load />
+
+<h3>Los cultivos ilícitos como financiación estructural</h3>
+
+<p>
+  Colombia produce cerca del 60% de la cocaína del mundo. Cada hectárea de
+  coca genera renta que puede ir a familias campesinas, comercializadores
+  intermedios o directamente a grupos armados que controlan el territorio.
+  Cuando aumentan los cultivos, <strong>aumenta la capacidad económica de
+  los grupos armados</strong>.
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Mínimo histórico (2013)</div>
+    <div class="mt-2 text-2xl font-extrabold text-emerald-900 font-mono">48K ha</div>
+    <div class="mt-1 text-xs text-emerald-700">Antes de la caída del glifosato</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Herencia 2022 (Duque→Petro)</div>
+    <div class="mt-2 text-2xl font-extrabold text-amber-900 font-mono">230K ha</div>
+    <div class="mt-1 text-xs text-amber-700">Post-cese aspersión</div>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Cierre 2024 (Petro)</div>
+    <div class="mt-2 text-2xl font-extrabold text-rose-900 font-mono">262K ha</div>
+    <div class="mt-1 text-xs text-rose-700">Récord histórico</div>
+  </div>
+</div>
+
+<Callout type="warning" title="Sustitución voluntaria: los límites">
+  El PNIS busca sustituir coca por cultivos legales con acompañamiento
+  técnico y económico. Ha inscrito ~100.000 familias, pero solo una
+  fracción ha completado el proceso. Bajo Petro se privilegió esta ruta
+  sobre la erradicación forzosa. El resultado: <strong>los cultivos
+  siguieron creciendo</strong>. El próximo gobierno recibe el problema
+  no solo sin solución sino profundizado.
+</Callout>
+
+<h2>4. Delitos de alto impacto</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Secuestros anuales</div>
+    <p class="mt-2 text-sm text-neutral-700">
+      Del pico de <strong>3.572 en 2000</strong> (Santos I) a mínimo histórico
+      de <strong>91 en 2020</strong> (Duque · pandemia). Rebote a
+      <strong>~300 en 2024</strong> (Petro). Persiste con nuevas modalidades:
+      "paseo millonario", secuestro express en zonas urbanas.
+    </p>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Extorsión (denuncias)</div>
+    <p class="mt-2 text-sm text-neutral-700">
+      Récord histórico: de <strong>5.480 (2015)</strong> a <strong>13.802
+      denuncias en 2024</strong> — +152% en una década. El 53% se realiza
+      desde cárceles. Impunidad supera el 90%. Es el <strong>delito que más
+      crece</strong>.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Hurto (todas modalidades)</div>
+    <p class="mt-2 text-sm text-neutral-700">
+      Récord anual bajo Petro. El hurto a comercios, personas y motocicletas
+      creció fuertemente en ciudades. Bogotá, Medellín y Cali reportan
+      aumentos de 20-30% en 3 años.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Percepción de seguridad</div>
+    <p class="mt-2 text-sm text-neutral-700">
+      Encuesta DANE ECSC: <strong>57% de los colombianos se siente inseguro</strong>
+      en su ciudad (2024). Cifra mayor que en 2022 (52%) y que en 2019 (49%).
+      La sensación va peor que las cifras objetivas.
+    </p>
+  </div>
+</div>
+
+<h2>Fact-check comparativo</h2>
+
+<div class="my-8 overflow-x-auto rounded-xl border border-neutral-200 bg-white">
+  <table class="w-full text-sm border-collapse">
+    <thead class="bg-neutral-50">
+      <tr class="border-b border-neutral-200">
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Indicador</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2018 (Duque)</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2022 (Petro asume)</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2025</th>
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Veredicto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Homicidios totales</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12.130</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">14.047</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">~14.100</td>
+        <td class="py-3 px-4 text-xs text-rose-700 font-semibold">Sin mejora</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Grupos armados</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">12.883</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">15.120</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">27.121</td>
+        <td class="py-3 px-4 text-xs text-rose-700 font-semibold">Empeoró +79%</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Cultivos de coca</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">169K ha</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">230K ha</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">262K ha</td>
+        <td class="py-3 px-4 text-xs text-rose-700 font-semibold">Récord</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Extorsión (denuncias)</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">6.280</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">9.791</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">13.417</td>
+        <td class="py-3 px-4 text-xs text-rose-700 font-semibold">Récord</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-neutral-800">Secuestros</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">174</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">175</td>
+        <td class="text-right py-3 px-4 tabular-nums text-amber-700">~300</td>
+        <td class="py-3 px-4 text-xs text-amber-700 font-semibold">Rebote</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Cómo llega la seguridad al cambio de gobierno</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Lo que se mantiene</div>
+    <ul class="mt-2 text-sm text-emerald-900 space-y-1 list-disc list-inside">
+      <li>Fuerza Pública numerosa y con presencia territorial</li>
+      <li>Marco institucional del Acuerdo Final vigente</li>
+      <li>JEP en funcionamiento, dictando sentencias</li>
+      <li>Cooperación internacional (EE.UU., UE) activa</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Lo que preocupa</div>
+    <ul class="mt-2 text-sm text-rose-900 space-y-1 list-disc list-inside">
+      <li>Grupos armados en récord (27.121)</li>
+      <li>Coca en récord (262.000 ha)</li>
+      <li>Homicidios subiendo desde 2023</li>
+      <li>Extorsión y hurto en récord</li>
+      <li>Paz Total sin acuerdos cerrados</li>
+      <li>Percepción de inseguridad en aumento</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Agenda pendiente para el próximo gobierno</h2>
+
+<ol>
+  <li><strong>Estrategia clara con grupos armados</strong>: definir quiénes negocian, quiénes se someten y quiénes se combaten. La ambigüedad de la Paz Total dio ventaja a los grupos.</li>
+  <li><strong>Control efectivo de coca</strong>: combinación de erradicación, sustitución con desarrollo rural real e interdicción de rutas. No es posible sostener 262.000 ha sin control.</li>
+  <li><strong>Prevención de extorsión desde cárceles</strong>: sistema penitenciario con bloqueo real de señal celular. Es urgente.</li>
+  <li><strong>Reforma a la Policía</strong>: modelo de policía de proximidad, formación, disciplina, transparencia en el uso de la fuerza.</li>
+  <li><strong>Coordinación con territorios</strong>: alcaldías y gobernaciones como aliados centrales, no adversarios.</li>
+</ol>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li><strong>Homicidios</strong> subieron de 12.130 (2018) a ~14.100 (2025). Sin mejora de tendencia; repunte en 2025.</li>
+  <li><strong>Grupos armados</strong> pasaron de 12.883 (2018) a 27.121 (2025). Casi se duplicaron. La Paz Total no funcionó.</li>
+  <li><strong>Coca</strong> en récord histórico: 262.000 ha en 2024. La sustitución voluntaria como estrategia única no funcionó.</li>
+  <li><strong>Extorsión</strong> en récord de las últimas tres décadas: 13.802 denuncias en 2024. El 53% desde cárceles.</li>
+  <li><strong>Percepción de inseguridad</strong> subió a 57% en 2024.</li>
+  <li>El próximo gobierno recibe la <strong>seguridad más deteriorada</strong> desde el fin de las FARC. Es su principal reto operacional.</li>
+</ul>
+
+<Callout type="source" title="Fuentes primarias del capítulo">
+  <p>
+    <strong>MinDefensa:</strong>
+    <a href="https://www.mindefensa.gov.co" target="_blank" rel="noopener">Balance anual de seguridad</a>
+  </p>
+  <p><strong>Policía Nacional / SIEDCO:</strong> estadísticas de criminalidad.</p>
+  <p><strong>Medicina Legal:</strong> homicidios (cifras cerradas).</p>
+  <p><strong>UNODC SIMCI:</strong>
+    <a href="https://www.unodc.org/colombia/es/simci-monitoreo-cultivos-ilicitos.html" target="_blank" rel="noopener">Cultivos ilícitos</a>
+  </p>
+  <p><strong>DANE ECSC:</strong> Encuesta de Convivencia y Seguridad Ciudadana.</p>
+  <p><strong>Tema conflicto-armado:</strong>
+    <a href="/temas/conflicto-armado/">8 capítulos completos</a>.
+  </p>
+</Callout>
+
+</Chapter>

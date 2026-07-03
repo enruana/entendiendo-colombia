@@ -1,0 +1,303 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import CoberturaSaludBP from "../../../components/temas/balance-pais/charts/CoberturaSaludBP.tsx";
+import CoberturaEducacionBP from "../../../components/temas/balance-pais/charts/CoberturaEducacionBP.tsx";
+import PisaColombiaBP from "../../../components/temas/balance-pais/charts/PisaColombiaBP.tsx";
+---
+
+<Chapter
+  number="07"
+  title="Servicios sociales"
+  subtitle="Salud, educación, infraestructura. Los servicios que el Estado presta directamente y en qué condiciones los recibe el próximo gobierno."
+  chapterNumber={7}
+  totalChapters={8}
+  prevHref="/temas/balance-pais/06-seguridad"
+  prevTitle="Seguridad y orden público"
+  nextHref="/temas/balance-pais/08-balance-final"
+  nextTitle="Balance final: agenda 2026-2030"
+  accentColor="sky"
+>
+
+<h2>Los servicios que definen la calidad del Estado</h2>
+
+<p>
+  Un Estado que no logra proveer salud, educación y servicios básicos de
+  calidad falla en su función más elemental. Colombia tiene cobertura formal
+  alta en varios servicios — arriba de la media latinoamericana — pero
+  problemas serios de calidad, sostenibilidad financiera y acceso efectivo.
+</p>
+
+<h2>1. Salud: cobertura récord, sistema en crisis</h2>
+
+<CoberturaSaludBP client:load />
+
+<h3>La paradoja del sistema colombiano</h3>
+
+<p>
+  Colombia tiene uno de los sistemas de salud con mayor cobertura formal de
+  América Latina: <strong>99,5% de la población está afiliada</strong> al
+  Sistema General de Seguridad Social en Salud (SGSSS) según MinSalud. Y sin
+  embargo, es también el sistema que enfrenta la mayor crisis operativa
+  desde su creación en 1993 (Ley 100).
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="font-bold text-rose-900">Intervenciones y crisis financiera de EPS</div>
+    <ul class="mt-1 text-sm text-rose-900/80 space-y-1 list-disc list-inside">
+      <li><strong>Nueva EPS</strong> (más grande del país, ~11 M afiliados) intervenida en 2024.</li>
+      <li><strong>Sanitas</strong> (~5 M afiliados) intervenida en 2024.</li>
+      <li><strong>Compensar</strong> (~2 M afiliados) en proceso de liquidación 2025.</li>
+      <li><strong>Coosalud, EPM Salud</strong> y otras con problemas de solvencia.</li>
+    </ul>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-4">
+    <div class="font-bold text-amber-900">La reforma que no se aprobó</div>
+    <p class="text-sm text-amber-900/80 mt-1">
+      El gobierno Petro presentó tres versiones de reforma a la salud (2023,
+      2024, 2025). Ninguna se aprobó en el Congreso. Pero durante el
+      trámite, las intervenciones administrativas transformaron de facto
+      buena parte del sistema — sin marco legal claro para el próximo
+      gobierno.
+    </p>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/40 p-4">
+    <div class="font-bold text-cyan-900">Deudas y flujo de caja</div>
+    <p class="text-sm text-cyan-900/80 mt-1">
+      El sistema debe más de <strong>$30 billones</strong> a hospitales,
+      clínicas, laboratorios y proveedores. La ADRES (administradora
+      pública) enfrenta desfases de caja crónicos. Servicios como
+      medicamentos oncológicos, transplantes y VIH se han visto afectados.
+    </p>
+  </div>
+</div>
+
+<Callout type="warning" title="Lo que hereda el próximo gobierno en salud">
+  Un sistema con <strong>cobertura casi universal formal pero acceso
+  efectivo comprometido</strong>. Millones de pacientes con demoras en
+  autorizaciones, medicamentos no entregados y una red de servicios
+  fragmentada. Ninguna reforma estructural aprobada. Deudas billonarias.
+  La recuperación del sistema es <strong>tarea inaplazable del primer
+  año</strong>.
+</Callout>
+
+<h2>2. Educación: cobertura amplia, calidad rezagada</h2>
+
+<CoberturaEducacionBP client:load />
+
+<h3>Los tres niveles y sus problemas</h3>
+
+<div class="my-6 grid md:grid-cols-3 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Primaria</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">97% cobertura</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Prácticamente universal. Los desafíos están en calidad (PISA), alimentación
+      escolar y ausentismo por vulnerabilidad económica.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Secundaria</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">87% cobertura</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      La deserción sigue alta. Muchos jóvenes abandonan por vinculación
+      laboral temprana o embarazo adolescente. En zonas rurales, <strong>~30%
+      no llega a grado 11</strong>.
+    </p>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Superior</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">56% cobertura</h3>
+    <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+      Muy por debajo de la meta OCDE (85%). Programas de gratuidad y crédito
+      ICETEX ayudaron, pero <strong>50% de deserción</strong> desperdicia el
+      esfuerzo.
+    </p>
+  </div>
+</div>
+
+<h3>Calidad: resultados PISA</h3>
+
+<PisaColombiaBP client:load />
+
+<Callout type="warning" title="La trampa del capital humano">
+  Colombia mantiene una brecha estructural con OCDE en calidad educativa.
+  Los estudiantes colombianos están <strong>3 años por detrás</strong> de
+  los estudiantes OCDE promedio en matemáticas y ciencias. Esto limita
+  productividad, salarios y crecimiento potencial de la economía. Sin
+  romper esta trampa, ningún programa social basta para reducir
+  estructuralmente la desigualdad.
+</Callout>
+
+<h2>3. Infraestructura: rezagos y compromisos</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Cobertura de energía</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">97,5%</div>
+    <p class="mt-2 text-xs text-cyan-900/80">
+      Casi universal en urbano. En zonas rurales dispersas persisten
+      brechas. Las zonas no interconectadas (Guaviare, Vaupés, Chocó
+      rural) siguen con diesel subsidiado.
+    </p>
+  </div>
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Agua potable urbana</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">97%</div>
+    <p class="mt-2 text-xs text-cyan-900/80">
+      Alta en ciudades. En zonas rurales solo <strong>63%</strong> tiene
+      agua tratada. La calidad química/microbiológica varía.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Alcantarillado urbano</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">92%</div>
+    <p class="mt-2 text-xs text-amber-900/80">
+      Y solo <strong>71% en municipios pequeños</strong>. El tratamiento
+      de aguas residuales sigue por debajo del 50% nacional.
+    </p>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Internet fijo</div>
+    <div class="mt-2 text-3xl font-extrabold text-rose-900 font-mono">68%</div>
+    <p class="mt-2 text-xs text-rose-900/80">
+      Bajísimo comparado con OCDE (~90%). Colombia depende mucho del móvil
+      (110% cobertura) pero la banda ancha fija en hogar es débil,
+      especialmente en zonas rurales (~15%).
+    </p>
+  </div>
+</div>
+
+<h3>Vías 4G y 5G: los megaproyectos</h3>
+
+<Callout type="info" title="Estado del programa vial">
+  El programa <strong>4G</strong> (Cuarta Generación de concesiones,
+  iniciado en 2013 bajo Santos) contempla 32 proyectos con inversión de
+  ~$40 billones. Al 2025: <strong>~75% de kilómetros construidos</strong>,
+  varios megaproyectos entregados (Autopista al Mar 1, Autopista Bogotá –
+  Villavicencio, Perimetral del Oriente, etc.). Algunos con litigios y
+  sobrecostos.
+  <br><br>
+  El programa <strong>5G</strong>, anunciado por Duque y continuado por
+  Petro, avanza con lentitud. Solo 3 de 15 proyectos han firmado contrato
+  al 2025. El próximo gobierno decidirá su ritmo y estructura.
+</Callout>
+
+<h2>Fact-check comparativo</h2>
+
+<div class="my-8 overflow-x-auto rounded-xl border border-neutral-200 bg-white">
+  <table class="w-full text-sm border-collapse">
+    <thead class="bg-neutral-50">
+      <tr class="border-b border-neutral-200">
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Indicador</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2018 (Duque)</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2022 (Petro asume)</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2025</th>
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Veredicto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Cobertura salud</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">94,9%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">99,2%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">99,5%</td>
+        <td class="py-3 px-4 text-xs text-amber-700 font-semibold">Formal alta, acceso comprometido</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Cobertura educación superior</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">52%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">54%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">56%</td>
+        <td class="py-3 px-4 text-xs text-emerald-700 font-semibold">Mejora modesta</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">PISA matemáticas</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">391 (2018)</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">-</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700">383 (2022)</td>
+        <td class="py-3 px-4 text-xs text-rose-700 font-semibold">Retroceso</td>
+      </tr>
+      <tr class="border-b border-neutral-100">
+        <td class="py-3 px-4 text-neutral-800">Agua potable rural</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">59%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">61%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-amber-700">63%</td>
+        <td class="py-3 px-4 text-xs text-amber-700 font-semibold">Avance lento</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-neutral-800">Internet fijo hogares</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">57%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">64%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700">68%</td>
+        <td class="py-3 px-4 text-xs text-emerald-700 font-semibold">Mejora</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Cómo llegan los servicios sociales al cambio de gobierno</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Avances</div>
+    <ul class="mt-2 text-sm text-emerald-900 space-y-1 list-disc list-inside">
+      <li>Cobertura salud 99,5%</li>
+      <li>Cobertura primaria y secundaria altas</li>
+      <li>Cobertura superior 56% (subiendo)</li>
+      <li>Internet fijo llegó a 68%</li>
+      <li>Programa 4G ~75% ejecutado</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Desafíos</div>
+    <ul class="mt-2 text-sm text-rose-900 space-y-1 list-disc list-inside">
+      <li>Sistema de salud en crisis operativa</li>
+      <li>Deudas del sistema salud >$30 billones</li>
+      <li>Sin reforma a la salud aprobada</li>
+      <li>PISA en retroceso o estancamiento</li>
+      <li>Rezago rural persistente</li>
+      <li>Programa 5G casi estancado</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Agenda pendiente para el próximo gobierno</h2>
+
+<ol>
+  <li><strong>Estabilización financiera del sistema de salud</strong>: pago de deudas, capitalización o liquidación ordenada de EPS insolventes, sostenibilidad de la ADRES.</li>
+  <li><strong>Reforma a la salud consensuada</strong>: 3 intentos fallidos indican necesidad de acuerdo multipartidista, no reforma unilateral.</li>
+  <li><strong>Calidad educativa</strong>: no basta más cobertura si los resultados PISA no mejoran. Priorizar formación docente, jornada única y bilingüismo.</li>
+  <li><strong>Agua rural</strong>: llegar a 80% en un cuatrienio requiere inversión sostenida y capacidad de ejecución territorial.</li>
+  <li><strong>Programa 5G</strong>: decidir si se reactiva la estructura de concesión o se opta por obra pública. Definir en el primer semestre.</li>
+</ol>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li><strong>Salud</strong>: cobertura récord (99,5%) pero <strong>crisis operativa</strong> con EPS intervenidas y deudas >$30 billones.</li>
+  <li><strong>Educación</strong>: coberturas subiendo (primaria 97%, secundaria 87%, superior 56%) pero <strong>PISA en retroceso</strong> — brecha de 3 años con OCDE.</li>
+  <li><strong>Servicios públicos</strong>: energía y agua urbana casi universales, pero <strong>rezago rural</strong> (agua rural 63%, internet fijo rural ~15%).</li>
+  <li><strong>Infraestructura vial</strong>: 4G ~75% ejecutado; 5G casi estancado.</li>
+  <li>El próximo gobierno recibe una <strong>infraestructura social con cobertura amplia pero fragilidad estructural</strong>. Los primeros 100 días serán decisivos para la crisis de salud.</li>
+</ul>
+
+<Callout type="source" title="Fuentes primarias del capítulo">
+  <p>
+    <strong>MinSalud SISPRO:</strong>
+    <a href="https://www.sispro.gov.co" target="_blank" rel="noopener">Base de Datos Única de Afiliados (BDUA)</a>
+  </p>
+  <p><strong>MinEducación SNIES:</strong>
+    <a href="https://snies.mineducacion.gov.co" target="_blank" rel="noopener">Sistema Nacional de Información</a>
+  </p>
+  <p><strong>OCDE / ICFES PISA:</strong>
+    <a href="https://www.oecd.org/pisa/" target="_blank" rel="noopener">Programme for International Student Assessment</a>
+  </p>
+  <p><strong>ANI:</strong>
+    <a href="https://www.ani.gov.co" target="_blank" rel="noopener">Agencia Nacional de Infraestructura</a>
+  </p>
+  <p><strong>MinTIC:</strong> cobertura de conectividad e internet fijo.</p>
+</Callout>
+
+</Chapter>
