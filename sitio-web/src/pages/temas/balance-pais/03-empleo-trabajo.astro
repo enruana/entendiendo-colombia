@@ -1,0 +1,294 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import DesempleoHistoricoBP from "../../../components/temas/balance-pais/charts/DesempleoHistoricoBP.tsx";
+import SalarioMinimoReal from "../../../components/temas/balance-pais/charts/SalarioMinimoReal.tsx";
+import InformalidadHistoricoBP from "../../../components/temas/balance-pais/charts/InformalidadHistoricoBP.tsx";
+---
+
+<Chapter
+  number="03"
+  title="Empleo y trabajo"
+  subtitle="Desempleo, informalidad, salario mínimo y calidad del empleo. Qué recibe el nuevo gobierno en el mercado laboral y cómo interpretar las cifras oficiales."
+  chapterNumber={3}
+  totalChapters={8}
+  prevHref="/temas/balance-pais/02-economia-precios"
+  prevTitle="Economía y precios"
+  nextHref="/temas/balance-pais/04-finanzas-estado"
+  nextTitle="Finanzas del Estado"
+  accentColor="violet"
+>
+
+<h2>El mercado laboral colombiano en cuatro números</h2>
+
+<p>
+  Para leer bien el estado del empleo hace falta separar la <strong>cantidad</strong>
+  (cuántos trabajan) de la <strong>calidad</strong> (con qué protecciones y a
+  qué salario). Los gobiernos suelen destacar el primero porque baja el
+  desempleo genera titulares. Pero un país donde el 55% de los ocupados no
+  cotiza seguridad social y el 48,9% gana menos del mínimo no puede llamar
+  "logro" únicamente al desempleo.
+</p>
+
+<Callout type="info" title="El tema empleo tiene el detalle completo">
+  Este capítulo del balance resume las cifras clave para el cambio de gobierno.
+  El tema <a href="/temas/empleo/">Empleo y mercado laboral</a> tiene 7
+  capítulos completos con la explicación técnica: clasificación de la
+  población, GEIH vs PILA, desempleo con sus trampas, calidad del empleo,
+  entre otros.
+</Callout>
+
+<h2>1. Desempleo: mínimo en 24 años</h2>
+
+<DesempleoHistoricoBP client:load />
+
+<h3>Cómo se llegó al 8,9%</h3>
+
+<p>
+  El desempleo de 2025 (8,9%) es el más bajo desde 2001. La trayectoria fue:
+</p>
+
+<ol>
+  <li><strong>Pico pandémico</strong>: 15,9% en 2020, con cierre de comercios y desplome del consumo.</li>
+  <li><strong>Recuperación 2021-2022</strong>: se creó empleo por rebote de la economía y por retorno del turismo, comercio y servicios.</li>
+  <li><strong>Estabilización 2023-2024</strong>: alrededor del 10,2%, mientras la economía crecía apenas 0,7%-1,7%.</li>
+  <li><strong>Reducción 2025</strong>: bajó a 8,9% en un contexto de crecimiento del 2,6% y de expansión del empleo informal en servicios.</li>
+</ol>
+
+<Callout type="warning" title="Lo que la tasa no cuenta">
+  La tasa de desempleo solo mide a quien <strong>busca activamente</strong>
+  trabajo. Deja fuera:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Desalentados</strong>: personas que dejaron de buscar por creer que no encontrarán. Se contabilizan en la Población Económicamente Inactiva (PEI).</li>
+    <li><strong>Subocupados</strong>: quienes trabajan pero desean más horas o mejor empleo.</li>
+    <li><strong>Empleos precarios</strong>: quien trabaja 1 hora a la semana ya cuenta como "ocupado".</li>
+  </ul>
+  Cuando el desempleo baja y la PEI sube simultáneamente, parte del "mejor
+  desempeño" es en realidad gente que dejó de buscar.
+</Callout>
+
+<h2>2. Salario mínimo: aumentos nominales vs poder de compra</h2>
+
+<SalarioMinimoReal client:load />
+
+<h3>Por qué el aumento "nominal" es solo la mitad de la historia</h3>
+
+<p>
+  El SMMLV subió de $616.000 (2014) a $1.750.905 (2026) — un aumento nominal
+  del 184%. Pero <strong>la inflación acumulada del mismo período fue ~96%</strong>.
+  Descontando inflación, el poder de compra del SMMLV aumentó ~45% en 12
+  años. Sigue siendo un aumento real relevante, pero muy lejos del "duplicó"
+  que se cita en discursos.
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">SMMLV 2014</div>
+    <div class="mt-2 text-2xl font-extrabold text-emerald-900 font-mono">$616K</div>
+    <div class="mt-1 text-xs text-emerald-700">Base de comparación</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">SMMLV 2026 nominal</div>
+    <div class="mt-2 text-2xl font-extrabold text-amber-900 font-mono">$1.750.905</div>
+    <div class="mt-1 text-xs text-amber-700">+184% nominal</div>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">SMMLV 2026 real</div>
+    <div class="mt-2 text-2xl font-extrabold text-rose-900 font-mono">$895K</div>
+    <div class="mt-1 text-xs text-rose-700">+45% en pesos de 2014</div>
+  </div>
+</div>
+
+<Callout type="key" title="Fact-check: '$1.000.000 → $2.000.000' es ingeniería contable">
+  El gobierno saliente presenta la comparación como "el salario mínimo se
+  duplicó bajo Petro". Verifiquemos:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li>2022: SMMLV $1.000.000 + auxilio $117.172 = <strong>$1.117.172</strong></li>
+    <li>2026: SMMLV $1.750.905 + auxilio $249.095 = <strong>$2.000.000</strong></li>
+  </ul>
+  Aumento honesto: +79% nominal, ~+32% real descontando inflación. Es un buen
+  aumento, pero no una duplicación. El "duplicó" surge de comparar solo el
+  auxilio-más-nominal-redondeado en 2026 contra el nominal solo (sin auxilio,
+  sin redondeo) en 2022. Es <strong>comparación asimétrica</strong>.
+</Callout>
+
+<h2>3. Informalidad: reducción real pero con caveat metodológico</h2>
+
+<InformalidadHistoricoBP client:load />
+
+<h3>El cambio metodológico de 2021</h3>
+
+<p>
+  En 2021, el DANE actualizó la GEIH y la definición de informalidad se hizo
+  más rigurosa (alineación con estándares OIT). Por eso las series pre y
+  post-2021 no son directamente comparables. Bajo la nueva metodología:
+</p>
+
+<ul>
+  <li><strong>2021</strong>: 59,24% (año base de la nueva serie)</li>
+  <li><strong>2022</strong>: 57,97% (bajo Duque/Petro)</li>
+  <li><strong>2023</strong>: 56,22% (Petro año 1) — <strong>mayor descenso (-1,75 pp)</strong></li>
+  <li><strong>2024</strong>: 55,95% (bajada casi nula: -0,27 pp)</li>
+  <li><strong>2025</strong>: 55,66% (-0,29 pp)</li>
+</ul>
+
+<Callout type="warning" title="El ritmo se frenó">
+  La reducción rápida de 2023 se estancó en 2024 y 2025. Si se mantiene el
+  ritmo actual (~0,3 pp por año), Colombia tardará <strong>décadas</strong>
+  en llegar a niveles OCDE (~15-20%). El próximo gobierno enfrenta un
+  fenómeno estructural que ninguna reforma laboral aislada ha logrado
+  destrabar.
+</Callout>
+
+<h2>4. Calidad del empleo: la variable que no aparece en el balance oficial</h2>
+
+<p>
+  El balance oficial destaca desempleo bajo, informalidad bajando, salario
+  mínimo aumentado. Pero omite la <strong>calidad del empleo</strong>, que
+  incluye varios indicadores adversos:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Trabajo con bajos ingresos</div>
+    <div class="mt-2 text-3xl font-extrabold text-rose-900 font-mono">48,9%</div>
+    <div class="mt-1 text-sm text-rose-900">de ocupados gana menos del SMMLV</div>
+    <p class="mt-2 text-xs text-rose-900/80">
+      GEIH feb 2026. La mitad del país trabaja pero no llega al mínimo legal.
+      Empeoró 3,7 pp entre 2024 y 2025.
+    </p>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Subempleo objetivo</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">~10%</div>
+    <div class="mt-1 text-sm text-amber-900">de ocupados quisiera cambiar</div>
+    <p class="mt-2 text-xs text-amber-900/80">
+      Trabajadores que buscan más horas, mejor salario o empleo adecuado a su
+      formación. Persistente en la última década.
+    </p>
+  </div>
+  <div class="rounded-xl border border-violet-200 bg-violet-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-violet-700">Brecha de género</div>
+    <div class="mt-2 text-3xl font-extrabold text-violet-900 font-mono">~5 pp</div>
+    <div class="mt-1 text-sm text-violet-900">desempleo mujeres vs hombres</div>
+    <p class="mt-2 text-xs text-violet-900/80">
+      El desempleo femenino sigue por encima del masculino. Además, las mujeres
+      concentran el 78% del trabajo doméstico no remunerado.
+    </p>
+  </div>
+  <div class="rounded-xl border border-cyan-200 bg-cyan-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">Desempleo juvenil</div>
+    <div class="mt-2 text-3xl font-extrabold text-cyan-900 font-mono">~17%</div>
+    <div class="mt-1 text-sm text-cyan-900">tasa 14-28 años</div>
+    <p class="mt-2 text-xs text-cyan-900/80">
+      El doble del promedio nacional. La tasa NEET (ni estudia, ni trabaja)
+      sigue cerca de 25% para mujeres jóvenes.
+    </p>
+  </div>
+</div>
+
+<h2>Fact-check comparativo</h2>
+
+<div class="my-8 overflow-x-auto rounded-xl border border-neutral-200 bg-white">
+  <table class="w-full text-sm border-collapse">
+    <thead class="bg-neutral-50">
+      <tr class="border-b border-neutral-200">
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Métrica</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2022</th>
+        <th class="text-right py-3 px-4 font-semibold text-neutral-700">2026</th>
+        <th class="text-left py-3 px-4 font-semibold text-neutral-700">Veredicto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-neutral-100 bg-emerald-50/30">
+        <td class="py-3 px-4 text-neutral-800">Desempleo (abril)</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">10,6%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-emerald-700 font-semibold">8,8%</td>
+        <td class="py-3 px-4 text-xs text-emerald-700 font-semibold">Logro real</td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-amber-50/40">
+        <td class="py-3 px-4 text-neutral-800">Informalidad (abril)</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">58,1%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-amber-700 font-semibold">54,2%</td>
+        <td class="py-3 px-4 text-xs text-amber-700 font-semibold">Modesto</td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-rose-50/30">
+        <td class="py-3 px-4 text-neutral-800">SMMLV nominal</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">$1M</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700 font-semibold">$1,75M</td>
+        <td class="py-3 px-4 text-xs text-rose-700 font-semibold">+75% (no "duplicó")</td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-rose-50/30">
+        <td class="py-3 px-4 text-neutral-800">SMMLV real (pesos 2014)</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">$654K</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700 font-semibold">$895K</td>
+        <td class="py-3 px-4 text-xs text-rose-700 font-semibold">+37% real</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-neutral-800">% ganan menos SMMLV</td>
+        <td class="text-right py-3 px-4 tabular-nums text-neutral-800">~45%</td>
+        <td class="text-right py-3 px-4 tabular-nums text-rose-700 font-semibold">48,9%</td>
+        <td class="py-3 px-4 text-xs text-rose-700 font-semibold">Empeoró</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Cómo llega el mercado laboral al cambio de gobierno</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Fortalezas</div>
+    <ul class="mt-2 text-sm text-emerald-900 space-y-1 list-disc list-inside">
+      <li>Desempleo en 8,9% — mínimo en 24 años</li>
+      <li>Informalidad bajando (aunque lento)</li>
+      <li>Salario mínimo con avance real (+45% en 12 años)</li>
+      <li>Ocupados en ~24 millones (récord histórico)</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Debilidades</div>
+    <ul class="mt-2 text-sm text-rose-900 space-y-1 list-disc list-inside">
+      <li>48,9% de ocupados gana menos del SMMLV</li>
+      <li>Informalidad se estancó en 55,66%</li>
+      <li>PEI de 14,9 millones (subió con desalentados)</li>
+      <li>Desempleo juvenil ~17%, brecha de género ~5 pp</li>
+      <li>Reforma laboral (Ley 2466 de 2025) apenas iniciando implementación</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Agenda pendiente para el próximo gobierno</h2>
+
+<ol>
+  <li><strong>Formalización efectiva</strong>: pasar del ritmo 0,3 pp/año a al menos 1 pp/año requiere reforma tributaria a las contribuciones patronales.</li>
+  <li><strong>Empleo joven</strong>: bajar el 17% de desempleo 14-28 años. Programas de primer empleo con incentivos tributarios reales.</li>
+  <li><strong>Reforma laboral en implementación</strong>: la Ley 2466 de 2025 (aumento de dominical, horarios) apenas está iniciando. El próximo gobierno recibe la fase crítica de aplicación.</li>
+  <li><strong>Cuidado no remunerado</strong>: reconocer y compensar el 78% del trabajo doméstico realizado por mujeres. Sistema Nacional de Cuidados en construcción.</li>
+</ol>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>El <strong>desempleo</strong> cerró 2025 en 8,9% — el más bajo desde 2001. Logro real, pero incompleto (PEI creció y calidad del empleo no mejoró).</li>
+  <li>El <strong>salario mínimo</strong> aumentó 184% nominal en 12 años. Descontando inflación, el aumento real es de +45%. La comparación "se duplicó" del gobierno saliente es asimétrica.</li>
+  <li>La <strong>informalidad</strong> bajó de 59,24% (2021) a 55,66% (2025). Reducción real pero modesta y con ritmo declinante desde 2024.</li>
+  <li>El 48,9% de los ocupados <strong>gana menos del SMMLV</strong>. Ese indicador de calidad empeoró bajo el gobierno saliente.</li>
+  <li>El próximo gobierno recibe un mercado laboral <strong>cuantitativamente sano pero cualitativamente pobre</strong>: mucha gente trabaja, pero en condiciones que no aseguran ingresos suficientes ni protección social.</li>
+</ul>
+
+<Callout type="source" title="Fuentes primarias del capítulo">
+  <p>
+    <strong>DANE GEIH:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo" target="_blank" rel="noopener">Empleo y desempleo</a>
+  </p>
+  <p><strong>DANE GEIH-EISS (informalidad):</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-informal-y-seguridad-social" target="_blank" rel="noopener">Empleo informal y seguridad social</a>
+  </p>
+  <p><strong>MinTrabajo (SMMLV y auxilio):</strong> decretos anuales publicados en el Diario Oficial.</p>
+  <p><strong>Tema empleo:</strong>
+    <a href="/temas/empleo/">7 capítulos completos con toda la metodología detallada</a>.
+  </p>
+</Callout>
+
+</Chapter>
