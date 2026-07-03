@@ -312,6 +312,82 @@ export const TEMAS: Tema[] = [
       },
     ],
   },
+  {
+    slug: "balance-pais",
+    nombre: "Balance del país",
+    tagline: "Cómo llega Colombia al cambio de gobierno: comparativas de 10 años en todas las áreas",
+    descripcion:
+      "Recorrido en 8 capítulos por el estado del país en el momento de la transición presidencial: el proceso de empalme, la economía, el empleo, las finanzas públicas, la pobreza, la seguridad y los servicios sociales. Con comparativas de al menos 10 años por métrica, fact-check del gobierno saliente y agenda para el próximo. Fuentes: DANE, BanRep, MinHacienda, MinDefensa, MinSalud, MinEducación, DAFP.",
+    icono: "🔄",
+    color: "amber",
+    available: true,
+    capitulos: [
+      {
+        numero: 1,
+        slug: "01-empalme-presidencial",
+        titulo: "El empalme presidencial",
+        descripcion:
+          "Qué es, cómo funciona, marco legal (Ley 152/1994, directivas del DAFP) y comparación de empalmes 2010-2026.",
+        accentColor: "amber",
+      },
+      {
+        numero: 2,
+        slug: "02-economia-precios",
+        titulo: "Economía y precios",
+        descripcion:
+          "PIB anual, inflación mensual, tasa de cambio, tasas del BanRep. Cómo se ha movido la economía en 12 años.",
+        accentColor: "cyan",
+      },
+      {
+        numero: 3,
+        slug: "03-empleo-trabajo",
+        titulo: "Empleo y trabajo",
+        descripcion:
+          "Desempleo, informalidad, población inactiva y calidad del empleo. Fact-check de las cifras oficiales.",
+        accentColor: "violet",
+      },
+      {
+        numero: 4,
+        slug: "04-finanzas-estado",
+        titulo: "Finanzas del Estado",
+        descripcion:
+          "PGN, deuda pública, déficit fiscal, calificación crediticia. Cómo ha cambiado la fortaleza fiscal.",
+        accentColor: "emerald",
+      },
+      {
+        numero: 5,
+        slug: "05-pobreza-desigualdad",
+        titulo: "Pobreza y desigualdad",
+        descripcion:
+          "Pobreza monetaria, GINI, pobreza multidimensional. La reducción real y la que se atribuye.",
+        accentColor: "rose",
+      },
+      {
+        numero: 6,
+        slug: "06-seguridad",
+        titulo: "Seguridad y orden público",
+        descripcion:
+          "Homicidios, grupos armados, hectáreas de coca, secuestros, extorsión. La lupa a la Paz Total.",
+        accentColor: "slate",
+      },
+      {
+        numero: 7,
+        slug: "07-servicios-sociales",
+        titulo: "Servicios sociales",
+        descripcion:
+          "Salud (crisis EPS, mortalidad), educación (PISA, cobertura), infraestructura. El estado del bienestar.",
+        accentColor: "sky",
+      },
+      {
+        numero: 8,
+        slug: "08-balance-final",
+        titulo: "Balance final: agenda 2026-2030",
+        descripcion:
+          "Tabla consolidada, fact-check del gobierno saliente, agenda urgente para el próximo gobierno.",
+        accentColor: "pink",
+      },
+    ],
+  },
 ];
 
 export function getTema(slug: string): Tema | undefined {

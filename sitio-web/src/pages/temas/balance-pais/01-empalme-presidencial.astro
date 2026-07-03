@@ -1,0 +1,258 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+---
+
+<Chapter
+  number="01"
+  title="El empalme presidencial"
+  subtitle="Qué es, cómo funciona y por qué es la ceremonia institucional más importante entre dos gobiernos. El manual del cambio de mando en Colombia."
+  chapterNumber={1}
+  totalChapters={8}
+  nextHref="/temas/balance-pais/02-economia-precios"
+  nextTitle="Economía y precios"
+  accentColor="amber"
+>
+
+<h2>Qué es el empalme</h2>
+
+<p>
+  El <strong>empalme presidencial</strong> es el proceso formal — establecido por
+  ley — en el cual el gobierno saliente entrega al gobierno entrante la
+  información necesaria para que el nuevo presidente asuma con conocimiento
+  completo del estado de cada entidad, cada programa y cada compromiso del
+  Estado.
+</p>
+
+<p>
+  No es un acto simbólico. Es un proceso técnico, extenso y regulado. En 2026, el
+  empalme entre el gobierno Petro y el nuevo gobierno arrancó formalmente el día
+  después de la segunda vuelta presidencial y culminó el 6 de agosto, un día
+  antes de la posesión.
+</p>
+
+<Callout type="info" title="Fechas clave del ciclo 2026">
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>26 mayo 2026</strong>: primera vuelta presidencial.</li>
+    <li><strong>16 junio 2026</strong>: segunda vuelta.</li>
+    <li><strong>17 junio - 6 agosto 2026</strong>: período de empalme (aprox. 50 días).</li>
+    <li><strong>20 julio 2026</strong>: instalación del nuevo Congreso.</li>
+    <li><strong>7 agosto 2026</strong>: posesión presidencial en la Plaza de Bolívar.</li>
+  </ul>
+</Callout>
+
+<h2>El marco legal</h2>
+
+<p>
+  El empalme tiene tres pilares normativos:
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-amber-700">Ley 152 de 1994</div>
+    <div class="font-bold text-neutral-900 mt-1">Ley Orgánica del Plan de Desarrollo</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Define el proceso de formulación del Plan Nacional de Desarrollo. El gobierno
+      saliente debe entregar información sobre la ejecución del Plan vigente y las
+      metas pendientes. Es la base del "empalme sustantivo".
+    </p>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-cyan-700">Decreto 4260 de 2007</div>
+    <div class="font-bold text-neutral-900 mt-1">Reglamentación del empalme entre gobiernos</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Establece el procedimiento operativo: obligación de cada entidad de preparar
+      un informe de gestión completo, la conformación de comisiones de empalme por
+      sector y las obligaciones del gobierno entrante para conformar equipos de
+      recepción.
+    </p>
+  </div>
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-emerald-700">Directivas del DAFP</div>
+    <div class="font-bold text-neutral-900 mt-1">Departamento Administrativo de la Función Pública</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Emite directivas específicas cada ciclo con lineamientos técnicos: formato de
+      informes, cronograma, temas obligatorios, protocolos de confidencialidad
+      sobre información sensible.
+    </p>
+  </div>
+</div>
+
+<h2>Qué se entrega en el empalme</h2>
+
+<p>
+  Cada entidad del orden nacional (ministerios, departamentos administrativos,
+  superintendencias, entidades adscritas, empresas industriales y comerciales del
+  Estado) debe preparar y entregar un <strong>informe de gestión</strong> que
+  incluye, como mínimo:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <h3 class="font-bold text-neutral-900">Financiero y presupuestal</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Ejecución del PGN por rubro y trimestre</li>
+      <li>Vigencias futuras comprometidas</li>
+      <li>Reservas presupuestales y cuentas por pagar</li>
+      <li>Deudas y pasivos contingentes</li>
+      <li>Recursos SGR y SGP con corte al último mes</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <h3 class="font-bold text-neutral-900">Programático</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Estado de metas del Plan Nacional de Desarrollo</li>
+      <li>Programas vigentes y su cronograma</li>
+      <li>Proyectos de inversión en ejecución</li>
+      <li>Convenios internacionales activos</li>
+      <li>Compromisos con entidades territoriales</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <h3 class="font-bold text-neutral-900">Jurídico</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Procesos judiciales activos y sus contingencias</li>
+      <li>Sanciones ejecutoriadas pendientes de pago</li>
+      <li>Sentencias contra la Nación pendientes</li>
+      <li>Contratos vigentes y su valor</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <h3 class="font-bold text-neutral-900">Talento humano</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Planta de personal y provisionales</li>
+      <li>Concursos abiertos y por cerrar</li>
+      <li>Contratistas de prestación de servicios (CPS)</li>
+      <li>Pactos colectivos y sindicatos activos</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Los actores del empalme</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Gobierno saliente</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">Prepara y entrega</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Presidencia designa un coordinador general del empalme</li>
+      <li>Cada ministro designa un enlace sectorial</li>
+      <li>DNP consolida informe sobre ejecución del PND</li>
+      <li>MinHacienda entrega estado fiscal actualizado</li>
+      <li>Prepara ceremonia oficial de transmisión de mando</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Gobierno entrante</div>
+    <h3 class="mt-2 text-lg font-bold text-neutral-900">Recibe y analiza</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Presidente electo designa equipo de empalme por sector</li>
+      <li>Nombra ministros y directores antes del 7 de agosto</li>
+      <li>Recibe informes de cada entidad</li>
+      <li>Prepara decreto de nombramientos y plan de choque</li>
+      <li>Comunica al país su Programa de Gobierno actualizado con la realidad recibida</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Empalmes comparados 2010-2026</h2>
+
+<p>
+  Los últimos cuatro empalmes presidenciales tuvieron dinámicas muy distintas
+  según la relación política entre saliente y entrante:
+</p>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-emerald-700">2010 · Uribe → Santos</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Empalme "de familia": Santos había sido Ministro de Defensa de Uribe. La
+      transición fue técnica y sin fricciones visibles. Continuidad en política de
+      seguridad, quiebre en política exterior (reactivación de relaciones con
+      Venezuela y Ecuador).
+    </p>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-cyan-700">2014 · Santos I → Santos II</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Continuidad: mismo presidente reelegido. No hubo empalme formal por cambio
+      de gobierno, pero sí ajustes de gabinete. Empieza el segundo período con las
+      negociaciones de La Habana ya avanzadas.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-rose-700">2018 · Santos → Duque</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Empalme técnico pero con tensiones políticas: Duque llegó con un discurso
+      crítico del Acuerdo de Paz. Empresas contratistas del posconflicto (PDET,
+      PNIS) enfrentaron incertidumbre por meses. Los equipos se coordinaron para
+      lo administrativo pero las prioridades del Plan Nacional de Desarrollo
+      cambiaron drásticamente.
+    </p>
+  </div>
+  <div class="rounded-lg border border-violet-200 bg-violet-50/40 p-4">
+    <div class="text-xs font-mono font-bold text-violet-700">2022 · Duque → Petro</div>
+    <p class="text-sm text-neutral-700 mt-1">
+      Empalme más tenso de las últimas décadas: primer gobierno de izquierda en
+      Colombia, cambio de coalición completo, disputas por interpretación de
+      cifras heredadas (déficit fiscal, pobreza). Petro cuestionó cifras de la
+      DIAN y de MinHacienda sobre ingresos proyectados. La ministra saliente de
+      Hacienda dijo que "entregaba mejor país del que le entregaron".
+    </p>
+  </div>
+</div>
+
+<h2>Qué ha cambiado en el empalme reciente</h2>
+
+<Callout type="key" title="Tendencias del último ciclo de empalmes">
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>Politización creciente</strong>: los empalmes han pasado de ser puramente técnicos a incluir disputas públicas sobre las cifras entregadas.</li>
+    <li><strong>Más información disponible</strong>: portales como PTE, Datos Abiertos y SECOP II permiten al gobierno entrante verificar en tiempo real.</li>
+    <li><strong>Menos tiempo de coordinación</strong>: el período legal (50 días) resulta corto para cambios profundos de dirección política.</li>
+    <li><strong>Compromisos internacionales</strong>: convenios con OCDE, OTAN e ILO restringen el margen del gobierno entrante para cambios rápidos.</li>
+  </ul>
+</Callout>
+
+<h2>Por qué importa el empalme para el ciudadano</h2>
+
+<p>
+  El empalme no es solo un procedimiento burocrático. Sus resultados afectan
+  directamente a millones de personas:
+</p>
+
+<ul>
+  <li><strong>Programas sociales en curso</strong>: familias que reciben Ingreso Solidario, Devolución del IVA, Renta Ciudadana dependen de que el nuevo gobierno mantenga (o modifique con anuncio) los programas.</li>
+  <li><strong>Contratos activos</strong>: proveedores, contratistas de prestación de servicios y ejecutores de obra necesitan seguridad de continuidad.</li>
+  <li><strong>Servidores públicos</strong>: 1,4 millones de trabajadores del Estado esperan claridad sobre planta, provisionales y CPS.</li>
+  <li><strong>Estabilidad macroeconómica</strong>: los mercados reaccionan a percepción de continuidad o ruptura de la política fiscal.</li>
+</ul>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>El <strong>empalme presidencial</strong> es el proceso formal de transición entre gobiernos, regulado por la Ley 152 de 1994 y el Decreto 4260 de 2007.</li>
+  <li>Dura ~50 días entre la segunda vuelta y la posesión (7 de agosto).</li>
+  <li>Cada entidad debe entregar informes en cuatro dimensiones: financiera, programática, jurídica y de talento humano.</li>
+  <li>Cuatro empalmes recientes (2010, 2014, 2018, 2022) tuvieron dinámicas muy distintas según la relación política entre saliente y entrante.</li>
+  <li>El próximo empalme (2026) llega en un contexto de <strong>alta polarización</strong> y <strong>datos oficiales cuestionados</strong>.</li>
+  <li>Los siguientes 7 capítulos revisan, área por área, en qué estado recibirá el país el próximo gobierno.</li>
+</ul>
+
+<Callout type="source" title="Cómo verificar estos datos">
+  <p>
+    <strong>DAFP — Función Pública:</strong>
+    <a href="https://www.funcionpublica.gov.co" target="_blank" rel="noopener">funcionpublica.gov.co</a>
+    publica las directivas de empalme por ciclo y los manuales operativos.
+  </p>
+  <p class="mt-2">
+    <strong>DNP — Sinergia:</strong>
+    <a href="https://sinergia.dnp.gov.co" target="_blank" rel="noopener">sinergia.dnp.gov.co</a>
+    reporta el estado de las metas del Plan Nacional de Desarrollo.
+  </p>
+  <p class="mt-2">
+    <strong>Diario Oficial:</strong> las leyes 152/1994, el Decreto 4260/2007 y los decretos
+    de posesión están disponibles en <code>www.imprenta.gov.co</code>.
+  </p>
+</Callout>
+
+</Chapter>

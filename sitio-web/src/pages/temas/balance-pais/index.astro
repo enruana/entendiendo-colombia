@@ -1,0 +1,151 @@
+---
+import Base from "../../../layouts/Base.astro";
+import StatCard from "../../../components/ui/StatCard.astro";
+import ChapterCard from "../../../components/ui/ChapterCard.astro";
+import { getTema, getCapituloHref } from "../../../lib/temas";
+
+const tema = getTema("balance-pais")!;
+
+const iconos: Record<string, string> = {
+  "01-empalme-presidencial": "🔄",
+  "02-economia-precios": "📈",
+  "03-empleo-trabajo": "💼",
+  "04-finanzas-estado": "🏛️",
+  "05-pobreza-desigualdad": "⚖️",
+  "06-seguridad": "🛡️",
+  "07-servicios-sociales": "🏥",
+  "08-balance-final": "📋",
+};
+
+// Capítulos publicados
+const builtSlugs = new Set<string>([
+  "01-empalme-presidencial",
+  "08-balance-final",
+]);
+
+const chapters = tema.capitulos.map((c) => ({
+  number: String(c.numero).padStart(2, "0"),
+  title: c.titulo,
+  description: c.descripcion,
+  href: getCapituloHref(tema.slug, c.slug),
+  icon: iconos[c.slug] ?? "📄",
+  color: c.accentColor,
+  available: builtSlugs.has(c.slug),
+}));
+---
+
+<Base title="Balance del país">
+  <section class="relative overflow-hidden mesh-gradient-hero">
+    <div class="relative mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-28 md:pb-32">
+      <div class="flex justify-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-medium text-amber-700 shadow-sm backdrop-blur text-center">
+          <span class="flex h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>
+          Tema 05 · Balance del país · En investigación
+        </div>
+      </div>
+
+      <h1 class="mt-6 sm:mt-8 text-center text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] text-neutral-900">
+        ¿Cómo llega Colombia<br />
+        <span class="gradient-text">al cambio de gobierno?</span>
+      </h1>
+
+      <p class="mx-auto mt-5 sm:mt-6 max-w-2xl text-center text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-2">
+        En agosto de 2026 empieza un nuevo gobierno. Este tema analiza —con
+        comparativas de al menos 10 años— en qué estado recibe el país en cada
+        área. Sin filtros de campaña. Con fuentes oficiales.
+      </p>
+
+      <div class="mt-8 sm:mt-10 flex justify-center px-4 sm:px-0">
+        <a href="#capitulos" class="btn-primary justify-center">
+          Ver los capítulos
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        <StatCard value="7 ago 2026" label="Nuevo gobierno" sublabel="Inicio del próximo cuatrienio" accent="amber" />
+        <StatCard value="12 años" label="Ventana de análisis" sublabel="Santos I hasta Petro" accent="cyan" />
+        <StatCard value="~50 métricas" label="Indicadores clave" sublabel="Todas con serie 10+ años" accent="emerald" />
+        <StatCard value="4 gobiernos" label="Comparados" sublabel="Santos I, Santos II, Duque, Petro" accent="violet" />
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+  </section>
+
+  <section class="relative mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+    <div class="text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        La lógica del tema
+      </div>
+      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+        Tres reglas para leer un balance
+      </h2>
+    </div>
+
+    <div class="mt-10 sm:mt-12 grid md:grid-cols-3 gap-4 sm:gap-5">
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6">
+        <div class="text-xs font-bold uppercase tracking-wider text-amber-700">1 · Serie larga</div>
+        <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+          Cada indicador con al menos 10 años. Ver la tendencia importa más que el
+          punto final.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6">
+        <div class="text-xs font-bold uppercase tracking-wider text-cyan-700">2 · Contexto por gobierno</div>
+        <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+          Marcamos cada cuatrienio: Santos I, Santos II, Duque, Petro. Para
+          separar tendencias de decisiones puntuales.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6">
+        <div class="text-xs font-bold uppercase tracking-wider text-rose-700">3 · Sin narrativa oficial</div>
+        <p class="mt-2 text-sm text-neutral-700 leading-relaxed">
+          Datos primarios de DANE, BanRep, MinHacienda. Fact-check explícito
+          cuando un gobierno cita un logro.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="capitulos" class="relative bg-neutral-50 border-y border-neutral-200">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+      <div class="text-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          El recorrido
+        </div>
+        <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900">
+          {chapters.length} capítulos en preparación
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto">
+          Cada capítulo se publica con datos verificados contra fuente primaria.
+          Mientras tanto, las tarjetas muestran el alcance.
+        </p>
+      </div>
+
+      <div class="mt-10 sm:mt-12 md:mt-14 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {chapters.map((ch) => <ChapterCard {...ch} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 md:py-24">
+    <div class="rounded-2xl border border-amber-300 bg-amber-50/40 p-6 sm:p-8">
+      <h3 class="text-xl sm:text-2xl font-bold text-neutral-900">Fuentes oficiales</h3>
+      <p class="mt-3 text-sm sm:text-base text-neutral-700 leading-relaxed">
+        Todos los datos vienen de fuentes primarias del Estado colombiano.
+      </p>
+      <ul class="mt-4 grid sm:grid-cols-2 gap-3 text-sm text-neutral-700">
+        <li class="flex gap-2"><span class="text-amber-700 font-bold">▸</span> <strong>DANE</strong> — IPC, PIB, GEIH, pobreza, GINI</li>
+        <li class="flex gap-2"><span class="text-amber-700 font-bold">▸</span> <strong>BanRep</strong> — TRM, tasas, balanza de pagos</li>
+        <li class="flex gap-2"><span class="text-amber-700 font-bold">▸</span> <strong>MinHacienda</strong> — PGN, MFMP, deuda</li>
+        <li class="flex gap-2"><span class="text-amber-700 font-bold">▸</span> <strong>DIAN</strong> — recaudo tributario</li>
+        <li class="flex gap-2"><span class="text-amber-700 font-bold">▸</span> <strong>MinDefensa</strong> — homicidios, secuestros</li>
+        <li class="flex gap-2"><span class="text-amber-700 font-bold">▸</span> <strong>UNODC SIMCI</strong> — hectáreas de coca</li>
+        <li class="flex gap-2"><span class="text-amber-700 font-bold">▸</span> <strong>MinSalud, MinEducación</strong></li>
+        <li class="flex gap-2"><span class="text-amber-700 font-bold">▸</span> <strong>DAFP</strong> — empleo público, empalme</li>
+      </ul>
+    </div>
+  </section>
+</Base>

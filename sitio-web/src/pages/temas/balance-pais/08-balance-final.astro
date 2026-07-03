@@ -1,0 +1,277 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+---
+
+<Chapter
+  number="08"
+  title="Balance final: agenda 2026-2030"
+  subtitle="Cómo verificar las cifras de un gobierno saliente, qué se hereda y cuál es la agenda urgente del próximo cuatrienio."
+  chapterNumber={8}
+  totalChapters={8}
+  prevHref="/temas/balance-pais/07-servicios-sociales"
+  prevTitle="Servicios sociales"
+  accentColor="pink"
+>
+
+<h2>Los balances oficiales necesitan ser verificados</h2>
+
+<p>
+  Todo gobierno saliente presenta un balance de gestión con los logros que
+  considera relevantes. Ese ejercicio es legítimo. Lo problemático es cuando la
+  comparación se hace con cifras seleccionadas, contextos suprimidos o
+  atribuciones cuestionables. Este capítulo hace lo contrario: toma cada
+  indicador que el gobierno saliente destaca y lo pone contra la fuente
+  primaria, con el contexto completo.
+</p>
+
+<h2>Fact-check del balance oficial 2022-2026</h2>
+
+<p>
+  El gobierno Petro ha circulado una tabla comparativa con nueve indicadores
+  entre julio 2022 (inicio del gobierno) y junio 2026. La revisamos uno a uno
+  contra las fuentes oficiales:
+</p>
+
+<div class="my-8 overflow-x-auto rounded-xl border border-neutral-200 bg-white">
+  <table class="w-full text-sm border-collapse">
+    <thead class="bg-neutral-50">
+      <tr class="border-b border-neutral-200">
+        <th class="text-left py-3 px-3 font-semibold text-neutral-700">Indicador</th>
+        <th class="text-left py-3 px-3 font-semibold text-neutral-700">Cifra del gobierno</th>
+        <th class="text-left py-3 px-3 font-semibold text-neutral-700">Veredicto</th>
+        <th class="text-left py-3 px-3 font-semibold text-neutral-700">Contexto real</th>
+      </tr>
+    </thead>
+    <tbody class="text-xs sm:text-sm">
+      <tr class="border-b border-neutral-100 bg-rose-50/30">
+        <td class="py-3 px-3 font-semibold text-neutral-800">Inflación</td>
+        <td class="py-3 px-3 text-neutral-800">Jul 2022: 10,21% → May 2026: 5,84%</td>
+        <td class="py-3 px-3 font-bold text-rose-700">ENGAÑOSO</td>
+        <td class="py-3 px-3 text-neutral-700">
+          Omite el pico de <strong>13,34% en marzo 2023</strong>, el más alto en
+          24 años, alcanzado BAJO Petro. La bajada posterior se explica por la
+          política monetaria del BanRep (autónomo) y el enfriamiento global.
+        </td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-rose-50/30">
+        <td class="py-3 px-3 font-semibold text-neutral-800">Dólar TRM</td>
+        <td class="py-3 px-3 text-neutral-800">Jul 2022: $4.400 → Jun 2026: $3.459</td>
+        <td class="py-3 px-3 font-bold text-rose-700">ENGAÑOSO</td>
+        <td class="py-3 px-3 text-neutral-700">
+          El dólar llegó a <strong>$5.089 en oct/nov 2022 BAJO Petro</strong>.
+          Los ciclos cambiarios recientes responden a la Fed y al carry trade
+          por altas tasas del BanRep, no a decisiones del ejecutivo.
+        </td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-emerald-50/30">
+        <td class="py-3 px-3 font-semibold text-neutral-800">Desempleo</td>
+        <td class="py-3 px-3 text-neutral-800">Abr 2022: 10,6% → Abr 2026: 8,8%</td>
+        <td class="py-3 px-3 font-bold text-emerald-700">LEGÍTIMO</td>
+        <td class="py-3 px-3 text-neutral-700">
+          El desempleo sí bajó. Pero la PEI creció (~1,3M desalentados no
+          aparecen). El 48,9% de los ocupados gana menos del mínimo (feb 2026).
+        </td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-amber-50/40">
+        <td class="py-3 px-3 font-semibold text-neutral-800">Informalidad</td>
+        <td class="py-3 px-3 text-neutral-800">Abr 2022: 58,1% → Abr 2026: 54,2%</td>
+        <td class="py-3 px-3 font-bold text-amber-700">MODESTO</td>
+        <td class="py-3 px-3 text-neutral-700">
+          Baja ~4 pp en 4 años, ritmo similar al de gobiernos previos (Santos
+          bajó ~6 pp en 8 años). En absolutos, informales crecieron de ~12,8M
+          a ~13,3M.
+        </td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-amber-50/40">
+        <td class="py-3 px-3 font-semibold text-neutral-800">Pobreza monetaria</td>
+        <td class="py-3 px-3 text-neutral-800">2022: 36,6% → 2025: 28,0%</td>
+        <td class="py-3 px-3 font-bold text-amber-700">PARCIAL</td>
+        <td class="py-3 px-3 text-neutral-700">
+          Caída real de 8,6 pp. Pero <strong>en 2020 fue 42,5%</strong> por
+          pandemia. La trayectoria descendente ya venía de 2021.
+        </td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-amber-50/40">
+        <td class="py-3 px-3 font-semibold text-neutral-800">GINI (desigualdad)</td>
+        <td class="py-3 px-3 text-neutral-800">2022: 0,556 → 2025: 0,531</td>
+        <td class="py-3 px-3 font-bold text-amber-700">MODESTO</td>
+        <td class="py-3 px-3 text-neutral-700">
+          Reducción de 0,025 pts. Colombia sigue entre los países <strong>más
+          desiguales del mundo</strong>. Nivel actual sigue siendo severo.
+        </td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-rose-50/30">
+        <td class="py-3 px-3 font-semibold text-neutral-800">Salario mínimo</td>
+        <td class="py-3 px-3 text-neutral-800">2022: $1.000.000 → 2026: $2.000.000</td>
+        <td class="py-3 px-3 font-bold text-rose-700">COMPARACIÓN ASIMÉTRICA</td>
+        <td class="py-3 px-3 text-neutral-700">
+          El SMMLV 2026 es <strong>$1.750.905</strong>. Los $2M incluyen
+          auxilio de transporte; en 2022 el auxilio NO se suma. Comparación
+          honesta: +79% nominal, ~32% real (inflación acumulada ~36%).
+        </td>
+      </tr>
+      <tr class="border-b border-neutral-100 bg-rose-50/30">
+        <td class="py-3 px-3 font-semibold text-neutral-800">Déficit fiscal</td>
+        <td class="py-3 px-3 text-neutral-800">2021: 7,1% PIB → 2025: 6,4% PIB</td>
+        <td class="py-3 px-3 font-bold text-rose-700">MUY ENGAÑOSO</td>
+        <td class="py-3 px-3 text-neutral-700">
+          2021 era año pandémico. El 6,4% en año normal es el
+          <strong>segundo más alto del siglo XXI</strong>. Petro activó la
+          cláusula de escape de la regla fiscal en jun 2025.
+        </td>
+      </tr>
+      <tr>
+        <td class="py-3 px-3 font-semibold text-neutral-800">Inversión extranjera</td>
+        <td class="py-3 px-3 text-neutral-800">2021: USD 9.402M → 2025: USD 11.469M</td>
+        <td class="py-3 px-3 font-bold text-rose-700">CHERRY-PICKING</td>
+        <td class="py-3 px-3 text-neutral-700">
+          En 2022 la IED fue USD ~17.500M. La de 2025 es
+          <strong>34% MENOR</strong> que la de 2022. Comparar solo contra 2021
+          (post-pandemia) esconde la caída reciente.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Legítimos</div>
+    <div class="mt-2 text-3xl font-extrabold text-emerald-900 font-mono">1 de 9</div>
+    <div class="mt-1 text-xs text-emerald-700">Desempleo</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Modestos o parciales</div>
+    <div class="mt-2 text-3xl font-extrabold text-amber-900 font-mono">3 de 9</div>
+    <div class="mt-1 text-xs text-amber-700">Informalidad, pobreza, GINI</div>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Engañosos</div>
+    <div class="mt-2 text-3xl font-extrabold text-rose-900 font-mono">5 de 9</div>
+    <div class="mt-1 text-xs text-rose-700">Inflación, dólar, salario, déficit, IED</div>
+  </div>
+</div>
+
+<h2>Cómo se construye un fact-check honesto</h2>
+
+<Callout type="key" title="Cinco reglas mínimas">
+  <ol class="mt-2 list-decimal list-inside space-y-1">
+    <li><strong>Usar la fuente primaria</strong>: DANE, BanRep, MinHacienda directo. No portales interpretativos.</li>
+    <li><strong>Comparar contextos similares</strong>: años normales con años normales; no comparar 2021 (pandemia) con 2025 (recuperación).</li>
+    <li><strong>Mostrar la serie completa</strong>: si un indicador tuvo pico intermedio, mencionarlo.</li>
+    <li><strong>Descontar inflación en cifras nominales</strong>: un salario "duplicado" en pesos corrientes puede ser un aumento real del 30%.</li>
+    <li><strong>Distinguir tendencia de decisión</strong>: no todo cambio se debe a la política del gobierno. La política monetaria del BanRep, ciclos globales y tendencias multianuales tienen peso propio.</li>
+  </ol>
+</Callout>
+
+<h2>Cómo llega el país al 7 de agosto de 2026</h2>
+
+<p>
+  Consolidando los indicadores clave de los capítulos anteriores:
+</p>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Lo que mejoró</div>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Desempleo cerca de mínimos históricos (~9%)</li>
+      <li>Pobreza monetaria en 28% (post-pandemia + rebote)</li>
+      <li>Informalidad bajando (aunque modesta)</li>
+      <li>Remesas récord (USD 12B+ anual)</li>
+      <li>Balanza comercial menos deficitaria</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Lo que empeoró</div>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Déficit fiscal 6,4% PIB (segundo más alto del siglo)</li>
+      <li>Deuda pública 64,7% PIB (récord no pandémico)</li>
+      <li>Cultivos de coca en máximo histórico (262K ha)</li>
+      <li>Grupos armados en 27.121 integrantes (+23,5% YoY)</li>
+      <li>Crisis del sistema de salud (EPS intervenidas)</li>
+      <li>Suspensión de la regla fiscal (jun 2025)</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Agenda urgente para el gobierno 2026-2030</h2>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-rose-300 bg-rose-50/60 p-4">
+    <div class="font-bold text-rose-900">1 · Reactivar la regla fiscal</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      La cláusula de escape suspende el ancla fiscal hasta 2027. El nuevo
+      gobierno debe recuperar el marco fiscal creíble para no perder más
+      calificación crediticia y reducir el costo de la deuda.
+    </p>
+  </div>
+  <div class="rounded-lg border border-amber-300 bg-amber-50/60 p-4">
+    <div class="font-bold text-amber-900">2 · Recuperar el sistema de salud</div>
+    <p class="text-sm text-amber-900/80 mt-1">
+      Con varias EPS intervenidas, el nuevo gobierno recibe un sistema al borde
+      del colapso operativo. Decisión inaplazable en los primeros 100 días.
+    </p>
+  </div>
+  <div class="rounded-lg border border-cyan-300 bg-cyan-50/60 p-4">
+    <div class="font-bold text-cyan-900">3 · Contener la expansión de grupos armados</div>
+    <p class="text-sm text-cyan-900/80 mt-1">
+      27.121 integrantes en enero 2026 (+23,5% en un año). La Paz Total pierde
+      credibilidad. Requiere replantear estrategia y presencia territorial.
+    </p>
+  </div>
+  <div class="rounded-lg border border-violet-300 bg-violet-50/60 p-4">
+    <div class="font-bold text-violet-900">4 · Reducir cultivos y economías ilegales</div>
+    <p class="text-sm text-violet-900/80 mt-1">
+      262.000 hectáreas de coca (récord). Minería ilegal financia más que la
+      cocaína. Sin estrategia integral rural, ninguna política de seguridad
+      es sostenible.
+    </p>
+  </div>
+  <div class="rounded-lg border border-emerald-300 bg-emerald-50/60 p-4">
+    <div class="font-bold text-emerald-900">5 · Ejecutar la inversión</div>
+    <p class="text-sm text-emerald-900/80 mt-1">
+      La inversión pública se ha ejecutado por debajo del apropiado por años.
+      Rezagos, vigencias futuras y baja capacidad de contratación limitan el
+      efecto multiplicador del PGN.
+    </p>
+  </div>
+</div>
+
+<Callout type="key" title="Fin del tema 'Balance del país'">
+  Si llegaste hasta aquí, tienes una visión integral del estado del país en el
+  momento del cambio de gobierno de 2026. Ninguna cifra fue tomada de un
+  discurso: todas vienen de fuentes primarias del Estado colombiano. Los
+  enlaces al final de cada capítulo te llevan a la fuente original.
+  <br><br>
+  El próximo tema —si el interés continúa— podría ser un balance
+  actualizado del gobierno entrante después de sus primeros 100 días, con
+  los mismos indicadores. Así este sitio se convierte en una memoria pública
+  verificable, independiente del ciclo político.
+</Callout>
+
+<Callout type="source" title="Fuentes primarias del capítulo">
+  <p>
+    <strong>Inflación:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-precios-al-consumidor-ipc" target="_blank" rel="noopener">DANE IPC</a>
+  </p>
+  <p><strong>TRM:</strong>
+    <a href="https://www.banrep.gov.co/es/estadisticas/trm" target="_blank" rel="noopener">BanRep</a>
+  </p>
+  <p><strong>Desempleo e informalidad:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral" target="_blank" rel="noopener">DANE GEIH</a>
+  </p>
+  <p><strong>Pobreza y GINI:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/pobreza-monetaria" target="_blank" rel="noopener">DANE Pobreza Monetaria 2025</a>
+  </p>
+  <p><strong>Salario mínimo:</strong> Decretos de fijación del SMMLV publicados en el Diario Oficial.
+  </p>
+  <p><strong>Déficit fiscal:</strong>
+    <a href="https://www.minhacienda.gov.co" target="_blank" rel="noopener">MinHacienda MFMP y Plan Financiero 2025</a>
+  </p>
+  <p><strong>IED:</strong>
+    <a href="https://www.banrep.gov.co/es/estadisticas/balanza-pagos" target="_blank" rel="noopener">BanRep Balanza de Pagos</a>
+  </p>
+</Callout>
+
+</Chapter>
