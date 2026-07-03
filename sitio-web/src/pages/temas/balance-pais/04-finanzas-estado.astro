@@ -1,0 +1,277 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import DeudaPibBP from "../../../components/temas/balance-pais/charts/DeudaPibBP.tsx";
+import DeficitFiscalBP from "../../../components/temas/balance-pais/charts/DeficitFiscalBP.tsx";
+import RecaudoTributarioPib from "../../../components/temas/balance-pais/charts/RecaudoTributarioPib.tsx";
+---
+
+<Chapter
+  number="04"
+  title="Finanzas del Estado"
+  subtitle="PGN, deuda, déficit fiscal, recaudo. En qué condiciones fiscales recibe el próximo gobierno al Estado colombiano."
+  chapterNumber={4}
+  totalChapters={8}
+  prevHref="/temas/balance-pais/03-empleo-trabajo"
+  prevTitle="Empleo y trabajo"
+  nextHref="/temas/balance-pais/05-pobreza-desigualdad"
+  nextTitle="Pobreza y desigualdad"
+  accentColor="emerald"
+>
+
+<h2>La salud fiscal de un país se lee en cuatro variables</h2>
+
+<p>
+  La política macroeconómica se sostiene sobre cuatro pilares:
+  <strong>presupuesto</strong> (cuánto gasta el Estado),
+  <strong>deuda</strong> (cuánto debe),
+  <strong>déficit</strong> (cuánto se endeuda más cada año) y
+  <strong>recaudo</strong> (cuánto ingresa por impuestos). Estos cuatro
+  determinan si el Estado puede cumplir sus compromisos, financiar sus
+  programas y mantener la confianza de los mercados.
+</p>
+
+<Callout type="info" title="El tema estado-finanzas tiene el detalle completo">
+  Este capítulo del balance resume las cifras clave para el cambio de gobierno.
+  El tema <a href="/temas/estado-finanzas/">Estado y finanzas públicas</a>
+  tiene 7 capítulos completos con: estructura del Estado, sueldos públicos,
+  impuestos, PGN, deuda pública, capital privado y eficiencia del gasto.
+</Callout>
+
+<h2>1. Presupuesto General de la Nación: crecimiento sostenido, ejecución cuestionada</h2>
+
+<p>
+  El PGN pasó de $203,6 billones (2015) a $547 billones (2026): +169% en
+  pesos corrientes. Como % del PIB ha oscilado entre 24% y 30%. La gráfica
+  histórica del PGN con su distribución por rubros está disponible en el
+  <a href="/temas/estado-finanzas/04-presupuesto/">capítulo 4 del tema
+  Estado y finanzas públicas</a>. Los puntos clave para el balance:
+</p>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">PGN 2022 (Duque)</div>
+    <div class="mt-2 text-2xl font-extrabold text-emerald-900 font-mono">$350 B</div>
+    <div class="mt-1 text-xs text-emerald-700">24,0% del PIB</div>
+  </div>
+  <div class="rounded-xl border border-amber-200 bg-amber-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-amber-700">PGN 2024 (Petro)</div>
+    <div class="mt-2 text-2xl font-extrabold text-amber-900 font-mono">$503 B</div>
+    <div class="mt-1 text-xs text-amber-700">29,7% del PIB (pico)</div>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">PGN 2026</div>
+    <div class="mt-2 text-2xl font-extrabold text-rose-900 font-mono">$547 B</div>
+    <div class="mt-1 text-xs text-rose-700">27,4% del PIB</div>
+  </div>
+</div>
+
+<Callout type="warning" title="El problema no es el tamaño, es la ejecución">
+  Bajo Petro, la <strong>ejecución de la inversión pública</strong> ha caído
+  a niveles bajos históricos. En 2023, algunos sectores solo ejecutaron el
+  70% del apropiado. El próximo gobierno recibe un PGN grande, pero con
+  <strong>rezagos acumulados</strong> (obras iniciadas y no terminadas) y con
+  <strong>vigencias futuras</strong> que comprometen ~30% del presupuesto del
+  próximo cuatrienio.
+</Callout>
+
+<h2>2. Deuda pública: cerca del techo constitucional</h2>
+
+<DeudaPibBP client:load />
+
+<h3>La trayectoria por gobierno</h3>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-slate-200 bg-slate-50 p-4">
+    <div class="font-bold text-slate-900">Santos (2014-2018): +10 pp del PIB</div>
+    <p class="text-sm text-slate-700 mt-1">
+      Colombia entró a la OCDE, mantuvo grado de inversión con las 3
+      calificadoras. Cerró 2018 en 50%. Se atribuye al ciclo bajo del precio
+      del petróleo (2014-2016), que redujo ingresos por regalías.
+    </p>
+  </div>
+  <div class="rounded-lg border border-amber-200 bg-amber-50/40 p-4">
+    <div class="font-bold text-amber-900">Duque (2018-2022): +14 pp del PIB</div>
+    <p class="text-sm text-amber-900/80 mt-1">
+      Salto pandémico llevó la deuda de 50% a 65% en 2020. Cerró 2022 en
+      60,1% tras esfuerzo de reducción. En 2021 <strong>perdió grado de
+      inversión con S&P y Fitch</strong>. Moody's lo mantiene.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="font-bold text-rose-900">Petro (2022-2026): +5 pp del PIB proyectados</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      Descenso técnico en 2023 (por revaluación del peso) enmascaró un déficit
+      alto. En 2024-2025 la deuda volvió a subir hasta 64,7%. En junio 2025
+      se activó la <strong>cláusula de escape de la Regla Fiscal</strong>
+      (Ley 2155/2021), suspendiendo el ancla fiscal hasta 2027.
+    </p>
+  </div>
+</div>
+
+<Callout type="key" title="Lo que hereda el próximo gobierno">
+  Solo <strong>~6 pp del PIB de margen</strong> antes de romper el techo
+  constitucional del 71%. Con déficits de 6-7% al año, ese margen se
+  consume en 1-2 años sin ajuste fiscal. Reactivar la Regla Fiscal y bajar
+  el déficit a 3-4% es <strong>tarea inaplazable</strong> del próximo
+  cuatrienio.
+</Callout>
+
+<h2>3. Déficit fiscal: alto sin pandemia</h2>
+
+<DeficitFiscalBP client:load />
+
+<h3>Contexto por año</h3>
+
+<p>
+  El déficit fiscal es la diferencia entre lo que el gobierno gasta y lo
+  que recauda. Un país sano opera con déficit del 2-3% del PIB. Colombia
+  operaba dentro de rango entre 2014 y 2019. Luego:
+</p>
+
+<ul>
+  <li><strong>2020-2021</strong>: pandemia disparó el déficit a 7,8% y 7,1%. Justificable por el contexto.</li>
+  <li><strong>2022</strong>: recuperación post-pandemia bajó el déficit a 5,3%.</li>
+  <li><strong>2023</strong>: primer año pleno de Petro. Déficit bajó a 4,3% — parece mejora. Pero fue año de bajo crecimiento (0,7%): el numerador (gasto) creció más lento porque el ejecutivo apenas iniciaba.</li>
+  <li><strong>2024</strong>: déficit rebota a 6,7%. Gasto pleno del gobierno + reformas sociales + recaudo por debajo de lo proyectado.</li>
+  <li><strong>2025</strong>: déficit del 6,4% — <strong>el segundo más alto del siglo sin pandemia</strong>.</li>
+</ul>
+
+<Callout type="key" title="Fact-check: 'redujimos el déficit de 7,1% a 6,4%'">
+  El gobierno saliente compara el déficit 2021 (7,1% pandemia) con el
+  2025 (6,4% año normal). Es una comparación de contextos incompatibles.
+  Comparaciones honestas:
+  <ul class="mt-2 list-disc list-inside space-y-1">
+    <li><strong>2019 (Duque, prepandemia)</strong>: -2,5%</li>
+    <li><strong>2025 (Petro)</strong>: -6,4%</li>
+  </ul>
+  Con la misma métrica, el déficit se cuadruplicó en años normales. El 6,4%
+  actual es más de 2 veces el déficit prepandemia.
+</Callout>
+
+<h2>4. Recaudo tributario: por debajo del potencial</h2>
+
+<RecaudoTributarioPib client:load />
+
+<h3>El problema estructural del recaudo</h3>
+
+<p>
+  Colombia recauda menos que el promedio latinoamericano y muchísimo menos
+  que la OCDE. Razones:
+</p>
+
+<ul>
+  <li><strong>Base tributaria estrecha</strong>: solo ~2 millones de personas declaran renta en un país de 52 millones.</li>
+  <li><strong>Alta informalidad</strong>: 55% de los ocupados no cotiza ni tributa formalmente.</li>
+  <li><strong>Exenciones y beneficios</strong>: el sistema tributario tiene muchos regímenes especiales que erosionan la base.</li>
+  <li><strong>Evasión y elusión</strong>: la DIAN estima que se evaden ~$70 billones al año en distintos tributos.</li>
+</ul>
+
+<Callout type="warning" title="La reforma tributaria de 2022 y sus límites">
+  La Ley 2277 de 2022 (Petro) buscaba recaudar ~$20 billones adicionales al
+  año. En su primer año (2023), lo logró parcialmente: el recaudo saltó a
+  17,6% del PIB. Pero desde 2024, el efecto se diluyó: las empresas
+  ajustaron su estructura, redujeron dividendos, aprovecharon beneficios,
+  y el <strong>faltante de recaudo en 2025 fue de $9,5 billones</strong>
+  respecto a la proyección oficial. Recaudar en Colombia es difícil, y
+  cada reforma tiende a rendir menos de lo esperado.
+</Callout>
+
+<h2>Calificación crediticia: perdimos el grado de inversión</h2>
+
+<div class="my-6 grid md:grid-cols-3 gap-4 text-center">
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">S&P</div>
+    <div class="mt-2 text-2xl font-extrabold text-rose-900 font-mono">BB+</div>
+    <div class="mt-1 text-xs text-rose-700">Perdió BBB- en 2021 (Duque)</div>
+  </div>
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Moody's</div>
+    <div class="mt-2 text-2xl font-extrabold text-emerald-900 font-mono">Baa2</div>
+    <div class="mt-1 text-xs text-emerald-700">Mantiene grado de inversión</div>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Fitch</div>
+    <div class="mt-2 text-2xl font-extrabold text-rose-900 font-mono">BB+</div>
+    <div class="mt-1 text-xs text-rose-700">Perdió BBB- en 2021 (Duque)</div>
+  </div>
+</div>
+
+<p>
+  Colombia perdió el grado de inversión con S&P y Fitch en <strong>julio de
+  2021 bajo el gobierno Duque</strong>, tras la retirada de la reforma
+  tributaria y el estallido social. La consecuencia: los inversionistas
+  extranjeros institucionales que solo pueden invertir en grado de
+  inversión salieron de la deuda colombiana. El costo del endeudamiento
+  externo subió estructuralmente. Moody's mantiene el grado pero con
+  perspectiva negativa. El próximo gobierno recibe una nación
+  <strong>en filo de perder el último grado de inversión</strong>.
+</p>
+
+<h2>Cómo llegan las finanzas del Estado al cambio de gobierno</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Lo que se mantiene</div>
+    <ul class="mt-2 text-sm text-emerald-900 space-y-1 list-disc list-inside">
+      <li>PGN de $547 billones para 2026</li>
+      <li>Moody's mantiene grado de inversión</li>
+      <li>Reservas internacionales suficientes (~USD 60B)</li>
+      <li>Sistema financiero sólido y bien capitalizado</li>
+      <li>Deuda mayoritariamente en pesos (menos riesgo cambiario)</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Lo que preocupa</div>
+    <ul class="mt-2 text-sm text-rose-900 space-y-1 list-disc list-inside">
+      <li>Deuda/PIB en 64,7% (récord no pandémico)</li>
+      <li>Déficit fiscal en 6,4% (segundo más alto del siglo)</li>
+      <li>Regla Fiscal suspendida con cláusula de escape</li>
+      <li>Recaudo por debajo del potencial post-reforma</li>
+      <li>Ejecución de inversión rezagada</li>
+      <li>Vigencias futuras comprometen ~30% del PGN 2027-2030</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Agenda pendiente para el próximo gobierno</h2>
+
+<ol>
+  <li><strong>Reactivar la Regla Fiscal</strong>: recuperar el marco fiscal creíble antes de 2027 para evitar caída del último grado de inversión.</li>
+  <li><strong>Corregir el déficit</strong>: pasar del 6,4% al 3-4% en 2 años. Requiere ajuste de gasto o reforma tributaria (o ambas).</li>
+  <li><strong>Ampliar la base tributaria</strong>: formalizar más contribuyentes en vez de subir tarifas a los que ya pagan.</li>
+  <li><strong>Racionalizar exenciones</strong>: eliminar beneficios tributarios que no cumplen su propósito social o económico.</li>
+  <li><strong>Mejorar ejecución de inversión</strong>: los rezagos actuales bloquean el efecto multiplicador del gasto público.</li>
+</ol>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>El <strong>PGN</strong> subió a $547 billones (27,4% del PIB) para 2026. Tamaño alto, ejecución rezagada.</li>
+  <li>La <strong>deuda/PIB</strong> cerró 2025 en 64,7% — cerca del techo constitucional del 71%. Solo ~6 pp de margen.</li>
+  <li>El <strong>déficit fiscal</strong> del 6,4% es el segundo más alto del siglo sin pandemia. La comparación con el 7,1% de 2021 es asimétrica (contexto pandémico).</li>
+  <li>El <strong>recaudo DIAN</strong> se mantiene en ~16% del PIB — menos de la mitad del promedio OCDE (34%). La reforma tributaria de 2022 rindió menos de lo esperado.</li>
+  <li>Colombia <strong>perdió grado de inversión con S&P y Fitch en 2021</strong> (Duque). Moody's lo mantiene con perspectiva negativa.</li>
+  <li>La <strong>Regla Fiscal está suspendida</strong> hasta 2027 por cláusula de escape activada en junio 2025.</li>
+  <li>El próximo gobierno recibe finanzas <strong>tensas pero no colapsadas</strong>: tiene margen pero muy limitado. El primer semestre marca el rumbo fiscal del cuatrienio.</li>
+</ul>
+
+<Callout type="source" title="Fuentes primarias del capítulo">
+  <p>
+    <strong>MinHacienda:</strong>
+    <a href="https://www.minhacienda.gov.co" target="_blank" rel="noopener">MFMP y Plan Financiero</a>
+  </p>
+  <p><strong>DIAN:</strong>
+    <a href="https://www.dian.gov.co/dian/cifras/Paginas/EstadisticasRecaudo.aspx" target="_blank" rel="noopener">Estadísticas de recaudo</a>
+  </p>
+  <p><strong>Contraloría:</strong>
+    <a href="https://www.contraloria.gov.co" target="_blank" rel="noopener">Cuenta General del Presupuesto</a>
+  </p>
+  <p><strong>DGCPTN:</strong> Dirección de Crédito Público y Tesoro Nacional, saldo de la deuda.
+  </p>
+  <p><strong>Tema estado-finanzas:</strong>
+    <a href="/temas/estado-finanzas/">7 capítulos completos con toda la metodología detallada</a>.
+  </p>
+</Callout>
+
+</Chapter>
