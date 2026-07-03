@@ -1,0 +1,227 @@
+---
+import Chapter from "../../../layouts/Chapter.astro";
+import Callout from "../../../components/ui/Callout.astro";
+import PibCrecimientoAnual from "../../../components/temas/balance-pais/charts/PibCrecimientoAnual.tsx";
+import InflacionAnual from "../../../components/temas/balance-pais/charts/InflacionAnual.tsx";
+import TrmHistorica from "../../../components/temas/balance-pais/charts/TrmHistorica.tsx";
+import TasaBanrep from "../../../components/temas/balance-pais/charts/TasaBanrep.tsx";
+---
+
+<Chapter
+  number="02"
+  title="Economía y precios"
+  subtitle="PIB, inflación, tasa de cambio y política monetaria. Cómo se ha movido la macro en 12 años y qué recibe el nuevo gobierno."
+  chapterNumber={2}
+  totalChapters={8}
+  prevHref="/temas/balance-pais/01-empalme-presidencial"
+  prevTitle="El empalme presidencial"
+  nextHref="/temas/balance-pais/03-empleo-trabajo"
+  nextTitle="Empleo y trabajo"
+  accentColor="cyan"
+>
+
+<h2>Cuatro variables definen el pulso macroeconómico</h2>
+
+<p>
+  Antes de entrar a empleo, finanzas o pobreza, hay que mirar el marco
+  macroeconómico. Cuatro indicadores capturan el "pulso" del país: el
+  crecimiento del PIB, la inflación, la tasa de cambio y la tasa de
+  intervención del BanRep. Si estos cuatro están sanos, el resto tiende a
+  mejorar; si están mal, el resto se complica.
+</p>
+
+<p>
+  Este capítulo muestra la trayectoria de cada uno en los últimos 12 años y
+  separa lo que es decisión de gobierno de lo que es ciclo económico o
+  política monetaria autónoma.
+</p>
+
+<h2>1. El crecimiento del PIB</h2>
+
+<PibCrecimientoAnual client:load />
+
+<h3>Tres regímenes en 12 años</h3>
+
+<div class="my-6 space-y-3">
+  <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-4">
+    <div class="font-bold text-emerald-900">2014-2019: crecimiento moderado con desaceleración</div>
+    <p class="text-sm text-emerald-900/80 mt-1">
+      Colombia venía creciendo ~4% al año hasta 2013. La caída del precio del
+      petróleo (2014-2016) desaceleró la economía a 1,4% en 2017 (mínimo del
+      periodo). Se recuperó parcialmente hacia 3,2% en 2019.
+    </p>
+  </div>
+  <div class="rounded-lg border border-rose-200 bg-rose-50/40 p-4">
+    <div class="font-bold text-rose-900">2020-2022: shock y rebote</div>
+    <p class="text-sm text-rose-900/80 mt-1">
+      La pandemia contrajo la economía 7,2% en 2020 — peor caída desde que
+      existen mediciones modernas. El rebote de 10,7% en 2021 es <strong>efecto
+      base estadístico</strong>: si caes 7 y rebotas 10, apenas volviste al
+      nivel previo. El PIB real de 2021 apenas superó el de 2019.
+    </p>
+  </div>
+  <div class="rounded-lg border border-cyan-200 bg-cyan-50/40 p-4">
+    <div class="font-bold text-cyan-900">2023-2025: desaceleración pronunciada</div>
+    <p class="text-sm text-cyan-900/80 mt-1">
+      El crecimiento cayó a apenas <strong>0,7% en 2023</strong>, uno de los
+      peores desempeños sin pandemia del siglo. En 2024 subió a 1,7% y en 2025
+      cerró en 2,6% — todavía por debajo del potencial y del promedio
+      latinoamericano.
+    </p>
+  </div>
+</div>
+
+<Callout type="warning" title="Lo que hereda el próximo gobierno">
+  Un país creciendo por debajo de su potencial (~3,5% según BanRep) genera
+  menos empleo formal, menos recaudo tributario y más presión social. Recuperar
+  la tasa de crecimiento estructural es el reto macro más importante del
+  próximo cuatrienio.
+</Callout>
+
+<h2>2. La inflación</h2>
+
+<InflacionAnual client:load />
+
+<h3>El ciclo 2021-2026 en detalle</h3>
+
+<p>
+  El episodio inflacionario reciente es el más agudo desde finales de los
+  años 90. Su origen tiene tres capas:
+</p>
+
+<ol>
+  <li><strong>Shock global de oferta post-pandemia</strong> (2021): cadenas de suministro rotas, escasez de contenedores.</li>
+  <li><strong>Guerra en Ucrania</strong> (2022): shock de precios de energía y alimentos importados.</li>
+  <li><strong>Devaluación del peso</strong> (2022): al llegar a $5.089, encareció todo lo importado.</li>
+</ol>
+
+<Callout type="key" title="¿Petro heredó la inflación o la empeoró?">
+  La inflación llegó a Petro <strong>subiendo</strong>, no en su pico. Cuando
+  asumió (jul 2022) era 10,21%. El pico llegó en <strong>marzo de 2023 con
+  13,34%</strong> — el más alto en 24 años. Es decir: subió BAJO Petro los
+  primeros 8 meses, luego empezó a bajar. La bajada la lideró el BanRep con
+  tasas al 13,25% durante 15 meses. En junio de 2026 la inflación anual (5,84%)
+  ya supera un año de rebote respecto al mínimo de abril 2025 — es decir,
+  volvió a subir.
+</Callout>
+
+<h2>3. La tasa de cambio</h2>
+
+<TrmHistorica client:load />
+
+<h3>Qué determina el precio del dólar</h3>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <h3 class="font-bold text-neutral-900">Factores globales (fuera del gobierno)</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Política de la Reserva Federal (Fed)</li>
+      <li>Precio del petróleo (Colombia es exportador)</li>
+      <li>Aversión al riesgo global</li>
+      <li>Flujos de capital hacia emergentes</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-neutral-200 bg-white p-4">
+    <h3 class="font-bold text-neutral-900">Factores locales (parcialmente controlables)</h3>
+    <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+      <li>Diferencial de tasas con EE.UU. (carry trade)</li>
+      <li>Percepción de riesgo país / calificación</li>
+      <li>Estabilidad política y jurídica</li>
+      <li>Balanza de pagos y remesas</li>
+    </ul>
+  </div>
+</div>
+
+<Callout type="info" title="Régimen de flotación desde 1999">
+  Colombia abandonó el sistema de "banda cambiaria" tras la crisis de 1999. Hoy
+  el peso es una moneda flotante: su valor lo determina el mercado. El BanRep
+  puede intervenir vendiendo o comprando dólares en momentos de volatilidad
+  extrema, pero <strong>no fija un valor objetivo</strong>. Ningún gobierno,
+  técnicamente, decide el valor del dólar.
+</Callout>
+
+<h2>4. La tasa de intervención del BanRep</h2>
+
+<TasaBanrep client:load />
+
+<h3>Por qué la autonomía del BanRep es crítica</h3>
+
+<p>
+  La Constitución de 1991 establece la <strong>autonomía técnica y
+  administrativa del Banco de la República</strong> (arts. 371-373). Sus siete
+  miembros de junta directiva no responden al gobierno de turno:
+</p>
+
+<ul>
+  <li>El <strong>Ministro de Hacienda</strong> preside la junta pero tiene un solo voto de siete.</li>
+  <li>El <strong>Gerente General</strong> es elegido por la propia junta cada 4 años.</li>
+  <li>Los cinco codirectores tienen períodos de 4 años, con rotación (el presidente designa 2, los otros 3 siguen de administraciones previas).</li>
+</ul>
+
+<p>
+  Esta estructura significa que <strong>ningún presidente controla al BanRep en
+  su primer año</strong>. Solo hacia el final del cuatrienio puede haber
+  designado a la mitad de la junta. La política monetaria, por diseño
+  constitucional, es contracíclica y trasciende ciclos políticos.
+</p>
+
+<Callout type="warning" title="El intento de Petro de cambiar la autonomía">
+  Durante 2023-2024, el presidente Petro criticó públicamente las decisiones de
+  la junta (tasa alta) y propuso reformas para "coordinar" política monetaria
+  con política fiscal. La propuesta no prosperó. La <strong>autonomía del
+  BanRep sobrevivió</strong> y fue clave para bajar la inflación del 13,34% al
+  5,20% en 20 meses.
+</Callout>
+
+<h2>Cómo llega la economía al cambio de gobierno</h2>
+
+<div class="my-6 grid md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Fortalezas</div>
+    <ul class="mt-2 text-sm text-emerald-900 space-y-1 list-disc list-inside">
+      <li>Inflación por debajo del 6% (aún fuera del rango meta, pero controlada)</li>
+      <li>PIB creciendo 2,6% (por encima del año previo)</li>
+      <li>Peso relativamente apreciado ($3.459 en jun 2026)</li>
+      <li>Sistema bancario sólido y bien capitalizado</li>
+      <li>Reservas internacionales holgadas (~9 meses de importaciones)</li>
+    </ul>
+  </div>
+  <div class="rounded-xl border border-rose-200 bg-rose-50/40 p-5">
+    <div class="text-xs font-bold uppercase tracking-wider text-rose-700">Debilidades</div>
+    <ul class="mt-2 text-sm text-rose-900 space-y-1 list-disc list-inside">
+      <li>PIB creciendo por debajo del potencial (~3,5%)</li>
+      <li>Inflación repuntando en 2026 (fuera del rango meta)</li>
+      <li>Tasa BanRep todavía alta (8,50%) — encarece crédito</li>
+      <li>Consumo de hogares débil</li>
+      <li>Inversión productiva estancada</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Resumen del capítulo</h2>
+
+<ul>
+  <li>El <strong>PIB</strong> promedia 3,1% en 12 años, pero con extremos: caída de 7,2% (2020) y rebote de 10,7% (2021). El 2023 con 0,7% es de los peores años sin pandemia del siglo.</li>
+  <li>La <strong>inflación</strong> alcanzó su pico en marzo 2023 con 13,34% BAJO Petro — no antes. La bajada la lideró el BanRep con tasas al 13,25%.</li>
+  <li>La <strong>tasa de cambio</strong> se devaluó 73% en 12 años (peso débil). El pico intradiario fue $5.089 en oct-nov 2022. Ningún gobierno controla directamente el peso: es régimen de flotación desde 1999.</li>
+  <li>El <strong>BanRep</strong> es autónomo desde 1991. Su papel en el control de inflación fue decisivo. Petro intentó cuestionar la autonomía pero no prosperó.</li>
+  <li>El próximo gobierno recibe una macroeconomía <strong>estable pero débil</strong>: sin crisis inminentes pero sin dinamismo.</li>
+</ul>
+
+<Callout type="source" title="Fuentes primarias del capítulo">
+  <p>
+    <strong>DANE PIB:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/cuentas-nacionales/cuentas-nacionales-trimestrales" target="_blank" rel="noopener">Cuentas Nacionales Trimestrales</a>
+  </p>
+  <p class="mt-2">
+    <strong>DANE IPC:</strong>
+    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-precios-al-consumidor-ipc" target="_blank" rel="noopener">IPC histórico y boletines mensuales</a>
+  </p>
+  <p class="mt-2">
+    <strong>BanRep TRM y tasas:</strong>
+    <a href="https://www.banrep.gov.co/es/estadisticas/trm" target="_blank" rel="noopener">Serie histórica TRM</a> y
+    <a href="https://www.banrep.gov.co/es/estadisticas/tasa-de-intervencion-de-politica-monetaria" target="_blank" rel="noopener">Tasa de intervención</a>
+  </p>
+</Callout>
+
+</Chapter>
